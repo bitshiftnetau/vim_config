@@ -113,42 +113,6 @@ Open up nvim or vim and run :PlugInstall
 
 After that, any key mappings you want to make are up to you. Just add them to the ~/.vimrc file. 
 
-Here is a list of my current keymappings:
-
-" Vim's auto indentation feature does not work properly with text copied from outisde of Vim. Press the <F2> key to toggle paste mode on/off.
-nnoremap <F2> :set invpaste paste?<CR>
-imap <F2> <C-O>:set invpaste paste?<CR>
-set pastetoggle=<F2>
-
-" Map the <Space> key to toggle a selected fold opened/closed.
-nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
-vnoremap <Space> zf
-
-" Automatically save and load folds
-autocmd BufWinLeave *.* mkview
-autocmd BufWinEnter *.* silent loadview"
-
-nnoremap <C-d> :term<CR>
-tnoremap <Esc> <C-\><C-n>:q!<CR>
-
-nnoremap <C-F10> :source ~/.vimrc<CR>
-nnoremap <C-F9> :w !sudo tee %<CR>
-nnoremap <C-x> :w<CR>
-
-nnoremap <C-k> :wincmd k<CR>
-nnoremap <C-j> :wincmd j<CR>
-nnoremap <C-h> :wincmd h<CR>
-nnoremap <C-l> :wincmd l<CR>
-
-tnoremap <C-h> <C-w>h<CR>
-tnoremap <C-j> <C-w>j<CR>
-tnoremap <C-k> <C-w>k<CR>
-tnoremap <C-l> <C-w>l<CR>
-inoremap <C-h> <C-w>h<CR>
-inoremap <C-j> <C-w>j<CR>
-inoremap <C-k> <C-w>k<CR>
-inoremap <C-l> <C-w>l<CR>
-
 
 
 
