@@ -38,29 +38,34 @@ NeoVim:
 
 User:
 /home/access/.config/nvim
+
 /home/access/.config/nvim/autoload
 
 Root:
 /root/.config/nvim
+
 /root/.config/nvim/autoload
 
 Vim:
 
 User:
-B
+
 sudo curl -fLo /home/access/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
+
+Then link to this plugin so that everyting remains consistent from one place:
+
 Root:
-sudo curl -fLo /root/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+sudo ln -s /home/access/.vim/autoload/plug.vim /root.vim/autoload/plug.vim
 
 NeoVim:
 
 User:
-sudo curl -fLo /home/access/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+sudo ln -s /home/access/.vim/autoload/plug.vim /home/access/.config/nvim/autoload/plug.vim
+
 
 Root:
-sudo curl -fLo /root/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
+sudo ln -s /home/access/.vim/autoload/plug.vim /root/.config/nvim/autoload/plug.vim
 
 
 |--- Config and Plugins ---|
@@ -77,8 +82,9 @@ Vim local user:
 ~/.vimrc
 
 Vim root: 
-ln -s /home/<user>/.vimrc   /root/.vimrc
-ln -s /home/<user>/.vim/    /root/.vim/
+ln -s   /home/<user>/.vimrc   /root/.vimrc
+
+ln -s   /home/<user>/.vim/    /root/.vim/
 
 Neovim local user:
 ln -s /home/<user>/.vimrc   /home/access/.config/nvim/init.vim
@@ -88,6 +94,8 @@ ln -s /home/<user>/.vimrc   /etc/xdg/nvim/init.vim
 
 
 |--- Plugin Config ---|
+
+NOTE: Please review the githubs for all plugins listed in the .vimrc.plug file as there are external dependencies like python3 and it's interface to vim
 
 Any plugins you want to install, write them into the .vimrc.plug file you have just created. 
 
