@@ -139,3 +139,9 @@ Main Config:      ~/.vimrc (symlinked to every other config location)
 
 Key Mappings:     see: Key Mappings section for complete list of my current mappings
 Plugins:          see: Plugin Config for a complete list of my current plugins 
+
+|--- MISC ---|
+
+Javascript plugins:
+npm install -g prettier
+
