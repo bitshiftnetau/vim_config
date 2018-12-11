@@ -72,8 +72,8 @@ sudo ln -s /home/access/.vim/autoload/plug.vim /root/.config/nvim/autoload/plug.
 
 Create a ~/.vimrc file and a .vimrc.plug file. Add the following to ~/.vimrc:
 
- if filereadable(expand("home/<user>/.vimrc.plug"))
-    source /home/<user>/.vimrc.plug
+ if filereadable(expand("home/user/.vimrc.plug"))
+    source /home/user/.vimrc.plug
  endif
 
 Put all of your changes in the ~/.vimrc file, then symlink to the various config file locations. They are as follows:
@@ -82,16 +82,15 @@ Vim local user:
 ~/.vimrc
 
 Vim root: 
-ln -s   /home/<user>/.vimrc   /root/.vimrc
+ln -s   /home/user/.vimrc   /root/.vimrc
 
-ln -s   /home/<user>/.vim/    /root/.vim/
+ln -s   /home/user/.vim/    /root/.vim/
 
 Neovim local user:
-ln -s /home/<user>/.vimrc   /home/access/.config/nvim/init.vim
+ln -s /home/user/.vimrc   /home/access/.config/nvim/init.vim
 
 Neovim root:
-ln -s /home/<user>/.vimrc   /etc/xdg/nvim/init.vim
-
+ln -s /home/user/.vimrc   /etc/xdg/nvim/init.vim
 
 |--- Plugin Config ---|
 
@@ -101,15 +100,19 @@ Any plugins you want to install, write them into the .vimrc.plug file you have j
 
 The format is as follows:
 
-call plug#begin('/home/<user>/.vim/plugged')
+call plug#begin('/home/user/.vim/plugged')
 
-Plug '<plugin shorthand for git>'
+Plug 'plugin shorthand for git'
 
 call plug#end()
 
 Example:
 
 Plug 'tpope/vim-fugitive'
+
+Link:
+sudo ln -s /home/user/.local/share/nvim/rplugin.vim /root/.local/share/nvim/rplugin.vim
+
 
 
 |--- Plugin Installation ---|
@@ -144,4 +147,9 @@ Plugins:          see: Plugin Config for a complete list of my current plugins
 
 Javascript plugins:
 npm install -g prettier
+
+
+|------------------- TO DO -------------------------|
+
+Move .vimrc file to global folder /etc/vim/ and change all symlinks to this directory. See Arch Linux Vim and NeoVim pages for directions.
 
