@@ -1,1 +1,1 @@
-/home/access/.vim
+/etc/.vim

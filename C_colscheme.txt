@@ -1,0 +1,43 @@
+
+Syntax:
+
+built-in types i.e. int, return, while, if, else,           #00D0D0
+braces:                                                     #D0D0D0
+classes, structures, unions:                                #FF8080
+enums:                                                      #FFFFFF
+enumerators:                                                #EFC090
+external SDK calls:                                         #BED6FF
+fields:                                                     #BED6FF
+function declaration:                                       #BED6FF
+functions:                                                  #D0D0D0
+keywords:                                                   #00D0D0
+local variables declaration:                                #BED6FF
+local variables references:                                 #79ABFF
+Macro definition:                                           #BED6FF
+Method definition:                                          #BED6FF
+Methods:                                                    #D0D0D0
+Namespace:                                                  #D197D9
+Numbers:                                                    #FFFF00
+Operators:                                                  #D0D0D0
+Others:                                                     #D0D0D0
+Parameter Variables:                                        #79ABFF
+Static fields:                                              #EFC090
+Static method invocations:                                  #BED6FF
+Strings:                                                    #DC78DC
+Template parameters:                                        #644632
+Typedefs:                                                   #FF8080
+
+
+Commments
+
+Multiline, single-line, tags, Doxygen                       #00E000
+
+
+Preprocessor
+
+Directives:                                                 #00D0D0
+Headers:                                                    #DC78DC
+Others:                                                     #D0D0D0
+
+
+
