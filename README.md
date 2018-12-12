@@ -105,9 +105,9 @@ After that, any key mappings you want to make are up to you. Just add them to th
 
 |--- Git tracking ---|
 
-Making a git repository of your home is probably a bad idea (you would be spending more time creating your .gitignore file than on doing what you really want to do).
+Since we are already using etckeeper so another git repo is non-optional, besides it's just a bad idea to git your /etc folder (you would be spending more time creating your .gitignore file than on doing what you really want to do).
 
-I suggest using a separate git directory for your dotfiles (eg. ~/git/dotfiles) and them making symlinks to your home (eg. ln -s ~/git/dotfiles/.vim ~/.vim, etc.).
+I suggest using a separate git directory for your dotfiles (eg. /etc/git/dotfiles) and then making symlinks to your vim files (eg. ln -s /etc/git/dotfiles/.vim /etc/.vim, etc.).
 
 
 |--- TL;DR Installation list ---|
