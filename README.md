@@ -64,22 +64,9 @@ ln -s /etc/.vim/colors    /etc/xdg/nvim/colors
 ln -s /etc/vimrc          /etc/xdg/nvim/init.vim
 ln -s /etc/.vim/plugged   /etc/xdg/nvim/plugged
 
+ln -s /etc/.vim/autoload/plug.vim /usr/share/vim/vimfiles/autoload/plug.vim
 
-Put all of your changes in the ~/.vimrc file, then symlink to the various config file locations. They are as follows:
 
-Vim local user:
-~/.vimrc
-
-Vim root: 
-ln -s   /home/user/.vimrc   /root/.vimrc
-
-ln -s   /home/user/.vim/    /root/.vim/
-
-Neovim local user:
-ln -s /home/user/.vimrc   /home/access/.config/nvim/init.vim
-
-Neovim root:
-ln -s /home/user/.vimrc   /etc/xdg/nvim/init.vim
 
 |--- Plugin Config ---|
 
@@ -89,7 +76,7 @@ Any plugins you want to install, write them into the .vimrc.plug file you have j
 
 The format is as follows:
 
-call plug#begin('/home/user/.vim/plugged')
+call plug#begin('/etc/.vim/plugged')
 
 Plug 'plugin shorthand for git'
 
@@ -136,6 +123,20 @@ Plugins:          see: Plugin Config for a complete list of my current plugins
 
 Javascript plugins:
 npm install -g prettier
+
+System vim plugins:
+
+YouCompleteMe:
+sudo pip install future
+
+packer -S: 
+merlin-3.2.2-1  
+vim-ale-2.1.0-1  
+vim-bufexplorer-7.4.19-1  
+vim-colorsamplerpack-2012.10.28-5  
+vim-doxygentoolkit-0.2.13-4
+
+NOTE: you will still need to add configuration options for the above plugins in your /etc/vimrc file
 
 
 |------------------- TO DO -------------------------|
