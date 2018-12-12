@@ -20,61 +20,50 @@ Curl:
 
 pacman -S curl
 
-Vim-Plug (This needs to be installed in both at the user level AND root, otherwise when you run PlugInstall after opening a 
-file with sudo, it can't find the plugin): 
 
-Create directories for vim-plug:
+|--- Config ---|
 
+Create a /etc/vimrc file and a /etc/.vimrc.plug file. 
 
-Vim:
+Add the following to /etc/vimrc:
 
-User:
-/home/access/.vim/autoload
-
-Root:
-/root/.vim/autoload
-
-NeoVim:
-
-User:
-/home/access/.config/nvim
-
-/home/access/.config/nvim/autoload
-
-Root:
-/root/.config/nvim
-
-/root/.config/nvim/autoload
-
-Vim:
-
-User:
-
-sudo curl -fLo /home/access/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
-
-Then link to this plugin so that everyting remains consistent from one place:
-
-Root:
-sudo ln -s /home/access/.vim/autoload/plug.vim /root.vim/autoload/plug.vim
-
-NeoVim:
-
-User:
-sudo ln -s /home/access/.vim/autoload/plug.vim /home/access/.config/nvim/autoload/plug.vim
-
-
-Root:
-sudo ln -s /home/access/.vim/autoload/plug.vim /root/.config/nvim/autoload/plug.vim
-
-
-|--- Config and Plugins ---|
-
-Create a ~/.vimrc file and a .vimrc.plug file. Add the following to ~/.vimrc:
-
- if filereadable(expand("home/user/.vimrc.plug"))
-    source /home/user/.vimrc.plug
+ if filereadable(expand("/etc/.vimrc.plug"))
+    source /etc/.vimrc.plug
  endif
+
+
+|--- Plugins ---|
+
+Create directories for Vim, NeoVim, and vim-plug for both programs:
+
+Vim:
+
+(Global)
+
+/etc/.vim
+/etc/.vim/autoload <--- vim.plug will go here
+/etc/.vim/colors
+/etc/.vim/plugged
+
+(User level is ~/.vimrc if you want to fine-tune on a user-level)
+
+NeoVim:
+
+/etc/xdg/nvim
+
+
+Then download vim-plug:
+
+sudo curl -fLo /etc/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+
+After that we need to symlink our /etc/.vim directories and /etc/vimrc file to 
+
+ln -s /etc/.vim/autoload  /etc/xdg/nvim/autoload
+ln -s /etc/.vim/colors    /etc/xdg/nvim/colors
+ln -s /etc/vimrc          /etc/xdg/nvim/init.vim
+ln -s /etc/.vim/plugged   /etc/xdg/nvim/plugged
+
 
 Put all of your changes in the ~/.vimrc file, then symlink to the various config file locations. They are as follows:
 
@@ -152,4 +141,14 @@ npm install -g prettier
 |------------------- TO DO -------------------------|
 
 Move .vimrc file to global folder /etc/vim/ and change all symlinks to this directory. See Arch Linux Vim and NeoVim pages for directions.
+
+sudo ln -s /etc/vimrc /etc/xdg/nvim/init.vim
+sudo ln -s /etc/.vim   /etc/xdg/nvim
+
+/etc/xdg/nvim
+autoload 	-> /etc/.vim/autoload
+colors 		-> /etc/.vim/colors
+init.vim 	-> /etc/vimrc
+plugged 	-> /etc/.vim/plugged
+
 
