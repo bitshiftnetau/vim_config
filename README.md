@@ -4,8 +4,42 @@ vim configuration file
 This document will serve as a personal reference for configuring nvim and vim on Arch Linux. 
 
 Seeing as there is no default central way to configure vim or neovim across all users including root, I figured that
-symlinking would be better. Most people don't advocate for linking this way or for running a global config from a user
-account, as it's generally considered uncouth. I do agree, but in this instance I don't really care. 
+symlinking would be much better
+
+Now, I am going to track these config files. So instead of creating them
+in the actual global locations i.e. /etc/vimrc, we are going to create 
+a git folder and place them there. 
+
+mkdir -p  /etc/git/dotfiles/.vim/autoload
+mkdir 		/etc/git/dotfiles/.vim/colors
+mkdir 		/etc/git/dotfiles/.vim/plugged
+touch			/etc/git/dotfiles/vimrc
+touch			/etc/git/dotfiles/.vimrc.plug
+
+|--- Plugins ---|
+
+Download vim-plug:
+
+sudo curl -fLo /etc/git/dotfiles/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+|--- Symlinks ---|
+
+After that we need to symlink our /etc/.vim directories and /etc/vimrc file:
+
+Vim:
+ln -s /etc/git/dotfiles/.vim /etc/.vim
+ln -s /etc/git/dotfiles/vimrc /etc/vimrc
+ln -s /etc/git/dotfiles/.vimrc.plug /etc/.vimrc.plug
+
+NeoVim:
+(we can't link the full .vim dir because it causes a circular link):
+
+ln -s /etc/git/dotfiles/.vim/autoload /etc/xdg/nvim/autoload
+ln -s /etc/git/dotfiles/.vim/colors		/etc/xdg/nvim/colors
+ln -s /etc/git/dotfiles/vimrc					/etc/xdg/nvim/init.vim
+ln -s /etc/git/dotfiles/.vim/plugged	/etc/xdg/nvim/plugged
+ln -s /etc/git/dotfiles/.vim/autoload/plug.vim /usr/share/vim/vimfiles/autoload/plug.vim
+
 
 
 |--- Installation ---|
@@ -23,48 +57,11 @@ pacman -S curl
 
 |--- Config ---|
 
-Create a /etc/vimrc file and a /etc/.vimrc.plug file. 
-
-Add the following to /etc/vimrc:
+Add the following to /etc/git/dotfiles/vimrc:
 
  if filereadable(expand("/etc/.vimrc.plug"))
     source /etc/.vimrc.plug
  endif
-
-
-|--- Plugins ---|
-
-Create directories for Vim, NeoVim, and vim-plug for both programs:
-
-Vim:
-
-(Global)
-
-/etc/.vim
-/etc/.vim/autoload <--- vim.plug will go here
-/etc/.vim/colors
-/etc/.vim/plugged
-
-(User level is ~/.vimrc if you want to fine-tune on a user-level)
-
-NeoVim:
-
-/etc/xdg/nvim
-
-
-Then download vim-plug:
-
-sudo curl -fLo /etc/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
-
-After that we need to symlink our /etc/.vim directories and /etc/vimrc file to 
-
-ln -s /etc/.vim/autoload  /etc/xdg/nvim/autoload
-ln -s /etc/.vim/colors    /etc/xdg/nvim/colors
-ln -s /etc/vimrc          /etc/xdg/nvim/init.vim
-ln -s /etc/.vim/plugged   /etc/xdg/nvim/plugged
-
-ln -s /etc/.vim/autoload/plug.vim /usr/share/vim/vimfiles/autoload/plug.vim
 
 
 
