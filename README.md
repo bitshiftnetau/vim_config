@@ -102,10 +102,22 @@ After that, any key mappings you want to make are up to you. Just add them to th
 
 |--- Git tracking ---|
 
-Since we are already using etckeeper so another git repo is non-optional, besides it's just a bad idea to git your /etc folder (you would be spending more time creating your .gitignore file than on doing what you really want to do).
+As mentioned earlier, we have structured our files and links in a way
+that means it's easy to track without having a huge .gitignore file. 
 
-I suggest using a separate git directory for your dotfiles (eg. /etc/git/dotfiles) and then making symlinks to your vim files (eg. ln -s /etc/git/dotfiles/.vim /etc/.vim, etc.).
+Run the following in your /etc/git/dotfiles directory
 
+git init
+
+
+Then make a .gitignore file and add the following to it:
+
+.vim/plugged
+
+
+We need to do this because the plugins folder is actually a git repo
+Even if we add this, it's a sub repo so it won't be tracked and just
+makes more mess.
 
 |--- TL;DR Installation list ---|
 
