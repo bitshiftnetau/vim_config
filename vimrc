@@ -205,6 +205,14 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:UltiSnipsEditSplit="vertical"
 
 
+"------- YouCompleteMe -------
+
+"Default YouCompleteMe conflicts with default UltiSnips tab key usage. Both YouCompleteMe and UltiSnips suggest map UltiSnips expand trigger to a different key, but I found this unsatisfactory. Rather than using a different key for UltiSnips it’s better to make YCM not use Tab key. To do this, add two following lines to your .vimrc:
+let g:ycm_key_list_select_completion=[]
+let g:ycm_key_list_previous_completion=[]
+"Don’t worry, you still be able to cycle through completion with <C-N> and <C-P> keys.
+
+
 
 "--------------------------------------------
 "---------- WORKSPACE / PROJECT -------------
@@ -236,7 +244,24 @@ augroup END
 "This feature is extremely useful for browsing header files.
 "By default, Vim searches file in working directory. However, most projects have separated directory for include files. 
 "Thus, you should set Vim’s path option to contain a comma-separated list of directories to look for the file.
-let &path.="src/include"
+let &path.="src/include, /usr/include/AL"
+
+"To let clang know about your include directories custom defines, you should place your -I and -D compiler flags into the .clang_complete file at the root of your project.
+
+"If you already populated path option with include directories, you may use the following command to insert list of compiler options:
+
+" "='-I'.substitute(&path, ',', '\n-I', 'g')<cr>p
+
+"After you’re done with file editing and navigation, you want to configure Vim to compile your project. Vim has a make command which, by default, executes make in current directory and parses output for errors.
+
+"The actual command to execute is stored in makeprg option. If you build your project out-of-source, with custom make arguments or even a different build command, just change makeprg to reflect this.
+set makeprg=make\ -C\ ../build\ -j4
+
+"After that, you can compile your project as quickly as typing “:make.” You may go further and bind this command to one of the keys. For example:
+nnoremap <F4> :make!<cr>
+
+"After you build your project, it’s expected to run it. You can execute any shell command from Vim’s command mode if you prepend it with !. So, to run your great program, you just type :!./my_great_program.
+"nnoremap <F5> :!./<program name><cr>
 
 
 

@@ -1,15 +1,15 @@
 call plug#begin('/etc/.vim/plugged')
 
-" 
+"Main git wrapper 
 Plug 'tpope/vim-fugitive'
 
-" git integration - shows diff in the left hand pane
+"More git integration - shows diff in the left hand pane
 Plug 'airblade/vim-gitgutter'
 
 "File explorer
 Plug 'scrooloose/nerdtree'
 
-" A sensible configuration
+"A sensible configuration
 Plug 'tpope/vim-sensible'
 
 "Linter enginer (to work in tandem with external linters)
@@ -32,7 +32,7 @@ Plug 'ncm2/ncm2'
 Plug 'phpactor/phpactor'
 Plug 'phpactor/ncm2-phpactor'
 
-" Universal ctags wrapper
+"Universal ctags wrapper
 Plug 'ludovicchabant/vim-gutentags'
 
 "Ultisnips
@@ -40,10 +40,10 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'SirVer/ultisnips' " engine
 Plug 'honza/vim-snippets' " actual snippets
 
-" node-host
+"Node-host
 " (not really sure what this is, it seems useful for nodejs plugins
 " but I have no idea what they are so I'm not installing it)
-" Plug 'neovim/node-host', { 'do': 'npm install -g neovim' }
+"Plug 'neovim/node-host', { 'do': 'npm install -g neovim' }
 
 " vim-handlebars
 Plug 'mustache/vim-mustache-handlebars'

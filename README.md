@@ -188,3 +188,18 @@ following:
 		C: splint
 		
 
+Troubleshooting
+
+Cmake
+
+“The build failed. NOTE: It is *highly* unlikely that this is a bug but 
+rather that this is a problem with the configuration of your system or a
+ missing dependency”.  To spare the diagnostic process, what caused this
+ was a really old version of GCC compiler. I had a newer version of the 
+compiler at a different location which is not the standard one and hence
+ the plugin could not find it. I added the following lines to “CMakeList
+s.txt” to point to the right one.
+
+set(CMAKE_C_COMPILER )
+set(CMAKE_CXX_COMPILER <path_to_g++>)
+project (YouCompleteMe)
