@@ -1,0 +1,63 @@
+call plug#begin('/etc/.vim/plugged')
+
+" 
+Plug 'tpope/vim-fugitive'
+
+" git integration
+Plug 'airblade/vim-gitgutter'
+
+"File explorer
+Plug 'scrooloose/nerdtree'
+
+" A sensible configuration
+Plug 'tpope/vim-sensible'
+
+"Linter enginer (to work in tandem with external linters)
+Plug 'W0rp/ale'
+
+"Close file without losing buffer
+Plug 'moll/vim-bbye'
+
+"Project
+Plug 'amiorin/vim-project'
+Plug 'mhinz/vim-startify'
+
+"vim-workspace
+Plug 'bagrat/vim-workspace'
+
+"Php
+Plug 'https://github.com/StanAngeloff/php.vim.git'
+Plug 'stephpy/vim-php-cs-fixer'
+Plug 'ncm2/ncm2'
+Plug 'phpactor/phpactor'
+Plug 'phpactor/ncm2-phpactor'
+
+" Universal ctags wrapper
+Plug 'ludovicchabant/vim-gutentags'
+
+"Ultisnips
+
+Plug 'SirVer/ultisnips' " engine
+Plug 'honza/vim-snippets' " actual snippets
+
+" node-host
+" (not really sure what this is, it seems useful for nodejs plugins
+" but I have no idea what they are so I'm not installing it)
+" Plug 'neovim/node-host', { 'do': 'npm install -g neovim' }
+
+" vim-handlebars
+" vim-javascript
+" vim-node
+" vim-sensible
+" vim-snippets
+" yajs.vim
+
+"if has('nvim')
+"  Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
+"else
+"  Plug 'roxma/nvim-yarp'
+"  Plug 'roxma/vim-hug-neovim-rpc'
+"  Plug 'Shougo/defx.nvim'
+"endif
+
+call plug#end()
