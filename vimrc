@@ -1,3 +1,7 @@
+"-------------------------------------
+"------------- RUNTIME ---------------
+"-------------------------------------
+
 " All system-wide defaults are set in $VIMRUNTIME/archlinux.vim (usually just
 " /usr/share/vim/vimfiles/archlinux.vim) and sourced by the call to :runtime
 " you can find below.  If you wish to change any of those settings, you should
@@ -5,10 +9,6 @@
 " everytime an upgrade of the vim packages is performed.  It is recommended to
 " make changes after sourcing archlinux.vim since it alters the value of the
 " 'compatible' option.
-
-"-------------------------------------
-"------------- RUNTIME ---------------
-"-------------------------------------
 
 " This line should not be removed as it ensures that various options are
 " properly set to work with the Vim-related packages.

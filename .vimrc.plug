@@ -3,7 +3,7 @@ call plug#begin('/etc/.vim/plugged')
 " 
 Plug 'tpope/vim-fugitive'
 
-" git integration
+" git integration - shows diff in the left hand pane
 Plug 'airblade/vim-gitgutter'
 
 "File explorer
