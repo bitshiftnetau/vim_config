@@ -46,18 +46,16 @@ Plug 'honza/vim-snippets' " actual snippets
 " Plug 'neovim/node-host', { 'do': 'npm install -g neovim' }
 
 " vim-handlebars
-" vim-javascript
-" vim-node
-" vim-sensible
-" vim-snippets
-" yajs.vim
+Plug 'mustache/vim-mustache-handlebars'
 
-"if has('nvim')
-"  Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
-"else
-"  Plug 'roxma/nvim-yarp'
-"  Plug 'roxma/vim-hug-neovim-rpc'
-"  Plug 'Shougo/defx.nvim'
-"endif
+" vim-javascript
+Plug 'pangloss/vim-javascript'
+
+" vim-node
+Plug 'moll/vim-node'
+
+" yajs.vim
+Plug 'othree/yajs.vim'
+
 
 call plug#end()
