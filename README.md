@@ -153,3 +153,29 @@ init.vim 	-> /etc/vimrc
 plugged 	-> /etc/.vim/plugged
 
 
+Add a map command for sloccount (counts lines of code)
+
+
+LOCAL WORKSPACE CONFIG 
+
+Create a local configuration file that applies to a new workspace upon
+creation. 
+
+Within this config file there should be a universal local directory 
+structure, depending on the filetype that is created
+Within that local directory structure should have a default set of the 
+following:
+
+  -git hooks
+  -makefiles
+  -local runtime commands for tools like nodemon, apache, etc. 
+  -ctags
+  -.ycm_extra_conf.py for each workspace
+  -local .vimrc file related to filetype extension
+	-either find a way to dynamically pass in the names of include folders
+	so that vim can include libraries. OR just have a new template
+	for each kind of project
+  -lang specific linter config
+		C: splint
+		
+
