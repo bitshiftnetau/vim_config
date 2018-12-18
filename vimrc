@@ -47,7 +47,8 @@ set wrap
 " Toggle paste option
 set pastetoggle=<F2>
 
-" Uncomment below to set the max textwidth. Use a value corresponding to the width of your screen.
+" Uncomment below to set the max textwidth. Use a value corresponding to 
+" the width of your screen.
 " set textwidth=79
 set formatoptions=tcqrn1
 set tabstop=2
@@ -72,7 +73,8 @@ set laststatus=2
 set showmode
 set showcmd
 
-" Highlight matching pairs of brackets. Use the '%' character to jump between them.
+" Highlight matching pairs of brackets. 
+" Use the '%' character to jump between them.
 set matchpairs+=<:>
 
 " Display different types of white spaces.
@@ -83,8 +85,8 @@ set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
 set number
 
 " Set status line display
-set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ [BUFFER=%n]\ %{strftime('%c')}
-
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\
+set statusline=[BUFFER=%n]\ %{strftime('%c')} 
 " Encoding
 set encoding=utf-8
 
@@ -97,7 +99,8 @@ set ignorecase
 " Include only uppercase words with uppercase search term
 set smartcase
 
-" Store info from no more than 100 files at a time, 9999 lines of text, 100kb of data. Useful for copying large amounts of data between files.
+" Store info from no more than 100 files at a time, 9999 lines of text, 
+" 100kb of data. Useful for copying large amounts of data between files.
 set viminfo='100,<9999,s100
 
 set showcmd " Show (partial) command in status line.
@@ -106,9 +109,33 @@ set showmatch " Show matching brackets.
 "set smartcase " Do smart case matching
 set incsearch " Incremental search
 set autowrite " Automatically save before commands like :next and :make
-"set hidden " Hide buffers when they are abandoned
+"t hidden " Hide buffers when they are abandoned
 set mouse=a " Enable mouse usage (all modes)
 set clipboard=unnamedplus
+
+
+"--------------------------------------------
+"----------- FIND COLOR SCHEMES -------------
+"--------------------------------------------
+
+":colorscheme then Space followed by TAB.
+
+
+
+"--------------------------------------------
+"------ RUNTIME PATH / EXTRA CONFIG ---------
+"--------------------------------------------
+
+"let path = ''
+"let &runtimepath.=','.string(path)
+
+
+"--------------------------------------------
+"-------------- FILETYPES -------------------
+"--------------------------------------------
+"autocmd FileType php,c,java inoremap ( ()<Esc>i
+
+
 
 "--------------------------------------------
 "-------------- KEYBINDINGS -----------------
@@ -123,15 +150,14 @@ nnoremap <C-F10> :source /etc/vimrc<CR>
 " Write buffer to file when not opened as sudo
 nnoremap <C-F9> :w !sudo tee %<CR>
 
-" Write buffer to file
-nnoremap <C-x> :w<CR>
-
 " PlugInstall/Update/Status
 nnoremap <C-F5> :PlugInstall<CR>
 nnoremap <C-F6> :PlugUpdate<CR>
 nnoremap <C-F7> :PlugStatus<CR>
+nnoremap <C-F8> :PlugClean<CR>
 
 " ---------  NeoVim ------------
+
 
 " Reload vimrc
 nnoremap <F34> :source /etc/vimrc<CR>
@@ -143,11 +169,21 @@ nnoremap <F33> :w !sudo tee %<CR>
 nnoremap <F29> :PlugInstall<CR>
 nnoremap <F30> :PlugUpdate<CR>
 nnoremap <F31> :PlugStatus<CR>
+nnoremap <F32> :PlugClean<CR>
 
 " ---------- *Vim AGNOSTIC ------------
 
+"nnoremap <C-d> :term<CR>
+nnoremap <C-d> :ConqueTerm bash<CR>
+
+" Navigate to previous buffer
+nnoremap <C-c> :b#<CR>
+
+"Close current buffer without grabbing buffer list
+nnoremap <C-x> :bd<CR>
+
 " Write buffer to file
-nnoremap <C-x> :w<CR>
+nnoremap <s> :w<CR>
 
 " Navigate between windows in normal mode
 nnoremap <C-k> :wincmd k<CR>
@@ -167,51 +203,54 @@ inoremap <C-j> <C-w>j<CR>
 inoremap <C-k> <C-w>k<CR>
 inoremap <C-l> <C-w>l<CR>
 
-" Vim's auto indentation feature does not work properly with text copied from outisde of Vim. Press the <F2> key to toggle paste mode on/off.
+" Vim's auto indentation feature does not work properly with text 
+" copied from outisde of Vim. Press the <F2> key to toggle paste mode on/off.
 nnoremap <F2> :set invpaste paste?<CR>
 imap <F2> <C-O>:set invpaste paste?<CR>
 
-" Open Terminal
-nnoremap <C-d> :term<CR>
 
 " Close Terminal
 tnoremap <Esc> <C-\><C-n>:q!<CR>
 
 " Automatically save and load folds
-autocmd BufWinLeave *.* mkview
-autocmd BufWinEnter *.* silent loadview"
+"autocmd BufWinLeave *.* mkview
+"autocmd BufWinEnter *.* silent loadview"
 
 " Jump to next tag
-"nnoremap N :C-]
+"nnoremap N :C-]j
+
+"Paste into terminal
+
+" Run the current file in Conque
+let g:ConqueTerm_ExecFileKey = '<F10>'
+" Send selected text to conque
+let g:ConqueTerm_SendVisKey = '<F9>'
 
 "----------------------------------
 "------ GLOBAL PLUGIN CONFIG ------ 
 "---------------------------------- 
 
-"-------- NERDTree ----------
-nnoremap @ :NERDTreeToggle<CR>
-
-autocmd VimEnter * NERDTree<CR>
-
-
-"-------- UltiSnips ---------
-
-" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-
-" If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit="vertical"
+"ConqueTerm
+let g:ConqueTerm_PyVersion = 3
+let g:ConqueTerm_Color = 1
+let g:ConqueTerm_InsertOnEnter = 1
+let g:ConqueTerm_StartMessages = 1
+let g:ConqueTerm_TERM = 'vt100'
 
 
-"------- YouCompleteMe -------
+" colorschemes
+" calmar256-dark
+" darkburn
+" relaxedgreen 
+" tabula
+" blue
+" zenburn 
+" darkblue 
 
-"Default YouCompleteMe conflicts with default UltiSnips tab key usage. Both YouCompleteMe and UltiSnips suggest map UltiSnips expand trigger to a different key, but I found this unsatisfactory. Rather than using a different key for UltiSnips it’s better to make YCM not use Tab key. To do this, add two following lines to your .vimrc:
-let g:ycm_key_list_select_completion=[]
-let g:ycm_key_list_previous_completion=[]
-"Don’t worry, you still be able to cycle through completion with <C-N> and <C-P> keys.
-
+"colorscheme 
+set background=dark
+set termguicolors
+colorscheme material-monokai
 
 
 "--------------------------------------------
@@ -233,43 +272,55 @@ filetype on
 
 " --------- C Language ----------
 
-" C source and header filetype detection
+" C source and header filetype detection with doxygen
 augroup project
     autocmd!
     autocmd BufRead,BufNewFile *.h,*.c set filetype=c.doxygen
 augroup END
 
 
-"Vim has a gf command (and related, <C-W><C-F> to open in new tab) which opens a file, whose name is under or after the cursor. 
+"Vim has a gf command (and related, <C-W><C-F> to open in new tab) 
+"which opens a file, whose name is under or after the cursor. 
 "This feature is extremely useful for browsing header files.
-"By default, Vim searches file in working directory. However, most projects have separated directory for include files. 
-"Thus, you should set Vim’s path option to contain a comma-separated list of directories to look for the file.
+"By default, Vim searches file in working directory. 
+"However, most projects have separated directory for include files. 
+"Thus, you should set Vim’s path option to contain a comma-separated 
+"list of directories to look for the file.
 let &path.="src/include, /usr/include/AL"
 
-"To let clang know about your include directories custom defines, you should place your -I and -D compiler flags into the .clang_complete file at the root of your project.
+"To let clang know about your include directories custom defines, 
+"you should place your -I and -D compiler flags into the
+" .clang_complete file at the root of your project.
 
-"If you already populated path option with include directories, you may use the following command to insert list of compiler options:
+"If you already populated path option with include directories, 
+"you may use the following command to insert list of compiler options:
 
 " "='-I'.substitute(&path, ',', '\n-I', 'g')<cr>p
 
-"After you’re done with file editing and navigation, you want to configure Vim to compile your project. Vim has a make command which, by default, executes make in current directory and parses output for errors.
+"After you’re done with file editing and navigation, you want to 
+"configure Vim to compile your project. Vim has a make command which, 
+"by default, executes make in current directory and parses output for errors.
 
-"The actual command to execute is stored in makeprg option. If you build your project out-of-source, with custom make arguments or even a different build command, just change makeprg to reflect this.
+"The actual command to execute is stored in makeprg option. 
+"If you build your project out-of-source, with custom make 
+"arguments or even a different build command, 
+"just change makeprg to reflect this.
 set makeprg=make\ -C\ ../build\ -j4
 
-"After that, you can compile your project as quickly as typing “:make.” You may go further and bind this command to one of the keys. For example:
-nnoremap <F4> :make!<cr>
+"After that, you can compile your project as quickly as typing “:make.” 
+"You may go further and bind this command to one of the keys. For example:
+nnoremap <F5> :make!<cr>
 
-"After you build your project, it’s expected to run it. You can execute any shell command from Vim’s command mode if you prepend it with !. So, to run your great program, you just type :!./my_great_program.
+"After you build your project, it’s expected to run it. 
+"You can execute any shell command from Vim’s command mode if you 
+"prepend it with !. So, to run your great program, 
+"you just type :!./my_great_program.
 "nnoremap <F5> :!./<program name><cr>
 
 
 
 "--------- Javascript -----------
 
-" deoplete
-autocmd FileType javascript set formatprg=prettier\ --stdin
-let g:deoplete#enable_at_startup = 1
 
 
 "------------ Java --------------

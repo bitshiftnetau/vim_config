@@ -1,10 +1,26 @@
 call plug#begin('/etc/.vim/plugged')
 
-"Main git wrapper 
-Plug 'tpope/vim-fugitive'
+"Main git wrapper "----------------DONE
+Plug 'tpope/vim-fugitive' 
+
+"Cycle through available color schemes
+Plug 'vim-scripts/CycleColor'
+
+" Conque shell
+"Plug 'lrvick/Conque-Shell'
+"https://github.com/lrvick/Conque-Shell
+
+
+"Colorscheme
+"Plug 'nightsense/wonka'
+"Plug 'kadekillary/subtle_solo'
+Plug 'skielbasa/vim-material-monokai'
 
 "More git integration - shows diff in the left hand pane
 Plug 'airblade/vim-gitgutter'
+
+"YouCompleteMe
+"Plug 'Valoric/YouCompleteMe'
 
 "File explorer
 Plug 'scrooloose/nerdtree'
@@ -18,12 +34,17 @@ Plug 'W0rp/ale'
 "Close file without losing buffer
 Plug 'moll/vim-bbye'
 
-"Project
+"Project and startify (project control/document root and project splash page)
 Plug 'amiorin/vim-project'
 Plug 'mhinz/vim-startify'
 
-"vim-workspace
+"vim-workspace (tabs and other features within the workspace)
 Plug 'bagrat/vim-workspace'
+
+"A persistent session plugin i.e. for layout of split windows etc.
+"Plug 'https://github.com/thaerkh/vim-workspace.git'
+Plug 'xolox/vim-session'
+Plug 'xolox/vim-misc'
 
 "Php
 Plug 'https://github.com/StanAngeloff/php.vim.git'
@@ -54,8 +75,7 @@ Plug 'pangloss/vim-javascript'
 " vim-node
 Plug 'moll/vim-node'
 
-" yajs.vim
-Plug 'othree/yajs.vim'
-
+" vim-templates
+Plug 'aperezdc/vim-template'
 
 call plug#end()
