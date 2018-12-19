@@ -86,6 +86,37 @@ Plug 'tpope/vim-fugitive'
 Link:
 sudo ln -s /home/user/.local/share/nvim/rplugin.vim /root/.local/share/nvim/rplugin.vim
 
+YCM-Generator
+export PATH=$PATH:/usr/share/YCM-Generator
+
+Configuration is written out to the .ycm_extra_conf.py file. This file should go in your project folder.
+
+What this generator does is reading the makefile in your project directory and translate the setup of your build into the setup of your auto-completion.
+So you’ll have to know where does the C++ library locate in your machine. Type echo | clang -v -E -x c++ - into your terminal
+
+You should tell your auto-completion program to search the same place as well. To do this, go to your YCM-Generator directory and find template.py. 
+Find the flags variable (which is a python list) at the beginning of the source file, add your include directories like this:
+
+flags = [
+	'-isystem',
+	'/path/to/your/first/system/include/directory',
+	'-isystem',
+	'/path/to/your/second/system/include/directory',
+	...
+	'-I',
+	'/path/to/your/first/local/include/directory',
+	...
+]
+
+In short, the -isystem tag precedes all the system library paths, while -I precedes all the local include directories. 
+Keep in mind that this is a template so you shouldn’t add any project-specific paths in there. 
+Personally, I only add . to the local include directories in template.py.
+
+When you generate configuration files for your project with YCM-Generator, you should run:
+
+/path/to/YCM-Generator/config_gen.py /path/to/project
+
+
 
 
 |--- Plugin Installation ---|

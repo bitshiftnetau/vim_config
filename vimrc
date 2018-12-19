@@ -85,8 +85,8 @@ set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
 set number
 
 " Set status line display
-set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\
-set statusline=[BUFFER=%n]\ %{strftime('%c')} 
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\[BUFFER=%n]\ %{strftime('%c')} 
+
 " Encoding
 set encoding=utf-8
 
@@ -105,8 +105,6 @@ set viminfo='100,<9999,s100
 
 set showcmd " Show (partial) command in status line.
 set showmatch " Show matching brackets.
-"set ignorecase " Do case insensitive matching
-"set smartcase " Do smart case matching
 set incsearch " Incremental search
 set autowrite " Automatically save before commands like :next and :make
 "t hidden " Hide buffers when they are abandoned
@@ -174,13 +172,13 @@ nnoremap <F32> :PlugClean<CR>
 " ---------- *Vim AGNOSTIC ------------
 
 "nnoremap <C-d> :term<CR>
-nnoremap <C-d> :ConqueTerm bash<CR>
+nnoremap <C-d> :terminal<CR>
 
 " Navigate to previous buffer
 nnoremap <C-c> :b#<CR>
 
 "Close current buffer without grabbing buffer list
-nnoremap <C-x> :bd<CR>
+tnoremap <C-x> exit<CR>
 
 " Write buffer to file
 nnoremap <s> :w<CR>
@@ -192,6 +190,7 @@ nnoremap <C-h> :wincmd h<CR>
 nnoremap <C-l> :wincmd l<CR>
 
 " Navigate between windows in terminal mode
+
 tnoremap <C-h> <C-w>h<CR>
 tnoremap <C-j> <C-w>j<CR>
 tnoremap <C-k> <C-w>k<CR>
@@ -208,9 +207,15 @@ inoremap <C-l> <C-w>l<CR>
 nnoremap <F2> :set invpaste paste?<CR>
 imap <F2> <C-O>:set invpaste paste?<CR>
 
+"tnoremap <C-k> <Up>
+"tnoremap <C-j> <Down>
+"tnoremap <C-h> <Left>
+"tnoremap l <Right>
 
 " Close Terminal
-tnoremap <Esc> <C-\><C-n>:q!<CR>
+tnoremap <C-d> :bd<CR>
+
+"<Esc> <C-\><C-n>:q!<CR>
 
 " Automatically save and load folds
 "autocmd BufWinLeave *.* mkview
@@ -250,7 +255,7 @@ let g:ConqueTerm_TERM = 'vt100'
 "colorscheme 
 set background=dark
 set termguicolors
-colorscheme material-monokai
+"colorscheme material-monokai
 
 "----------------------------------
 "------ GLOBAL PLUGIN CONFIG ------ 
@@ -291,6 +296,9 @@ try
 catch
   " No such file? No problem; just ignore it.
 endtry
+
+let g:signify_vcs_list = 1
+let g:signify_realtime = 1
 
 "--------------------------------------------
 "---------- WORKSPACE / PROJECT -------------

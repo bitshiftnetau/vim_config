@@ -680,7 +680,7 @@ $RAKUDO_ERROR_COLOR	.vim/plugged/ale/ale_linters/perl6/perl6.vim	/^let $RAKUDO_E
 <C-F6>	vimrc	/^nnoremap <C-F6> :PlugUpdate<CR>$/;"	m
 <C-F7>	vimrc	/^nnoremap <C-F7> :PlugStatus<CR>$/;"	m
 <C-F8>	vimrc	/^nnoremap <C-F8> :PlugClean<CR>$/;"	m
-<C-F9>	vimrc	/^nnoremap <C-F9> :w !sudo tee %<CR>$/;"	m
+<C-F9>	vimrc	/^nnoremap <C-F9> :w !sudo tee % >\/dev\/null<CR>$/;"	m
 <C-L>	.vim/plugged/vim-sensible/plugin/sensible.vim	/^  nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>$/;"	m
 <C-N>	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^    nnoremap <buffer> <silent> <C-N> :<C-U>execute <SID>StageNext(v:count1)<CR>$/;"	m
 <C-P>	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^    nnoremap <buffer> <silent> <C-P> :<C-U>execute <SID>StagePrevious(v:count1)<CR>$/;"	m
@@ -719,7 +719,7 @@ $RAKUDO_ERROR_COLOR	.vim/plugged/ale/ale_linters/perl6/perl6.vim	/^let $RAKUDO_E
 <F30>	vimrc	/^nnoremap <F30> :PlugUpdate<CR>$/;"	m
 <F31>	vimrc	/^nnoremap <F31> :PlugStatus<CR>$/;"	m
 <F32>	vimrc	/^nnoremap <F32> :PlugClean<CR>$/;"	m
-<F33>	vimrc	/^nnoremap <F33> :w !sudo tee %<CR>$/;"	m
+<F33>	vimrc	/^nnoremap <F33> :w !sudo tee % > \/dev\/null<CR>$/;"	m
 <F34>	vimrc	/^nnoremap <F34> :source \/etc\/vimrc<CR>$/;"	m
 <F36>	.vim/plugin/vim-fugitive_config.vim	/^nnoremap <F36> :Gcommit -a -m$/;"	m
 <F37>	.vim/plugin/vim-fugitive_config.vim	/^nnoremap <F37> :Gcommit %$/;"	m
