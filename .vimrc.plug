@@ -6,8 +6,8 @@ Plug 'tpope/vim-fugitive'
 "Cycle through available color schemes
 "Plug 'vim-scripts/CycleColor'
 
-"More git integration - shows diff in the left hand pane
-Plug 'mhinz/vim-signify'
+"Live view of git changes
+Plug 'airblade/vim-gitgutter'
 
 "File explorer
 Plug 'scrooloose/nerdtree'
@@ -54,7 +54,7 @@ Plug 'mustache/vim-mustache-handlebars'
 Plug 'pangloss/vim-javascript'
 
 " vim-node
-Plug 'moll/vim-node'
+"Plug 'moll/vim-node'
 
 " vim-templates
 Plug 'aperezdc/vim-template'

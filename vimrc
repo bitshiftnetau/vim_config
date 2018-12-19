@@ -112,32 +112,9 @@ set mouse=a " Enable mouse usage (all modes)
 set clipboard=unnamedplus
 
 
-"--------------------------------------------
-"----------- FIND COLOR SCHEMES -------------
-"--------------------------------------------
-
-":colorscheme then Space followed by TAB.
-
-
-
-"--------------------------------------------
-"------ RUNTIME PATH / EXTRA CONFIG ---------
-"--------------------------------------------
-
-"let path = ''
-"let &runtimepath.=','.string(path)
-
-
-"--------------------------------------------
-"-------------- FILETYPES -------------------
-"--------------------------------------------
-"autocmd FileType php,c,java inoremap ( ()<Esc>i
-
-
-
-"--------------------------------------------
-"-------------- KEYBINDINGS -----------------
-"--------------------------------------------
+"----------------------------------------------------------------------
+"--------------------------- KEYBINDINGS ------------------------------
+"----------------------------------------------------------------------
 
 
 " ------------ Vim --------------
@@ -226,40 +203,14 @@ tnoremap <C-d> :bd<CR>
 
 "Paste into terminal
 
-" Run the current file in Conque
-let g:ConqueTerm_ExecFileKey = '<F10>'
-" Send selected text to conque
-let g:ConqueTerm_SendVisKey = '<F9>'
-
-"----------------------------------
-"------ GLOBAL PLUGIN CONFIG ------ 
-"---------------------------------- 
-
-"ConqueTerm
-let g:ConqueTerm_PyVersion = 3
-let g:ConqueTerm_Color = 1
-let g:ConqueTerm_InsertOnEnter = 1
-let g:ConqueTerm_StartMessages = 1
-let g:ConqueTerm_TERM = 'vt100'
-
-
-" colorschemes
-" calmar256-dark
-" darkburn
-" relaxedgreen 
-" tabula
-" blue
-" zenburn 
-" darkblue 
+"----------------------------------------------------------------------
+"--------------------- GLOBAL PLUGIN CONFIG ---------------------------
+"----------------------------------------------------------------------
 
 "colorscheme 
 set background=dark
 set termguicolors
 "colorscheme material-monokai
-
-"----------------------------------
-"------ GLOBAL PLUGIN CONFIG ------ 
-"---------------------------------- 
 
 try 
   source /etc/git/dotfiles/.vim/plugin/ntree_config.vim
@@ -279,11 +230,11 @@ catch
   " No such file? No problem; just ignore it.
 endtry
 
-try
-  source /etc/git/dotfiles/.vim/plugin/vim-gitgutter_config.vim
-catch
+"try
+"  source /etc/git/dotfiles/.vim/plugin/vim-gitgutter_config.vim
+"catch
   " No such file? No problem; just ignore it.
-endtry
+"endtry
 
 try
   source /etc/git/dotfiles/.vim/plugin/vim-workspace.vim
@@ -300,18 +251,16 @@ endtry
 let g:signify_vcs_list = 1
 let g:signify_realtime = 1
 
-"--------------------------------------------
-"---------- WORKSPACE / PROJECT -------------
-"--------------------------------------------
+"----------------------------------------------------------------------
+"--------------------- WORKSPACE / PROJECT ----------------------------
+"----------------------------------------------------------------------
 
 " Load .vimrc if it exists in currect dir
 set exrc
 
-"The following configuration options need to 
-"go into a .vimrc template file that will be
-"included in the workspace template structure
-"this .vimrc file will be used as defined
-"above by 'set exrc'
+"The following configuration options need to go into a .vimrc template 
+"file that will be included in the workspace template structure. 
+"This .vimrc file will be used as defined above by 'set exrc'
 
 " Set filetype on 
 filetype on

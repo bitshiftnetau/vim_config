@@ -211,13 +211,15 @@ following:
   -local runtime commands for tools like nodemon, apache, etc. 
   -ctags
   -.ycm_extra_conf.py for each workspace
-  -local .vimrc file related to filetype extension
-	-either find a way to dynamically pass in the names of include folders
+  -local .vimrc file related to: 
+    -filetype extension
+    -tags
+  -either find a way to dynamically pass in the names of include folders
 	so that vim can include libraries. OR just have a new template
-	for each kind of project
+	for each kind of project... just include all new sdks and include 
+  paths = simple
   -lang specific linter config
 		C: splint
-		
 
 Troubleshooting
 
