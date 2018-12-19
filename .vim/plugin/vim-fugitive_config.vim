@@ -6,12 +6,11 @@ nnoremap <C-f> :Ggrep
 "set statusline={FugitiveStatusline()}
 
 "Vim
-nnoremap <C-F1> :Gcommit -a
-nnoremap <C-F2> :Gcommit %
+nnoremap <C-F12> :Gcommit -a -m
+nnoremap <C-F11> :Gcommit %
 
 "Neovim
-nnoremap <F25> :Gcommit -a
-nnoremap <F26> :Gcommit %
-
+nnoremap <F36> :Gcommit -a -m
+nnoremap <F37> :Gcommit %
 
 

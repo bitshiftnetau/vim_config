@@ -7,14 +7,15 @@ Plug 'tpope/vim-fugitive'
 Plug 'vim-scripts/CycleColor'
 
 " Conque shell
-"Plug 'lrvick/Conque-Shell'
+
+Plug 'lrvick/Conque-Shell'
 "https://github.com/lrvick/Conque-Shell
 
 
 "Colorscheme
 "Plug 'nightsense/wonka'
 "Plug 'kadekillary/subtle_solo'
-Plug 'skielbasa/vim-material-monokai'
+"Plug 'skielbasa/vim-material-monokai'
 
 "More git integration - shows diff in the left hand pane
 Plug 'airblade/vim-gitgutter'
@@ -32,7 +33,10 @@ Plug 'tpope/vim-sensible'
 Plug 'W0rp/ale'
 
 "Close file without losing buffer
-Plug 'moll/vim-bbye'
+"Plug 'moll/vim-bbye'
+
+"File type icons
+"Plug 'ryanoasis/vim-devicons'
 
 "Project and startify (project control/document root and project splash page)
 Plug 'amiorin/vim-project'

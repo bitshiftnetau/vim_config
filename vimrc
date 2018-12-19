@@ -148,7 +148,7 @@ set clipboard=unnamedplus
 nnoremap <C-F10> :source /etc/vimrc<CR>
 
 " Write buffer to file when not opened as sudo
-nnoremap <C-F9> :w !sudo tee %<CR>
+nnoremap <C-F9> :w !sudo tee % >/dev/null<CR>
 
 " PlugInstall/Update/Status
 nnoremap <C-F5> :PlugInstall<CR>
@@ -163,7 +163,7 @@ nnoremap <C-F8> :PlugClean<CR>
 nnoremap <F34> :source /etc/vimrc<CR>
 
 " Write buffer to file when not opened as sudo
-nnoremap <F33> :w !sudo tee %<CR>
+nnoremap <F33> :w !sudo tee % > /dev/null<CR>
 
 " PlugInstall/Update/Status
 nnoremap <F29> :PlugInstall<CR>
@@ -252,6 +252,45 @@ set background=dark
 set termguicolors
 colorscheme material-monokai
 
+"----------------------------------
+"------ GLOBAL PLUGIN CONFIG ------ 
+"---------------------------------- 
+
+try 
+  source /etc/git/dotfiles/.vim/plugin/ntree_config.vim
+catch
+  " No such file? No problem; just ignore it.
+endtry 
+
+try 
+  source  /etc/git/dotfiles/.vim/plugin/Ultisnips_config.vim
+catch
+  " No such file? No problem; just ignore it.
+endtry 
+
+try
+  source /etc/git/dotfiles/.vim/plugin/vim-fugitive_config.vim 
+catch
+  " No such file? No problem; just ignore it.
+endtry
+
+try
+  source /etc/git/dotfiles/.vim/plugin/vim-gitgutter_config.vim
+catch
+  " No such file? No problem; just ignore it.
+endtry
+
+try
+  source /etc/git/dotfiles/.vim/plugin/vim-workspace.vim
+catch
+  " No such file? No problem; just ignore it.
+endtry
+
+try
+  source /etc/git/dotfiles/.vim/plugin/YCM_config.vim
+catch
+  " No such file? No problem; just ignore it.
+endtry
 
 "--------------------------------------------
 "---------- WORKSPACE / PROJECT -------------
