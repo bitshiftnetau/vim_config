@@ -161,6 +161,10 @@ Plugins:          see: Plugin Config for a complete list of my current plugins
 
 |--- MISC ---|
 
+colors:
+ln -s /etc/git/dotfiles/.vim/colors/access_colors.vim /usr/share/vim/vim81/colors/access_colors.vim
+
+
 Javascript plugins:
 npm install -g prettier
 

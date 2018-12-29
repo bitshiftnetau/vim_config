@@ -32,6 +32,20 @@ endif
 " Set compatibility to Vim only.
 " set nocompatible
 
+
+"set timeoutlen=1000
+"set ttimeoutlen=0
+"maptimeout 0
+
+
+"colorscheme 
+"set background=dark
+"set termguicolors
+"colorscheme material-monokai
+colorscheme access_colors
+"colorscheme default
+
+
 " Helps force plug-ins to load correctly when it is turned back on below.
 filetype off
 
@@ -119,6 +133,12 @@ set clipboard=unnamedplus
 
 " ------------ Vim --------------
 
+"Exit out of terminal
+tnoremap <C-x> <C-w>:bd!<CR>j
+
+"Close current buffer
+nnoremap <C-x> :bd!<CR>
+
 " Reload vimrc
 nnoremap <C-F10> :source /etc/vimrc<CR>
 
@@ -133,6 +153,10 @@ nnoremap <C-F8> :PlugClean<CR>
 
 " ---------  NeoVim ------------
 
+"Exit out of terminal
+"if has('nvim')
+"tnoremap <Esc> <C-\><C-n>:q!<CR>
+"endif
 
 " Reload vimrc
 nnoremap <F34> :source /etc/vimrc<CR>
@@ -154,14 +178,12 @@ nnoremap <C-d> :terminal<CR>
 " Navigate to previous buffer
 nnoremap <C-c> :b#<CR>
 
-"Close current buffer without grabbing buffer list
-tnoremap <C-x> exit<CR>
-
 " Write buffer to file
 nnoremap <s> :w<CR>
 
 " Navigate between windows in normal mode
 nnoremap <C-k> :wincmd k<CR>
+
 nnoremap <C-j> :wincmd j<CR>
 nnoremap <C-h> :wincmd h<CR>
 nnoremap <C-l> :wincmd l<CR>
@@ -190,16 +212,15 @@ imap <F2> <C-O>:set invpaste paste?<CR>
 "tnoremap l <Right>
 
 " Close Terminal
-tnoremap <C-d> :bd<CR>
+"tnoremap <C-d> :bd<CR>
 
-"<Esc> <C-\><C-n>:q!<CR>
 
 " Automatically save and load folds
 "autocmd BufWinLeave *.* mkview
 "autocmd BufWinEnter *.* silent loadview"
 
 " Jump to next tag
-"nnoremap N :C-]j
+nnoremap N :C-]j
 
 "Paste into terminal
 
@@ -207,49 +228,172 @@ tnoremap <C-d> :bd<CR>
 "--------------------- GLOBAL PLUGIN CONFIG ---------------------------
 "----------------------------------------------------------------------
 
-"colorscheme 
-set background=dark
-set termguicolors
-"colorscheme material-monokai
+"----------------------- vim-gitgutter ----------------------------
 
-try 
-  source /etc/git/dotfiles/.vim/plugin/ntree_config.vim
-catch
-  " No such file? No problem; just ignore it.
-endtry 
+" https://github.com/airblade/vim-gitgutter
 
-try 
-  source  /etc/git/dotfiles/.vim/plugin/Ultisnips_config.vim
-catch
-  " No such file? No problem; just ignore it.
-endtry 
+set updatetime=50 " speed of update 
+let g:gitgutter_max_signs = 500  " maximum number of changes that will be
+                                 " shown in a given file
+let g:gitgutter_map_keys = 0 " don't setup any default mappings 
 
-try
-  source /etc/git/dotfiles/.vim/plugin/vim-fugitive_config.vim 
-catch
-  " No such file? No problem; just ignore it.
-endtry
+" View next or previous hunk when adding files
+nmap <C-j> <Plug>GitGutterNextHunk
+nmap <C-k> <Plug>GitGutterPrevHunk
+"nmap <Leader>ha <Plug>GitGutterStageHunk
+"nmap <Leader>hr <Plug>GitGutterUndoHunk
+"nmap <Leader>hv <Plug>GitGutterPreviewHunk
+"omap ih <Plug>GitGutterTextObjectInnerPending
+"omap ah <Plug>GitGutterTextObjectOuterPending
+"xmap ih <Plug>GitGutterTextObjectInnerVisual
+"xmap ah <Plug>GitGutterTextObjectOuterVisual
 
-"try
-"  source /etc/git/dotfiles/.vim/plugin/vim-gitgutter_config.vim
-"catch
-  " No such file? No problem; just ignore it.
-"endtry
+"To customise your sign column's background color, 
+"first tell vim-gitgutter to leave it alone
+"let g:gitgutter_override_sign_column_highlight = 0
 
-try
-  source /etc/git/dotfiles/.vim/plugin/vim-workspace.vim
-catch
-  " No such file? No problem; just ignore it.
-endtry
+"And then either update your colorscheme's SignColumn 
+"highlight group or set it in your vimrc:
 
-try
-  source /etc/git/dotfiles/.vim/plugin/YCM_config.vim
-catch
-  " No such file? No problem; just ignore it.
-endtry
+"highlight SignColumn ctermbg=whatever    " terminal Vim
+"highlight SignColumn guibg=whatever      " gVim/MacVim
 
-let g:signify_vcs_list = 1
-let g:signify_realtime = 1
+"By default the sign column will appear when there are 
+"signs to show and disappear when there aren't. 
+"To always have the sign column, add to your vimrc:
+
+if exists('&signcolumn')  " Vim 7.4.2201
+  set signcolumn=yes
+else
+  let g:gitgutter_sign_column_always = 1
+endif
+
+"To customise the colours, set up the following highlight groups in your
+"colorscheme or ~/.vimrc:
+
+"GitGutterAdd          " an added line
+"GitGutterChange       " a changed line
+"GitGutterDelete       " at least one removed line
+"GitGutterChangeDelete " a changed line followed by at least one removed line
+
+"You can either set these with highlight GitGutterAdd {key}={arg}... 
+"or link them to existing highlight groups with, say, highlight link 
+"GitGutterAdd DiffAdd.
+
+"To customise the symbols, add the following to your ~/.vimrc:
+
+"let g:gitgutter_sign_added = 'xx'
+"let g:gitgutter_sign_modified = 'yy'
+"let g:gitgutter_sign_removed = 'zz'
+"let g:gitgutter_sign_removed_first_line = '^^'
+"let g:gitgutter_sign_modified_removed = 'ww'
+
+"Line highlights
+"Similarly to the signs' colours, set up the following highlight 
+"groups in your colorscheme or ~/.vimrc:
+
+"GitGutterAddLine          " default: links to DiffAdd
+"GitGutterChangeLine       " default: links to DiffChange
+"GitGutterDeleteLine       " default: links to DiffDelete
+"GitGutterChangeDeleteLine " default: links to GitGutterChangeLineDefault, i.e. DiffChange
+
+
+
+
+
+"--------------------------- NERDTree -------------------------------
+nnoremap @ :NERDTreeToggle<CR>
+autocmd VimEnter * NERDTree<CR>
+
+
+
+"--------------------------- UltiSnips ------------------------------
+
+" Trigger configuration. 
+" Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+"let g:UltiSnipsEditSplit="vertical"
+
+
+
+"---------------------------- UltiSnips -------------------------------
+
+" Trigger configuration. 
+" Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+"let g:UltiSnipsEditSplit="vertical"
+
+
+
+"-------------------------- YouCompleteMe ------------------------------
+
+"Default YouCompleteMe conflicts with default UltiSnips tab key usage. 
+"Both YouCompleteMe and UltiSnips suggest map UltiSnips expand trigger to 
+"a different key, but I found this unsatisfactory. Rather than using a 
+"different key for UltiSnips it’s better to make YCM not use Tab key. 
+"To do this, add two following lines to your .vimrc:
+let g:ycm_key_list_select_completion=[]
+let g:ycm_key_list_previous_completion=[]
+"Don’t worry, you still be able to cycle through completion 
+"with <C-N> and <C-P> keys.
+
+
+
+
+"-------------------------- Vim-workspace ------------------------------
+"
+let g:workspace_use_devicons = 1
+
+nnoremap <Tab> :WSNext<CR>
+nnoremap <S-Tab> :WSPrev<CR>
+nnoremap <Leader><Tab> :WSClose<CR>
+nnoremap <Leader><S-Tab> :WSClose!<CR>
+nnoremap <C-t> :WSTabNew<CR>
+
+"cabbrev bonly WSBufOnly
+
+let g:workspace_powerline_separators = 1
+let g:workspace_tab_icon = "\uf00a"
+"let g:workspace_left_trunc_icon = "\uf0a8"
+"let g:workspace_right_trunc_icon = "\uf0a9"
+
+
+
+
+
+" -------------------------- vim-fugitive -------------------------------
+"
+" https://github.com/tpope/vim-fugitive
+"
+nnoremap <C-f> :Ggrep 
+"set statusline={FugitiveStatusline()}
+
+"Vim
+nnoremap <C-F12> :Gcommit -a -m
+nnoremap <C-F11> :Gcommit %
+
+"Neovim
+nnoremap <F36> :Gcommit -a -m
+nnoremap <F37> :Gcommit %
+
+" -------------------------- Emmett -------------------------------------
+"
+let g:user_emmet_leader_key=','
+
+
+
+
+
+"let g:signify_vcs_list = 1
+"let g:signify_realtime = 1
 
 "----------------------------------------------------------------------
 "--------------------- WORKSPACE / PROJECT ----------------------------

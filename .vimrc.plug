@@ -6,6 +6,15 @@ Plug 'tpope/vim-fugitive'
 "Cycle through available color schemes
 "Plug 'vim-scripts/CycleColor'
 
+"Emmet for web dev snippets
+Plug 'mattn/emmet-vim'
+
+"Definitions not yet shipped with stock vim
+Plug 'justinmk/vim-syntax-extra'
+
+"Polyglot
+"Plug 'sheerun/vim-ployglot'
+
 "Live view of git changes
 Plug 'airblade/vim-gitgutter'
 

@@ -606,17 +606,8 @@ $RAKUDO_ERROR_COLOR	.vim/plugged/ale/ale_linters/perl6/perl6.vim	/^let $RAKUDO_E
 .tomorrow-yellow	.vim/plugged/phpactor/doc/template/css/highlight.tomorrow-night.css	/^.tomorrow-yellow, pre .class, pre .ruby .class .title, pre .css .rules .attribute {$/;"	c
 0	.vim/plugged/phpactor/composer.json	/^        "bin\/phpactor"$/;"	s	array:bin
 0.1.0	.vim/plugged/phpactor/CHANGELOG.md	/^## 0.1.0 $/;"	s
-0.1.0 (Jul 28, 2013)	.vim/plugged/vim-node/CHANGELOG.md	/^## 0.1.0 (Jul 28, 2013)$/;"	s
-0.1.1 (Jul 28, 2013)	.vim/plugged/vim-node/CHANGELOG.md	/^## 0.1.1 (Jul 28, 2013)$/;"	s
 0.2.0	.vim/plugged/phpactor/CHANGELOG.md	/^## 0.2.0$/;"	s
-0.2.0 (Jul 28, 2013)	.vim/plugged/vim-node/CHANGELOG.md	/^## 0.2.0 (Jul 28, 2013)$/;"	s
 0.3.0	.vim/plugged/phpactor/CHANGELOG.md	/^## 0.3.0$/;"	s
-0.5.0 (Aug 5, 2013)	.vim/plugged/vim-node/CHANGELOG.md	/^## 0.5.0 (Aug 5, 2013)$/;"	s
-0.5.1 (Aug 8, 2013)	.vim/plugged/vim-node/CHANGELOG.md	/^## 0.5.1 (Aug 8, 2013)$/;"	s
-0.6.0 (Aug 23, 2013)	.vim/plugged/vim-node/CHANGELOG.md	/^## 0.6.0 (Aug 23, 2013)$/;"	s
-0.7.0 (Aug 28, 2013)	.vim/plugged/vim-node/CHANGELOG.md	/^## 0.7.0 (Aug 28, 2013)$/;"	s
-0.8.0 (Sep 6, 2013)	.vim/plugged/vim-node/CHANGELOG.md	/^## 0.8.0 (Sep 6, 2013)$/;"	s
-0.8.1 (Apr 15, 2014)	.vim/plugged/vim-node/CHANGELOG.md	/^## 0.8.1 (Apr 15, 2014)$/;"	s
 1. Supported Languages and Tools	.vim/plugged/ale/README.md	/^## 1. Supported Languages and Tools$/;"	s
 2. Usage	.vim/plugged/ale/README.md	/^## 2. Usage$/;"	s
 2.i Linting	.vim/plugged/ale/README.md	/^### 2.i Linting$/;"	S
@@ -659,8 +650,6 @@ $RAKUDO_ERROR_COLOR	.vim/plugged/ale/ale_linters/perl6/perl6.vim	/^let $RAKUDO_E
 5.xvi. How can I configure ALE differently for different buffers?	.vim/plugged/ale/README.md	/^### 5.xvi. How can I configure ALE differently for different buffers?$/;"	S
 5.xvii. How can I configure the height of the list in which ALE displays errors?	.vim/plugged/ale/README.md	/^### 5.xvii. How can I configure the height of the list in which ALE displays errors?$/;"	S
 :ALEInfo	.vim/plugged/ale/.github/ISSUE_TEMPLATE/report-a-bug.md	/^### :ALEInfo$/;"	S
-:Nedit	.vim/plugged/vim-node/test/autoload_test.rb	/^  describe ":Nedit" do$/;"	d
-:Nopen	.vim/plugged/vim-node/test/autoload_test.rb	/^  describe ":Nopen" do$/;"	d
 :root .fa-flip-horizontal	.vim/plugged/phpactor/doc/template/css/font-awesome.min.css	/^ *\/@font-face{font-family:'FontAwesome';src:url('..\/fonts\/fontawesome-webfont.eot?v=4.2.0');s/;"	c
 :root .fa-flip-vertical	.vim/plugged/phpactor/doc/template/css/font-awesome.min.css	/^ *\/@font-face{font-family:'FontAwesome';src:url('..\/fonts\/fontawesome-webfont.eot?v=4.2.0');s/;"	c
 :root .fa-rotate-180	.vim/plugged/phpactor/doc/template/css/font-awesome.min.css	/^ *\/@font-face{font-family:'FontAwesome';src:url('..\/fonts\/fontawesome-webfont.eot?v=4.2.0');s/;"	c
@@ -670,34 +659,28 @@ $RAKUDO_ERROR_COLOR	.vim/plugged/ale/ale_linters/perl6/perl6.vim	/^let $RAKUDO_E
 <2-LeftMouse>	.vim/plugged/vim-startify/autoload/startify.vim	/^  nnoremap <buffer><nowait><silent> <2-LeftMouse> :call startify#open_buffers()<cr>$/;"	m
 <BS>	.vim/plugged/ultisnips/autoload/UltiSnips/map_keys.vim	/^    snoremap <silent> <BS> <c-g>c$/;"	m
 <C-F10>	vimrc	/^nnoremap <C-F10> :source \/etc\/vimrc<CR>$/;"	m
-<C-F11>	.vim/plugin/vim-fugitive_config.vim	/^nnoremap <C-F11> :Gcommit %$/;"	m
-<C-F12>	.vim/plugin/vim-fugitive_config.vim	/^nnoremap <C-F12> :Gcommit -a -m$/;"	m
-<C-F5>	vimrc	/^nnoremap <C-F5> :PlugInstall<CR>$/;"	m
-<C-F6>	vimrc	/^nnoremap <C-F6> :PlugUpdate<CR>$/;"	m
-<C-F7>	vimrc	/^nnoremap <C-F7> :PlugStatus<CR>$/;"	m
-<C-F8>	vimrc	/^nnoremap <C-F8> :PlugClean<CR>$/;"	m
+<C-F11>	vimrc	/^nnoremap <C-F11> :Gcommit %$/;"	m
+<C-F12>	vimrc	/^nnoremap <C-F12> :Gcommit -a -m$/;"	m
 <C-F9>	vimrc	/^nnoremap <C-F9> :w !sudo tee % >\/dev\/null<CR>$/;"	m
 <C-N>	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^    nnoremap <buffer> <silent> <C-N> :<C-U>execute <SID>StageNext(v:count1)<CR>$/;"	m
 <C-P>	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^    nnoremap <buffer> <silent> <C-P> :<C-U>execute <SID>StagePrevious(v:count1)<CR>$/;"	m
 <C-c>	vimrc	/^nnoremap <C-c> :b#<CR>$/;"	m
 <C-d>	vimrc	/^nnoremap <C-d> :terminal<CR>$/;"	m
-<C-f>	.vim/plugin/vim-fugitive_config.vim	/^nnoremap <C-f> :Ggrep $/;"	m
+<C-f>	vimrc	/^nnoremap <C-f> :Ggrep $/;"	m
 <C-h>	vimrc	/^inoremap <C-h> <C-w>h<CR>$/;"	m
 <C-h>	vimrc	/^nnoremap <C-h> :wincmd h<CR>$/;"	m
-<C-j>	.vim/plugin/vim-gitgutter_config.vim	/^nmap <C-j> <Plug>GitGutterNextHunk$/;"	m
 <C-j>	vimrc	/^inoremap <C-j> <C-w>j<CR>$/;"	m
+<C-j>	vimrc	/^nmap <C-j> <Plug>GitGutterNextHunk$/;"	m
 <C-j>	vimrc	/^nnoremap <C-j> :wincmd j<CR>$/;"	m
-<C-k>	.vim/plugin/vim-gitgutter_config.vim	/^nmap <C-k> <Plug>GitGutterPrevHunk$/;"	m
 <C-k>	vimrc	/^inoremap <C-k> <C-w>k<CR>$/;"	m
+<C-k>	vimrc	/^nmap <C-k> <Plug>GitGutterPrevHunk$/;"	m
 <C-k>	vimrc	/^nnoremap <C-k> :wincmd k<CR>$/;"	m
 <C-l>	vimrc	/^inoremap <C-l> <C-w>l<CR>$/;"	m
 <C-l>	vimrc	/^nnoremap <C-l> :wincmd l<CR>$/;"	m
 <C-q>	.vim/plugged/ale/ftplugin/ale-preview-selection.vim	/^noremap <buffer> <C-q> <NOP>$/;"	m
-<C-t>	.vim/plugin/vim-workspace_config.vim	/^noremap <C-t> :WSTabNew<CR>$/;"	m
+<C-t>	vimrc	/^nnoremap <C-t> :WSTabNew<CR>$/;"	m
 <C-v>	.vim/plugged/ale/ftplugin/ale-preview-selection.vim	/^noremap <buffer> <C-v> <NOP>$/;"	m
-<C-w><C-f>	.vim/plugged/vim-node/autoload/node.vim	/^		nmap <buffer> <C-w><C-f> <Plug>NodeSplitGotoFile$/;"	m
-<C-w>f	.vim/plugged/vim-node/autoload/node.vim	/^		nmap <buffer> <C-w>f <Plug>NodeSplitGotoFile$/;"	m
-<C-w>gf	.vim/plugged/vim-node/autoload/node.vim	/^		nmap <buffer> <C-w>gf <Plug>NodeTabGotoFile$/;"	m
+<C-x>	vimrc	/^nnoremap <C-x> :bd!<CR>$/;"	m
 <CR>	.vim/plugged/ale/ftplugin/ale-preview-selection.vim	/^noremap <buffer> <CR> :call ale#preview#OpenSelectionInBuffer()<CR>$/;"	m
 <CR>	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^        nnoremap <buffer> <silent> <CR> :<C-U>exe <SID>BlameCommit("exe 'norm q'<Bar>edit")<CR>$/;"	m
 <CR>	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^    nnoremap <buffer> <silent> <CR>    :<C-U>.Gblame<CR>$/;"	m
@@ -713,11 +696,14 @@ $RAKUDO_ERROR_COLOR	.vim/plugged/ale/ale_linters/perl6/perl6.vim	/^let $RAKUDO_E
 <F32>	vimrc	/^nnoremap <F32> :PlugClean<CR>$/;"	m
 <F33>	vimrc	/^nnoremap <F33> :w !sudo tee % > \/dev\/null<CR>$/;"	m
 <F34>	vimrc	/^nnoremap <F34> :source \/etc\/vimrc<CR>$/;"	m
-<F36>	.vim/plugin/vim-fugitive_config.vim	/^nnoremap <F36> :Gcommit -a -m$/;"	m
-<F37>	.vim/plugin/vim-fugitive_config.vim	/^nnoremap <F37> :Gcommit %$/;"	m
+<F36>	vimrc	/^nnoremap <F36> :Gcommit -a -m$/;"	m
+<F37>	vimrc	/^nnoremap <F37> :Gcommit %$/;"	m
 <F5>	vimrc	/^nnoremap <F5> :make!<cr>$/;"	m
-<Leader><S-Tab>	.vim/plugin/vim-workspace_config.vim	/^noremap <Leader><S-Tab> :WSClose!<CR>$/;"	m
-<Leader><Tab>	.vim/plugin/vim-workspace_config.vim	/^noremap <Leader><Tab> :WSClose<CR>$/;"	m
+<Leader><S-Tab>	vimrc	/^nnoremap <Leader><S-Tab> :WSClose!<CR>$/;"	m
+<Leader><Tab>	vimrc	/^nnoremap <Leader><Tab> :WSClose<CR>$/;"	m
+<Leader>hp	.vim/plugged/vim-gitgutter/autoload/gitgutter.vim	/^    nmap <buffer> <Leader>hp <Plug>GitGutterPreviewHunk$/;"	m
+<Leader>hs	.vim/plugged/vim-gitgutter/autoload/gitgutter.vim	/^    nmap <buffer> <Leader>hs <Plug>GitGutterStageHunk$/;"	m
+<Leader>hu	.vim/plugged/vim-gitgutter/autoload/gitgutter.vim	/^    nmap <buffer> <Leader>hu <Plug>GitGutterUndoHunk$/;"	m
 <MiddleMouse>	.vim/plugged/vim-startify/autoload/startify.vim	/^  nnoremap <buffer><nowait><silent> <MiddleMouse> :enew <bar> execute 'normal! "'.(v:register=='/;"	m
 <Plug>(ale_detail)	.vim/plugged/ale/plugin/ale.vim	/^nnoremap <silent> <Plug>(ale_detail) :ALEDetail<Return>$/;"	m
 <Plug>(ale_disable)	.vim/plugged/ale/plugin/ale.vim	/^nnoremap <silent> <Plug>(ale_disable) :ALEDisable<Return>$/;"	m
@@ -749,14 +735,19 @@ $RAKUDO_ERROR_COLOR	.vim/plugged/ale/ale_linters/perl6/perl6.vim	/^let $RAKUDO_E
 <Plug>(ncm2_auto_trigger)	.vim/plugged/ncm2/autoload/ncm2.vim	/^inoremap <silent> <Plug>(ncm2_auto_trigger) <C-r>=ncm2#_do_auto_trigger()<CR>$/;"	m
 <Plug>(ncm2_manual_trigger)	.vim/plugged/ncm2/autoload/ncm2.vim	/^inoremap <silent> <Plug>(ncm2_manual_trigger) <C-r>=ncm2#_on_complete(1)<CR>$/;"	m
 <Plug>(ncm2_skip_auto_trigger)	.vim/plugged/ncm2/autoload/ncm2.vim	/^inoremap <silent> <Plug>(ncm2_skip_auto_trigger) <C-r>=ncm2#skip_auto_trigger()<CR>$/;"	m
-<Plug>NodeGotoFile	.vim/plugged/vim-node/autoload/node.vim	/^	nnoremap <buffer><silent> <Plug>NodeGotoFile$/;"	m
-<Plug>NodeSplitGotoFile	.vim/plugged/vim-node/autoload/node.vim	/^	nnoremap <buffer><silent> <Plug>NodeSplitGotoFile$/;"	m
-<Plug>NodeTabGotoFile	.vim/plugged/vim-node/autoload/node.vim	/^	nnoremap <buffer><silent> <Plug>NodeTabGotoFile$/;"	m
-<Plug>NodeVSplitGotoFile	.vim/plugged/vim-node/autoload/node.vim	/^	nnoremap <buffer><silent> <Plug>NodeVSplitGotoFile$/;"	m
-<S-Tab>	.vim/plugin/vim-workspace_config.vim	/^noremap <S-Tab> :WSPrev<CR>$/;"	m
+<Plug>GitGutterNextHunk	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^nnoremap <silent> <expr> <Plug>GitGutterNextHunk &diff ? ']c' : ":\\<C-U>execute v:count1 . 'Git/;"	m
+<Plug>GitGutterPrevHunk	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^nnoremap <silent> <expr> <Plug>GitGutterPrevHunk &diff ? '[c' : ":\\<C-U>execute v:count1 . 'Git/;"	m
+<Plug>GitGutterPreviewHunk	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^nnoremap <silent> <Plug>GitGutterPreviewHunk :GitGutterPreviewHunk<CR>$/;"	m
+<Plug>GitGutterStageHunk	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^nnoremap <silent> <Plug>GitGutterStageHunk   :GitGutterStageHunk<CR>$/;"	m
+<Plug>GitGutterTextObjectInnerPending	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^onoremap <silent> <Plug>GitGutterTextObjectInnerPending :<C-U>call gitgutter#hunk#text_object(1)/;"	m
+<Plug>GitGutterTextObjectInnerVisual	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^xnoremap <silent> <Plug>GitGutterTextObjectInnerVisual  :<C-U>call gitgutter#hunk#text_object(1)/;"	m
+<Plug>GitGutterTextObjectOuterPending	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^onoremap <silent> <Plug>GitGutterTextObjectOuterPending :<C-U>call gitgutter#hunk#text_object(0)/;"	m
+<Plug>GitGutterTextObjectOuterVisual	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^xnoremap <silent> <Plug>GitGutterTextObjectOuterVisual  :<C-U>call gitgutter#hunk#text_object(0)/;"	m
+<Plug>GitGutterUndoHunk	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^nnoremap <silent> <Plug>GitGutterUndoHunk    :GitGutterUndoHunk<CR>$/;"	m
+<S-Tab>	vimrc	/^nnoremap <S-Tab> :WSPrev<CR>$/;"	m
 <S-v>	.vim/plugged/ale/ftplugin/ale-preview-selection.vim	/^noremap <buffer> <S-v> <NOP>$/;"	m
 <SID>:	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^nnoremap <SID>: :<C-U><C-R>=v:count ? v:count : ''<CR>$/;"	m
-<Tab>	.vim/plugin/vim-workspace_config.vim	/^noremap <Tab> :WSNext<CR>$/;"	m
+<Tab>	vimrc	/^nnoremap <Tab> :WSNext<CR>$/;"	m
 <c-h>	.vim/plugged/ultisnips/autoload/UltiSnips/map_keys.vim	/^    snoremap <silent> <c-h> <c-g>c$/;"	m
 <c-r>	.vim/plugged/ultisnips/autoload/UltiSnips/map_keys.vim	/^    snoremap <c-r> <c-g>"_c<c-r>$/;"	m
 <cr>	.vim/autoload/plug.vim	/^      nmap <buffer> <cr> <plug>(plug-preview)$/;"	m
@@ -770,7 +761,7 @@ $RAKUDO_ERROR_COLOR	.vim/plugged/ale/ale_linters/perl6/perl6.vim	/^let $RAKUDO_E
 <plug>(startify-open-buffers)	.vim/plugged/vim-startify/plugin/startify.vim	/^nnoremap <silent><plug>(startify-open-buffers) :<c-u>call startify#open_buffers()<cr>$/;"	m
 <s>	vimrc	/^nnoremap <s> :w<CR>$/;"	m
 =template=	.vim/plugged/vim-template/templates/=template=.ml	/^(*$/;"	M
-@	.vim/plugin/ntree_config.vim	/^nnoremap @ :NERDTreeToggle<CR>$/;"	m
+@	vimrc	/^nnoremap @ :NERDTreeToggle<CR>$/;"	m
 A	.vim/plugged/ale/ftplugin/ale-preview-selection.vim	/^noremap <buffer> A <NOP>$/;"	m
 A	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^        nnoremap <buffer> <silent> A    :<C-u>exe "vertical resize ".(<SID>linechars('.\\{-\\}\\/;"	m
 A	.vim/plugged/vim-php-cs-fixer/tests/fixtures/misc/single_import_per_statement,ordered_imports.php	/^use some\\{Z, A};$/;"	a	typeref:unknown:some\\A
@@ -821,7 +812,6 @@ Aaa	.vim/plugged/vim-php-cs-fixer/tests/fixtures/misc/class_definition,no_traili
 Aaa	.vim/plugged/vim-php-cs-fixer/tests/results/misc/class_definition,no_trailing_whitespace.php	/^class Aaa implements$/;"	c
 Abc	.vim/plugged/vim-php-cs-fixer/tests/fixtures/misc/imports.php	/^use Abc, \\Barr, \\Zzzz;$/;"	a	namespace:Acme	typeref:unknown:Abc
 Abc	.vim/plugged/vim-php-cs-fixer/tests/results/misc/imports.php	/^use Abc;$/;"	a	namespace:Acme	typeref:unknown:Abc
-About	.vim/plugged/vim-node/README.md	/^About$/;"	s
 About Phpactor	.vim/plugged/phpactor/doc/README.md	/^About Phpactor$/;"	c
 AbsolutePathCandidate	.vim/plugged/phpactor/tests/Unit/Extension/Core/Rpc/StatusHandlerTest.php	/^use Phpactor\\ConfigLoader\\Adapter\\PathCandidate\\AbsolutePathCandidate;$/;"	a	namespace:Phpactor\\Tests\\Unit\\Extension\\Core\\Rpc	typeref:unknown:Phpactor\\ConfigLoader\\Adapter\\PathCandidate\\AbsolutePathCandidate
 AbstractClassGenerateHandler	.vim/plugged/phpactor/lib/Extension/CodeTransform/Rpc/AbstractClassGenerateHandler.php	/^abstract class AbstractClassGenerateHandler extends AbstractHandler$/;"	c	namespace:Phpactor\\Extension\\CodeTransform\\Rpc
@@ -853,6 +843,7 @@ AddedSnippetsSource	.vim/plugged/ultisnips/pythonx/UltiSnips/snippet/source/adde
 AirlineWebDevIcons	.vim/plugged/vim-devicons/plugin/webdevicons.vim	/^function! AirlineWebDevIcons(...)$/;"	f
 AliasAlreadyUsedException	.vim/plugged/phpactor/tests/Unit/Extension/CoreTransform/Rpc/ImportClassHandlerTest.php	/^use Phpactor\\CodeTransform\\Domain\\Refactor\\ImportClass\\AliasAlreadyUsedException;$/;"	a	namespace:Phpactor\\Tests\\Unit\\Extension\\CoreTransform\\Rpc	typeref:unknown:Phpactor\\CodeTransform\\Domain\\Refactor\\ImportClass\\AliasAlreadyUsedException
 Aliases for snippets	.vim/plugged/ultisnips/doc/examples/snippets-aliasing/README.md	/^# Aliases for snippets$/;"	c
+Align	.vim/plugged/vim-gitgutter/test/runner.vim	/^function Align(left, right)$/;"	f
 Animals	.vim/plugged/phpactor/tests/Assets/Projects/Animals/lib/Badger.php	/^namespace Animals;$/;"	n
 Animals\\Aardvark	.vim/plugged/phpactor/tests/Assets/Projects/Animals/lib/Aardvark/Edentate.php	/^namespace Animals\\Aardvark;$/;"	n
 Animals\\Badger	.vim/plugged/phpactor/tests/Assets/Projects/Animals/lib/Badger/Carnivorous.php	/^namespace Animals\\Badger;$/;"	n
@@ -869,6 +860,7 @@ Anon_Trigger_Simple	.vim/plugged/ultisnips/test/test_AnonymousExpansion.py	/^cla
 Anon_Trigger_Twice	.vim/plugged/ultisnips/test/test_AnonymousExpansion.py	/^class Anon_Trigger_Twice(_AnonBase):$/;"	c
 AnonymousClass0c87ac400101	.vim/plugged/vim-template/templates/=template=.jsx	/^class %FILE% extends Component {$/;"	c
 AnonymousClass1	.vim/plugged/phpactor/tests/Unit/Extension/Completion/LanguageServer/CompletionHandlerTest.php	/^        return new CompletionHandler($this->manager, new class($suggestions) implements Completo/;"	c	function:Phpactor\\Tests\\Unit\\Extension\\Completion\\LanguageServer\\CompletionHandlerTest::create
+Answer	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^  func Answer(char)$/;"	f
 Any background context you can provide?	.vim/plugged/vim-devicons/.github/PULL_REQUEST_TEMPLATE.md	/^#### Any background context you can provide?$/;"	t
 Application	.vim/plugged/phpactor/bin/phpactor	/^use Phpactor\\Application;$/;"	a	typeref:unknown:Phpactor\\Application
 Application	.vim/plugged/phpactor/lib/Application.php	/^class Application extends SymfonyApplication$/;"	c	namespace:Phpactor
@@ -894,10 +886,8 @@ Assignments	.vim/plugged/phpactor/doc/completion.md	/^### Assignments$/;"	S
 Asynchronous Lint Engine [![Travis CI Build Status](https://travis-ci.org/w0rp/ale.svg?branch=master)](https://travis-ci.org/w0rp/ale) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/r0ef1xu8xjmik58d/branch/master?svg=true)](https://ci.appveyor.com/project/w0rp/ale) [![Join the chat at https://gitter.im/vim-ale/Lobby](https://badges.gitter.im/vim-ale/Lobby.svg)](https://gitter.im/vim-ale/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)	.vim/plugged/ale/README.md	/^# Asynchronous Lint Engine [![Travis CI Build Status](https:\/\/travis-ci.org\/w0rp\/ale.svg?bra/;"	c
 Attribution	.vim/plugged/vim-devicons/CODE_OF_CONDUCT.md	/^## Attribution$/;"	s
 Author and Feedback	.vim/plugged/vim-startify/README.md	/^## Author and Feedback$/;"	s
-Autocommand	.vim/plugged/vim-node/test/autoload_test.rb	/^  describe "Autocommand" do$/;"	d
 Autocommands	.vim/plugged/ultisnips/test/test_Autocommands.py	/^class Autocommands(_VimTest):$/;"	c
 Autojump from tabstop when it's empty	.vim/plugged/ultisnips/doc/examples/autojump-if-empty/README.md	/^# Autojump from tabstop when it's empty$/;"	c
-Autoloaded	.vim/plugged/vim-node/test/autoload_test.rb	/^describe "Autoloaded" do$/;"	d
 Autotrigger_CanExpandOnTriggerWithLengthMoreThanOne	.vim/plugged/ultisnips/test/test_Autotrigger.py	/^class Autotrigger_CanExpandOnTriggerWithLengthMoreThanOne(_VimTest):$/;"	c
 Autotrigger_CanMatchContext	.vim/plugged/ultisnips/test/test_Autotrigger.py	/^class Autotrigger_CanMatchContext(_VimTest):$/;"	c
 Autotrigger_CanMatchPreviouslySelectedPlaceholder	.vim/plugged/ultisnips/test/test_Autotrigger.py	/^class Autotrigger_CanMatchPreviouslySelectedPlaceholder(_VimTest):$/;"	c
@@ -1425,6 +1415,7 @@ EscapeCharToken	.vim/plugged/ultisnips/pythonx/UltiSnips/snippet/parsing/_lexer.
 EscapeRegex	.vim/plugged/vim-template/plugin/templates.vim	/^function <SID>EscapeRegex(raw)$/;"	f
 EscapedChar	.vim/plugged/ultisnips/pythonx/UltiSnips/text_objects/_escaped_char.py	/^class EscapedChar(NoneditableTextObject):$/;"	c
 Examples	.vim/plugged/vim-startify/CONTRIBUTING.md	/^Examples$/;"	s
+Exception	.vim/plugged/vim-gitgutter/test/runner.vim	/^function Exception()$/;"	f
 ExclusiveSelection_RealWorldCase_Test	.vim/plugged/ultisnips/test/test_Selection.py	/^class ExclusiveSelection_RealWorldCase_Test(_ES_Base):$/;"	c
 ExclusiveSelection_SimpleTabstop_Test	.vim/plugged/ultisnips/test/test_Selection.py	/^class ExclusiveSelection_SimpleTabstop_Test(_ES_Base):$/;"	c
 ExecutableFinder	.vim/plugged/phpactor/lib/Extension/Core/Application/Status.php	/^use Symfony\\Component\\Process\\ExecutableFinder;$/;"	a	namespace:Phpactor\\Extension\\Core\\Application	typeref:unknown:Symfony\\Component\\Process\\ExecutableFinder
@@ -1591,7 +1582,7 @@ FoundReferences	.vim/plugged/phpactor/lib/Extension/ClassMover/Application/Logge
 FoundReferences	.vim/plugged/phpactor/lib/Extension/ClassMover/Command/Logger/SymfonyConsoleCopyLogger.php	/^use Phpactor\\ClassMover\\FoundReferences;$/;"	a	namespace:Phpactor\\Extension\\ClassMover\\Command\\Logger	typeref:unknown:Phpactor\\ClassMover\\FoundReferences
 FoundReferences	.vim/plugged/phpactor/lib/Extension/ClassMover/Command/Logger/SymfonyConsoleMoveLogger.php	/^use Phpactor\\ClassMover\\FoundReferences;$/;"	a	namespace:Phpactor\\Extension\\ClassMover\\Command\\Logger	typeref:unknown:Phpactor\\ClassMover\\FoundReferences
 FoundReferences	.vim/plugged/phpactor/tests/Unit/Extension/ClassMover/Command/Logger/SymfonyConsoleMoveLoggerTest.php	/^use Phpactor\\ClassMover\\FoundReferences;$/;"	a	namespace:Phpactor\\Tests\\Unit\\Extension\\ClassMover\\Command\\Logger	typeref:unknown:Phpactor\\ClassMover\\FoundReferences
-Ftdetect	.vim/plugged/vim-node/test/ftdetect_test.rb	/^describe "Ftdetect" do$/;"	d
+FriendlyName	.vim/plugged/vim-gitgutter/test/runner.vim	/^function FriendlyName(test_name)$/;"	f
 FugitiveCommonDir	.vim/plugged/vim-fugitive/plugin/fugitive.vim	/^function! FugitiveCommonDir(...) abort$/;"	f
 FugitiveConfig	.vim/plugged/vim-fugitive/plugin/fugitive.vim	/^function! FugitiveConfig(key, ...) abort$/;"	f
 FugitiveDetect	.vim/plugged/vim-fugitive/plugin/fugitive.vim	/^function! FugitiveDetect(path) abort$/;"	f
@@ -1647,14 +1638,30 @@ GetHandlebarsIndent	.vim/plugged/vim-mustache-handlebars/indent/handlebars.vim	/
 GetJavascriptIndent	.vim/plugged/vim-javascript/indent/javascript.vim	/^function GetJavascriptIndent()$/;"	f
 Getting Started	.vim/plugged/phpactor/doc/lsp.md	/^Getting Started$/;"	s
 Getting help	.vim/plugged/vim-snippets/README.md	/^Getting help$/;"	s
+GitGutter	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^command! -bar GitGutter    call gitgutter#process_buffer(bufnr(''), 1)$/;"	c
+GitGutterAll	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^command! -bar GitGutterAll call gitgutter#all(1)$/;"	c
+GitGutterDebug	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^command! -bar GitGutterDebug call gitgutter#debug#debug()$/;"	c
+GitGutterDisable	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^command! -bar GitGutterDisable call gitgutter#disable()$/;"	c
+GitGutterEnable	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^command! -bar GitGutterEnable  call gitgutter#enable()$/;"	c
+GitGutterGetHunkSummary	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^function! GitGutterGetHunkSummary()$/;"	f
+GitGutterGetHunks	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^function! GitGutterGetHunks()$/;"	f
+GitGutterLineHighlightsDisable	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^command! -bar GitGutterLineHighlightsDisable call gitgutter#highlight#line_disable()$/;"	c
+GitGutterLineHighlightsEnable	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^command! -bar GitGutterLineHighlightsEnable  call gitgutter#highlight#line_enable()$/;"	c
+GitGutterLineHighlightsToggle	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^command! -bar GitGutterLineHighlightsToggle  call gitgutter#highlight#line_toggle()$/;"	c
+GitGutterNextHunk	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^command! -bar -count=1 GitGutterNextHunk call gitgutter#hunk#next_hunk(<count>)$/;"	c
+GitGutterPrevHunk	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^command! -bar -count=1 GitGutterPrevHunk call gitgutter#hunk#prev_hunk(<count>)$/;"	c
+GitGutterPreviewHunk	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^command! -bar GitGutterPreviewHunk call gitgutter#hunk#preview()$/;"	c
+GitGutterSignsDisable	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^command! -bar GitGutterSignsDisable call gitgutter#sign#disable()$/;"	c
+GitGutterSignsEnable	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^command! -bar GitGutterSignsEnable  call gitgutter#sign#enable()$/;"	c
+GitGutterSignsToggle	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^command! -bar GitGutterSignsToggle  call gitgutter#sign#toggle()$/;"	c
+GitGutterStageHunk	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^command! -bar GitGutterStageHunk   call gitgutter#hunk#stage()$/;"	c
+GitGutterToggle	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^command! -bar GitGutterToggle  call gitgutter#toggle()$/;"	c
+GitGutterUndoHunk	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^command! -bar GitGutterUndoHunk    call gitgutter#hunk#undo()$/;"	c
 Glob	.vim/plugged/phpactor/lib/Extension/ClassMover/Application/ClassCopy.php	/^use Webmozart\\Glob\\Glob;$/;"	a	namespace:Phpactor\\Extension\\ClassMover\\Application	typeref:unknown:Webmozart\\Glob\\Glob
 Glob	.vim/plugged/phpactor/lib/Extension/CodeTransform/Application/ClassInflect.php	/^use Webmozart\\Glob\\Glob;$/;"	a	namespace:Phpactor\\Extension\\CodeTransform\\Application	typeref:unknown:Webmozart\\Glob\\Glob
 Glob	.vim/plugged/phpactor/lib/Extension/CodeTransform/Command/ClassTransformCommand.php	/^use Webmozart\\Glob\\Glob;$/;"	a	namespace:Phpactor\\Extension\\CodeTransform\\Command	typeref:unknown:Webmozart\\Glob\\Glob
 Glob	.vim/plugged/phpactor/lib/Extension/CodeTransform/Rpc/ClassInflectHandler.php	/^use Webmozart\\Glob\\Glob;$/;"	a	namespace:Phpactor\\Extension\\CodeTransform\\Rpc	typeref:unknown:Webmozart\\Glob\\Glob
 Glob	.vim/plugged/phpactor/lib/Extension/Core/Application/Helper/FilesystemHelper.php	/^use Webmozart\\Glob\\Glob;$/;"	a	namespace:Phpactor\\Extension\\Core\\Application\\Helper	typeref:unknown:Webmozart\\Glob\\Glob
-Goto file	.vim/plugged/vim-node/test/autoload_test.rb	/^  describe "Goto file" do$/;"	d
-Goto file with split	.vim/plugged/vim-node/test/autoload_test.rb	/^  describe "Goto file with split" do$/;"	d
-Goto file with tab	.vim/plugged/vim-node/test/autoload_test.rb	/^  describe "Goto file with tab" do$/;"	d
 GotoDefinition	.vim/plugged/phpactor/lib/Extension/WorseReflectionExtra/GotoDefinition/GotoDefinition.php	/^class GotoDefinition$/;"	c	namespace:Phpactor\\Extension\\WorseReflectionExtra\\GotoDefinition
 GotoDefinition	.vim/plugged/phpactor/lib/Extension/WorseReflectionExtra/LanguageServer/GotoDefinitionHandler.php	/^use Phpactor\\Extension\\WorseReflectionExtra\\GotoDefinition\\GotoDefinition;$/;"	a	namespace:Phpactor\\Extension\\WorseReflectionExtra\\LanguageServer	typeref:unknown:Phpactor\\Extension\\WorseReflectionExtra\\GotoDefinition\\GotoDefinition
 GotoDefinition	.vim/plugged/phpactor/lib/Extension/WorseReflectionExtra/Rpc/GotoDefinitionHandler.php	/^use Phpactor\\Extension\\WorseReflectionExtra\\GotoDefinition\\GotoDefinition;$/;"	a	namespace:Phpactor\\Extension\\WorseReflectionExtra\\Rpc	typeref:unknown:Phpactor\\Extension\\WorseReflectionExtra\\GotoDefinition\\GotoDefinition
@@ -1769,7 +1776,6 @@ How?	.vim/plugged/vim-gutentags/README.md	/^## How?$/;"	s
 HtmlHiLink	.vim/plugged/vim-mustache-handlebars/syntax/mustache.vim	/^  command! -nargs=+ HtmlHiLink hi def link <args>$/;"	c
 HtmlHiLink	.vim/plugged/vim-mustache-handlebars/syntax/mustache.vim	/^  command! -nargs=+ HtmlHiLink hi link <args>$/;"	c
 I	.vim/plugged/ale/ftplugin/ale-preview-selection.vim	/^noremap <buffer> I <NOP>$/;"	m
-ID	.vim/plugged/vim-node/Makefile	/^ID = 4674$/;"	m
 IMMoving_AcceptInputWhenMoved_ECR	.vim/plugged/ultisnips/test/test_Movement.py	/^class IMMoving_AcceptInputWhenMoved_ECR(_VimTest):$/;"	c
 IMMoving_CursorsKeys_ECR	.vim/plugged/ultisnips/test/test_Movement.py	/^class IMMoving_CursorsKeys_ECR(_VimTest):$/;"	c
 IMMoving_ExitWhenOutsideAbove_ECR	.vim/plugged/ultisnips/test/test_Movement.py	/^class IMMoving_ExitWhenOutsideAbove_ECR(_VimTest):$/;"	c
@@ -1798,7 +1804,6 @@ ImportClassHandler	.vim/plugged/phpactor/lib/Extension/CodeTransform/Rpc/ImportC
 ImportClassHandler	.vim/plugged/phpactor/tests/Unit/Extension/CoreTransform/Rpc/ImportClassHandlerTest.php	/^use Phpactor\\Extension\\CodeTransform\\Rpc\\ImportClassHandler;$/;"	a	namespace:Phpactor\\Tests\\Unit\\Extension\\CoreTransform\\Rpc	typeref:unknown:Phpactor\\Extension\\CodeTransform\\Rpc\\ImportClassHandler
 ImportClassHandlerTest	.vim/plugged/phpactor/tests/Unit/Extension/CoreTransform/Rpc/ImportClassHandlerTest.php	/^class ImportClassHandlerTest extends HandlerTestCase$/;"	c	namespace:Phpactor\\Tests\\Unit\\Extension\\CoreTransform\\Rpc
 ImportedNameReference	.vim/plugged/phpactor/tests/Unit/Extension/ClassMover/Command/Logger/SymfonyConsoleMoveLoggerTest.php	/^use Phpactor\\ClassMover\\Domain\\Reference\\ImportedNameReference;$/;"	a	namespace:Phpactor\\Tests\\Unit\\Extension\\ClassMover\\Command\\Logger	typeref:unknown:Phpactor\\ClassMover\\Domain\\Reference\\ImportedNameReference
-Include file search pattern	.vim/plugged/vim-node/test/autoload_test.rb	/^  describe "Include file search pattern" do$/;"	d
 IndentUtil	.vim/plugged/ultisnips/pythonx/UltiSnips/indent_util.py	/^class IndentUtil(object):$/;"	c
 Indentation Specific	.vim/plugged/vim-javascript/README.md	/^## Indentation Specific$/;"	s
 IndentedDumper	.vim/plugged/phpactor/lib/Extension/Core/Console/Dumper/IndentedDumper.php	/^final class IndentedDumper implements Dumper$/;"	c	namespace:Phpactor\\Extension\\Core\\Console\\Dumper
@@ -1888,7 +1893,6 @@ Installation	.vim/plugged/vim-snippets/README.md	/^Installation$/;"	s
 Installation	.vim/plugged/vim-template/README.rst	/^Installation$/;"	c
 Installation	.vim/plugged/vim-workspace/README.md	/^## Installation$/;"	s
 Installation and Documentation	.vim/plugged/vim-startify/README.md	/^## Installation and Documentation$/;"	s
-Installing	.vim/plugged/vim-node/README.md	/^Installing$/;"	s
 InstanceOf	.vim/plugged/phpactor/doc/completion.md	/^### InstanceOf$/;"	S
 Integration with other plugins	.vim/plugged/vim-devicons/DEVELOPER.md	/^#### Integration with other plugins$/;"	t
 IntegrationTestCase	.vim/plugged/phpactor/tests/Benchmark/BaseBenchCase.php	/^use Phpactor\\Tests\\IntegrationTestCase;$/;"	a	namespace:Phpactor\\Tests\\Benchmark	typeref:unknown:Phpactor\\Tests\\IntegrationTestCase
@@ -1930,11 +1934,9 @@ LS	.vim/plugged/ultisnips/test/constant.py	/^LS = '@'  # List snippets$/;"	v
 Language Server	.vim/plugged/phpactor/doc/lsp.md	/^Language Server$/;"	c
 Language maintainers	.vim/plugged/vim-snippets/README.md	/^Language maintainers$/;"	s
 LeaveTrailingWhitespace	.vim/plugged/ultisnips/test/test_Chars.py	/^class LeaveTrailingWhitespace(_VimTest):$/;"	c
-Lib	.vim/plugged/vim-node/test/autoload/lib_test.rb	/^describe "Lib" do$/;"	d
 License	.vim/plugged/vim-devicons/README.md	/^License$/;"	s
 License	.vim/plugged/vim-fugitive/README.markdown	/^## License$/;"	s
 License	.vim/plugged/vim-javascript/README.md	/^## License$/;"	s
-License	.vim/plugged/vim-node/README.md	/^License$/;"	s
 License	.vim/plugged/vim-snippets/README.md	/^License$/;"	s
 License	.vim/plugged/vim-workspace/README.md	/^## License$/;"	s
 LineIterator	.vim/plugged/ultisnips/pythonx/UltiSnips/text.py	/^class LineIterator(object):$/;"	c
@@ -1951,6 +1953,7 @@ ListInput	.vim/plugged/phpactor/tests/Unit/Extension/CoreTransform/Rpc/ImportCla
 ListInput	.vim/plugged/phpactor/tests/Unit/Extension/CoreTransform/Rpc/OverrideMethodHandlerTest.php	/^use Phpactor\\Extension\\Rpc\\Response\\Input\\ListInput;$/;"	a	namespace:Phpactor\\Tests\\Unit\\Extension\\CoreTransform\\Rpc	typeref:unknown:Phpactor\\Extension\\Rpc\\Response\\Input\\ListInput
 ListTemplateSuffixes	.vim/plugged/vim-template/plugin/templates.vim	/^fun ListTemplateSuffixes(A,P,L)$/;"	f
 Location	.vim/plugged/phpactor/lib/Extension/WorseReflectionExtra/LanguageServer/GotoDefinitionHandler.php	/^use LanguageServerProtocol\\Location;$/;"	a	namespace:Phpactor\\Extension\\WorseReflectionExtra\\LanguageServer	typeref:unknown:LanguageServerProtocol\\Location
+Log	.vim/plugged/vim-gitgutter/test/runner.vim	/^function Log(msg)$/;"	f
 Log files if you think the issue is a bug	.vim/plugged/ncm2/.github/ISSUE_TEMPLATE.md	/^### Log files if you think the issue is a bug$/;"	S
 LoggerInterface	.vim/plugged/phpactor/lib/Extension/CodeTransform/Application/AbstractClassGenerator.php	/^use Psr\\Log\\LoggerInterface;$/;"	a	namespace:Phpactor\\Extension\\CodeTransform\\Application	typeref:unknown:Psr\\Log\\LoggerInterface
 Logging	.vim/plugged/phpactor/doc/developing.md	/^Logging$/;"	s
@@ -2032,6 +2035,7 @@ Multiple_SimpleCaseSelectTooHigh_ESelectLast	.vim/plugged/ultisnips/test/test_Mu
 Multiple_SimpleCaseSelectZero_EEscape	.vim/plugged/ultisnips/test/test_MultipleMatches.py	/^class Multiple_SimpleCaseSelectZero_EEscape(_MultipleMatches):$/;"	c
 Mustache Abbreviations	.vim/plugged/vim-mustache-handlebars/README.md	/^### Mustache Abbreviations$/;"	S
 N	.vim/plugged/vim-startify/autoload/startify.vim	/^  nnoremap <buffer><expr> N 'j '[v:searchforward].'N'$/;"	m
+N	vimrc	/^nnoremap N :C-]j$/;"	m
 NAME	.vim/plugged/phpactor/lib/Extension/ClassMover/Rpc/ClassCopyHandler.php	/^    const NAME = 'copy_class';$/;"	d	class:Phpactor\\Extension\\ClassMover\\Rpc\\ClassCopyHandler
 NAME	.vim/plugged/phpactor/lib/Extension/ClassMover/Rpc/ClassMoveHandler.php	/^    const NAME = 'move_class';$/;"	d	class:Phpactor\\Extension\\ClassMover\\Rpc\\ClassMoveHandler
 NAME	.vim/plugged/phpactor/lib/Extension/ClassMover/Rpc/ReferencesHandler.php	/^    const NAME = 'references';$/;"	d	class:Phpactor\\Extension\\ClassMover\\Rpc\\ReferencesHandler
@@ -2057,7 +2061,6 @@ NAME	.vim/plugged/phpactor/lib/Extension/SourceCodeFilesystemExtra/Rpc/ClassSear
 NAME	.vim/plugged/phpactor/lib/Extension/WorseReflectionExtra/Rpc/ContextMenuHandler.php	/^    const NAME = 'context_menu';$/;"	d	class:Phpactor\\Extension\\Rpc\\Handler\\ContextMenuHandler
 NAME	.vim/plugged/phpactor/lib/Extension/WorseReflectionExtra/Rpc/GotoDefinitionHandler.php	/^    const NAME = 'goto_definition';$/;"	d	class:Phpactor\\Extension\\WorseReflectionExtra\\Rpc\\GotoDefinitionHandler
 NAME	.vim/plugged/phpactor/lib/Extension/WorseReflectionExtra/Rpc/OffsetInfoHandler.php	/^    const NAME = 'offset_info';$/;"	d	class:Phpactor\\Extension\\WorseReflectionExtra\\Rpc\\OffsetInfoHandler
-NAME	.vim/plugged/vim-node/Makefile	/^NAME = node$/;"	m
 NAVIGATOR_AUTOCREATE	.vim/plugged/phpactor/lib/Extension/Navigation/NavigationExtension.php	/^    const NAVIGATOR_AUTOCREATE = 'navigator.autocreate';$/;"	d	class:Phpactor\\Extension\\Navigation\\NavigationExtension
 NCM2	.vim/plugged/phpactor/doc/vim-plugin.md	/^### NCM2$/;"	S
 NERDTree	.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim	/^    command! -n=? -complete=dir -bar NERDTree :call g:NERDTreeCreator.CreateTabTree('<args>')$/;"	c
@@ -2121,7 +2124,6 @@ NavigatorInterface	.vim/plugged/phpactor/lib/Extension/Navigation/Application/Na
 Ncm2Base	.vim/plugged/ncm2/pythonx/ncm2.py	/^class Ncm2Base:$/;"	c
 Ncm2Core	.vim/plugged/ncm2/pythonx/ncm2_core.py	/^class Ncm2Core(Ncm2Base):$/;"	c
 Ncm2Source	.vim/plugged/ncm2/pythonx/ncm2.py	/^class Ncm2Source(Ncm2Base):$/;"	c
-Nedit	.vim/plugged/vim-node/autoload/node.vim	/^	command! -bar -bang -nargs=1 -buffer -complete=customlist,s:complete Nedit$/;"	c
 NeoVim on Unix	.vim/plugged/ale/README.md	/^#### NeoVim on Unix$/;"	t
 Neovim Completion Manager (NCM)	.vim/plugged/phpactor/doc/vim-plugin.md	/^### Neovim Completion Manager (NCM)$/;"	S
 NeuterFileName	.vim/plugged/vim-template/plugin/templates.vim	/^function <SID>NeuterFileName(filename)$/;"	f
@@ -2137,11 +2139,8 @@ No_Tab_Expand_Leading_Tabs	.vim/plugged/ultisnips/test/test_SnippetOptions.py	/^
 No_Tab_Expand_No_TS	.vim/plugged/ultisnips/test/test_SnippetOptions.py	/^class No_Tab_Expand_No_TS(_No_Tab_Expand):$/;"	c
 No_Tab_Expand_RealWorld	.vim/plugged/ultisnips/test/test_SnippetOptions.py	/^class No_Tab_Expand_RealWorld(_TabExpand_RealWorld, _VimTest):$/;"	c
 No_Tab_Expand_Simple	.vim/plugged/ultisnips/test/test_SnippetOptions.py	/^class No_Tab_Expand_Simple(_No_Tab_Expand):$/;"	c
-Node	.vim/plugged/vim-node/plugin/node.vim	/^augroup Node$/;"	a
-Node.vim	.vim/plugged/vim-node/README.md	/^Node.vim$/;"	c
 NonUnicodeDataInUnnamedRegister	.vim/plugged/ultisnips/test/test_Fixes.py	/^class NonUnicodeDataInUnnamedRegister(_VimTest):$/;"	c
 NoneditableTextObject	.vim/plugged/ultisnips/pythonx/UltiSnips/text_objects/_base.py	/^class NoneditableTextObject(TextObject):$/;"	c
-Nopen	.vim/plugged/vim-node/autoload/node.vim	/^	command! -bar -bang -nargs=1 -buffer -complete=customlist,s:complete Nopen$/;"	c
 NormalizePath	.vim/plugged/vim-template/plugin/templates.vim	/^function <SID>NormalizePath(path)$/;"	f
 NotFound	.vim/plugged/phpactor/lib/Extension/CodeTransform/Application/ClassInflect.php	/^use Phpactor\\WorseReflection\\Core\\Exception\\NotFound;$/;"	a	namespace:Phpactor\\Extension\\CodeTransform\\Application	typeref:unknown:Phpactor\\WorseReflection\\Core\\Exception\\NotFound
 NotFound	.vim/plugged/phpactor/lib/Extension/CompletionExtra/Rpc/HoverHandler.php	/^use Phpactor\\WorseReflection\\Core\\Exception\\NotFound;$/;"	a	namespace:Phpactor\\Extension\\CompletionExtra\\Rpc	typeref:unknown:Phpactor\\WorseReflection\\Core\\Exception\\NotFound
@@ -2592,7 +2591,6 @@ PlugSnapshot	.vim/autoload/plug.vim	/^  command! -nargs=? -bar -bang -complete=f
 PlugStatus	.vim/autoload/plug.vim	/^  command! -nargs=0 -bar PlugStatus  call s:status()$/;"	c
 PlugUpdate	.vim/autoload/plug.vim	/^  command! -nargs=* -bar -bang -complete=customlist,s:names PlugUpdate  call s:update(<bang>0, [/;"	c
 PlugUpgrade	.vim/autoload/plug.vim	/^  command! -nargs=0 -bar PlugUpgrade if s:upgrade() | execute 'source' s:esc(s:me) | endif$/;"	c
-Plugin	.vim/plugged/vim-node/test/plugin_test.rb	/^describe "Plugin" do$/;"	d
 Plugin_SuperTab_SimpleTest	.vim/plugged/ultisnips/test/test_Plugin.py	/^class Plugin_SuperTab_SimpleTest(_VimTest):$/;"	c
 Popen	.vim/plugged/ncm2/pythonx/ncm2.py	/^    class Popen(cls):$/;"	c
 Position	.vim/plugged/phpactor/lib/Extension/CompletionExtra/LanguageServer/CompletionHandler.php	/^use LanguageServerProtocol\\Position;$/;"	a	namespace:Phpactor\\Extension\\CompletionExtra\\LanguageServer	typeref:unknown:LanguageServerProtocol\\Position
@@ -2671,6 +2669,7 @@ R	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^    nnoremap <buffer> <silen
 RPC Extension	.vim/plugged/phpactor/doc/configuration.md	/^### RPC Extension$/;"	S
 RPC Protocol	.vim/plugged/phpactor/doc/rpc.md	/^RPC Protocol$/;"	c
 RUN_TESTS	.vim/plugged/ale/run-tests.bat	/^:RUN_TESTS$/;"	l
+Random	.vim/plugged/vim-gitgutter/test/runner.vim	/^function Random(min, max)$/;"	f
 Range	.vim/plugged/phpactor/lib/Extension/CompletionExtra/LanguageServer/CompletionHandler.php	/^use LanguageServerProtocol\\Range;$/;"	a	namespace:Phpactor\\Extension\\CompletionExtra\\LanguageServer	typeref:unknown:LanguageServerProtocol\\Range
 Range	.vim/plugged/phpactor/lib/Extension/WorseReflectionExtra/LanguageServer/GotoDefinitionHandler.php	/^use LanguageServerProtocol\\Range;$/;"	a	namespace:Phpactor\\Extension\\WorseReflectionExtra\\LanguageServer	typeref:unknown:LanguageServerProtocol\\Range
 ReadBookmarks	.vim/plugged/nerdtree/lib/nerdtree/creator.vim	/^    command! -buffer -nargs=0 ReadBookmarks call g:NERDTreeBookmark.CacheBookmarks(0) <bar> call/;"	c
@@ -2864,6 +2863,7 @@ RpcGotoDefinitionHandler	.vim/plugged/phpactor/lib/Extension/WorseReflectionExtr
 RpcHandlerTest	.vim/plugged/phpactor/tests/Smoke/RpcHandlerTest.php	/^class RpcHandlerTest extends IntegrationTestCase$/;"	c	namespace:Phpactor\\Tests\\Smoke
 RpcVersion	.vim/plugged/phpactor/tests/System/Extension/Rpc/Command/RpcCommandTest.php	/^use Phpactor\\Extension\\Rpc\\RpcVersion;$/;"	a	namespace:Phpactor\\Tests\\System\\Extension\\Rpc\\Command	typeref:unknown:Phpactor\\Extension\\Rpc\\RpcVersion
 Run these commands in the "Git for Windows" Bash terminal	.vim/plugged/ale/README.md	/^# Run these commands in the "Git for Windows" Bash terminal$/;"	c
+RunTest	.vim/plugged/vim-gitgutter/test/runner.vim	/^function RunTest(test)$/;"	f
 Running the test suite.	.vim/plugged/ultisnips/CONTRIBUTING.md	/^### Running the test suite.$/;"	S
 Running using docker.	.vim/plugged/ultisnips/CONTRIBUTING.md	/^#### Running using docker.$/;"	t
 RuntimeException	.vim/plugged/phpactor/lib/Extension/ClassMover/Application/Finder/FileFinder.php	/^use RuntimeException;$/;"	a	namespace:Phpactor\\Extension\\ClassMover\\Application\\Finder	typeref:unknown:RuntimeException
@@ -2911,11 +2911,13 @@ Self-Promotion	.vim/plugged/vim-fugitive/README.markdown	/^## Self-Promotion$/;"
 Self-Promotion	.vim/plugged/vim-project/README.md	/^## Self-Promotion$/;"	s
 ServerCapabilities	.vim/plugged/phpactor/lib/Extension/CompletionExtra/LanguageServer/CompletionLanguageExtension.php	/^use LanguageServerProtocol\\ServerCapabilities;$/;"	a	namespace:Phpactor\\Extension\\CompletionExtra\\LanguageServer	typeref:unknown:LanguageServerProtocol\\ServerCapabilities
 ServerCapabilities	.vim/plugged/phpactor/lib/Extension/WorseReflectionExtra/LanguageServer/WorseReflectionLanguageExtension.php	/^use LanguageServerProtocol\\ServerCapabilities;$/;"	a	namespace:Phpactor\\Extension\\WorseReflectionExtra\\LanguageServer	typeref:unknown:LanguageServerProtocol\\ServerCapabilities
+SetUp	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function SetUp()$/;"	f
 ShellCode	.vim/plugged/ultisnips/pythonx/UltiSnips/text_objects/_shell_code.py	/^class ShellCode(NoneditableTextObject):$/;"	c
 ShellCodeToken	.vim/plugged/ultisnips/pythonx/UltiSnips/snippet/parsing/_lexer.py	/^class ShellCodeToken(Token):$/;"	c
 ShiftWidthZero	.vim/plugged/ultisnips/test/test_Fixes.py	/^class ShiftWidthZero(_VimTest):$/;"	c
 ShowUsage	.vim/plugged/vim-gutentags/plat/unix/update_scopedb.sh	/^ShowUsage() {$/;"	f
 ShowUsage	.vim/plugged/vim-gutentags/plat/unix/update_tags.sh	/^ShowUsage() {$/;"	f
+Shuffle	.vim/plugged/vim-gitgutter/test/runner.vim	/^function Shuffle(list)$/;"	f
 SignatureHelpOptions	.vim/plugged/phpactor/lib/Extension/CompletionExtra/LanguageServer/CompletionLanguageExtension.php	/^use LanguageServerProtocol\\SignatureHelpOptions;$/;"	a	namespace:Phpactor\\Extension\\CompletionExtra\\LanguageServer	typeref:unknown:LanguageServerProtocol\\SignatureHelpOptions
 Similar Projects	.vim/plugged/phpactor/doc/README.md	/^Similar Projects$/;"	s
 Simple function call	.vim/plugged/vim-devicons/DEVELOPER.md	/^##### Simple function call$/;"	T
@@ -3169,7 +3171,6 @@ TEST_DESTINATION_1	.vim/plugged/phpactor/tests/Unit/Extension/Navigation/Navigat
 TEST_DESTINATION_2	.vim/plugged/phpactor/tests/Unit/Extension/Navigation/Navigator/ChainNavigatorTest.php	/^    const TEST_DESTINATION_2 = '\/destination2.php';$/;"	d	class:Phpactor\\Tests\\Unit\\Extension\\Navigation\\Navigator\\ChainNavigatorTest
 TEST_NAME	.vim/plugged/phpactor/tests/Unit/Extension/CoreTransform/Rpc/ImportClassHandlerTest.php	/^    const TEST_NAME = 'Foo';$/;"	d	class:Phpactor\\Tests\\Unit\\Extension\\CoreTransform\\Rpc\\ImportClassHandlerTest
 TEST_OFFSET	.vim/plugged/phpactor/tests/Unit/Extension/CoreTransform/Rpc/ImportClassHandlerTest.php	/^    const TEST_OFFSET = 1234;$/;"	d	class:Phpactor\\Tests\\Unit\\Extension\\CoreTransform\\Rpc\\ImportClassHandlerTest
-TEST_OPTS	.vim/plugged/vim-node/Makefile	/^TEST_OPTS =$/;"	m
 TEST_PATH	.vim/plugged/phpactor/tests/Unit/Extension/ClassMover/Rpc/ReferencesHandlerTest.php	/^    const TEST_PATH = 'test_file.php';$/;"	d	class:Phpactor\\Tests\\Unit\\Extension\\ClassMover\\Rpc\\ReferencesHandlerTest
 TEST_PATH	.vim/plugged/phpactor/tests/Unit/Extension/CoreTransform/Rpc/ImportClassHandlerTest.php	/^    const TEST_PATH = '\/path\/to';$/;"	d	class:Phpactor\\Tests\\Unit\\Extension\\CoreTransform\\Rpc\\ImportClassHandlerTest
 TEST_PATH	.vim/plugged/phpactor/tests/Unit/Extension/Navigation/Navigator/ChainNavigatorTest.php	/^    const TEST_PATH = '\/path\/to\/test.php';$/;"	d	class:Phpactor\\Tests\\Unit\\Extension\\Navigation\\Navigator\\ChainNavigatorTest
@@ -3180,7 +3181,6 @@ TExpand	.vim/plugged/vim-template/plugin/templates.vim	/^function <SID>TExpand(v
 TExpandVars	.vim/plugged/vim-template/plugin/templates.vim	/^function <SID>TExpandVars()$/;"	f
 TFind	.vim/plugged/vim-template/plugin/templates.vim	/^function <SID>TFind(path, name, up)$/;"	f
 TFindLink	.vim/plugged/vim-template/plugin/templates.vim	/^function <SID>TFindLink(path, template)$/;"	f
-TITLE	.vim/plugged/vim-node/Makefile	/^TITLE = Node.vim$/;"	m
 TLoad	.vim/plugged/vim-template/plugin/templates.vim	/^function <SID>TLoad(position, template)$/;"	f
 TLoadTemplate	.vim/plugged/vim-template/plugin/templates.vim	/^function <SID>TLoadTemplate(template, position)$/;"	f
 TPutCursor	.vim/plugged/vim-template/plugin/templates.vim	/^function <SID>TPutCursor()$/;"	f
@@ -3282,6 +3282,7 @@ TabstopWithMirrorInDefaultOverwrite1_ExpectCorrectResult	.vim/plugged/ultisnips/
 TabstopWithMirrorInDefaultOverwrite_ExpectCorrectResult	.vim/plugged/ultisnips/test/test_Mirror.py	/^class TabstopWithMirrorInDefaultOverwrite_ExpectCorrectResult(_VimTest):$/;"	c
 TabstopWithMirrorInDefaultTwiceAndExtra_ExpectCorrectResult	.vim/plugged/ultisnips/test/test_Mirror.py	/^class TabstopWithMirrorInDefaultTwiceAndExtra_ExpectCorrectResult(_VimTest):$/;"	c
 TabstopWithMirrorManyFromAll_ExpectCorrectResult	.vim/plugged/ultisnips/test/test_Mirror.py	/^class TabstopWithMirrorManyFromAll_ExpectCorrectResult(_VimTest):$/;"	c
+TearDown	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function TearDown()$/;"	f
 TempFileManager	.vim/plugged/ultisnips/test/vim_interface.py	/^class TempFileManager(object):$/;"	c
 Template	.vim/plugged/vim-template/plugin/templates.vim	/^command -nargs=? -complete=customlist,ListTemplateSuffixes Template call <SID>TLoad(0, "<args>")$/;"	c
 TemplateBaseNameTest	.vim/plugged/vim-template/plugin/templates.vim	/^function <SID>TemplateBaseNameTest(template, prefix, filename)$/;"	f
@@ -3326,6 +3327,40 @@ TestRealLife	.vim/plugged/ultisnips/pythonx/UltiSnips/test_diff.py	/^class TestR
 TestRealLife1	.vim/plugged/ultisnips/pythonx/UltiSnips/test_diff.py	/^class TestRealLife1(_Base, unittest.TestCase):$/;"	c
 TestUltiSnipsProblem	.vim/plugged/ultisnips/pythonx/UltiSnips/test_diff.py	/^class TestUltiSnipsProblem(_Base, unittest.TestCase):$/;"	c
 TestWithNewline	.vim/plugged/ultisnips/pythonx/UltiSnips/test_diff.py	/^class TestWithNewline(_Base, unittest.TestCase):$/;"	c
+Test_add_lines	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_add_lines()$/;"	f
+Test_add_lines_fish	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_add_lines_fish()$/;"	f
+Test_around_text_object	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_around_text_object()$/;"	f
+Test_edit_file_with_same_name_as_a_branch	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_edit_file_with_same_name_as_a_branch()$/;"	f
+Test_empty_file	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_empty_file()$/;"	f
+Test_encoding	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_encoding()$/;"	f
+Test_file_added_to_git	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_file_added_to_git()$/;"	f
+Test_filename_leading_dash	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_filename_leading_dash()$/;"	f
+Test_filename_umlaut	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_filename_umlaut()$/;"	f
+Test_filename_with_equals	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_filename_with_equals()$/;"	f
+Test_filename_with_square_brackets	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_filename_with_square_brackets()$/;"	f
+Test_fix_file_references	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_fix_file_references()$/;"	f
+Test_follow_symlink	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_follow_symlink()$/;"	f
+Test_hunk_outside_noop	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_hunk_outside_noop()$/;"	f
+Test_hunk_stage	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_hunk_stage()$/;"	f
+Test_hunk_stage_nearby_hunk	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_hunk_stage_nearby_hunk()$/;"	f
+Test_hunk_undo	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_hunk_undo()$/;"	f
+Test_inner_text_object	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_inner_text_object()$/;"	f
+Test_keep_alt	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_keep_alt()$/;"	f
+Test_keep_modified	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_keep_modified()$/;"	f
+Test_keep_op_marks	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_keep_op_marks()$/;"	f
+Test_modify_lines	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_modify_lines()$/;"	f
+Test_no_modifications	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_no_modifications()$/;"	f
+Test_orphaned_signs	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_orphaned_signs()$/;"	f
+Test_overlapping_hunk_op	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_overlapping_hunk_op()$/;"	f
+Test_overlapping_hunks	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_overlapping_hunks()$/;"	f
+Test_remove_first_lines	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_remove_first_lines()$/;"	f
+Test_remove_lines	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_remove_lines()$/;"	f
+Test_undo_nearby_hunk	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_undo_nearby_hunk()$/;"	f
+Test_untracked_file_outside_repo	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_untracked_file_outside_repo()$/;"	f
+Test_untracked_file_square_brackets_within_repo	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_untracked_file_square_brackets_within_repo()$/;"	f
+Test_untracked_file_within_repo	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_untracked_file_within_repo()$/;"	f
+Test_user_autocmd	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_user_autocmd()$/;"	f
+Test_write_option	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_write_option()$/;"	f
 Testing	.vim/plugged/ultisnips/CONTRIBUTING.md	/^## Testing$/;"	s
 Testing	.vim/plugged/vim-gutentags/CONTRIBUTING.md	/^## Testing$/;"	s
 Tests	.vim/plugged/phpactor/tests/Assets/Projects/PhpUnit/tests/FoobarTest.php	/^namespace Tests;$/;"	n
@@ -3378,7 +3413,6 @@ TolerantExtractExpression	.vim/plugged/phpactor/lib/Extension/CodeTransform/Code
 TolerantImportClass	.vim/plugged/phpactor/lib/Extension/CodeTransform/CodeTransformExtension.php	/^use Phpactor\\CodeTransform\\Adapter\\TolerantParser\\Refactor\\TolerantImportClass;$/;"	a	namespace:Phpactor\\Extension\\CodeTransform	typeref:unknown:Phpactor\\CodeTransform\\Adapter\\TolerantParser\\Refactor\\TolerantImportClass
 TolerantRenameVariable	.vim/plugged/phpactor/lib/Extension/CodeTransform/CodeTransformExtension.php	/^use Phpactor\\CodeTransform\\Adapter\\TolerantParser\\Refactor\\TolerantRenameVariable;$/;"	a	namespace:Phpactor\\Extension\\CodeTransform	typeref:unknown:Phpactor\\CodeTransform\\Adapter\\TolerantParser\\Refactor\\TolerantRenameVariable
 TolerantUpdater	.vim/plugged/phpactor/lib/Extension/CodeTransform/CodeTransformExtension.php	/^use Phpactor\\CodeBuilder\\Adapter\\TolerantParser\\TolerantUpdater;$/;"	a	namespace:Phpactor\\Extension\\CodeTransform	typeref:unknown:Phpactor\\CodeBuilder\\Adapter\\TolerantParser\\TolerantUpdater
-Tour	.vim/plugged/vim-node/README.md	/^### Tour$/;"	S
 TrailingNewline_TabStop_EndNL	.vim/plugged/ultisnips/test/test_Chars.py	/^class TrailingNewline_TabStop_EndNL(_VimTest):$/;"	c
 TrailingNewline_TabStop_EndStartNL	.vim/plugged/ultisnips/test/test_Chars.py	/^class TrailingNewline_TabStop_EndStartNL(_VimTest):$/;"	c
 TrailingNewline_TabStop_ExtraNL_ECR	.vim/plugged/ultisnips/test/test_Chars.py	/^class TrailingNewline_TabStop_ExtraNL_ECR(_VimTest):$/;"	c
@@ -3498,7 +3532,6 @@ Undo_RemoveOneSnippetByTime2	.vim/plugged/ultisnips/test/test_Editing.py	/^class
 Undo_RemoveWholeSnippet	.vim/plugged/ultisnips/test/test_Editing.py	/^class Undo_RemoveWholeSnippet(_VimTest):$/;"	c
 UnknownVariable	.vim/plugged/ultisnips/utils/get_tm_snippets.py	/^class UnknownVariable(Exception):$/;"	c
 Unlock	.vim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^:Unlock$/;"	l
-Unreleased	.vim/plugged/vim-node/CHANGELOG.md	/^## Unreleased$/;"	s
 UnsupportedVariableExpression	.vim/plugged/ultisnips/utils/get_tm_snippets.py	/^class UnsupportedVariableExpression(Exception):$/;"	c
 UpdateFileSourceResponse	.vim/plugged/phpactor/lib/Extension/ClassMover/Rpc/ReferencesHandler.php	/^use Phpactor\\Extension\\Rpc\\Response\\UpdateFileSourceResponse;$/;"	a	namespace:Phpactor\\Extension\\ClassMover\\Rpc	typeref:unknown:Phpactor\\Extension\\Rpc\\Response\\UpdateFileSourceResponse
 UpdateFileSourceResponse	.vim/plugged/phpactor/lib/Extension/CodeTransform/Rpc/ChangeVisiblityHandler.php	/^use Phpactor\\Extension\\Rpc\\Response\\UpdateFileSourceResponse;$/;"	a	namespace:Phpactor\\Extension\\CodeTransform\\Rpc	typeref:unknown:Phpactor\\Extension\\Rpc\\Response\\UpdateFileSourceResponse
@@ -3529,14 +3562,12 @@ Usage	.vim/plugged/phpactor/doc/extensions.md	/^Usage$/;"	s
 Usage	.vim/plugged/vim-gutentags/plat/win32/update_scopedb.cmd	/^:Usage$/;"	l
 Usage	.vim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^:Usage$/;"	l
 Use the special autoloader above	.vim/plugged/phpactor/doc/integrations.md	/^# Use the special autoloader above$/;"	c
-Using	.vim/plugged/vim-node/README.md	/^Using$/;"	s
 VADER_OUTPUT_FILE	.vim/plugged/ale/run-tests.bat	/^set VADER_OUTPUT_FILE=%~dp0\\vader_output$/;"	v
 VARIABLE_ACTION	.vim/plugged/phpactor/tests/Unit/Extension/ContextMenu/Handler/ContextMenuHandlerTest.php	/^    const VARIABLE_ACTION = 'do_something';$/;"	d	class:Phpactor\\Tests\\Unit\\Extension\\ContextMenu\\Handler\\ContextMenuHandlerTest
 VARIABLE_NAME	.vim/plugged/phpactor/tests/Unit/Extension/CoreTransform/Rpc/ExtractExpressionHandlerTest.php	/^    const VARIABLE_NAME = 'FOOBAR';$/;"	d	class:Phpactor\\Tests\\Unit\\Extension\\CoreTransform\\Rpc\\ExtractExpressionHandlerTest
 VARIABLE_NAME	.vim/plugged/phpactor/tests/Unit/Extension/CoreTransform/Rpc/RenameVariableHandlerTest.php	/^    const VARIABLE_NAME = 'FOOBAR';$/;"	d	class:Phpactor\\Tests\\Unit\\Extension\\CoreTransform\\Rpc\\RenameVariableHandlerTest
 VARIANT	.vim/plugged/phpactor/tests/Unit/Extension/CoreTransform/Rpc/ClassInflectHandlerTest.php	/^    const VARIANT = 'default';$/;"	d	class:Phpactor\\Tests\\Unit\\Extension\\CoreTransform\\Rpc\\ClassInflectHandlerTest
 VARIANT	.vim/plugged/phpactor/tests/Unit/Extension/CoreTransform/Rpc/ClassNewHandlerTest.php	/^    const VARIANT = 'default';$/;"	d	class:Phpactor\\Tests\\Unit\\Extension\\CoreTransform\\Rpc\\ClassNewHandlerTest
-VERSION	.vim/plugged/vim-node/Makefile	/^VERSION = 0.8.1$/;"	m
 VIM Guides	.vim/plugged/phpactor/doc/links.md	/^VIM Guides$/;"	s
 ValueExpander	.vim/plugged/phpactor/lib/Extension/Core/CoreExtension.php	/^use Phpactor\\FilePathResolver\\Expander\\ValueExpander;$/;"	a	namespace:Phpactor\\Extension\\Core	typeref:unknown:Phpactor\\FilePathResolver\\Expander\\ValueExpander
 Variable	.vim/plugged/phpactor/lib/Extension/WorseReflectionExtra/Application/OffsetInfo.php	/^use Phpactor\\WorseReflection\\Core\\Reflection\\Inference\\Variable;$/;"	a	namespace:Phpactor\\Extension\\WorseReflectionExtra\\Application	typeref:unknown:Phpactor\\WorseReflection\\Core\\Reflection\\Inference\\Variable
@@ -3547,7 +3578,6 @@ VerifyVimDict2	.vim/plugged/ultisnips/test/test_UltiSnipFunc.py	/^class VerifyVi
 VerifyVimDict3	.vim/plugged/ultisnips/test/test_UltiSnipFunc.py	/^class VerifyVimDict3(_VimTest):$/;"	c
 Versions	.vim/plugged/phpactor/lib/Application.php	/^use PackageVersions\\Versions;$/;"	a	namespace:Phpactor	typeref:unknown:PackageVersions\\Versions
 Versions / dialects / ..	.vim/plugged/vim-snippets/README.md	/^Versions \/ dialects \/ ..$/;"	c
-Viewing Node.js core modules	.vim/plugged/vim-node/README.md	/^#### Viewing Node.js core modules$/;"	t
 Vim 8 on Unix	.vim/plugged/ale/README.md	/^#### Vim 8 on Unix$/;"	t
 Vim 8 on Windows	.vim/plugged/ale/README.md	/^#### Vim 8 on Windows$/;"	t
 Vim-php-cs-fixer	.vim/plugged/vim-php-cs-fixer/README.md	/^Vim-php-cs-fixer$/;"	c
@@ -3603,7 +3633,6 @@ Visual_SelectOneWord_Inword	.vim/plugged/ultisnips/test/test_Visual.py	/^class V
 Visual_SelectOneWord_ProblemAfterTab	.vim/plugged/ultisnips/test/test_Visual.py	/^class Visual_SelectOneWord_ProblemAfterTab(_VimTest):$/;"	c
 Visual_SelectOneWord_TillEndOfLine	.vim/plugged/ultisnips/test/test_Visual.py	/^class Visual_SelectOneWord_TillEndOfLine(_VimTest):$/;"	c
 Visual_SelectOneWord_TwiceVisual	.vim/plugged/ultisnips/test/test_Visual.py	/^class Visual_SelectOneWord_TwiceVisual(_VimTest):$/;"	c
-Vundle	.vim/plugged/vim-node/README.md	/^### Vundle$/;"	S
 WHITESPACE_AFTER_SET	.vim/plugged/ale/test/script/block-padding-checker	/^WHITESPACE_AFTER_SET = END_BLOCKS$/;"	v
 WHITESPACE_BEFORE_SET	.vim/plugged/ale/test/script/block-padding-checker	/^WHITESPACE_BEFORE_SET = START_BLOCKS | TERMINATORS$/;"	v
 WHITESPACE_FORBIDDEN_AFTER_SET	.vim/plugged/ale/test/script/block-padding-checker	/^WHITESPACE_FORBIDDEN_AFTER_SET = START_BLOCKS | MIDDLE_BLOCKS$/;"	v
@@ -3615,8 +3644,6 @@ WSClose	.vim/plugged/vim-workspace/plugin/workspace.vim	/^command! -bang WSClose
 WSNext	.vim/plugged/vim-workspace/plugin/workspace.vim	/^command! WSNext :call workspace#next()$/;"	c
 WSPrev	.vim/plugged/vim-workspace/plugin/workspace.vim	/^command! WSPrev :call workspace#previous()$/;"	c
 WSTabNew	.vim/plugged/vim-workspace/plugin/workspace.vim	/^command! WSTabNew :call workspace#newtab()$/;"	c
-Want `<C-w>f` to open the file under the cursor in a new vertical split?	.vim/plugged/vim-node/README.md	/^#### Want `<C-w>f` to open the file under the cursor in a new vertical split?$/;"	t
-Want to customize settings for files inside a Node projects?	.vim/plugged/vim-node/README.md	/^#### Want to customize settings for files inside a Node projects?$/;"	t
 WebDevIconsGetFileFormatSymbol	.vim/plugged/vim-devicons/plugin/webdevicons.vim	/^function! WebDevIconsGetFileFormatSymbol(...)$/;"	f
 WebDevIconsGetFileTypeSymbol	.vim/plugged/vim-devicons/plugin/webdevicons.vim	/^function! WebDevIconsGetFileTypeSymbol(...)$/;"	f
 WebDevIconsNERDTreeChangeRootHandler	.vim/plugged/vim-devicons/nerdtree_plugin/webdevicons.vim	/^function! WebDevIconsNERDTreeChangeRootHandler(node)$/;"	f
@@ -3644,7 +3671,6 @@ Why not PHP Language Server?	.vim/plugged/phpactor/doc/history.md	/^Why not PHP 
 Why?	.vim/plugged/vim-gutentags/README.md	/^## Why?$/;"	s
 With Vundle	.vim/plugged/vim-template/README.rst	/^With Vundle$/;"	s	chapter:Updating
 WithChainResults	.vim/plugged/ale/autoload/ale/assert.vim	/^    command! -nargs=+ WithChainResults :call ale#assert#WithChainResults(<args>)$/;"	c
-WithTemporaryDirectory	.vim/plugged/vim-node/test/helper.rb	/^module WithTemporaryDirectory$/;"	m
 Work-in-progress	.vim/plugged/phpactor/doc/rpc.md	/^Work-in-progress$/;"	s
 Workspace	.vim/plugged/phpactor/tests/IntegrationTestCase.php	/^use Phpactor\\TestUtils\\Workspace;$/;"	a	namespace:Phpactor\\Tests	typeref:unknown:Phpactor\\TestUtils\\Workspace
 WorseBuilderFactory	.vim/plugged/phpactor/lib/Extension/CodeTransform/CodeTransformExtension.php	/^use Phpactor\\CodeBuilder\\Adapter\\WorseReflection\\WorseBuilderFactory;$/;"	a	namespace:Phpactor\\Extension\\CodeTransform	typeref:unknown:Phpactor\\CodeBuilder\\Adapter\\WorseReflection\\WorseBuilderFactory
@@ -3687,10 +3713,12 @@ Zzzz	.vim/plugged/vim-php-cs-fixer/tests/results/misc/imports.php	/^use \\Zzzz;$
 [[	.vim/plugged/vim-mustache-handlebars/ftplugin/mustache.vim	/^nnoremap <silent> <buffer> [[ :<C-U>call <SID>sectionmovement('{{','b','n',v:count1)<CR>$/;"	m
 [[	.vim/plugged/vim-mustache-handlebars/ftplugin/mustache.vim	/^xnoremap <silent> <buffer> [[ :<C-U>call <SID>sectionmovement('{{','b','v',v:count1)<CR>$/;"	m
 [apt-vim](https://github.com/egalpin/apt-vim)	.vim/plugged/nerdtree/README.markdown	/^#### [apt-vim](https:\/\/github.com\/egalpin\/apt-vim)$/;"	t
+[c	.vim/plugged/vim-gitgutter/autoload/gitgutter.vim	/^    nmap <buffer> [c <Plug>GitGutterPrevHunk$/;"	m
 [pathogen.vim](https://github.com/tpope/vim-pathogen)	.vim/plugged/nerdtree/README.markdown	/^#### [pathogen.vim](https:\/\/github.com\/tpope\/vim-pathogen)$/;"	t
 ]]	.vim/autoload/plug.vim	/^  nnoremap <silent> <buffer> ]] :silent! call <SID>section('')<cr>$/;"	m
 ]]	.vim/plugged/vim-mustache-handlebars/ftplugin/mustache.vim	/^nnoremap <silent> <buffer> ]] :<C-U>call <SID>sectionmovement('{{','' ,'n',v:count1)<CR>$/;"	m
 ]]	.vim/plugged/vim-mustache-handlebars/ftplugin/mustache.vim	/^xnoremap <silent> <buffer> ]] :<C-U>call <SID>sectionmovement('{{','' ,'v',v:count1)<CR>$/;"	m
+]c	.vim/plugged/vim-gitgutter/autoload/gitgutter.vim	/^    nmap <buffer> ]c <Plug>GitGutterNextHunk$/;"	m
 _AddFuncBase	.vim/plugged/ultisnips/test/test_UltiSnipFunc.py	/^class _AddFuncBase(_VimTest):$/;"	c
 _AnonBase	.vim/plugged/ultisnips/test/test_AnonymousExpansion.py	/^class _AnonBase(_VimTest):$/;"	c
 _Base	.vim/plugged/ultisnips/pythonx/UltiSnips/test_diff.py	/^class _Base(object):$/;"	c
@@ -4135,6 +4163,8 @@ a	.vim/plugged/vim-php-cs-fixer/tests/results/misc/no_closing_tag,full_opening_t
 a	.vim/plugged/vim-php-cs-fixer/tests/results/misc/simplified_null_return,no_useless_return,no_whitespace_in_blank_line,blank_line_before_return,no_extra_consecutive_blank_lines.php	/^    private static function a($a)$/;"	f	class:Test
 abbr_fuzzy_match	.vim/plugged/ncm2/pythonx/ncm2_matcher/abbrfuzzy.py	/^def abbr_fuzzy_match(abbr, b, s, off, chcmp):$/;"	f
 abbrs_ge	.vim/plugged/ncm2/pythonx/ncm2_matcher/substrfuzzy.py	/^def abbrs_ge(abbrs, ge):$/;"	f
+ac	.vim/plugged/vim-gitgutter/autoload/gitgutter.vim	/^    omap <buffer> ac <Plug>GitGutterTextObjectOuterPending$/;"	m
+ac	.vim/plugged/vim-gitgutter/autoload/gitgutter.vim	/^    xmap <buffer> ac <Plug>GitGutterTextObjectOuterVisual$/;"	m
 action	.vim/plugged/phpactor/lib/Extension/ContextMenu/menu.json	/^            "action": "change_visibility",$/;"	s	object:constant.cycle_visiblity
 action	.vim/plugged/phpactor/lib/Extension/ContextMenu/menu.json	/^            "action": "change_visibility",$/;"	s	object:method.cycle_visiblity
 action	.vim/plugged/phpactor/lib/Extension/ContextMenu/menu.json	/^            "action": "change_visibility",$/;"	s	object:property.cycle_visiblity
@@ -5037,8 +5067,6 @@ autoload	.vim/plugged/phpactor/tests/Assets/Projects/Animals/composer.json	/^   
 autoload	.vim/plugged/phpactor/tests/Assets/Projects/PhpUnit/composer.json	/^    "autoload": {$/;"	o
 autoload-dev	.vim/plugged/phpactor/composer.json	/^    "autoload-dev": {$/;"	o
 autoloadFile	.vim/plugged/phpactor/bin/phpactor	/^        $autoloadFile = $file;$/;"	v
-autospec	.vim/plugged/vim-node/Makefile	/^autospec:$/;"	t
-autotest	.vim/plugged/vim-node/Makefile	/^autotest: autospec$/;"	t
 availableGenerators	.vim/plugged/phpactor/lib/Extension/CodeTransform/Application/AbstractClassGenerator.php	/^    public function availableGenerators()$/;"	f	class:Phpactor\\Extension\\CodeTransform\\Application\\AbstractClassGenerator
 b	.vim/plugged/ultisnips/pythonx/UltiSnips/test_diff.py	/^    a, b = '', ''$/;"	v	class:TestEmptyString
 b	.vim/plugged/ultisnips/pythonx/UltiSnips/test_diff.py	/^    a, b = 'Hello', 'Hello\\nWorld\\nWorld\\nWorld'$/;"	v	class:TestLotsaNewlines
@@ -5084,7 +5112,6 @@ b:loaded_mustache_handlebars	.vim/plugged/vim-mustache-handlebars/ftplugin/musta
 b:match_ignorecase	.vim/plugged/ultisnips/ftplugin/snippets.vim	/^  let b:match_ignorecase = 0$/;"	v
 b:match_words	.vim/plugged/ultisnips/ftplugin/snippets.vim	/^  let b:match_words = '^snippet\\>:^endsnippet\\>,^global\\>:^endglobal\\>,\\${:}'$/;"	v
 b:match_words	.vim/plugged/vim-mustache-handlebars/ftplugin/mustache.vim	/^  let b:match_words = b:match_words$/;"	v
-b:node_root	.vim/plugged/vim-node/test/plugin_test.rb	/^  describe "b:node_root" do$/;"	d
 b:ultisnips_override_snipmate	.vim/plugged/ultisnips/syntax/snippets_snipmate.vim	/^let b:ultisnips_override_snipmate = 1$/;"	v
 b:undo_ftplugin	.vim/plugged/ultisnips/ftplugin/snippets.vim	/^let b:undo_ftplugin = "$/;"	v
 b:undo_ftplugin	.vim/plugged/vim-javascript/after/ftplugin/javascript.vim	/^  let b:undo_ftplugin .= ' | setlocal iskeyword< suffixesadd<'$/;"	v
@@ -5210,9 +5237,7 @@ complete	.vim/plugged/phpactor/lib/Extension/CompletionExtra/Application/Complet
 complete	.vim/plugged/phpactor/lib/Extension/CompletionExtra/Command/CompleteCommand.php	/^    private $complete;$/;"	v	class:Phpactor\\Extension\\CompletionExtra\\Command\\CompleteCommand
 complete	.vim/plugged/phpactor/tests/System/Extension/Completion/Application/CompleteTest.php	/^    private function complete(string $source)$/;"	f	class:Phpactor\\Tests\\System\\Extension\\Completion\\Application\\CompleteTest
 complete	.vim/plugged/phpactor/tests/Unit/Extension/Completion/LanguageServer/CompletionHandlerTest.php	/^            public function complete(string $source, int $offset): Generator$/;"	f	class:Phpactor\\Tests\\Unit\\Extension\\Completion\\LanguageServer\\CompletionHandlerTest::create::AnonymousClass1
-complete	.vim/plugged/vim-node/test/autoload_test.rb	/^      def complete(cmd)$/;"	f
 complete	.vim/plugged/vim-snippets/pythonx/vimsnippets.py	/^def complete(tab, opts):$/;"	f
-completion	.vim/plugged/vim-node/test/autoload_test.rb	/^    describe "completion" do$/;"	d
 completor	.vim/plugged/phpactor/lib/Extension/CompletionExtra/LanguageServer/CompletionHandler.php	/^    private $completor;$/;"	v	class:Phpactor\\Extension\\CompletionExtra\\LanguageServer\\CompletionHandler
 completor	.vim/plugged/phpactor/lib/Extension/CompletionExtra/LanguageServer/CompletionLanguageExtension.php	/^    private $completor;$/;"	v	class:Phpactor\\Extension\\CompletionExtra\\LanguageServer\\CompletionLanguageExtension
 composer.autoload_deregister	.vim/plugged/phpactor/doc/configuration.md	/^#### composer.autoload_deregister$/;"	t
@@ -5370,6 +5395,7 @@ defaultFilesystem	.vim/plugged/phpactor/lib/Extension/ClassMover/Rpc/ClassMoveHa
 defaultFilesystem	.vim/plugged/phpactor/lib/Extension/ClassMover/Rpc/ReferencesHandler.php	/^    private $defaultFilesystem;$/;"	v	class:Phpactor\\Extension\\ClassMover\\Rpc\\ReferencesHandler
 defaultFilesystem	.vim/plugged/phpactor/lib/Extension/SourceCodeFilesystemExtra/Rpc/ClassSearchHandler.php	/^    private $defaultFilesystem;$/;"	v	class:Phpactor\\Extension\\SourceCodeFilesystemExtra\\Rpc\\ClassSearchHandler
 defaultReplacement	.vim/plugged/phpactor/lib/Extension/ClassMover/Rpc/ReferencesHandler.php	/^    private function defaultReplacement(SymbolContext $symbolContext)$/;"	f	class:Phpactor\\Extension\\ClassMover\\Rpc\\ReferencesHandler
+default_grep	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^let default_grep = 'grep'$/;"	v
 delegateAction	.vim/plugged/phpactor/lib/Extension/ContextMenu/Handler/ContextMenuHandler.php	/^    private function delegateAction(array $symbolMenu, array $arguments, ReflectionOffset $offse/;"	f	class:Phpactor\\Extension\\ContextMenu\\Handler\\ContextMenuHandler
 delegateAction	.vim/plugged/phpactor/lib/Extension/WorseReflectionExtra/Rpc/ContextMenuHandler.php	/^    private function delegateAction(array $symbolMenu, array $arguments, ReflectionOffset $offse/;"	f	class:Phpactor\\Extension\\Rpc\\Handler\\ContextMenuHandler
 delete_mark	.vim/plugged/ultisnips/pythonx/UltiSnips/_vim.py	/^def delete_mark(name):$/;"	f
@@ -5433,6 +5459,7 @@ e	.vim/plugged/vim-project/autoload/project/config.vim	/^  nnoremap <buffer><sil
 eat	.vim/plugged/phpactor/tests/Assets/Projects/Animals/lib/Badger/Carnivorous.php	/^    public function eat()$/;"	f	class:Animals\\Badger\\Carnivorous
 echoMessage	.vim/plugged/phpactor/lib/Extension/ClassMover/Rpc/ReferencesHandler.php	/^    private function echoMessage(string $action, SymbolContext $symbolContext, string $filesyste/;"	f	class:Phpactor\\Extension\\ClassMover\\Rpc\\ReferencesHandler
 echo_to_hierarchy	.vim/plugged/ultisnips/pythonx/UltiSnips/debug.py	/^def echo_to_hierarchy(text_object):$/;"	f
+elapsed	.vim/plugged/vim-gitgutter/unplace.vim	/^let elapsed = reltime(start)$/;"	v
 end	.vim/plugged/ultisnips/pythonx/UltiSnips/text_objects/_base.py	/^    def end(self):$/;"	m	class:TextObject
 ensure	.vim/plugged/ultisnips/pythonx/UltiSnips/snippet/source/_base.py	/^    def ensure(self, filetypes):$/;"	m	class:SnippetSource
 ensure	.vim/plugged/ultisnips/pythonx/UltiSnips/snippet/source/file/_base.py	/^    def ensure(self, filetypes):$/;"	m	class:SnippetFileSource
@@ -5620,7 +5647,6 @@ filter_get	.vim/plugged/ncm2/pythonx/ncm2_core.py	/^    def filter_get(self, opt
 filter_opt_formalize	.vim/plugged/ncm2/pythonx/ncm2_core.py	/^    def filter_opt_formalize(self, opts):$/;"	m	class:Ncm2Core
 filter_opt_get	.vim/plugged/ncm2/pythonx/ncm2_core.py	/^    def filter_opt_get(self, data, sr):$/;"	m	class:Ncm2Core
 finalize	.vim/plugged/ultisnips/pythonx/UltiSnips/snippet/parsing/_base.py	/^def finalize(all_tokens, seen_ts, snippet_instance):$/;"	f
-find	.vim/plugged/vim-node/test/autoload/lib_test.rb	/^    def find(name)$/;"	f
 findOrReplaceReferences	.vim/plugged/phpactor/lib/Extension/ClassMover/Application/ClassMemberReferences.php	/^    public function findOrReplaceReferences($/;"	f	class:Phpactor\\Extension\\ClassMover\\Application\\ClassMemberReferences
 findOrReplaceReferences	.vim/plugged/phpactor/lib/Extension/ClassMover/Application/ClassReferences.php	/^    public function findOrReplaceReferences(string $filesystemName, string $class, string $repla/;"	f	class:Phpactor\\Extension\\ClassMover\\Application\\ClassReferences
 findOrReplaceReferences	.vim/plugged/phpactor/lib/Extension/ClassMover/Command/ReferencesClassCommand.php	/^    private function findOrReplaceReferences($filesystem, $class, $replace, $dryRun)$/;"	f	class:Phpactor\\Extension\\ClassMover\\Command\\ReferencesClassCommand
@@ -5646,6 +5672,7 @@ forReflectionInterface	.vim/plugged/phpactor/lib/Extension/Navigation/Navigator/
 formatArray	.vim/plugged/phpactor/lib/Extension/Core/Console/Dumper/TableDumper.php	/^    private function formatArray(array $data, $padding = 0)$/;"	f	class:Phpactor\\Extension\\Core\\Console\\Dumper\\TableDumper
 formatValue	.vim/plugged/phpactor/lib/Extension/Core/Console/Dumper/IndentedDumper.php	/^    private function formatValue($value)$/;"	f	class:Phpactor\\Extension\\Core\\Console\\Dumper\\IndentedDumper
 formatter	.vim/plugged/phpactor/lib/Extension/CompletionExtra/Rpc/HoverHandler.php	/^    private $formatter;$/;"	v	class:Phpactor\\Extension\\CompletionExtra\\Rpc\\HoverHandler
+friendly_name	.vim/plugged/vim-gitgutter/test/runner.vim	/^  let friendly_name = FriendlyName(test)$/;"	v
 friendsofphp/php-cs-fixer	.vim/plugged/phpactor/composer.json	/^        "friendsofphp\/php-cs-fixer": "^2.12@dev"$/;"	s	object:require-dev
 fromClassPathAndOffset	.vim/plugged/phpactor/lib/Extension/WorseReflectionExtra/GotoDefinition/GotoDefinitionResult.php	/^    public static function fromClassPathAndOffset(string $path, int $offset): GotoDefinitionResu/;"	f	namespace:Phpactor\\Extension\\WorseReflectionExtra\\GotoDefinition
 fromPhpactorType	.vim/plugged/phpactor/lib/Extension/CompletionExtra/LanguageServer/PhpactorToLspCompletionType.php	/^    public static function fromPhpactorType(?string $suggestionType)$/;"	f	class:Phpactor\\Extension\\CompletionExtra\\LanguageServer\\PhpactorToLspCompletionType
@@ -5716,13 +5743,6 @@ fuzzy_match	.vim/plugged/ncm2/pythonx/ncm2_matcher/abbrfuzzy.py	/^def fuzzy_matc
 fuzzy_match	.vim/plugged/ncm2/pythonx/ncm2_matcher/substrfuzzy.py	/^def fuzzy_match(b, s, chcmp):$/;"	f
 g:	.vim/plugged/ale/autoload/ale.vim	/^        let g:[l:full_name] = a:default$/;"	v
 g:	.vim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^            let g:[newname] = g:[key]$/;"	v
-g:ConqueTerm_Color	vimrc	/^let g:ConqueTerm_Color = 1$/;"	v
-g:ConqueTerm_ExecFileKey	vimrc	/^let g:ConqueTerm_ExecFileKey = '<F10>'$/;"	v
-g:ConqueTerm_InsertOnEnter	vimrc	/^let g:ConqueTerm_InsertOnEnter = 1$/;"	v
-g:ConqueTerm_PyVersion	vimrc	/^let g:ConqueTerm_PyVersion = 3$/;"	v
-g:ConqueTerm_SendVisKey	vimrc	/^let g:ConqueTerm_SendVisKey = '<F9>'$/;"	v
-g:ConqueTerm_StartMessages	vimrc	/^let g:ConqueTerm_StartMessages = 1$/;"	v
-g:ConqueTerm_TERM	vimrc	/^let g:ConqueTerm_TERM = 'vt100'$/;"	v
 g:DevIconsAppendArtifactFix	.vim/plugged/vim-devicons/plugin/webdevicons.vim	/^    let g:DevIconsAppendArtifactFix = 0$/;"	v
 g:DevIconsAppendArtifactFix	.vim/plugged/vim-devicons/plugin/webdevicons.vim	/^    let g:DevIconsAppendArtifactFix = 1$/;"	v
 g:DevIconsArtifactFixChar	.vim/plugged/vim-devicons/plugin/webdevicons.vim	/^  let g:DevIconsArtifactFixChar = " "$/;"	v
@@ -5765,13 +5785,13 @@ g:UltiSnipsEditSplit	.vim/plugged/ultisnips/docker/docker_vimrc.vim	/^let g:Ulti
 g:UltiSnipsEnableSnipMate	.vim/plugged/ultisnips/autoload/UltiSnips/map_keys.vim	/^    let g:UltiSnipsEnableSnipMate = 1$/;"	v
 g:UltiSnipsExpandTrigger	.vim/plugged/ultisnips/autoload/UltiSnips/map_keys.vim	/^    let g:UltiSnipsExpandTrigger = "<tab>"$/;"	v
 g:UltiSnipsExpandTrigger	.vim/plugged/ultisnips/docker/docker_vimrc.vim	/^let g:UltiSnipsExpandTrigger="<tab>"$/;"	v
-g:UltiSnipsExpandTrigger	.vim/plugin/Ultisnips_config.vim	/^let g:UltiSnipsExpandTrigger="<tab>"$/;"	v
+g:UltiSnipsExpandTrigger	vimrc	/^let g:UltiSnipsExpandTrigger="<tab>"$/;"	v
 g:UltiSnipsJumpBackwardTrigger	.vim/plugged/ultisnips/autoload/UltiSnips/map_keys.vim	/^    let g:UltiSnipsJumpBackwardTrigger = "<c-k>"$/;"	v
 g:UltiSnipsJumpBackwardTrigger	.vim/plugged/ultisnips/docker/docker_vimrc.vim	/^let g:UltiSnipsJumpBackwardTrigger="<c-z>"$/;"	v
-g:UltiSnipsJumpBackwardTrigger	.vim/plugin/Ultisnips_config.vim	/^let g:UltiSnipsJumpBackwardTrigger="<c-z>"$/;"	v
+g:UltiSnipsJumpBackwardTrigger	vimrc	/^let g:UltiSnipsJumpBackwardTrigger="<c-z>"$/;"	v
 g:UltiSnipsJumpForwardTrigger	.vim/plugged/ultisnips/autoload/UltiSnips/map_keys.vim	/^    let g:UltiSnipsJumpForwardTrigger = "<c-j>"$/;"	v
 g:UltiSnipsJumpForwardTrigger	.vim/plugged/ultisnips/docker/docker_vimrc.vim	/^let g:UltiSnipsJumpForwardTrigger="<c-b>"$/;"	v
-g:UltiSnipsJumpForwardTrigger	.vim/plugin/Ultisnips_config.vim	/^let g:UltiSnipsJumpForwardTrigger="<c-b>"$/;"	v
+g:UltiSnipsJumpForwardTrigger	vimrc	/^let g:UltiSnipsJumpForwardTrigger="<c-b>"$/;"	v
 g:UltiSnipsListSnippets	.vim/plugged/ultisnips/autoload/UltiSnips/map_keys.vim	/^    let g:UltiSnipsListSnippets = "<c-tab>"$/;"	v
 g:UltiSnipsMappingsToIgnore	.vim/plugged/ultisnips/autoload/UltiSnips/map_keys.vim	/^    let g:UltiSnipsMappingsToIgnore = []$/;"	v
 g:UltiSnipsRemoveSelectModeMappings	.vim/plugged/ultisnips/autoload/UltiSnips/map_keys.vim	/^    let g:UltiSnipsRemoveSelectModeMappings = 1$/;"	v
@@ -5940,15 +5960,27 @@ g:ale_xml_xmllint_executable	.vim/plugged/ale/ale_linters/xml/xmllint.vim	/^let 
 g:ale_xml_xmllint_options	.vim/plugged/ale/ale_linters/xml/xmllint.vim	/^let g:ale_xml_xmllint_options = get(g:, 'ale_xml_xmllint_options', '')$/;"	v
 g:autoloaded_fugitive	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^let g:autoloaded_fugitive = 1$/;"	v
 g:autoloaded_startify	.vim/plugged/vim-startify/autoload/startify.vim	/^let g:autoloaded_startify = 1$/;"	v
+g:colors_name	.vim/colors/access_colors.vim	/^let g:colors_name = "access_colors"$/;"	v
 g:ctrlp_formatline_func	.vim/plugged/vim-devicons/plugin/webdevicons.vim	/^        let g:ctrlp_formatline_func = 's:formatline(s:curtype() == "buf" ? v:val : WebDevIconsGe/;"	v
 g:current_ulti_dict	.vim/plugged/ultisnips/autoload/UltiSnips.vim	/^    let g:current_ulti_dict = {}$/;"	v
 g:current_ulti_dict_info	.vim/plugged/ultisnips/autoload/UltiSnips.vim	/^      let g:current_ulti_dict_info = {}$/;"	v
 g:dir	.vim/plugged/ale/autoload/ale/test.vim	/^    let g:dir = getcwd() " no-custom-checks$/;"	v
 g:fugitive_git_executable	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^  let g:fugitive_git_executable = 'git'$/;"	v
 g:fugitive_summary_format	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^  let g:fugitive_summary_format = '%s'$/;"	v
-g:gitgutter_map_keys	.vim/plugin/vim-gitgutter_config.vim	/^let g:gitgutter_map_keys = 0 " don't setup any default mappings $/;"	v
-g:gitgutter_max_signs	.vim/plugin/vim-gitgutter_config.vim	/^let g:gitgutter_max_signs = 500  " maximum number of changes that will be$/;"	v
-g:gitgutter_sign_column_always	.vim/plugin/vim-gitgutter_config.vim	/^  let g:gitgutter_sign_column_always = 1$/;"	v
+g:gitgutter_async	.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^    let g:gitgutter_async = async$/;"	v
+g:gitgutter_enabled	.vim/plugged/vim-gitgutter/autoload/gitgutter.vim	/^  let g:gitgutter_enabled = 0$/;"	v
+g:gitgutter_enabled	.vim/plugged/vim-gitgutter/autoload/gitgutter.vim	/^  let g:gitgutter_enabled = 1$/;"	v
+g:gitgutter_grep	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^      let g:gitgutter_grep .= ' --color=never'$/;"	v
+g:gitgutter_grep	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^    let g:gitgutter_grep = ''$/;"	v
+g:gitgutter_highlight_lines	.vim/plugged/vim-gitgutter/autoload/gitgutter/highlight.vim	/^  let g:gitgutter_highlight_lines = 0$/;"	v
+g:gitgutter_highlight_lines	.vim/plugged/vim-gitgutter/autoload/gitgutter/highlight.vim	/^  let g:gitgutter_highlight_lines = 1$/;"	v
+g:gitgutter_hook_context	.vim/plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^    let g:gitgutter_hook_context = {'bufnr': a:bufnr}$/;"	v
+g:gitgutter_map_keys	vimrc	/^let g:gitgutter_map_keys = 0 " don't setup any default mappings $/;"	v
+g:gitgutter_max_signs	vimrc	/^let g:gitgutter_max_signs = 500  " maximum number of changes that will be$/;"	v
+g:gitgutter_sign_column_always	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^  let g:gitgutter_sign_column_always = 0$/;"	v
+g:gitgutter_sign_column_always	vimrc	/^  let g:gitgutter_sign_column_always = 1$/;"	v
+g:gitgutter_signs	.vim/plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^  let g:gitgutter_signs = 0$/;"	v
+g:gitgutter_signs	.vim/plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^  let g:gitgutter_signs = 1$/;"	v
 g:gutentags_add_default_project_roots	.vim/plugged/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_add_default_project_roots = get(g:, 'gutentags_add_default_project_roots', 1)$/;"	v
 g:gutentags_auto_add_cscope	.vim/plugged/vim-gutentags/autoload/gutentags/cscope.vim	/^    let g:gutentags_auto_add_cscope = 1$/;"	v
 g:gutentags_auto_add_gtags_cscope	.vim/plugged/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^	let g:gutentags_auto_add_gtags_cscope = 1$/;"	v
@@ -6009,12 +6041,12 @@ g:gutentags_use_jobs	.vim/plugged/vim-gutentags/plugin/gutentags.vim	/^let g:gut
 g:loaded_ale	.vim/plugged/ale/plugin/ale.vim	/^let g:loaded_ale = 1$/;"	v
 g:loaded_ale_dont_use_this_in_other_plugins_please	.vim/plugged/ale/plugin/ale.vim	/^let g:loaded_ale_dont_use_this_in_other_plugins_please = 1$/;"	v
 g:loaded_fugitive	.vim/plugged/vim-fugitive/plugin/fugitive.vim	/^let g:loaded_fugitive = 1$/;"	v
+g:loaded_gitgutter	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^let g:loaded_gitgutter = 1$/;"	v
 g:loaded_gutentags	.vim/plugged/vim-gutentags/plugin/gutentags.vim	/^let g:loaded_gutentags = 1$/;"	v
 g:loaded_nerdtree_autoload	.vim/plugged/nerdtree/autoload/nerdtree.vim	/^let g:loaded_nerdtree_autoload = 1$/;"	v
 g:loaded_nerdtree_exec_menuitem	.vim/plugged/nerdtree/nerdtree_plugin/exec_menuitem.vim	/^let g:loaded_nerdtree_exec_menuitem = 1$/;"	v
 g:loaded_nerdtree_fs_menu	.vim/plugged/nerdtree/nerdtree_plugin/fs_menu.vim	/^let g:loaded_nerdtree_fs_menu = 1$/;"	v
 g:loaded_nerdtree_ui_glue_autoload	.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim	/^let g:loaded_nerdtree_ui_glue_autoload = 1$/;"	v
-g:loaded_node	.vim/plugged/vim-node/plugin/node.vim	/^let g:loaded_node = 1$/;"	v
 g:loaded_plug	.vim/autoload/plug.vim	/^let g:loaded_plug = 1$/;"	v
 g:loaded_startify	.vim/plugged/vim-startify/plugin/startify.vim	/^let g:loaded_startify = 1$/;"	v
 g:loaded_webdevicons	.vim/plugged/vim-devicons/plugin/webdevicons.vim	/^let g:loaded_webdevicons = 1$/;"	v
@@ -6060,8 +6092,6 @@ g:plugs	.vim/autoload/plug.vim	/^  let g:plugs = {}$/;"	v
 g:plugs_order	.vim/autoload/plug.vim	/^  let g:plugs_order = []$/;"	v
 g:plugs_order	.vim/autoload/plug.vim	/^  let g:plugs_order = get(g:, 'plugs_order', keys(g:plugs))$/;"	v
 g:project_dir	.vim/plugged/vim-project/autoload/project.vim	/^  let g:project_dir = len(a:000) > 0 ? expand(a:1, 1) : expand('$HOME', 1)$/;"	v
-g:signify_realtime	vimrc	/^let g:signify_realtime = 1$/;"	v
-g:signify_vcs_list	vimrc	/^let g:signify_vcs_list = 1$/;"	v
 g:snips_author	.vim/plugged/vim-snippets/plugin/vimsnippets.vim	/^    let g:snips_author = "yourname"$/;"	v
 g:snips_email	.vim/plugged/vim-snippets/plugin/vimsnippets.vim	/^    let g:snips_email = "yourname@email.com"$/;"	v
 g:snips_github	.vim/plugged/vim-snippets/plugin/vimsnippets.vim	/^    let g:snips_github = "https:\/\/github.com\/yourname"$/;"	v
@@ -6087,6 +6117,7 @@ g:templates_tr_in	.vim/plugged/vim-template/plugin/templates.vim	/^	let g:templa
 g:templates_tr_out	.vim/plugged/vim-template/plugin/templates.vim	/^	let g:templates_tr_out = [ '\\.', '.*', '\\?' ]$/;"	v
 g:templates_use_licensee	.vim/plugged/vim-template/plugin/templates.vim	/^	let g:templates_use_licensee = 1$/;"	v
 g:templates_user_variables	.vim/plugged/vim-template/plugin/templates.vim	/^	let g:templates_user_variables = []$/;"	v
+g:testname	.vim/plugged/vim-gitgutter/test/runner.vim	/^let g:testname = expand('%')$/;"	v
 g:vim_php_cs_fixer	.vim/plugged/vim-php-cs-fixer/plugin/php_cs_fixer.vim	/^let g:vim_php_cs_fixer = 1$/;"	v
 g:virtual_scriptnames	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^    let g:virtual_scriptnames = {}$/;"	v
 g:virtual_scriptnames	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^  let g:virtual_scriptnames[temp] = amatch$/;"	v
@@ -6117,20 +6148,20 @@ g:workspace_modified_icon	.vim/plugged/vim-workspace/plugin/workspace.vim	/^    
 g:workspace_new_buffer_name	.vim/plugged/vim-workspace/plugin/workspace.vim	/^    let g:workspace_new_buffer_name = "*"$/;"	v
 g:workspace_powerline_separators	.vim/plugged/vim-workspace/plugin/workspace.vim	/^    let g:workspace_powerline_separators = 0$/;"	v
 g:workspace_powerline_separators	.vim/plugged/vim-workspace/plugin/workspace.vim	/^    let g:workspace_powerline_separators = 1$/;"	v
-g:workspace_powerline_separators	.vim/plugin/vim-workspace_config.vim	/^let g:workspace_powerline_separators = 1$/;"	v
+g:workspace_powerline_separators	vimrc	/^let g:workspace_powerline_separators = 1$/;"	v
 g:workspace_right_trunc_icon	.vim/plugged/vim-workspace/plugin/workspace.vim	/^    let g:workspace_right_trunc_icon = ">"$/;"	v
 g:workspace_separator	.vim/plugged/vim-workspace/plugin/workspace.vim	/^    let g:workspace_separator = "\\ue0b0"$/;"	v
 g:workspace_separator	.vim/plugged/vim-workspace/plugin/workspace.vim	/^    let g:workspace_separator = get(g:, "workspace_separator", "")$/;"	v
 g:workspace_subseparator	.vim/plugged/vim-workspace/plugin/workspace.vim	/^    let g:workspace_subseparator = "\\ue0b1"$/;"	v
 g:workspace_subseparator	.vim/plugged/vim-workspace/plugin/workspace.vim	/^    let g:workspace_subseparator = get(g:, "workspace_subseparator", "|")$/;"	v
 g:workspace_tab_icon	.vim/plugged/vim-workspace/plugin/workspace.vim	/^    let g:workspace_tab_icon = "#"$/;"	v
-g:workspace_tab_icon	.vim/plugin/vim-workspace_config.vim	/^let g:workspace_tab_icon = "\\uf00a"$/;"	v
+g:workspace_tab_icon	vimrc	/^let g:workspace_tab_icon = "\\uf00a"$/;"	v
 g:workspace_use_devicons	.vim/plugged/vim-workspace/plugin/workspace.vim	/^        let g:workspace_use_devicons = 0$/;"	v
 g:workspace_use_devicons	.vim/plugged/vim-workspace/plugin/workspace.vim	/^        let g:workspace_use_devicons = 1$/;"	v
 g:workspace_use_devicons	.vim/plugged/vim-workspace/plugin/workspace.vim	/^    let g:workspace_use_devicons = 0$/;"	v
-g:workspace_use_devicons	.vim/plugin/vim-workspace_config.vim	/^let g:workspace_use_devicons = 1$/;"	v
-g:ycm_key_list_previous_completion	.vim/plugin/YCM_config.vim	/^let g:ycm_key_list_previous_completion=[]$/;"	v
-g:ycm_key_list_select_completion	.vim/plugin/YCM_config.vim	/^let g:ycm_key_list_select_completion=[]$/;"	v
+g:workspace_use_devicons	vimrc	/^let g:workspace_use_devicons = 1$/;"	v
+g:ycm_key_list_previous_completion	vimrc	/^let g:ycm_key_list_previous_completion=[]$/;"	v
+g:ycm_key_list_select_completion	vimrc	/^let g:ycm_key_list_select_completion=[]$/;"	v
 g?	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^        nnoremap <buffer> <silent> g?   :help fugitive-:Gblame<CR>$/;"	m
 g?	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^    nnoremap <buffer> <silent> g?   :help fugitive-:Gstatus<CR>$/;"	m
 gather_candidates	.vim/plugged/ultisnips/rplugin/python3/deoplete/sources/ultisnips.py	/^    def gather_candidates(self, context):$/;"	m	class:Source
@@ -6172,12 +6203,66 @@ get_sources_for_popup	.vim/plugged/ncm2/pythonx/ncm2_core.py	/^    def get_sourc
 get_src	.vim/plugged/ncm2/pythonx/ncm2.py	/^    def get_src(self, src, ctx):$/;"	m	class:Ncm2Base
 get_tabstops	.vim/plugged/ultisnips/pythonx/UltiSnips/text_objects/_snippet_instance.py	/^    def get_tabstops(self):$/;"	m	class:SnippetInstance
 get_word_pattern	.vim/plugged/ncm2/pythonx/ncm2_core.py	/^    def get_word_pattern(self, ctx, sr):$/;"	m	class:Ncm2Core
-gf	.vim/plugged/vim-node/autoload/node.vim	/^		nmap <buffer> gf <Plug>NodeGotoFile$/;"	m
-given absolute path	.vim/plugged/vim-node/test/autoload/lib_test.rb	/^    describe "given absolute path" do$/;"	d
-given module name	.vim/plugged/vim-node/test/autoload/lib_test.rb	/^    describe "given module name" do$/;"	d
-given nothing	.vim/plugged/vim-node/test/autoload/lib_test.rb	/^    describe "given nothing" do$/;"	d
-given relative path	.vim/plugged/vim-node/test/autoload/lib_test.rb	/^    describe "given relative path" do$/;"	d
-glob	.vim/plugged/vim-node/test/autoload/lib_test.rb	/^    def glob(arg = "")$/;"	f
+gitgutter	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^augroup gitgutter$/;"	a
+gitgutter#all	.vim/plugged/vim-gitgutter/autoload/gitgutter.vim	/^function! gitgutter#all(force) abort$/;"	f
+gitgutter#async#available	.vim/plugged/vim-gitgutter/autoload/gitgutter/async.vim	/^function! gitgutter#async#available()$/;"	f
+gitgutter#async#execute	.vim/plugged/vim-gitgutter/autoload/gitgutter/async.vim	/^function! gitgutter#async#execute(cmd, bufnr, handler) abort$/;"	f
+gitgutter#debug#debug	.vim/plugged/vim-gitgutter/autoload/gitgutter/debug.vim	/^function! gitgutter#debug#debug()$/;"	f
+gitgutter#debug#log	.vim/plugged/vim-gitgutter/autoload/gitgutter/debug.vim	/^function! gitgutter#debug#log(message, ...) abort$/;"	f
+gitgutter#diff#handler	.vim/plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^function! gitgutter#diff#handler(bufnr, diff) abort$/;"	f
+gitgutter#diff#hunk_diff	.vim/plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^function! gitgutter#diff#hunk_diff(bufnr, full_diff, ...)$/;"	f
+gitgutter#diff#parse_diff	.vim/plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^function! gitgutter#diff#parse_diff(diff) abort$/;"	f
+gitgutter#diff#parse_hunk	.vim/plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^function! gitgutter#diff#parse_hunk(line) abort$/;"	f
+gitgutter#diff#process_hunks	.vim/plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^function! gitgutter#diff#process_hunks(bufnr, hunks) abort$/;"	f
+gitgutter#diff#run_diff	.vim/plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^function! gitgutter#diff#run_diff(bufnr, from, preserve_full_diff) abort$/;"	f
+gitgutter#disable	.vim/plugged/vim-gitgutter/autoload/gitgutter.vim	/^function! gitgutter#disable() abort$/;"	f
+gitgutter#enable	.vim/plugged/vim-gitgutter/autoload/gitgutter.vim	/^function! gitgutter#enable() abort$/;"	f
+gitgutter#highlight#define_highlights	.vim/plugged/vim-gitgutter/autoload/gitgutter/highlight.vim	/^function! gitgutter#highlight#define_highlights() abort$/;"	f
+gitgutter#highlight#define_sign_column_highlight	.vim/plugged/vim-gitgutter/autoload/gitgutter/highlight.vim	/^function! gitgutter#highlight#define_sign_column_highlight() abort$/;"	f
+gitgutter#highlight#define_sign_text_highlights	.vim/plugged/vim-gitgutter/autoload/gitgutter/highlight.vim	/^function! gitgutter#highlight#define_sign_text_highlights() abort$/;"	f
+gitgutter#highlight#define_signs	.vim/plugged/vim-gitgutter/autoload/gitgutter/highlight.vim	/^function! gitgutter#highlight#define_signs() abort$/;"	f
+gitgutter#highlight#line_disable	.vim/plugged/vim-gitgutter/autoload/gitgutter/highlight.vim	/^function! gitgutter#highlight#line_disable() abort$/;"	f
+gitgutter#highlight#line_enable	.vim/plugged/vim-gitgutter/autoload/gitgutter/highlight.vim	/^function! gitgutter#highlight#line_enable() abort$/;"	f
+gitgutter#highlight#line_toggle	.vim/plugged/vim-gitgutter/autoload/gitgutter/highlight.vim	/^function! gitgutter#highlight#line_toggle() abort$/;"	f
+gitgutter#hunk#cursor_in_hunk	.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^function! gitgutter#hunk#cursor_in_hunk(hunk) abort$/;"	f
+gitgutter#hunk#fix_file_references	.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^  function! gitgutter#hunk#fix_file_references(filepath, hunk_diff)$/;"	f
+gitgutter#hunk#hunks	.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^function! gitgutter#hunk#hunks(bufnr) abort$/;"	f
+gitgutter#hunk#increment_lines_added	.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^function! gitgutter#hunk#increment_lines_added(bufnr, count) abort$/;"	f
+gitgutter#hunk#increment_lines_modified	.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^function! gitgutter#hunk#increment_lines_modified(bufnr, count) abort$/;"	f
+gitgutter#hunk#increment_lines_removed	.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^function! gitgutter#hunk#increment_lines_removed(bufnr, count) abort$/;"	f
+gitgutter#hunk#next_hunk	.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^function! gitgutter#hunk#next_hunk(count) abort$/;"	f
+gitgutter#hunk#prev_hunk	.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^function! gitgutter#hunk#prev_hunk(count) abort$/;"	f
+gitgutter#hunk#preview	.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^function! gitgutter#hunk#preview() abort$/;"	f
+gitgutter#hunk#reset	.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^function! gitgutter#hunk#reset(bufnr) abort$/;"	f
+gitgutter#hunk#set_hunks	.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^function! gitgutter#hunk#set_hunks(bufnr, hunks) abort$/;"	f
+gitgutter#hunk#stage	.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^function! gitgutter#hunk#stage() abort$/;"	f
+gitgutter#hunk#summary	.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^function! gitgutter#hunk#summary(bufnr) abort$/;"	f
+gitgutter#hunk#text_object	.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^function! gitgutter#hunk#text_object(inner) abort$/;"	f
+gitgutter#hunk#undo	.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^function! gitgutter#hunk#undo() abort$/;"	f
+gitgutter#init_buffer	.vim/plugged/vim-gitgutter/autoload/gitgutter.vim	/^function! gitgutter#init_buffer(bufnr)$/;"	f
+gitgutter#process_buffer	.vim/plugged/vim-gitgutter/autoload/gitgutter.vim	/^function! gitgutter#process_buffer(bufnr, force) abort$/;"	f
+gitgutter#sign#clear_signs	.vim/plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^function! gitgutter#sign#clear_signs(bufnr) abort$/;"	f
+gitgutter#sign#disable	.vim/plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^function! gitgutter#sign#disable() abort$/;"	f
+gitgutter#sign#enable	.vim/plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^function! gitgutter#sign#enable() abort$/;"	f
+gitgutter#sign#remove_dummy_sign	.vim/plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^function! gitgutter#sign#remove_dummy_sign(bufnr, force) abort$/;"	f
+gitgutter#sign#reset	.vim/plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^function! gitgutter#sign#reset()$/;"	f
+gitgutter#sign#toggle	.vim/plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^function! gitgutter#sign#toggle() abort$/;"	f
+gitgutter#sign#update_signs	.vim/plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^function! gitgutter#sign#update_signs(bufnr, modified_lines) abort$/;"	f
+gitgutter#toggle	.vim/plugged/vim-gitgutter/autoload/gitgutter.vim	/^function! gitgutter#toggle() abort$/;"	f
+gitgutter#utility#cd_cmd	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! gitgutter#utility#cd_cmd(bufnr, cmd) abort$/;"	f
+gitgutter#utility#extension	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! gitgutter#utility#extension(bufnr) abort$/;"	f
+gitgutter#utility#file	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! gitgutter#utility#file(bufnr)$/;"	f
+gitgutter#utility#getbufvar	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! gitgutter#utility#getbufvar(buffer, varname, ...)$/;"	f
+gitgutter#utility#is_active	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! gitgutter#utility#is_active(bufnr) abort$/;"	f
+gitgutter#utility#repo_path	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! gitgutter#utility#repo_path(bufnr, shellesc) abort$/;"	f
+gitgutter#utility#set_repo_path	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! gitgutter#utility#set_repo_path(bufnr) abort$/;"	f
+gitgutter#utility#setbufvar	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! gitgutter#utility#setbufvar(buffer, varname, val)$/;"	f
+gitgutter#utility#shellescape	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! gitgutter#utility#shellescape(arg) abort$/;"	f
+gitgutter#utility#supports_overscore_sign	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! gitgutter#utility#supports_overscore_sign()$/;"	f
+gitgutter#utility#system	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! gitgutter#utility#system(cmd, ...) abort$/;"	f
+gitgutter#utility#warn	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! gitgutter#utility#warn(message) abort$/;"	f
+gitgutter#utility#warn_once	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! gitgutter#utility#warn_once(bufnr, message, key) abort$/;"	f
+gitgutter#utility#windows	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! gitgutter#utility#windows()$/;"	f
 globSourceDestination	.vim/plugged/phpactor/lib/Extension/Core/Application/Helper/FilesystemHelper.php	/^    public static function globSourceDestination(string $src, string $dest): \\Generator$/;"	f	class:Phpactor\\Extension\\Core\\Application\\Helper\\FilesystemHelper
 gotoClass	.vim/plugged/phpactor/lib/Extension/WorseReflectionExtra/GotoDefinition/GotoDefinition.php	/^    public function gotoClass(SymbolContext $symbolContext): GotoDefinitionResult$/;"	f	class:Phpactor\\Extension\\WorseReflectionExtra\\GotoDefinition\\GotoDefinition
 gotoDefinition	.vim/plugged/phpactor/lib/Extension/WorseReflectionExtra/GotoDefinition/GotoDefinition.php	/^    public function gotoDefinition(SymbolContext $symbolContext): GotoDefinitionResult$/;"	f	class:Phpactor\\Extension\\WorseReflectionExtra\\GotoDefinition\\GotoDefinition
@@ -6289,8 +6374,12 @@ i	.vim/plugged/ale/ftplugin/ale-preview-selection.vim	/^noremap <buffer> i <NOP>
 i	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^        nnoremap <buffer> <silent> i    :<C-U>exe <SID>BlameCommit("exe 'norm q'<Bar>edit")<CR>$/;"	m
 i	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^        nnoremap <buffer> <silent> i :<C-U>let b:fugitive_display_format -= v:count1<Bar>exe fug/;"	m
 i	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^    nnoremap <buffer> <silent> i :<C-U>let b:fugitive_display_format -= 1<Bar>exe fugitive#BufRe/;"	m
+i	.vim/plugged/vim-gitgutter/test/runner.vim	/^      let i += 1$/;"	v
+i	.vim/plugged/vim-gitgutter/test/runner.vim	/^    let i = 0$/;"	v
 i	.vim/plugged/vim-project/autoload/project/config.vim	/^  nnoremap <buffer><silent> i :enew <bar> startinsert<cr>$/;"	m
 i	.vim/plugged/vim-startify/autoload/startify.vim	/^  nnoremap <buffer><nowait><silent> i             :enew <bar> startinsert<cr>$/;"	m
+ic	.vim/plugged/vim-gitgutter/autoload/gitgutter.vim	/^    omap <buffer> ic <Plug>GitGutterTextObjectInnerPending$/;"	m
+ic	.vim/plugged/vim-gitgutter/autoload/gitgutter.vim	/^    xmap <buffer> ic <Plug>GitGutterTextObjectInnerVisual$/;"	m
 ie	.vim/plugged/vim-mustache-handlebars/ftplugin/mustache.vim	/^  onoremap <silent> <buffer> ie :<C-U>call <SID>wrap_inside()<CR>$/;"	m
 ie	.vim/plugged/vim-mustache-handlebars/ftplugin/mustache.vim	/^  xnoremap <silent> <buffer> ie :<C-U>call <SID>wrap_inside()<CR>$/;"	m
 ignores	.vim/plugged/ultisnips/test/test_Selection.py	/^    ignores = ['H']$/;"	v	class:SelectModeMappings_IgnoreMappings1_ECR
@@ -6307,7 +6396,6 @@ image_vim_git_py3	.vim/plugged/ultisnips/Makefile	/^image_vim_git_py3:$/;"	t
 img	.vim/plugged/phpactor/doc/template/css/main.css	/^img {$/;"	s
 import	.vim/plugged/phpactor/lib/Extension/ContextMenu/menu.json	/^        "import": {$/;"	o	object:class
 importClass	.vim/plugged/phpactor/tests/Unit/Extension/CoreTransform/Rpc/ImportClassHandlerTest.php	/^    private $importClass;$/;"	v	class:Phpactor\\Tests\\Unit\\Extension\\CoreTransform\\Rpc\\ImportClassHandlerTest
-included	.vim/plugged/vim-node/test/helper.rb	/^  def self.included(base)$/;"	S	module:WithTemporaryDirectory
 indent_to_spaces	.vim/plugged/ultisnips/pythonx/UltiSnips/indent_util.py	/^    def indent_to_spaces(self, indent):$/;"	m	class:IndentUtil
 inflect	.vim/plugged/phpactor/lib/Extension/ContextMenu/menu.json	/^        "inflect": {$/;"	o	object:class
 infoForFile	.vim/plugged/phpactor/lib/Extension/ClassToFileExtra/Application/FileInfo.php	/^    public function infoForFile(string $sourcePath)$/;"	f	class:Phpactor\\Extension\\ClassToFileExtra\\Application\\FileInfo
@@ -6889,7 +6977,6 @@ line	.vim/plugged/phpactor/lib/Extension/ClassMover/Application/ClassMemberRefer
 line	.vim/plugged/phpactor/lib/Extension/ClassMover/Application/ClassReferences.php	/^    private function line(string $code, int $offset)$/;"	f	class:Phpactor\\Extension\\ClassMover\\Application\\ClassReferences
 line_index	.vim/plugged/ultisnips/pythonx/UltiSnips/text.py	/^    def line_index(self):$/;"	m	class:LineIterator
 line_till_cursor	.vim/plugged/ultisnips/pythonx/UltiSnips/_vim.py	/^    def line_till_cursor(self):  # pylint:disable=no-self-use$/;"	m	class:VimBuffer
-list-core-modules	.vim/plugged/vim-node/Makefile	/^list-core-modules: node.tar.gz$/;"	t
 listGenerators	.vim/plugged/phpactor/lib/Extension/CodeTransform/Command/ClassInflectCommand.php	/^    private function listGenerators(InputInterface $input, OutputInterface $output)$/;"	f	class:Phpactor\\Extension\\CodeTransform\\Command\\ClassInflectCommand
 listGenerators	.vim/plugged/phpactor/lib/Extension/CodeTransform/Command/ClassNewCommand.php	/^    private function listGenerators(InputInterface $input, OutputInterface $output)$/;"	f	class:Phpactor\\Extension\\CodeTransform\\Command\\ClassNewCommand
 list_snippets	.vim/plugged/ultisnips/pythonx/UltiSnips/snippet_manager.py	/^    def list_snippets(self):$/;"	m	class:SnippetManager
@@ -6923,7 +7010,6 @@ logging.enabled	.vim/plugged/phpactor/doc/configuration.md	/^#### logging.enable
 logging.fingers_crossed	.vim/plugged/phpactor/doc/configuration.md	/^#### logging.fingers_crossed$/;"	t
 logging.level	.vim/plugged/phpactor/doc/configuration.md	/^#### logging.level$/;"	t
 logging.path	.vim/plugged/phpactor/doc/configuration.md	/^#### logging.path$/;"	t
-love	.vim/plugged/vim-node/Makefile	/^love:$/;"	t
 main	.vim/plugged/ale/test/dumb_tcp_client.py	/^def main():$/;"	f
 main	.vim/plugged/ale/test/dumb_tcp_server.py	/^def main():$/;"	f
 main	.vim/plugged/ale/test/script/block-padding-checker	/^def main():$/;"	f
@@ -7125,22 +7211,13 @@ new_scratch_buffer	.vim/plugged/ultisnips/pythonx/UltiSnips/_vim.py	/^def new_sc
 next	.vim/plugged/ultisnips/pythonx/UltiSnips/snippet/parsing/_lexer.py	/^    next = __next__  # for python2$/;"	v	class:_TextIterator
 next	.vim/plugged/ultisnips/pythonx/UltiSnips/text.py	/^    next = __next__  # for python2$/;"	v	class:LineIterator
 no_unidecode_available	.vim/plugged/ultisnips/test/util.py	/^def no_unidecode_available():$/;"	f
-node#initialize	.vim/plugged/vim-node/autoload/node.vim	/^function! node#initialize(root)$/;"	f
-node#javascript	.vim/plugged/vim-node/autoload/node.vim	/^function! node#javascript()$/;"	f
-node#lib#find	.vim/plugged/vim-node/autoload/node/lib.vim	/^function! node#lib#find(name, from)$/;"	f
-node#lib#find	.vim/plugged/vim-node/test/autoload/lib_test.rb	/^  describe "node#lib#find" do$/;"	d
-node#lib#glob	.vim/plugged/vim-node/autoload/node/lib.vim	/^function! node#lib#glob(name)$/;"	f
-node#lib#glob	.vim/plugged/vim-node/test/autoload/lib_test.rb	/^  describe "node#lib#glob" do$/;"	d
-node#lib#version	.vim/plugged/vim-node/autoload/node/lib.vim	/^function! node#lib#version()$/;"	f
-node#lib#version	.vim/plugged/vim-node/test/autoload/lib_test.rb	/^  describe "node#lib#version" do$/;"	d
-node#suffixesadd	.vim/plugged/vim-node/autoload/node.vim	/^let node#suffixesadd = [".js", ".json", ".es", ".jsx"]$/;"	v
-node.tar.gz	.vim/plugged/vim-node/Makefile	/^node.tar.gz:$/;"	t
 normalizePath	.vim/plugged/phpactor/lib/Phpactor.php	/^    public static function normalizePath(string $path): string$/;"	f	class:Phpactor\\Phpactor
 normalizeToClass	.vim/plugged/phpactor/lib/Extension/Core/Application/Helper/ClassFileNormalizer.php	/^    public function normalizeToClass(string $classOrFile): string$/;"	f	class:Phpactor\\Extension\\Core\\Application\\Helper\\ClassFileNormalizer
 normalizeToFile	.vim/plugged/phpactor/lib/Extension/Core/Application/Helper/ClassFileNormalizer.php	/^    public function normalizeToFile(string $classOrFile): string$/;"	f	class:Phpactor\\Extension\\Core\\Application\\Helper\\ClassFileNormalizer
 normalizer	.vim/plugged/phpactor/lib/Extension/CodeTransform/Application/AbstractClassGenerator.php	/^    protected $normalizer;$/;"	v	class:Phpactor\\Extension\\CodeTransform\\Application\\AbstractClassGenerator
 notify	.vim/plugged/ncm2/pythonx/ncm2_core.py	/^    def notify(self, method: str, *args):$/;"	m	class:Ncm2Core
 ntabs_to_proper_indent	.vim/plugged/ultisnips/pythonx/UltiSnips/indent_util.py	/^    def ntabs_to_proper_indent(self, ntabs):$/;"	m	class:IndentUtil
+num	.vim/plugged/vim-gitgutter/unplace.vim	/^let num = 500$/;"	v
 number	.vim/plugged/phpactor/lib/Extension/ContextMenu/menu.json	/^    "number": {$/;"	o
 number	.vim/plugged/ultisnips/pythonx/UltiSnips/_vim.py	/^    def number(self):  # pylint:disable=no-self-use$/;"	m	class:VimBuffer
 number	.vim/plugged/ultisnips/pythonx/UltiSnips/text_objects/_tabstop.py	/^    def number(self):$/;"	m	class:TabStop
@@ -7216,7 +7293,6 @@ p	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^      nnoremap <buffer> <sil
 p	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^      nnoremap <buffer> <silent> p     :<C-U>exe <SID>GF("pedit")<CR>$/;"	m
 p	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^    nnoremap <buffer> <silent> p :<C-U>execute <SID>StagePatch(line('.'),line('.')+v:count1-1)<C/;"	m
 p	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^    xnoremap <buffer> <silent> p :<C-U>execute <SID>StagePatch(line("'<"),line("'>"))<CR>$/;"	m
-pack	.vim/plugged/vim-node/Makefile	/^pack:$/;"	t
 parameters	.vim/plugged/phpactor/lib/Extension/ContextMenu/menu.json	/^            "parameters": {$/;"	o	object:class.class_new
 parameters	.vim/plugged/phpactor/lib/Extension/ContextMenu/menu.json	/^            "parameters": {$/;"	o	object:class.copy
 parameters	.vim/plugged/phpactor/lib/Extension/ContextMenu/menu.json	/^            "parameters": {$/;"	o	object:class.find_references
@@ -7473,7 +7549,6 @@ psr-4	.vim/plugged/phpactor/composer.json	/^        "psr-4": {$/;"	o	object:auto
 psr-4	.vim/plugged/phpactor/composer.json	/^        "psr-4": {$/;"	o	object:autoload-dev
 psr-4	.vim/plugged/phpactor/tests/Assets/Projects/Animals/composer.json	/^        "psr-4": {$/;"	o	object:autoload
 psr-4	.vim/plugged/phpactor/tests/Assets/Projects/PhpUnit/composer.json	/^        "psr-4": {$/;"	o	object:autoload
-publish	.vim/plugged/vim-node/Makefile	/^publish:$/;"	t
 pytest	.vim/plugged/ale/test/command_callback/python_paths/namespace_package_pytest/pytest.ini	/^[pytest]$/;"	s
 python3	.vim/plugged/ultisnips/test/test_Plugin.py	/^def python3():$/;"	f
 q	.vim/autoload/plug.vim	/^  nnoremap <silent> <buffer> q  :if b:plug_preview==1<bar>pc<bar>endif<bar>bd<cr>$/;"	m
@@ -7630,7 +7705,6 @@ rv	.vim/plugged/ultisnips/pythonx/UltiSnips/text_objects/_python_code.py	/^    d
 rv	.vim/plugged/ultisnips/utils/get_tm_snippets.py	/^        rv = fetch_snippets_from_dir(bundle)$/;"	v
 s	.vim/plugged/vim-startify/autoload/startify.vim	/^  nnoremap <buffer><nowait><silent> s             :call <sid>set_mark('S')<cr>$/;"	m
 s:A	.vim/plugged/vim-project/autoload/project/utils.vim	/^function! s:A(cmd, file, bang) abort$/;"	f
-s:ABSPATH	.vim/plugged/vim-node/autoload/node/lib.vim	/^let s:ABSPATH = '^\/'$/;"	v
 s:AddHintsForTypeScriptParsingErrors	.vim/plugged/ale/autoload/ale/handlers/eslint.vim	/^function! s:AddHintsForTypeScriptParsingErrors(output) abort$/;"	f
 s:AddProblemsFromOtherBuffers	.vim/plugged/ale/autoload/ale/engine.vim	/^function! s:AddProblemsFromOtherBuffers(buffer, linters) abort$/;"	f
 s:AddSubCallbacks	.vim/plugged/ale/autoload/ale/fix.vim	/^function! s:AddSubCallbacks(full_list, callbacks) abort$/;"	f
@@ -7680,8 +7754,6 @@ s:BuildSignMap	.vim/plugged/ale/autoload/ale/sign.vim	/^function! s:BuildSignMap
 s:BuildText	.vim/plugged/ale/ale_linters/ruby/reek.vim	/^function! s:BuildText(buffer, error) abort$/;"	f
 s:COMPLETION_TRIGGER_CHARACTER	.vim/plugged/ale/autoload/ale/lsp/message.vim	/^let s:COMPLETION_TRIGGER_CHARACTER = 2$/;"	v
 s:COMPLETION_TRIGGER_INVOKED	.vim/plugged/ale/autoload/ale/lsp/message.vim	/^let s:COMPLETION_TRIGGER_INVOKED = 1$/;"	v
-s:CORE_MODULES	.vim/plugged/vim-node/autoload/node/lib.vim	/^let s:CORE_MODULES = ["_debugger", "_http_agent", "_http_client",$/;"	v
-s:CORE_URL_PREFIX	.vim/plugged/vim-node/autoload/node/lib.vim	/^let s:CORE_URL_PREFIX = "https:\/\/rawgit.com\/nodejs\/node"$/;"	v
 s:CheckForBadConfig	.vim/plugged/ale/autoload/ale/handlers/eslint.vim	/^function! s:CheckForBadConfig(buffer, lines) abort$/;"	f
 s:ChopLeft	.vim/plugged/vim-workspace/autoload/workspace.vim	/^function! s:ChopLeft(buffers, line)$/;"	f
 s:ChopRight	.vim/plugged/vim-workspace/autoload/workspace.vim	/^function! s:ChopRight(buffers, line)$/;"	f
@@ -7768,7 +7840,6 @@ s:FlagSet.removeFlag	.vim/plugged/nerdtree/lib/nerdtree/flag_set.vim	/^function!
 s:FlagSet.renderToString	.vim/plugged/nerdtree/lib/nerdtree/flag_set.vim	/^function! s:FlagSet.renderToString()$/;"	f
 s:FormatEntry	.vim/plugged/ale/autoload/ale/fix/registry.vim	/^function! s:FormatEntry(key, entry) abort$/;"	f
 s:GF	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:GF(mode) abort$/;"	f
-s:GLOB_WILDIGNORE	.vim/plugged/vim-node/autoload/node/lib.vim	/^let s:GLOB_WILDIGNORE = 1$/;"	v
 s:GatherOutput	.vim/plugged/ale/autoload/ale/engine.vim	/^function! s:GatherOutput(job_id, line) abort$/;"	f
 s:GatherOutput	.vim/plugged/ale/autoload/ale/fix.vim	/^function! s:GatherOutput(job_id, line) abort$/;"	f
 s:Generate	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:Generate(rev, ...) abort$/;"	f
@@ -7866,7 +7937,6 @@ s:LookingAt	.vim/plugged/vim-javascript/indent/javascript.vim	/^function s:Looki
 s:MAX_COL_SIZE	.vim/plugged/ale/autoload/ale/highlight.vim	/^let s:MAX_COL_SIZE = 1073741824 " pow(2, 30)$/;"	v
 s:MAX_POS_VALUES	.vim/plugged/ale/autoload/ale/highlight.vim	/^let s:MAX_POS_VALUES = 8$/;"	v
 s:METHOD_NOT_FOUND	.vim/plugged/ale/autoload/ale/lsp/response.vim	/^let s:METHOD_NOT_FOUND = -32601$/;"	v
-s:MODULE	.vim/plugged/vim-node/autoload/node/lib.vim	/^let s:MODULE = '\\v^(\/|\\.\\.?(\/|$))@!'$/;"	v
 s:MenuController	.vim/plugged/nerdtree/lib/nerdtree/menu_controller.vim	/^let s:MenuController = {}$/;"	v
 s:MenuController.New	.vim/plugged/nerdtree/lib/nerdtree/menu_controller.vim	/^function! s:MenuController.New(menuItems)$/;"	f
 s:MenuController._allIndexesFor	.vim/plugged/nerdtree/lib/nerdtree/menu_controller.vim	/^function! s:MenuController._allIndexesFor(shortcut)$/;"	f
@@ -8008,7 +8078,6 @@ s:PrepareWrappedCommand	.vim/plugged/ale/autoload/ale/job.vim	/^function! s:Prep
 s:PreviousToken	.vim/plugged/vim-javascript/indent/javascript.vim	/^function s:PreviousToken(...)$/;"	f
 s:ProjectionistDetect	.vim/plugged/vim-fugitive/plugin/fugitive.vim	/^function! s:ProjectionistDetect() abort$/;"	f
 s:Pure	.vim/plugged/vim-javascript/indent/javascript.vim	/^function s:Pure(f,...)$/;"	f
-s:RELPATH	.vim/plugged/vim-node/autoload/node/lib.vim	/^let s:RELPATH = '\\v^\\.\\.?(\/|$)'$/;"	v
 s:REQUEST_CANCELLED	.vim/plugged/ale/autoload/ale/lsp/response.vim	/^let s:REQUEST_CANCELLED = -32800$/;"	v
 s:Read	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:Read(count, line1, line2, range, bang, mods, args, ...) abort$/;"	f
 s:Refresh	.vim/plugged/vim-devicons/nerdtree_plugin/webdevicons.vim	/^function! s:Refresh()$/;"	f
@@ -8199,16 +8268,19 @@ s:Wq	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:Wq(force,...)
 s:Write	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:Write(force,...) abort$/;"	f
 s:__ale_julia_project_filenames	.vim/plugged/ale/autoload/ale/julia.vim	/^let s:__ale_julia_project_filenames = ['REQUIRE', 'Manifest.toml', 'Project.toml']$/;"	v
 s:_handleOldOptions	.vim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^function! s:_handleOldOptions() abort$/;"	f
-s:absolutize	.vim/plugged/vim-node/autoload/node/lib.vim	/^function! s:absolutize(name, from)$/;"	f
+s:abs_path	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! s:abs_path(bufnr, shellesc)$/;"	f
 s:activateAll	.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:activateAll()$/;"	f
 s:activateBookmark	.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:activateBookmark(bm)$/;"	f
 s:activateDirNode	.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:activateDirNode(directoryNode)$/;"	f
 s:activateFileNode	.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:activateFileNode(node)$/;"	f
 s:add_db	.vim/plugged/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^function! s:add_db(db_file) abort$/;"	f
+s:add_dummy_sign	.vim/plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^function! s:add_dummy_sign(bufnr) abort$/;"	f
 s:add_methods	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:add_methods(namespace, method_names) abort$/;"	f
 s:add_or_remove_suffix	.vim/plugged/vim-project/autoload/project/utils.vim	/^function! s:add_or_remove_suffix(file, suffix) abort$/;"	f
 s:added_db_files	.vim/plugged/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^let s:added_db_files = {}$/;"	v
 s:added_dbs	.vim/plugged/vim-gutentags/autoload/gutentags/cscope.vim	/^let s:added_dbs = []$/;"	v
+s:adjust_header	.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^function! s:adjust_header(bufnr, hunk_diff)$/;"	f
+s:adjust_hunk_summary	.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^function! s:adjust_hunk_summary(hunk_diff) abort$/;"	f
 s:aliases	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^let s:aliases = {}$/;"	v
 s:append_ul	.vim/autoload/plug.vim	/^function! s:append_ul(lnum, text)$/;"	f
 s:ask	.vim/autoload/plug.vim	/^function! s:ask(message, ...)$/;"	f
@@ -8217,6 +8289,7 @@ s:assert	.vim/plugged/vim-php-cs-fixer/tests/misc.vim	/^let s:assert = themis#he
 s:assign_name	.vim/autoload/plug.vim	/^function! s:assign_name()$/;"	f
 s:assoc	.vim/autoload/plug.vim	/^function! s:assoc(dict, key, val)$/;"	f
 s:auto_trigger_tick	.vim/plugged/ncm2/autoload/ncm2.vim	/^let s:auto_trigger_tick = []$/;"	v
+s:available	.vim/plugged/vim-gitgutter/autoload/gitgutter/async.vim	/^let s:available = has('nvim') || ($/;"	v
 s:back_to_slash	.vim/plugged/vim-project/autoload/project/config.vim	/^function! s:back_to_slash(string) abort$/;"	f
 s:bang	.vim/autoload/plug.vim	/^function! s:bang(cmd, ...)$/;"	f
 s:bar	.vim/autoload/plug.vim	/^function! s:bar()$/;"	f
@@ -8234,7 +8307,10 @@ s:buffer_relative	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:
 s:buffer_repo	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:buffer_repo() dict abort$/;"	f
 s:buffer_spec	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^  function! s:buffer_spec() dict abort$/;"	f
 s:buffer_type	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:buffer_type(...) dict abort$/;"	f
+s:bufnr	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^let s:bufnr       = bufnr('')$/;"	v
+s:build_command	.vim/plugged/vim-gitgutter/autoload/gitgutter/async.vim	/^function! s:build_command(cmd)$/;"	f
 s:bvars	.vim/plugged/vim-javascript/indent/javascript.vim	/^let s:bvars = {$/;"	v
+s:c_flag	.vim/plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^let s:c_flag = s:git_supports_command_line_config_override()$/;"	v
 s:cache_cleanup	.vim/plugged/ncm2/autoload/ncm2.vim	/^func! s:cache_cleanup()$/;"	f
 s:cache_matches_cleanup	.vim/plugged/ncm2/autoload/ncm2.vim	/^func! s:cache_matches_cleanup()$/;"	f
 s:cache_project_root	.vim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! s:cache_project_root(path) abort$/;"	f
@@ -8246,6 +8322,7 @@ s:cfile	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:cfile() ab
 s:chCwd	.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:chCwd(node)$/;"	f
 s:chRoot	.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:chRoot(node)$/;"	f
 s:chain_results	.vim/plugged/ale/autoload/ale/assert.vim	/^let s:chain_results = []$/;"	v
+s:channel_log	.vim/plugged/vim-gitgutter/autoload/gitgutter/debug.vim	/^let s:channel_log = s:plugin_dir.'channel.log'$/;"	v
 s:channel_map	.vim/plugged/ale/autoload/ale/socket.vim	/^let s:channel_map = get(s:, 'channel_map', {})$/;"	v
 s:char_bottom_left	.vim/plugged/vim-startify/autoload/startify/fortune.vim	/^let s:char_bottom_left  = ['*', '╰'][s:unicode]$/;"	v
 s:char_bottom_right	.vim/plugged/vim-startify/autoload/startify/fortune.vim	/^let s:char_bottom_right = ['*', '╯'][s:unicode]$/;"	v
@@ -8260,6 +8337,7 @@ s:chsh	.vim/autoload/plug.vim	/^function! s:chsh(swap)$/;"	f
 s:classpath_sep	.vim/plugged/ale/ale_linters/java/javac.vim	/^let s:classpath_sep = has('unix') ? ':' : ';'$/;"	v
 s:classpath_sep	.vim/plugged/ale/ale_linters/kotlin/kotlinc.vim	/^let s:classpath_sep = has('unix') ? ':' : ';'$/;"	v
 s:clean	.vim/autoload/plug.vim	/^function! s:clean(force)$/;"	f
+s:clear	.vim/plugged/vim-gitgutter/autoload/gitgutter.vim	/^function! s:clear(bufnr)$/;"	f
 s:close	.vim/plugged/vim-startify/autoload/startify.vim	/^function! s:close() abort$/;"	f
 s:closeChildren	.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:closeChildren(node)$/;"	f
 s:closeCurrentDir	.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:closeCurrentDir(node)$/;"	f
@@ -8279,7 +8357,6 @@ s:compare_by_val_len	.vim/plugged/vim-startify/autoload/startify.vim	/^  functio
 s:compare_git_uri	.vim/autoload/plug.vim	/^function! s:compare_git_uri(a, b)$/;"	f
 s:compensate_for_pum	.vim/plugged/ultisnips/autoload/UltiSnips.vim	/^function! s:compensate_for_pum()$/;"	f
 s:compile_commands_cache	.vim/plugged/ale/autoload/ale/c.vim	/^    let s:compile_commands_cache = {}$/;"	v
-s:complete	.vim/plugged/vim-node/autoload/node.vim	/^function! s:complete(arg, cmd, cursor)$/;"	f
 s:complete_timer	.vim/plugged/ncm2/autoload/ncm2.vim	/^let s:complete_timer = 0$/;"	v
 s:complete_timer_handler	.vim/plugged/ncm2/autoload/ncm2.vim	/^func! s:complete_timer_handler()$/;"	f
 s:completion_notified	.vim/plugged/ncm2/autoload/ncm2.vim	/^let s:completion_notified = {}$/;"	v
@@ -8291,12 +8368,16 @@ s:context_tick_extra	.vim/plugged/ncm2/autoload/ncm2.vim	/^let s:context_tick_ex
 s:continuation	.vim/plugged/vim-javascript/indent/javascript.vim	/^let s:continuation = get(g:,'javascript_continuation',$/;"	v
 s:core	.vim/plugged/ncm2/autoload/ncm2.vim	/^let s:core = yarp#py3('ncm2_core')$/;"	v
 s:core	.vim/plugged/ncm2/autoload/ncm2.vim	/^let s:core.on_load = 'ncm2#_core_started'$/;"	v
+s:counter	.vim/plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^let s:counter = 0$/;"	v
 s:cow	.vim/plugged/vim-startify/autoload/startify/fortune.vim	/^let s:cow = [$/;"	v
 s:cpath	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:cpath(path, ...) abort$/;"	f
 s:cpo_save	.vim/autoload/plug.vim	/^let s:cpo_save = &cpo$/;"	v
 s:cpo_save	.vim/plugged/vim-javascript/indent/javascript.vim	/^let s:cpo_save = &cpo$/;"	v
 s:cpo_save	.vim/plugged/vim-mustache-handlebars/ftplugin/mustache.vim	/^let s:cpo_save = &cpo$/;"	v
 s:create_last_session_link	.vim/plugged/vim-startify/autoload/startify.vim	/^function! s:create_last_session_link(spath)$/;"	f
+s:current_dir	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^let s:current_dir = expand('%:p:h')$/;"	v
+s:current_hunk	.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^function! s:current_hunk() abort$/;"	f
+s:cursor_in_two_hunks	.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^function! s:cursor_in_two_hunks()$/;"	f
 s:cursor_timer	.vim/plugged/ale/autoload/ale/cursor.vim	/^let s:cursor_timer = -1$/;"	v
 s:cursor_timer	.vim/plugged/ale/autoload/ale/virtualtext.vim	/^let s:cursor_timer = -1$/;"	v
 s:default_ale_linter_aliases	.vim/plugged/ale/autoload/ale/linter.vim	/^let s:default_ale_linter_aliases = {$/;"	v
@@ -8305,11 +8386,12 @@ s:default_registry	.vim/plugged/ale/autoload/ale/fix/registry.vim	/^let s:defaul
 s:default_template_dir	.vim/plugged/vim-template/plugin/templates.vim	/^let s:default_template_dir = <SID>DirName(<SID>DirName(expand("<sfile>"))) . "templates"$/;"	v
 s:define_commands	.vim/autoload/plug.vim	/^function! s:define_commands()$/;"	f
 s:define_commands	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:define_commands() abort$/;"	f
+s:define_sign_line_highlights	.vim/plugged/vim-gitgutter/autoload/gitgutter/highlight.vim	/^function! s:define_sign_line_highlights() abort$/;"	f
+s:define_sign_text	.vim/plugged/vim-gitgutter/autoload/gitgutter/highlight.vim	/^function! s:define_sign_text() abort$/;"	f
 s:delay_handler	.vim/plugged/ncm2/autoload/ncm2/on_complete.vim	/^func! s:delay_handler(sr, args)$/;"	f
 s:delete	.vim/autoload/plug.vim	/^function! s:delete(range, force)$/;"	f
 s:deleteBookmark	.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:deleteBookmark(bookmark)$/;"	f
 s:delete_op	.vim/autoload/plug.vim	/^function! s:delete_op(type, ...)$/;"	f
-s:detect	.vim/plugged/vim-node/plugin/node.vim	/^function! s:detect(dir)$/;"	f
 s:did_check_exe	.vim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^let s:did_check_exe = 0$/;"	v
 s:diff	.vim/autoload/plug.vim	/^function! s:diff()$/;"	f
 s:diff_modifier	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:diff_modifier(count) abort$/;"	f
@@ -8318,23 +8400,30 @@ s:diff_window_count	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! 
 s:diffoff	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:diffoff() abort$/;"	f
 s:diffoff_all	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:diffoff_all(dir) abort$/;"	f
 s:diffthis	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:diffthis() abort$/;"	f
+s:dir	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! s:dir(bufnr) abort$/;"	f
 s:dirArrows	.vim/plugged/nerdtree/syntax/nerdtree.vim	/^let s:dirArrows = escape(g:NERDTreeDirArrowCollapsible, '~]\\-').escape(g:NERDTreeDirArrowExpand/;"	v
 s:dir_for_worktree	.vim/plugged/vim-fugitive/plugin/fugitive.vim	/^let s:dir_for_worktree = {}$/;"	v
 s:directory	.vim/plugged/vim-template/plugin/templates.vim	/^	let s:directory = <SID>NormalizePath(expand(s:directory) . '\/')$/;"	v
-s:dirname	.vim/plugged/vim-node/autoload/node.vim	/^function! s:dirname(path)$/;"	f
 s:dirpath	.vim/autoload/plug.vim	/^  function! s:dirpath(path)$/;"	f
+s:discard_header	.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^function! s:discard_header(hunk_diff)$/;"	f
 s:displayHelp	.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:displayHelp()$/;"	f
 s:display_by_path	.vim/plugged/vim-startify/autoload/startify.vim	/^function! s:display_by_path(path_prefix, path_format, use_env) abort$/;"	f
 s:do	.vim/autoload/plug.vim	/^function! s:do(pull, force, todo)$/;"	f
 s:do_ins_task	.vim/plugged/ncm2/autoload/ncm2.vim	/^func! s:do_ins_task(fn, args, timer)$/;"	f
 s:doautocmd	.vim/autoload/plug.vim	/^function! s:doautocmd(...)$/;"	f
 s:dobufread	.vim/autoload/plug.vim	/^function! s:dobufread(names)$/;"	f
+s:done	.vim/plugged/vim-gitgutter/test/runner.vim	/^  let s:done += 1$/;"	v
+s:done	.vim/plugged/vim-gitgutter/test/runner.vim	/^let s:done = 0$/;"	v
 s:draw_box	.vim/plugged/vim-startify/autoload/startify/fortune.vim	/^function! s:draw_box(lines) abort$/;"	f
-s:edit	.vim/plugged/vim-node/autoload/node.vim	/^function! s:edit(name, from, ...)$/;"	f
+s:dummy_sign_id	.vim/plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^let s:dummy_sign_id = s:first_sign_id - 1$/;"	v
 s:enable_neovim	.vim/plugged/ale/ale_linters/vim/vint.vim	/^let s:enable_neovim = has('nvim') ? ' --enable-neovim' : ''$/;"	v
 s:end_col_pattern_map	.vim/plugged/ale/ale_linters/python/flake8.vim	/^let s:end_col_pattern_map = {$/;"	v
 s:err	.vim/autoload/plug.vim	/^function! s:err(msg)$/;"	f
-s:error	.vim/plugged/vim-node/autoload/node.vim	/^function! s:error(msg)$/;"	f
+s:errored	.vim/plugged/vim-gitgutter/test/runner.vim	/^      let s:errored = 0$/;"	v
+s:errored	.vim/plugged/vim-gitgutter/test/runner.vim	/^let s:errored = 0$/;"	v
+s:errors	.vim/plugged/vim-gitgutter/test/runner.vim	/^      let s:errors += 1$/;"	v
+s:errors	.vim/plugged/vim-gitgutter/test/runner.vim	/^  let s:errors += 1$/;"	v
+s:errors	.vim/plugged/vim-gitgutter/test/runner.vim	/^let s:errors = 0$/;"	v
 s:esc	.vim/autoload/plug.vim	/^function! s:esc(path)$/;"	f
 s:escape	.vim/plugged/vim-project/autoload/project/config.vim	/^function! s:escape(path) abort$/;"	f
 s:escrtp	.vim/autoload/plug.vim	/^function! s:escrtp(path)$/;"	f
@@ -8342,31 +8431,36 @@ s:exec_paths	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^let s:exec_paths 
 s:executable	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:executable(binary) abort$/;"	f
 s:executable_cache_map	.vim/plugged/ale/autoload/ale/engine.vim	/^    let s:executable_cache_map = {}$/;"	v
 s:executables	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^let s:executables = {}$/;"	v
+s:exists_file	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! s:exists_file(bufnr) abort$/;"	f
 s:expand	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^let s:expand = '\\%(\\(' . s:var . '\\)\\(' . s:flag . '*\\)\\(:S\\)\\=\\)'$/;"	v
 s:extract_name	.vim/autoload/plug.vim	/^function! s:extract_name(str, prefix, suffix)$/;"	f
+s:fail	.vim/plugged/vim-gitgutter/test/runner.vim	/^      let s:fail += 1$/;"	v
+s:fail	.vim/plugged/vim-gitgutter/test/runner.vim	/^let s:fail = 0$/;"	v
 s:feedkeys	.vim/plugged/ncm2/autoload/ncm2.vim	/^func! s:feedkeys(key, ...)$/;"	f
-s:filetype_patterns	.vim/plugged/vim-node/plugin/node.vim	/^	let s:filetype_patterns = s:flatten(map(s:filetypes, "<SID>permutate(v:val)"))$/;"	v
-s:filetype_patterns_joined	.vim/plugged/vim-node/plugin/node.vim	/^	let s:filetype_patterns_joined = join(s:filetype_patterns, ",")$/;"	v
-s:filetypes	.vim/plugged/vim-node/plugin/node.vim	/^let s:filetypes = ["javascript", "json", "jsx"]$/;"	v
+s:filename	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! s:filename(bufnr) abort$/;"	f
 s:filter_oldfiles	.vim/plugged/vim-startify/autoload/startify.vim	/^function! s:filter_oldfiles(path_prefix, path_format, use_env) abort$/;"	f
 s:filter_oldfiles_unsafe	.vim/plugged/vim-startify/autoload/startify.vim	/^function! s:filter_oldfiles_unsafe(path_prefix, path_format, use_env) abort$/;"	f
 s:filters.filter	.vim/plugged/vim-devicons/plugin/webdevicons.vim	/^    function! s:filters.filter(candidates, context)$/;"	f
 s:findAndRevealPath	.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:findAndRevealPath(pathStr)$/;"	f
+s:find_current_signs	.vim/plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^function! s:find_current_signs(bufnr) abort$/;"	f
 s:find_name	.vim/autoload/plug.vim	/^function! s:find_name(lnum)$/;"	f
 s:finish	.vim/autoload/plug.vim	/^function! s:finish(pull)$/;"	f
 s:finish_bindings	.vim/autoload/plug.vim	/^function! s:finish_bindings()$/;"	f
 s:first_rtp	.vim/autoload/plug.vim	/^let s:first_rtp = s:escrtp(get(s:split_rtp(), 0, ''))$/;"	v
+s:first_sign_id	.vim/plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^let s:first_sign_id = 3000$/;"	v
+s:fix_file_references	.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^function! s:fix_file_references(filepath, hunk_diff)$/;"	f
 s:fixed_column	.vim/plugged/vim-startify/autoload/startify.vim	/^let s:fixed_column = len(s:padding_left) + 2$/;"	v
 s:flag	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^let s:flag = '\\%(:[p8~.htre]\\|:g\\=s\\(.\\).\\{-\\}\\1.\\{-\\}\\1\\)'$/;"	v
-s:flatten	.vim/plugged/vim-node/plugin/node.vim	/^function! s:flatten(list)$/;"	f
 s:fnameescape	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:fnameescape(file) abort$/;"	f
 s:fnameescape	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^let s:fnameescape = " \\t\\n*?[{`$\\\\%#'\\"|!<"$/;"	v
 s:format	.vim/plugged/ale/ale_linters/vim/vint.vim	/^let s:format = '-f "{file_path}:{line_number}:{column_number}: {severity}: {description} (see {r/;"	v
+s:format_for_log	.vim/plugged/vim-gitgutter/autoload/gitgutter/debug.vim	/^function! s:format_for_log(data) abort$/;"	f
 s:format_git_log	.vim/autoload/plug.vim	/^function! s:format_git_log(line)$/;"	f
 s:format_message	.vim/autoload/plug.vim	/^function! s:format_message(bullet, name, message)$/;"	f
 s:full_path	.vim/plugged/vim-project/autoload/project/config.vim	/^function! s:full_path(arg) abort$/;"	f
 s:function	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:function(name) abort$/;"	f
 s:generate_wildignore_options	.vim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^function! s:generate_wildignore_options() abort$/;"	f
+s:get_background_colors	.vim/plugged/vim-gitgutter/autoload/gitgutter/highlight.vim	/^function! s:get_background_colors(group) abort$/;"	f
 s:get_ctags_executable	.vim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^function! s:get_ctags_executable(proj_dir) abort$/;"	f
 s:get_env	.vim/plugged/vim-startify/autoload/startify.vim	/^  function! s:get_env()$/;"	f
 s:get_index_as_string	.vim/plugged/vim-startify/autoload/startify.vim	/^function! s:get_index_as_string() abort$/;"	f
@@ -8374,25 +8468,35 @@ s:get_lists	.vim/plugged/vim-startify/autoload/startify.vim	/^function! s:get_li
 s:get_random_offset	.vim/plugged/vim-startify/autoload/startify/fortune.vim	/^function! s:get_random_offset(max) abort$/;"	f
 s:get_sep	.vim/plugged/vim-project/autoload/project/config.vim	/^function! s:get_sep() abort$/;"	f
 s:getcmdwintype_exists	.vim/plugged/ale/autoload/ale.vim	/^let s:getcmdwintype_exists = exists('*getcmdwintype')$/;"	v
+s:git_diff	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function s:git_diff()$/;"	f
+s:git_diff_staged	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function s:git_diff_staged()$/;"	f
+s:git_supports_command_line_config_override	.vim/plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^function! s:git_supports_command_line_config_override() abort$/;"	f
 s:git_validate	.vim/autoload/plug.vim	/^function! s:git_validate(spec, check_branch)$/;"	f
+s:git_version	.vim/plugged/vim-gitgutter/autoload/gitgutter/debug.vim	/^function! s:git_version()$/;"	f
 s:git_version_requirement	.vim/autoload/plug.vim	/^function! s:git_version_requirement(...)$/;"	f
 s:git_versions	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^let s:git_versions = {}$/;"	v
 s:glob	.vim/autoload/plug.vim	/^function! s:glob(from, pattern)$/;"	f
-s:glob	.vim/plugged/vim-node/autoload/node/lib.vim	/^function! s:glob(path, stripPrefix)$/;"	f
 s:glob_dir	.vim/autoload/plug.vim	/^function! s:glob_dir(path)$/;"	f
 s:global_variable_list	.vim/plugged/ale/autoload/ale/debugging.vim	/^let s:global_variable_list = [$/;"	v
 s:globsubs	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^let s:globsubs = {$/;"	v
 s:go_to_definition_map	.vim/plugged/ale/autoload/ale/definition.vim	/^let s:go_to_definition_map = {}$/;"	v
+s:grep_version	.vim/plugged/vim-gitgutter/autoload/gitgutter/debug.vim	/^function! s:grep_version()$/;"	f
 s:gsub	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:gsub(str,pat,rep) abort$/;"	f
 s:handleLeftClick	.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:handleLeftClick()$/;"	f
 s:handleMiddleMouse	.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:handleMiddleMouse()$/;"	f
 s:hardRefreshNerdTree	.vim/plugged/vim-devicons/plugin/webdevicons.vim	/^function! s:hardRefreshNerdTree()$/;"	f
 s:has_features	.vim/plugged/ale/plugin/ale.vim	/^    let s:has_features = has('timers') && exists('*job_start') && exists('*ch_close_in')$/;"	v
 s:has_features	.vim/plugged/ale/plugin/ale.vim	/^    let s:has_features = has('timers') && has('nvim-0.2.0')$/;"	v
+s:has_fresh_changes	.vim/plugged/vim-gitgutter/autoload/gitgutter.vim	/^function! s:has_fresh_changes(bufnr) abort$/;"	f
 s:hash_colors	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^let s:hash_colors = {}$/;"	v
 s:hash_match	.vim/autoload/plug.vim	/^function! s:hash_match(a, b)$/;"	f
+s:highlight_name_for_change	.vim/plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^function! s:highlight_name_for_change(text) abort$/;"	f
 s:hover_map	.vim/plugged/ale/autoload/ale/hover.vim	/^let s:hover_map = {}$/;"	v
+s:hunk_op	.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^function! s:hunk_op(op)$/;"	f
+s:hunk_re	.vim/plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^let s:hunk_re = '^@@ -\\(\\d\\+\\),\\?\\(\\d*\\) +\\(\\d\\+\\),\\?\\(\\d*\\) @@'$/;"	v
 s:in_comm	.vim/plugged/vim-javascript/indent/javascript.vim	/^let s:in_comm = s:skip_expr[:-14] . "'comment\\\\|doc'"$/;"	v
+s:indent	.vim/plugged/vim-gitgutter/test/runner.vim	/^let s:indent = ''$/;"	v
+s:indent	.vim/plugged/vim-gitgutter/test/runner.vim	/^let s:indent = max(map(copy(s:tests), {_, val -> len(FriendlyName(val))}))$/;"	v
 s:indexes	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^let s:indexes = {}$/;"	v
 s:infer_properties	.vim/autoload/plug.vim	/^function! s:infer_properties(name, repo)$/;"	f
 s:initVariable	.vim/plugged/nerdtree/plugin/NERD_tree.vim	/^function! s:initVariable(var, value)$/;"	f
@@ -8407,11 +8511,16 @@ s:initializeVimfiler	.vim/plugged/vim-devicons/plugin/webdevicons.vim	/^function
 s:ins_task	.vim/plugged/ncm2/autoload/ncm2.vim	/^func! s:ins_task(fn, ...)$/;"	f
 s:install	.vim/autoload/plug.vim	/^function! s:install(force, names)$/;"	f
 s:isDarwin	.vim/plugged/vim-devicons/plugin/webdevicons.vim	/^function s:isDarwin()$/;"	f
-s:isNode	.vim/plugged/vim-node/ftdetect/node.vim	/^function! s:isNode()$/;"	f
+s:is_added	.vim/plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^function! s:is_added(from_count, to_count) abort$/;"	f
+s:is_file_buffer	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! s:is_file_buffer(bufnr) abort$/;"	f
 s:is_in_skiplist	.vim/plugged/vim-startify/autoload/startify.vim	/^function! s:is_in_skiplist(arg) abort$/;"	f
 s:is_local_plug	.vim/autoload/plug.vim	/^  function! s:is_local_plug(repo)$/;"	f
 s:is_managed	.vim/autoload/plug.vim	/^function! s:is_managed(name)$/;"	f
+s:is_modified	.vim/plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^function! s:is_modified(from_count, to_count) abort$/;"	f
+s:is_modified_and_added	.vim/plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^function! s:is_modified_and_added(from_count, to_count) abort$/;"	f
+s:is_modified_and_removed	.vim/plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^function! s:is_modified_and_removed(from_count, to_count) abort$/;"	f
 s:is_preview_window_open	.vim/autoload/plug.vim	/^function! s:is_preview_window_open()$/;"	f
+s:is_removed	.vim/plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^function! s:is_removed(from_count, to_count) abort$/;"	f
 s:is_updated	.vim/autoload/plug.vim	/^function! s:is_updated(dir)$/;"	f
 s:is_win	.vim/autoload/plug.vim	/^let s:is_win = has('win32')$/;"	v
 s:job_abort	.vim/autoload/plug.vim	/^function! s:job_abort()$/;"	f
@@ -8443,6 +8552,7 @@ s:last_rtp	.vim/autoload/plug.vim	/^let s:last_rtp  = s:escrtp(get(s:split_rtp()
 s:last_wildignores	.vim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^let s:last_wildignores = ''$/;"	v
 s:lastline	.vim/autoload/plug.vim	/^function! s:lastline(msg)$/;"	f
 s:lazy	.vim/autoload/plug.vim	/^function! s:lazy(plug, opt)$/;"	f
+s:line_adjustment_for_current_hunk	.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^function! s:line_adjustment_for_current_hunk() abort$/;"	f
 s:linechars	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:linechars(pattern) abort$/;"	f
 s:lines	.vim/autoload/plug.vim	/^function! s:lines(msg)$/;"	f
 s:lint_timer	.vim/plugged/ale/autoload/ale.vim	/^let s:lint_timer = -1$/;"	v
@@ -8460,29 +8570,43 @@ s:lod_ft	.vim/autoload/plug.vim	/^function! s:lod_ft(pat, names)$/;"	f
 s:lod_map	.vim/autoload/plug.vim	/^function! s:lod_map(map, names, with_prefix, prefix)$/;"	f
 s:log	.vim/autoload/plug.vim	/^function! s:log(bullet, name, lines)$/;"	f
 s:log4	.vim/autoload/plug.vim	/^function! s:log4(name, msg)$/;"	f
+s:log_file	.vim/plugged/vim-gitgutter/autoload/gitgutter/debug.vim	/^let s:log_file    = s:plugin_dir.'gitgutter.log'$/;"	v
 s:logpos	.vim/autoload/plug.vim	/^function! s:logpos(name)$/;"	f
 s:lpad	.vim/autoload/plug.vim	/^function! s:lpad(str, len)$/;"	f
 s:lsp_linter_map	.vim/plugged/ale/autoload/ale/lsp_linter.vim	/^    let s:lsp_linter_map = {}$/;"	v
 s:mac_gui	.vim/autoload/plug.vim	/^let s:mac_gui = has('gui_macvim') && has('gui_running')$/;"	v
-s:mainFromPackage	.vim/plugged/vim-node/autoload/node/lib.vim	/^function! s:mainFromPackage(path)$/;"	f
 s:manual_update_tags	.vim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! s:manual_update_tags(bang) abort$/;"	f
 s:map	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:map(mode, lhs, rhs, ...) abort$/;"	f
+s:match_highlight	.vim/plugged/vim-gitgutter/autoload/gitgutter/highlight.vim	/^function! s:match_highlight(highlight, pattern) abort$/;"	f
 s:matches	.vim/plugged/ncm2/autoload/ncm2.vim	/^let s:matches = []$/;"	v
 s:me	.vim/autoload/plug.vim	/^let s:me = resolve(expand('<sfile>:p'))$/;"	v
+s:messages	.vim/plugged/vim-gitgutter/test/runner.vim	/^let s:messages = []$/;"	v
 s:names	.vim/autoload/plug.vim	/^function! s:names(...)$/;"	f
-s:nedit	.vim/plugged/vim-node/autoload/node.vim	/^function! s:nedit(name, from, ...)$/;"	f
+s:new_log_session	.vim/plugged/vim-gitgutter/autoload/gitgutter/debug.vim	/^let s:new_log_session = 1$/;"	v
 s:new_window	.vim/autoload/plug.vim	/^function! s:new_window()$/;"	f
+s:next_sign_id	.vim/plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^function! s:next_sign_id() abort$/;"	f
+s:next_sign_id	.vim/plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^let s:next_sign_id  = s:first_sign_id$/;"	v
 s:no_current	.vim/plugged/vim-workspace/autoload/workspace.vim	/^let s:no_current = 0$/;"	v
-s:nopen	.vim/plugged/vim-node/autoload/node.vim	/^function! s:nopen(name, from, ...)$/;"	f
+s:nomodeline	.vim/plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^let s:nomodeline = (v:version > 703 || (v:version == 703 && has('patch442'))) ? '<nomodeline>' :/;"	v
+s:not_git_dir	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! s:not_git_dir(bufnr) abort$/;"	f
+s:not_tracked_by_git	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^  function! s:not_tracked_by_git(bufnr)$/;"	f
 s:ns_id	.vim/plugged/ale/autoload/ale/virtualtext.vim	/^    let s:ns_id = nvim_create_namespace('ale')$/;"	v
 s:numfiles	.vim/plugged/vim-startify/autoload/startify.vim	/^let s:numfiles       = get(g:, 'startify_files_number', 10)$/;"	v
 s:nvim	.vim/autoload/plug.vim	/^let s:nvim = has('nvim-0.2') || (has('nvim') && exists('*jobwait') && !s:is_win)$/;"	v
 s:nvim_cb	.vim/autoload/plug.vim	/^function! s:nvim_cb(job_id, data, event) dict abort$/;"	f
 s:nvim_job_exit_wrapper	.vim/plugged/vim-gutentags/autoload/gutentags.vim	/^    function! s:nvim_job_exit_wrapper(real_cb, job, exit_code, event_type) abort$/;"	f
 s:nvim_job_out_wrapper	.vim/plugged/vim-gutentags/autoload/gutentags.vim	/^    function! s:nvim_job_out_wrapper(real_cb, job, lines, event_type) abort$/;"	f
+s:obsolete_gitgutter_signs_to_remove	.vim/plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^function! s:obsolete_gitgutter_signs_to_remove(bufnr, new_gitgutter_signs_line_numbers) abort$/;"	f
 s:old_cpo	.vim/plugged/nerdtree/plugin/NERD_tree.vim	/^let s:old_cpo = &cpo$/;"	v
 s:omni_start_map	.vim/plugged/ale/autoload/ale/completion.vim	/^let s:omni_start_map = {$/;"	v
+s:on_bufenter	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^function! s:on_bufenter()$/;"	f
 s:on_complete_done	.vim/plugged/ncm2/autoload/ncm2.vim	/^func! s:on_complete_done()$/;"	f
+s:on_exit_nvim	.vim/plugged/vim-gitgutter/autoload/gitgutter/async.vim	/^function! s:on_exit_nvim(_job_id, exit_code, _event) dict abort$/;"	f
+s:on_exit_vim	.vim/plugged/vim-gitgutter/autoload/gitgutter/async.vim	/^function! s:on_exit_vim(channel) dict abort$/;"	f
+s:on_stderr_nvim	.vim/plugged/vim-gitgutter/autoload/gitgutter/async.vim	/^function! s:on_stderr_nvim(_job_id, _data, _event) dict abort$/;"	f
+s:on_stderr_vim	.vim/plugged/vim-gitgutter/autoload/gitgutter/async.vim	/^function! s:on_stderr_vim(channel, _data) dict abort$/;"	f
+s:on_stdout_nvim	.vim/plugged/vim-gitgutter/autoload/gitgutter/async.vim	/^function! s:on_stdout_nvim(_job_id, data, _event) dict abort$/;"	f
+s:on_stdout_vim	.vim/plugged/vim-gitgutter/autoload/gitgutter/async.vim	/^function! s:on_stdout_vim(_channel, data) dict abort$/;"	f
 s:on_vimenter	.vim/plugged/vim-startify/plugin/startify.vim	/^function! s:on_vimenter()$/;"	f
 s:on_vimleavepre	.vim/plugged/vim-startify/plugin/startify.vim	/^function! s:on_vimleavepre()$/;"	f
 s:openExplorer	.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:openExplorer(node)$/;"	f
@@ -8494,6 +8618,8 @@ s:openVSplit	.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:o
 s:open_buffer	.vim/plugged/vim-startify/autoload/startify.vim	/^function! s:open_buffer(entry)$/;"	f
 s:opfirst	.vim/plugged/vim-javascript/indent/javascript.vim	/^let s:opfirst = '^' . get(g:,'javascript_opfirst',$/;"	v
 s:opt	.vim/plugged/ncm2/autoload/ncm2.vim	/^func! s:opt(name, default)$/;"	f
+s:option	.vim/plugged/vim-gitgutter/autoload/gitgutter/debug.vim	/^function! s:option(name)$/;"	f
+s:output	.vim/plugged/vim-gitgutter/autoload/gitgutter/debug.vim	/^function! s:output(text)$/;"	f
 s:override_source	.vim/plugged/ncm2/autoload/ncm2.vim	/^func! s:override_source(sr)$/;"	f
 s:padding_left	.vim/plugged/vim-startify/autoload/startify.vim	/^let s:padding_left = repeat(' ', get(g:, 'startify_padding_left', 3))$/;"	v
 s:padding_left	.vim/plugged/vim-startify/syntax/startify.vim	/^let s:padding_left = repeat(' ', get(g:, 'startify_padding_left', 3))$/;"	v
@@ -8501,11 +8627,11 @@ s:parse_options	.vim/autoload/plug.vim	/^function! s:parse_options(arg)$/;"	f
 s:partial_timers	.vim/plugged/ale/autoload/ale/util.vim	/^    let s:partial_timers = {}$/;"	v
 s:path	.vim/autoload/plug.vim	/^  function! s:path(path)$/;"	f
 s:pattern	.vim/plugged/ale/autoload/ale/handlers/gcc.vim	/^let s:pattern = '\\v^([a-zA-Z]?:?[^:]+):(\\d+):(\\d+)?:? ([^:]+): (.+)$'$/;"	v
-s:permutate	.vim/plugged/vim-node/plugin/node.vim	/^function! s:permutate(ft)$/;"	f
 s:plug_buf	.vim/autoload/plug.vim	/^let s:plug_buf = get(s:, 'plug_buf', -1)$/;"	v
 s:plug_src	.vim/autoload/plug.vim	/^let s:plug_src = 'https:\/\/github.com\/junegunn\/vim-plug.git'$/;"	v
 s:plug_tab	.vim/autoload/plug.vim	/^let s:plug_tab = get(s:, 'plug_tab', -1)$/;"	v
 s:plug_window_exists	.vim/autoload/plug.vim	/^function! s:plug_window_exists()$/;"	f
+s:plugin_dir	.vim/plugged/vim-gitgutter/autoload/gitgutter/debug.vim	/^let s:plugin_dir  = expand('<sfile>:p:h:h:h').'\/'$/;"	v
 s:plugin_home	.vim/plugged/vim-devicons/plugin/webdevicons.vim	/^let s:plugin_home = expand('<sfile>:p:h:h')$/;"	v
 s:popup_timed	.vim/plugged/ncm2/autoload/ncm2.vim	/^func! s:popup_timed(_)$/;"	f
 s:popup_timer	.vim/plugged/ncm2/autoload/ncm2.vim	/^let s:popup_timer = 0$/;"	v
@@ -8516,12 +8642,19 @@ s:pragma_error	.vim/plugged/ale/autoload/ale/handlers/gcc.vim	/^let s:pragma_err
 s:predefined_quotes	.vim/plugged/vim-startify/autoload/startify/fortune.vim	/^let s:predefined_quotes = [$/;"	v
 s:prepare	.vim/autoload/plug.vim	/^function! s:prepare(...)$/;"	f
 s:prepare_env	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^let s:prepare_env = {$/;"	v
+s:preview	.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^function! s:preview(hunk_diff)$/;"	f
 s:previewNodeCurrent	.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:previewNodeCurrent(node)$/;"	f
 s:previewNodeHSplit	.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:previewNodeHSplit(node)$/;"	f
 s:previewNodeVSplit	.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:previewNodeVSplit(node)$/;"	f
 s:preview_commit	.vim/autoload/plug.vim	/^function! s:preview_commit()$/;"	f
 s:print_section_header	.vim/plugged/vim-startify/autoload/startify.vim	/^function! s:print_section_header() abort$/;"	f
+s:process_added	.vim/plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^function! s:process_added(modifications, from_count, to_count, to_line) abort$/;"	f
+s:process_hunk	.vim/plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^function! s:process_hunk(bufnr, hunk) abort$/;"	f
+s:process_modified	.vim/plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^function! s:process_modified(modifications, from_count, to_count, to_line) abort$/;"	f
+s:process_modified_and_added	.vim/plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^function! s:process_modified_and_added(modifications, from_count, to_count, to_line) abort$/;"	f
+s:process_modified_and_removed	.vim/plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^function! s:process_modified_and_removed(modifications, from_count, to_count, to_line) abort$/;"	f
 s:process_options_file	.vim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^function! s:process_options_file(proj_dir, path) abort$/;"	f
+s:process_removed	.vim/plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^function! s:process_removed(modifications, from_count, to_count, to_line) abort$/;"	f
 s:progress_bar	.vim/autoload/plug.vim	/^function! s:progress_bar(line, bar, total)$/;"	f
 s:progress_opt	.vim/autoload/plug.vim	/^function! s:progress_opt(base)$/;"	f
 s:projects	.vim/plugged/vim-project/autoload/project/config.vim	/^let s:projects = {}$/;"	v
@@ -8538,6 +8671,7 @@ s:rel	.vim/plugged/vim-javascript/indent/javascript.vim	/^let s:rel = has('relti
 s:relative_path	.vim/plugged/vim-startify/autoload/startify.vim	/^let s:relative_path  = get(g:, 'startify_relative_path') ? ':~:.' : ':p:~'$/;"	v
 s:reload_plugins	.vim/autoload/plug.vim	/^function! s:reload_plugins()$/;"	f
 s:remove_rtp	.vim/autoload/plug.vim	/^function! s:remove_rtp()$/;"	f
+s:remove_signs	.vim/plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^function! s:remove_signs(bufnr, sign_ids, all_signs) abort$/;"	f
 s:remove_triggers	.vim/autoload/plug.vim	/^function! s:remove_triggers(name)$/;"	f
 s:renameBuffer	.vim/plugged/nerdtree/nerdtree_plugin/fs_menu.vim	/^function! s:renameBuffer(bufNum, newNodeName, isDirectory)$/;"	f
 s:reorg_rtp	.vim/autoload/plug.vim	/^function! s:reorg_rtp()$/;"	f
@@ -8558,9 +8692,9 @@ s:repo_tree	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:repo_t
 s:repo_user	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:repo_user() dict abort$/;"	f
 s:repos	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^let s:repos = {}$/;"	v
 s:request	.vim/plugged/ncm2/autoload/ncm2.vim	/^func! s:request(event, ...)$/;"	f
-s:resolve	.vim/plugged/vim-node/autoload/node/lib.vim	/^function! s:resolve(path)$/;"	f
-s:resolveFromDirectory	.vim/plugged/vim-node/autoload/node/lib.vim	/^function! s:resolveFromDirectory(path)$/;"	f
-s:resolveSuffix	.vim/plugged/vim-node/autoload/node/lib.vim	/^function! s:resolveSuffix(path)$/;"	f
+s:reset_summary	.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^function! s:reset_summary(bufnr) abort$/;"	f
+s:reset_tick	.vim/plugged/vim-gitgutter/autoload/gitgutter.vim	/^function! s:reset_tick(bufnr) abort$/;"	f
+s:restore_shell	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! s:restore_shell() abort$/;"	f
 s:retry	.vim/autoload/plug.vim	/^function! s:retry()$/;"	f
 s:reuseWin	.vim/plugged/nerdtree/autoload/nerdtree.vim	/^function! s:reuseWin(dir) abort$/;"	f
 s:revert	.vim/autoload/plug.vim	/^function! s:revert()$/;"	f
@@ -8574,6 +8708,7 @@ s:save_cpo	.vim/plugged/ultisnips/autoload/unite/sources/ultisnips.vim	/^let s:s
 s:save_cpo	.vim/plugged/ultisnips/ftplugin/snippets.vim	/^let s:save_cpo = &cpo$/;"	v
 s:save_cpo	.vim/plugged/vim-devicons/autoload/vimfiler/columns/devicons.vim	/^let s:save_cpo = &cpo$/;"	v
 s:save_cpo	.vim/plugged/vim-devicons/plugin/webdevicons.vim	/^let s:save_cpo = &cpo$/;"	v
+s:save_last_seen_change	.vim/plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^function! s:save_last_seen_change(bufnr) abort$/;"	f
 s:script_path	.vim/plugged/ale/autoload/ale/gradle.vim	/^let s:script_path = fnamemodify(resolve(expand('<sfile>:p')), ':h')$/;"	v
 s:section	.vim/autoload/plug.vim	/^function! s:section(flags)$/;"	f
 s:sectionmovement	.vim/plugged/vim-mustache-handlebars/ftplugin/mustache.vim	/^function! s:sectionmovement(pattern,flags,mode,count)$/;"	f
@@ -8583,7 +8718,9 @@ s:sep	.vim/plugged/ale/autoload/ale/python.vim	/^let s:sep = has('win32') ? '\\'
 s:sep	.vim/plugged/vim-project/syntax/project.vim	/^let s:sep = project#config#get_sep()$/;"	v
 s:sep	.vim/plugged/vim-startify/autoload/startify.vim	/^let s:sep = startify#get_separator()$/;"	v
 s:sep	.vim/plugged/vim-startify/syntax/startify.vim	/^let s:sep = startify#get_separator()$/;"	v
+s:separator	.vim/plugged/vim-gitgutter/autoload/gitgutter/debug.vim	/^function! s:separator()$/;"	f
 s:session_dir	.vim/plugged/vim-startify/autoload/startify.vim	/^let s:session_dir    = resolve(expand(get(g:, 'startify_session_dir',$/;"	v
+s:set	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^function! s:set(var, default) abort$/;"	f
 s:setCursorHold	.vim/plugged/vim-devicons/plugin/webdevicons.vim	/^function! s:setCursorHold()$/;"	f
 s:setDictionaries	.vim/plugged/vim-devicons/plugin/webdevicons.vim	/^function! s:setDictionaries()$/;"	f
 s:setSyntax	.vim/plugged/vim-devicons/plugin/webdevicons.vim	/^function! s:setSyntax()$/;"	f
@@ -8593,7 +8730,9 @@ s:set_custom_section	.vim/plugged/vim-startify/autoload/startify.vim	/^function!
 s:set_mappings	.vim/plugged/vim-startify/autoload/startify.vim	/^function! s:set_mappings() abort$/;"	f
 s:set_mark	.vim/plugged/vim-startify/autoload/startify.vim	/^function! s:set_mark(type, ...) abort$/;"	f
 s:set_match_words	.vim/plugged/ultisnips/ftplugin/snippets.vim	/^  let s:set_match_words = 1$/;"	v
+s:set_path	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! s:set_path(bufnr, path)$/;"	f
 s:setup	.vim/plugged/vim-project/autoload/project/config.vim	/^function! s:setup() abort$/;"	f
+s:setup_maps	.vim/plugged/vim-gitgutter/autoload/gitgutter.vim	/^function! s:setup_maps()$/;"	f
 s:shellesc	.vim/autoload/plug.vim	/^function! s:shellesc(arg)$/;"	f
 s:shellesc	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:shellesc(arg) abort$/;"	f
 s:shellesc_cmd	.vim/autoload/plug.vim	/^function! s:shellesc_cmd(arg)$/;"	f
@@ -8607,6 +8746,7 @@ s:show_files	.vim/plugged/vim-startify/autoload/startify.vim	/^function! s:show_
 s:show_lists	.vim/plugged/vim-startify/autoload/startify.vim	/^function! s:show_lists(lists) abort$/;"	f
 s:show_sessions	.vim/plugged/vim-startify/autoload/startify.vim	/^function! s:show_sessions() abort$/;"	f
 s:show_special	.vim/plugged/vim-startify/autoload/startify.vim	/^let s:show_special   = get(g:, 'startify_enable_special', 1)$/;"	v
+s:signs	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function s:signs(filename)$/;"	f
 s:skip_context_id	.vim/plugged/ncm2/autoload/ncm2.vim	/^let s:skip_context_id = 0$/;"	v
 s:skip_expr	.vim/plugged/vim-javascript/indent/javascript.vim	/^let s:skip_expr = "s:SynAt(line('.'),col('.')) =~? b:syng_strcom"$/;"	v
 s:skip_tick	.vim/plugged/ncm2/autoload/ncm2.vim	/^let s:skip_tick = []$/;"	v
@@ -8624,12 +8764,14 @@ s:sources	.vim/plugged/ncm2/autoload/ncm2.vim	/^let s:sources = {}$/;"	v
 s:sources_override	.vim/plugged/ncm2/autoload/ncm2.vim	/^let s:sources_override = {}$/;"	v
 s:spawn	.vim/autoload/plug.vim	/^function! s:spawn(name, cmd, opts)$/;"	f
 s:split_rtp	.vim/autoload/plug.vim	/^function! s:split_rtp()$/;"	f
+s:stage	.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^function! s:stage(hunk_diff)$/;"	f
 s:stage_info	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:stage_info(lnum) abort$/;"	f
 s:startbcol	.vim/plugged/ncm2/autoload/ncm2.vim	/^let s:startbcol = 1$/;"	v
 s:status	.vim/autoload/plug.vim	/^function! s:status()$/;"	f
 s:status_load	.vim/autoload/plug.vim	/^function! s:status_load(lnum)$/;"	f
 s:status_update	.vim/autoload/plug.vim	/^function! s:status_update() range$/;"	f
 s:strip	.vim/plugged/vim-devicons/plugin/webdevicons.vim	/^function! s:strip(input)$/;"	f
+s:strip_trailing_new_line	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! s:strip_trailing_new_line(line) abort$/;"	f
 s:sub	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:sub(str,pat,rep) abort$/;"	f
 s:subscope_detectors	.vim/plugged/ncm2/autoload/ncm2.vim	/^let s:subscope_detectors = {}$/;"	v
 s:suite	.vim/plugged/vim-php-cs-fixer/tests/misc.vim	/^let s:suite  = themis#suite('vim-php-cs-fixer')$/;"	v
@@ -8642,6 +8784,7 @@ s:suite.phpdocsTest	.vim/plugged/vim-php-cs-fixer/tests/misc.vim	/^function! s:s
 s:suite.semicolon_after_instructionNo_unneeded_control_parentheses	.vim/plugged/vim-php-cs-fixer/tests/misc.vim	/^function! s:suite.semicolon_after_instructionNo_unneeded_control_parentheses() abort "{{{$/;"	f
 s:suite.simplified_null_returnNo_useless_returnNo_whitespace_in_blank_lineBlank_line_before_returnNo_extra_consecutive_blank_lines	.vim/plugged/vim-php-cs-fixer/tests/misc.vim	/^function! s:suite.simplified_null_returnNo_useless_returnNo_whitespace_in_blank_lineBlank_line_b/;"	f
 s:suite.single_import_per_statementOrdered_imports	.vim/plugged/vim-php-cs-fixer/tests/misc.vim	/^function! s:suite.single_import_per_statementOrdered_imports() abort "{{{$/;"	f
+s:supports_star	.vim/plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^let s:supports_star = v:version > 703 || (v:version == 703 && has("patch596"))$/;"	v
 s:sw	.vim/plugged/vim-javascript/indent/javascript.vim	/^  function s:sw()$/;"	f
 s:switch_in	.vim/autoload/plug.vim	/^function! s:switch_in()$/;"	f
 s:switch_out	.vim/autoload/plug.vim	/^function! s:switch_out(...)$/;"	f
@@ -8649,10 +8792,16 @@ s:symbol_map	.vim/plugged/ale/autoload/ale/symbol.vim	/^let s:symbol_map = {}$/;
 s:syntax	.vim/autoload/plug.vim	/^function! s:syntax()$/;"	f
 s:system	.vim/autoload/plug.vim	/^function! s:system(cmd, ...)$/;"	f
 s:system_chomp	.vim/autoload/plug.vim	/^function! s:system_chomp(...)$/;"	f
+s:t_string	.vim/plugged/vim-gitgutter/autoload/gitgutter.vim	/^let s:t_string = type('')$/;"	v
+s:temp_buffer	.vim/plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^let s:temp_buffer = tempname()$/;"	v
 s:temp_dir	.vim/plugged/ale/autoload/ale/handlers/haskell.vim	/^let s:temp_dir = fnamemodify(ale#util#Tempname(), ':h')$/;"	v
 s:temp_dir	.vim/plugged/ale/autoload/ale/path.vim	/^let s:temp_dir = ale#path#Simplify(fnamemodify(ale#util#Tempname(), ':h'))$/;"	v
 s:temp_files	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^  let s:temp_files = {}$/;"	v
+s:temp_from	.vim/plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^let s:temp_from = tempname()$/;"	v
 s:temp_regex_prefix	.vim/plugged/ale/autoload/ale/handlers/haskell.vim	/^let s:temp_regex_prefix =$/;"	v
+s:test_repo	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^let s:test_repo   = s:current_dir.'\/test-repo'$/;"	v
+s:tests	.vim/plugged/vim-gitgutter/test/runner.vim	/^  let s:tests = filter(s:tests, 'v:val =~ argv(1)')$/;"	v
+s:tests	.vim/plugged/vim-gitgutter/test/runner.vim	/^let s:tests = split(substitute(@q, 'function \\(\\k*()\\)', '\\1', 'g'))$/;"	v
 s:tf	.vim/plugged/vim-startify/autoload/startify.vim	/^let s:tf             = exists('g:startify_transformations')$/;"	v
 s:throw	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:throw(string) abort$/;"	f
 s:tick	.vim/autoload/plug.vim	/^function! s:tick()$/;"	f
@@ -8670,11 +8819,13 @@ s:transform	.vim/plugged/vim-startify/autoload/startify.vim	/^function s:transfo
 s:tree_up_dir_line	.vim/plugged/nerdtree/syntax/nerdtree.vim	/^let s:tree_up_dir_line = '.. (up a dir)'$/;"	v
 s:trees	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^let s:trees = {}$/;"	v
 s:trigger_character_map	.vim/plugged/ale/autoload/ale/completion.vim	/^let s:trigger_character_map = {$/;"	v
+s:trigger_gitgutter	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function s:trigger_gitgutter()$/;"	f
 s:triggers	.vim/autoload/plug.vim	/^let s:triggers = get(s:, 'triggers', {})$/;"	v
 s:trim	.vim/autoload/plug.vim	/^function! s:trim(str)$/;"	f
 s:try_rnotify	.vim/plugged/ncm2/autoload/ncm2.vim	/^func! s:try_rnotify(event, ...)$/;"	f
+s:unc_path	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! s:unc_path(bufnr)$/;"	f
+s:undo	.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^function! s:undo(hunk_diff)$/;"	f
 s:unicode	.vim/plugged/vim-startify/autoload/startify/fortune.vim	/^let s:unicode = &encoding == 'utf-8' && get(g:, 'startify_fortune_use_unicode')$/;"	v
-s:uniq	.vim/plugged/vim-node/autoload/node/lib.vim	/^function! s:uniq(list)$/;"	f
 s:unite_source	.vim/plugged/ultisnips/autoload/unite/sources/ultisnips.vim	/^let s:unite_source = {$/;"	v
 s:unite_source	.vim/plugged/ultisnips/autoload/unite/sources/ultisnips.vim	/^let s:unite_source.action_table.expand = {$/;"	v
 s:unite_source	.vim/plugged/ultisnips/autoload/unite/sources/ultisnips.vim	/^let s:unite_source.action_table.preview = {$/;"	v
@@ -8701,22 +8852,27 @@ s:update_tags	.vim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! s:up
 s:update_vim	.vim/autoload/plug.vim	/^function! s:update_vim()$/;"	f
 s:upgrade	.vim/autoload/plug.vim	/^function! s:upgrade()$/;"	f
 s:upgrade_specs	.vim/autoload/plug.vim	/^function! s:upgrade_specs()$/;"	f
+s:upsert_new_gitgutter_signs	.vim/plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^function! s:upsert_new_gitgutter_signs(bufnr, modified_lines) abort$/;"	f
+s:use_known_shell	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! s:use_known_shell() abort$/;"	f
 s:var	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^let s:var = '\\%(%\\|#<\\=\\d\\+\\|##\\=\\)'$/;"	v
 s:version	.vim/plugged/vim-devicons/plugin/webdevicons.vim	/^let s:version = '0.10.0'$/;"	v
 s:version_cache	.vim/plugged/ale/autoload/ale/semver.vim	/^let s:version_cache = {}$/;"	v
 s:version_requirement	.vim/autoload/plug.vim	/^function! s:version_requirement(val, min)$/;"	f
 s:vim8	.vim/autoload/plug.vim	/^let s:vim8 = has('patch-8.0.0039') && exists('*job_start')$/;"	v
+s:vim_version	.vim/plugged/vim-gitgutter/autoload/gitgutter/debug.vim	/^function! s:vim_version()$/;"	f
 s:warmup	.vim/plugged/ncm2/autoload/ncm2.vim	/^func! s:warmup(...)$/;"	f
 s:warn	.vim/autoload/plug.vim	/^function! s:warn(cmd, msg)$/;"	f
 s:warn	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:warn(str) abort$/;"	f
 s:warn	.vim/plugged/vim-startify/autoload/startify.vim	/^function! s:warn(msg) abort$/;"	f
 s:wildignores_options_path	.vim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^let s:wildignores_options_path = ''$/;"	v
 s:winshell	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:winshell() abort$/;"	f
+s:winshell	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! s:winshell()$/;"	f
 s:with_cd	.vim/autoload/plug.vim	/^function! s:with_cd(cmd, dir)$/;"	f
 s:word_regex_list	.vim/plugged/ale/ale_linters/vim/vint.vim	/^let s:word_regex_list = [$/;"	v
 s:worktree_for_dir	.vim/plugged/vim-fugitive/plugin/fugitive.vim	/^let s:worktree_for_dir = {}$/;"	v
 s:wrap_around	.vim/plugged/vim-mustache-handlebars/ftplugin/mustache.vim	/^function! s:wrap_around()$/;"	f
 s:wrap_inside	.vim/plugged/vim-mustache-handlebars/ftplugin/mustache.vim	/^function! s:wrap_inside()$/;"	f
+s:write_buffer	.vim/plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^function! s:write_buffer(bufnr, file)$/;"	f
 s:write_triggered_update_tags	.vim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! s:write_triggered_update_tags(bufno) abort$/;"	f
 s:z	.vim/plugged/vim-javascript/indent/javascript.vim	/^let s:z = has('patch-7.4.984') ? 'z' : ''$/;"	v
 save_mark	.vim/plugged/ultisnips/pythonx/UltiSnips/_vim.py	/^def save_mark(name):$/;"	f
@@ -8795,8 +8951,6 @@ setUp	.vim/plugged/ultisnips/test/vim_test_case.py	/^    def setUp(self):$/;"	m	
 set_colors_workspace	.vim/plugged/vim-workspace/plugin/workspace.vim	/^augroup set_colors_workspace$/;"	a
 set_cursor_from_pos	.vim/plugged/ultisnips/pythonx/UltiSnips/_vim.py	/^def set_cursor_from_pos(pos):$/;"	f
 set_mark_from_pos	.vim/plugged/ultisnips/pythonx/UltiSnips/_vim.py	/^def set_mark_from_pos(name, pos):$/;"	f
-set_node_version	.vim/plugged/vim-node/test/autoload/lib_test.rb	/^  def set_node_version(version)$/;"	f
-setup	.vim/plugged/vim-node/test/helper.rb	/^  def setup$/;"	f	module:WithTemporaryDirectory
 setupAllFiles	.vim/plugged/phpactor/tests/Unit/Extension/ClassMover/Application/Finder/FileFinderTest.php	/^    private function setupAllFiles()$/;"	f	class:Phpactor\\Tests\\Unit\\Extension\\ClassMover\\Application\\Finder\\FileFinderTest
 setup_other_plugins	.vim/plugged/ultisnips/test_all.py	/^def setup_other_plugins(all_plugins):$/;"	f
 shell_in_repro	.vim/plugged/ultisnips/Makefile	/^shell_in_repro:$/;"	t
@@ -9288,12 +9442,12 @@ source_path	.vim/plugged/phpactor/lib/Extension/ContextMenu/menu.json	/^        
 source_path	.vim/plugged/phpactor/lib/Extension/ContextMenu/menu.json	/^                "source_path": "%path%"$/;"	s	object:class.navigate.parameters
 space_before_function_paren	.vim/plugged/vim-snippets/pythonx/javascript_snippets.py	/^def space_before_function_paren(snip):$/;"	f
 spaces_to_indent	.vim/plugged/ultisnips/pythonx/UltiSnips/indent_util.py	/^    def spaces_to_indent(self, indent):$/;"	m	class:IndentUtil
-spec	.vim/plugged/vim-node/Makefile	/^spec: $(shell find . -name "*_test.rb")$/;"	t
 split_at_whitespace	.vim/plugged/ultisnips/pythonx/UltiSnips/snippet/definition/_base.py	/^def split_at_whitespace(string):$/;"	f
 src/Blog/Post.php	.vim/plugged/phpactor/doc/refactorings.md	/^# src\/Blog\/Post.php$/;"	c
 src/Cms/Page.php	.vim/plugged/phpactor/doc/refactorings.md	/^# src\/Cms\/Page.php$/;"	c
 src/Writer.php	.vim/plugged/phpactor/doc/refactorings.md	/^# src\/Writer.php$/;"	c
 start	.vim/plugged/ultisnips/pythonx/UltiSnips/text_objects/_base.py	/^    def start(self):$/;"	m	class:TextObject
+start	.vim/plugged/vim-gitgutter/unplace.vim	/^let start = reltime()$/;"	v
 startify	.vim/plugged/vim-startify/plugin/startify.vim	/^augroup startify$/;"	a
 startify#debug	.vim/plugged/vim-startify/autoload/startify.vim	/^function! startify#debug()$/;"	f
 startify#fortune#boxed	.vim/plugged/vim-startify/autoload/startify/fortune.vim	/^function! startify#fortune#boxed(...) abort$/;"	f
@@ -9335,6 +9489,7 @@ string\\name\\short	.vim/plugged/phpactor/lib/Extension/WorseReflectionExtra/App
 substr_fuzzy_match	.vim/plugged/ncm2/pythonx/ncm2_matcher/substrfuzzy.py	/^def substr_fuzzy_match(b, s, abbrs, chcmp):$/;"	f
 suggestions	.vim/plugged/phpactor/lib/Extension/CodeTransform/Rpc/ImportClassHandler.php	/^    private function suggestions(string $name)$/;"	f	class:Phpactor\\Extension\\CodeTransform\\Rpc\\ImportClassHandler
 suggestions	.vim/plugged/phpactor/tests/Unit/Extension/Completion/LanguageServer/CompletionHandlerTest.php	/^            private $suggestions;$/;"	v	class:Phpactor\\Tests\\Unit\\Extension\\Completion\\LanguageServer\\CompletionHandlerTest::create::AnonymousClass1
+summary	.vim/plugged/vim-gitgutter/test/runner.vim	/^let summary = [$/;"	v
 suspend_proxy_edits	.vim/plugged/ultisnips/pythonx/UltiSnips/buffer_proxy.py	/^def suspend_proxy_edits():$/;"	f
 sxq_save	.vim/plugged/vim-php-cs-fixer/autoload/php_cs_fixer.vim	/^    let sxq_save = &shellxquote$/;"	v
 symbolContext	.vim/plugged/phpactor/tests/Unit/Extension/WorseReflection/Rpc/GotoDefinitionHandlerTest.php	/^    private $symbolContext;$/;"	v	class:Phpactor\\Tests\\Unit\\Extension\\WorseReflection\\Rpc\\GotoDefinitionHandlerTest
@@ -9346,12 +9501,9 @@ symfony/process	.vim/plugged/phpactor/composer.json	/^        "symfony\/process"
 symfony/yaml	.vim/plugged/phpactor/composer.json	/^        "symfony\/yaml": "^3.3",$/;"	s	object:require
 t	.vim/plugged/ale/ftplugin/ale-preview-selection.vim	/^noremap <buffer> t :call ale#preview#OpenSelectionInTab()<CR>$/;"	m
 t	.vim/plugged/vim-startify/autoload/startify.vim	/^  nnoremap <buffer><nowait><silent> t             :call <sid>set_mark('T')<cr>$/;"	m
-tag	.vim/plugged/vim-node/Makefile	/^tag:$/;"	t
 tearDown	.vim/plugged/phpactor/tests/Integration/ApplicationTest.php	/^    public function tearDown()$/;"	f	class:Phpactor\\Tests\\Integration\\ApplicationTest
 tearDown	.vim/plugged/ultisnips/test/vim_test_case.py	/^    def tearDown(self):$/;"	m	class:VimTestCase
-teardown	.vim/plugged/vim-node/test/helper.rb	/^  def teardown$/;"	f	module:WithTemporaryDirectory
 test	.vim/plugged/ncm2/pythonx/ncm2_matcher/abbrfuzzy.py	/^def test():$/;"	f
-test	.vim/plugged/vim-node/Makefile	/^test: spec$/;"	t
 testAsksForAliasIfClassAlreadyUsed	.vim/plugged/phpactor/tests/Unit/Extension/CoreTransform/Rpc/ImportClassHandlerTest.php	/^    public function testAsksForAliasIfClassAlreadyUsed()$/;"	f	class:Phpactor\\Tests\\Unit\\Extension\\CoreTransform\\Rpc\\ImportClassHandlerTest
 testBar	.vim/plugged/phpactor/tests/Assets/Projects/PhpUnit/tests/FoobarTest.php	/^    public function testBar()$/;"	f	class:Tests\\FoobarTest
 testByTypeProperty	.vim/plugged/phpactor/tests/System/Extension/ClassMover/Command/ReferencesMemberCommandTest.php	/^    public function testByTypeProperty()$/;"	f	class:Phpactor\\Tests\\System\\Extension\\ClassMover\\Command\\ReferencesMemberCommandTest
@@ -9516,7 +9668,6 @@ to_vim	.vim/plugged/ultisnips/pythonx/UltiSnips/text_objects/_snippet_instance.p
 to_vim_cursor	.vim/plugged/ultisnips/pythonx/UltiSnips/snippet/definition/_base.py	/^    def to_vim_cursor(self):$/;"	m	class:_SnippetUtilCursor
 tokenize	.vim/plugged/ultisnips/pythonx/UltiSnips/snippet/parsing/_lexer.py	/^def tokenize(text, indent, offset, allowed_tokens):$/;"	f
 tokenize_snippet_text	.vim/plugged/ultisnips/pythonx/UltiSnips/snippet/parsing/_base.py	/^def tokenize_snippet_text(snippet_instance, text, indent,$/;"	f
-touch	.vim/plugged/vim-node/test/helper.rb	/^def touch(path, contents = nil)$/;"	f
 tox	.vim/plugged/ale/test/command_callback/python_paths/namespace_package_tox/tox.ini	/^[tox]$/;"	s
 traitFilePaths	.vim/plugged/phpactor/lib/Extension/ClassMover/Application/Finder/FileFinder.php	/^    private function traitFilePaths(ReflectionClass $reflection, $filePaths)$/;"	f	class:Phpactor\\Extension\\ClassMover\\Application\\Finder\\FileFinder
 transform	.vim/plugged/phpactor/lib/Extension/CodeTransform/Application/Transformer.php	/^    private $transform;$/;"	v	class:Phpactor\\Extension\\CodeTransform\\Application\\Transformer
