@@ -1,4 +1,4 @@
-call plug#begin('/etc/.vim/plugged')
+call plug#begin('/etc/git/dotfiles/vim_config/.vim/plugged')
 
 "Main git wrapper 
 Plug 'tpope/vim-fugitive' 
@@ -43,6 +43,9 @@ Plug 'stephpy/vim-php-cs-fixer'
 Plug 'ncm2/ncm2'
 Plug 'phpactor/phpactor'
 Plug 'phpactor/ncm2-phpactor'
+
+"Universal Ctags
+Plug 'universal-ctags/ctags'
 
 "Universal ctags wrapper
 Plug 'ludovicchabant/vim-gutentags'

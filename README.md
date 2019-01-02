@@ -10,26 +10,31 @@ Now, I am going to track these config files. So instead of creating them
 in the actual global locations i.e. /etc/vimrc, we are going to create 
 a git folder and place them there. 
 
-mkdir -p  /etc/git/dotfiles/.vim/autoload
-mkdir 		/etc/git/dotfiles/.vim/colors
-mkdir 		/etc/git/dotfiles/.vim/plugged
-touch			/etc/git/dotfiles/vimrc
-touch			/etc/git/dotfiles/.vimrc.plug
+mkdir -p  /etc/git/dotfiles/vim_config/.vim/autoload
+mkdir 		/etc/git/dotfiles/vim_config/.vim/colors
+mkdir 		/etc/git/dotfiles/vim_config/.vim/plugged
+touch			/etc/git/dotfiles/vim_config/vimrc
+touch			/etc/git/dotfiles/vim_config/.vimrc.plug
 
 |--- Plugins ---|
 
 Download vim-plug:
 
-sudo curl -fLo /etc/git/dotfiles/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+sudo curl -fLo /etc/git/dotfiles/vim_config/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+mkdir /etc/git/dotfiles/vim_config/.vim/plugged
 
 |--- Symlinks ---|
 
 After that we need to symlink our /etc/.vim directories and /etc/vimrc file:
 
 Vim:
-ln -s /etc/git/dotfiles/.vim /etc/.vim
-ln -s /etc/git/dotfiles/vimrc /etc/vimrc
-ln -s /etc/git/dotfiles/.vimrc.plug /etc/.vimrc.plug
+ln -s /etc/git/dotfiles/vim_config/.vim /etc/.vim
+/usr/share/vim/vimfiles/.vim
+ln -s /etc/git/dotfiles/vim_config/vimrc /etc/vimrc
+ln -s /etc/git/dotfiles/vim_config/.vimrc.plug /etc/.vimrc.plug
+ln -s /etc/git/dotfiles/vim_config/.vim/plugged /usr/share/vim/vimfiles/pluggedj
+sudo cp /etc/git/dotfiles/vim_config/.vim/colors/access_colors.vim /usr/share/vim/vim81/colors
 
 NeoVim:
 (we can't link the full .vim dir because it causes a circular link):

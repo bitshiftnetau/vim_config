@@ -45,6 +45,8 @@ endif
 colorscheme access_colors
 "colorscheme default
 
+"background (transparent to match tilda)
+hi Normal guibg=NONE ctermbg=NONE
 
 " Helps force plug-ins to load correctly when it is turned back on below.
 filetype off
