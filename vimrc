@@ -37,7 +37,7 @@ endif
 "set ttimeoutlen=0
 "maptimeout 0
 
-
+set noswapfile
 "colorscheme 
 "set background=dark
 "set termguicolors
@@ -127,6 +127,9 @@ set autowrite " Automatically save before commands like :next and :make
 set mouse=a " Enable mouse usage (all modes)
 set clipboard=unnamedplus
 
+" OmniCompletion
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
 
 "----------------------------------------------------------------------
 "--------------------------- KEYBINDINGS ------------------------------
@@ -240,8 +243,8 @@ let g:gitgutter_max_signs = 500  " maximum number of changes that will be
 let g:gitgutter_map_keys = 0 " don't setup any default mappings 
 
 " View next or previous hunk when adding files
-nmap <C-j> <Plug>GitGutterNextHunk
-nmap <C-k> <Plug>GitGutterPrevHunk
+"nmap <C-j> <Plug>GitGutterNextHunk
+"nmap <C-k> <Plug>GitGutterPrevHunk
 "nmap <Leader>ha <Plug>GitGutterStageHunk
 "nmap <Leader>hr <Plug>GitGutterUndoHunk
 "nmap <Leader>hv <Plug>GitGutterPreviewHunk
