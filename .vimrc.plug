@@ -12,8 +12,11 @@ Plug 'mattn/emmet-vim'
 "Definitions not yet shipped with stock vim
 Plug 'justinmk/vim-syntax-extra'
 
-"Polyglot
-"Plug 'sheerun/vim-ployglot'
+"Polyglot language pack
+Plug 'sheerun/vim-polyglot'
+
+"SLOC counter
+Plug 'vmchale/polyglot-vim'
 
 "Live view of git changes
 Plug 'airblade/vim-gitgutter'
@@ -33,6 +36,15 @@ Plug 'ryanoasis/vim-devicons'
 "Project and startify (project control/document root and project splash page)
 Plug 'amiorin/vim-project'
 Plug 'mhinz/vim-startify'
+
+"adds common CL commands as native to vim
+Plug 'tpope/vim-eunuch'
+
+"multiple inserts and deletes at one time
+Plug 'terryma/vim-multiple-cursors'
+
+"colored status line
+Plug 'itchyny/lightline.vim'
 
 "vim-workspace (tabs and other features within the workspace)
 Plug 'bagrat/vim-workspace'

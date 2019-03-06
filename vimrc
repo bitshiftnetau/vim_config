@@ -32,7 +32,6 @@ endif
 " Set compatibility to Vim only.
 " set nocompatible
 
-
 "set timeoutlen=1000
 "set ttimeoutlen=0
 "maptimeout 0
@@ -42,7 +41,9 @@ set noswapfile
 "set background=dark
 "set termguicolors
 "colorscheme material-monokai
-colorscheme access_colors
+
+"colorscheme access_colors
+hi MatchParen cterm=underline ctermbg=none ctermfg=red
 "colorscheme default
 
 "background (transparent to match tilda)
@@ -69,7 +70,6 @@ set pastetoggle=<F2>
 set formatoptions=tcqrn1
 set tabstop=2
 set shiftwidth=2
-set softtabstop=2
 set expandtab
 set noshiftround
 
@@ -94,8 +94,9 @@ set showcmd
 set matchpairs+=<:>
 
 " Display different types of white spaces.
-set list
-set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
+set nolist
+"set listchars=trail:•,extends:#,nbsp:.
+"tab:›\ ,trail:•,extends:#,nbsp:.
 
 " Show line numbers
 set number
@@ -128,7 +129,7 @@ set mouse=a " Enable mouse usage (all modes)
 set clipboard=unnamedplus
 
 " OmniCompletion
-filetype plugin on
+filetype plugin indent on
 set omnifunc=syntaxcomplete#Complete
 
 "----------------------------------------------------------------------
@@ -137,6 +138,9 @@ set omnifunc=syntaxcomplete#Complete
 
 
 " ------------ Vim --------------
+
+"Clear highlight of last search
+:nnoremap <silent> <CR> :nohlsearch<CR><CR>
 
 "Exit out of terminal
 tnoremap <C-x> <C-w>:bd!<CR>j
@@ -239,7 +243,7 @@ nnoremap N :C-]j
 
 set updatetime=50 " speed of update 
 let g:gitgutter_max_signs = 500  " maximum number of changes that will be
-                                 " shown in a given file
+                               " shown in a given file
 let g:gitgutter_map_keys = 0 " don't setup any default mappings 
 
 " View next or previous hunk when adding files
@@ -268,9 +272,9 @@ let g:gitgutter_map_keys = 0 " don't setup any default mappings
 "To always have the sign column, add to your vimrc:
 
 if exists('&signcolumn')  " Vim 7.4.2201
-  set signcolumn=yes
+set signcolumn=yes
 else
-  let g:gitgutter_sign_column_always = 1
+let g:gitgutter_sign_column_always = 1
 endif
 
 "To customise the colours, set up the following highlight groups in your
@@ -303,8 +307,24 @@ endif
 "GitGutterChangeDeleteLine " default: links to GitGutterChangeLineDefault, i.e. DiffChange
 
 
+"----------------------------- Devicons -----------------------------
+set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete\ 12
+"set encoding=utf-8
 
 
+
+"----------------------- vim-multiple-cursors -----------------------
+let g:multi_cursor_use_default_mapping=0
+
+" Default mapping
+"let g:multi_cursor_start_word_key      = '<C-n>'
+"let g:multi_cursor_select_all_word_key = '<A-n>'
+"let g:multi_cursor_start_key           = 'g<C-n>'
+"let g:multi_cursor_select_all_key      = 'g<A-n>'
+"let g:multi_cursor_next_key            = '<C-n>'
+"let g:multi_cursor_prev_key            = '<C-p>'
+"let g:multi_cursor_skip_key            = '<C-x>'
+"let g:multi_cursor_quit_key            = '<Esc>'
 
 "--------------------------- NERDTree -------------------------------
 nnoremap @ :NERDTreeToggle<CR>
@@ -324,20 +344,6 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 "let g:UltiSnipsEditSplit="vertical"
 
 
-
-"---------------------------- UltiSnips -------------------------------
-
-" Trigger configuration. 
-" Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-
-" If you want :UltiSnipsEdit to split your window.
-"let g:UltiSnipsEditSplit="vertical"
-
-
-
 "-------------------------- YouCompleteMe ------------------------------
 
 "Default YouCompleteMe conflicts with default UltiSnips tab key usage. 
@@ -345,12 +351,10 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 "a different key, but I found this unsatisfactory. Rather than using a 
 "different key for UltiSnips it’s better to make YCM not use Tab key. 
 "To do this, add two following lines to your .vimrc:
-let g:ycm_key_list_select_completion=[]
-let g:ycm_key_list_previous_completion=[]
+"let g:ycm_key_list_select_completion=[]
+"let g:ycm_key_list_previous_completion=[]
 "Don’t worry, you still be able to cycle through completion 
 "with <C-N> and <C-P> keys.
-
-
 
 
 "-------------------------- Vim-workspace ------------------------------
@@ -359,18 +363,40 @@ let g:workspace_use_devicons = 1
 
 nnoremap <Tab> :WSNext<CR>
 nnoremap <S-Tab> :WSPrev<CR>
-nnoremap <Leader><Tab> :WSClose<CR>
-nnoremap <Leader><S-Tab> :WSClose!<CR>
-nnoremap <C-t> :WSTabNew<CR>
+"nnoremap <Leader><Tab> :WSClose<CR>
+"nnoremap <Leader><S-Tab> :WSClose!<CR>
+"nnoremap <C-t> :WSTabNew<CR>
 
 "cabbrev bonly WSBufOnly
 
 let g:workspace_powerline_separators = 1
 let g:workspace_tab_icon = "\uf00a"
-"let g:workspace_left_trunc_icon = "\uf0a8"
-"let g:workspace_right_trunc_icon = "\uf0a9"
+let g:workspace_left_trunc_icon = "\uf0a8"
+let g:workspace_right_trunc_icon = "\uf0a9"
 
 
+"-------------------------- Vim-lightline ------------------------------
+
+"let g:lightline = {
+"  \     'active': {
+"  \         'left': [['mode', 'paste' ], ['readonly', 'filename', 'modified']],
+"  \         'right': [['lineinfo'], ['percent'], ['fileformat', 'fileencoding']]
+"  \     }
+"  \ }
+
+let g:lightline = {
+      \ 'colorscheme': 'solarized dark',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'fugitive#head'
+      \ },
+      \ }
+
+"turn off tab-line (the the top line)
+let g:lightline.enable = { 'tabline': 0 }
 
 
 
