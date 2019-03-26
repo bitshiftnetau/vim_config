@@ -18,14 +18,6 @@ runtime! archlinux.vim
 let skip_defaults_vim=1
 
 "-------------------------------------
-"---------- PLUGIN FILE --------------
-"-------------------------------------
-
-if filereadable(expand("/etc/.vimrc.plug"))
-    source /etc/.vimrc.plug
-endif
-
-"-------------------------------------
 "-------- VIM CORE CONFIG ------------
 "-------------------------------------
 
@@ -129,13 +121,14 @@ set mouse=a " Enable mouse usage (all modes)
 set clipboard=unnamedplus
 
 " OmniCompletion
-filetype plugin indent on
-set omnifunc=syntaxcomplete#Complete
+"filetype plugin indent on
+"set omnifunc=syntaxcomplete#Complete
+
+
 
 "----------------------------------------------------------------------
 "--------------------------- KEYBINDINGS ------------------------------
 "----------------------------------------------------------------------
-
 
 " ------------ Vim --------------
 
@@ -160,6 +153,8 @@ nnoremap <C-F6> :PlugUpdate<CR>
 nnoremap <C-F7> :PlugStatus<CR>
 nnoremap <C-F8> :PlugClean<CR>
 
+
+
 " ---------  NeoVim ------------
 
 "Exit out of terminal
@@ -178,6 +173,8 @@ nnoremap <F29> :PlugInstall<CR>
 nnoremap <F30> :PlugUpdate<CR>
 nnoremap <F31> :PlugStatus<CR>
 nnoremap <F32> :PlugClean<CR>
+
+
 
 " ---------- *Vim AGNOSTIC ------------
 
@@ -233,9 +230,12 @@ nnoremap N :C-]j
 
 "Paste into terminal
 
+
+
 "----------------------------------------------------------------------
 "--------------------- GLOBAL PLUGIN CONFIG ---------------------------
 "----------------------------------------------------------------------
+
 
 "----------------------- vim-gitgutter ----------------------------
 
@@ -307,11 +307,11 @@ endif
 "GitGutterChangeDeleteLine " default: links to GitGutterChangeLineDefault, i.e. DiffChange
 
 
+
 "----------------------------- Devicons -----------------------------
-set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete\ 12
+"let g:airline_powerline_fonts = 1
 "set encoding=utf-8
-
-
+set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete\ 12
 
 "----------------------- vim-multiple-cursors -----------------------
 let g:multi_cursor_use_default_mapping=0
@@ -326,11 +326,19 @@ let g:multi_cursor_use_default_mapping=0
 "let g:multi_cursor_skip_key            = '<C-x>'
 "let g:multi_cursor_quit_key            = '<Esc>'
 
+
+
 "--------------------------- NERDTree -------------------------------
 nnoremap @ :NERDTreeToggle<CR>
 autocmd VimEnter * NERDTree<CR>
 
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
+
+":hi Directory guifg=#FF0000 ctermfg=red
 
 "--------------------------- UltiSnips ------------------------------
 
@@ -344,6 +352,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 "let g:UltiSnipsEditSplit="vertical"
 
 
+
 "-------------------------- YouCompleteMe ------------------------------
 
 "Default YouCompleteMe conflicts with default UltiSnips tab key usage. 
@@ -351,29 +360,13 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 "a different key, but I found this unsatisfactory. Rather than using a 
 "different key for UltiSnips it’s better to make YCM not use Tab key. 
 "To do this, add two following lines to your .vimrc:
-"let g:ycm_key_list_select_completion=[]
-"let g:ycm_key_list_previous_completion=[]
+let g:ycm_key_list_select_completion=[]
+let g:ycm_key_list_previous_completion=[]
 "Don’t worry, you still be able to cycle through completion 
 "with <C-N> and <C-P> keys.
-
-
-"-------------------------- Vim-workspace ------------------------------
-"
-let g:workspace_use_devicons = 1
-
-nnoremap <Tab> :WSNext<CR>
-nnoremap <S-Tab> :WSPrev<CR>
-"nnoremap <Leader><Tab> :WSClose<CR>
-"nnoremap <Leader><S-Tab> :WSClose!<CR>
-"nnoremap <C-t> :WSTabNew<CR>
-
-"cabbrev bonly WSBufOnly
-
-let g:workspace_powerline_separators = 1
-let g:workspace_tab_icon = "\uf00a"
-let g:workspace_left_trunc_icon = "\uf0a8"
-let g:workspace_right_trunc_icon = "\uf0a9"
-
+let g:ycm_error_symbol = 'EE'
+let g:ycm_warning_symbol = 'WW'
+let g:ycm_global_ycm_extra_conf='/usr/lib/youcompleteme/.ycm_extra_conf.py'
 
 "-------------------------- Vim-lightline ------------------------------
 
@@ -398,6 +391,43 @@ let g:lightline = {
 "turn off tab-line (the the top line)
 let g:lightline.enable = { 'tabline': 0 }
 
+"-------------------------- Vim-buffet ------------------------------
+"
+let g:buffet_use_devicons = 1
+"let g:workspace_use_devicons = 1
+
+noremap <Tab> :bn<CR>
+noremap <S-Tab> :bp<CR>
+"noremap <Leader><Tab> :Bw<CR>
+"noremap <Leader><S-Tab> :Bw!<CR>
+"noremap <C-t> :tabnew split<CR>
+
+"cabbrev bonly WSBufOnly
+
+let g:buffet_separator = "|"
+let g:buffet_powerline_separators = 0
+let g:buffet_tab_icon = ">>"
+let g:buffet_left_trunc_icon = "\uf0a8"
+let g:buffet_right_trunc_icon = "\uf0a9"
+
+"BuffetCurrentBuffer - the current buffer.
+"BuffetActiveBuffer - an active buffer (a non-current buffer visible in a non-current window).
+"BuffetBuffer - a non-current and non-active buffer.
+"BuffetTrunc - the truncation indicator (count of truncated buffers from the left or right).
+"BuffetTab - a tab.
+
+"hi! TabLineFill ctermfg=195 ctermbg=54
+"hi! TabLine ctermfg=195 ctermbg=red
+"hi! TabLineSel ctermfg=Red ctermbg=Yellow
+
+
+function! g:BuffetSetCustomColors()
+    hi! BuffetCurrentBuffer cterm=NONE ctermbg=154 ctermfg=0
+    hi! BuffetActiveBuffer cterm=NONE ctermbg=154 ctermfg=0 
+    hi! BuffetBuffer ctermfg=195 ctermbg=54
+    hi! BuffetTrunc ctermfg=195 ctermbg=54
+    hi! BuffetTab ctermfg=195 ctermbg=54
+endfunction
 
 
 " -------------------------- vim-fugitive -------------------------------
@@ -415,16 +445,48 @@ nnoremap <C-F11> :Gcommit %
 nnoremap <F36> :Gcommit -a -m
 nnoremap <F37> :Gcommit %
 
+
+
 " -------------------------- Emmett -------------------------------------
 "
 let g:user_emmet_leader_key=','
-
-
-
-
-
 "let g:signify_vcs_list = 1
 "let g:signify_realtime = 1
+
+
+
+
+"----------------------------------------------------------------------
+"--------------------------- LINTERS ----------------------------------
+"----------------------------------------------------------------------
+
+"----------------------- ALE Linters ------------------------------
+
+"C
+"let g:ale_linters = {'c': 'all'}
+
+"Javascript
+"let g:ale_linters = {'javascript': ['eslint']}
+
+"----------------------- vim-lsp / Cquery -----------------------------
+
+"if executable('cquery')
+"   au User lsp_setup call lsp#register_server({
+"      \ 'name': 'cquery',
+"      \ 'cmd': {server_info->['cquery']},
+"      \ 'root_uri': {server_info->lsp#utils#path_to_uri(lsp#utils#find_nearest_parent_file_directory(lsp#utils#get_buffer_path(), 'compile_commands.json'))},
+"      \ 'initialization_options': { 'cacheDirectory': '/tmp/cquery/cache' },
+"      \ 'whitelist': ['c', 'cpp'],
+"      \ })
+"endif
+
+"-------------------------- Asyncomplete -------------------------
+
+"inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+"inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+"inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<cr>"
+
+"autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 
 "----------------------------------------------------------------------
 "--------------------- WORKSPACE / PROJECT ----------------------------
@@ -441,6 +503,7 @@ set exrc
 filetype on
 
 
+
 " --------- C Language ----------
 
 " C source and header filetype detection with doxygen
@@ -449,7 +512,6 @@ augroup project
     autocmd BufRead,BufNewFile *.h,*.c set filetype=c.doxygen
 augroup END
 
-
 "Vim has a gf command (and related, <C-W><C-F> to open in new tab) 
 "which opens a file, whose name is under or after the cursor. 
 "This feature is extremely useful for browsing header files.
@@ -457,7 +519,8 @@ augroup END
 "However, most projects have separated directory for include files. 
 "Thus, you should set Vim’s path option to contain a comma-separated 
 "list of directories to look for the file.
-let &path.="src/include, /usr/include/AL"
+let &path.="src/include, /usr/include/AL, /usr/include/sdks/gecko_sdk/platform/CMSIS/Include, /usr/include/sdks/gecko_sdk/platform/Device/SiliconLabs/EFM32ZG/Include, /usr/include/sdks/gecko_sdk/util/third_party/freertos/include, /usr/include/sdks/gecko_sdk/platform/emlib/inc, /usr/include/sdks/gecko_sdk/hardware/kit/EFM32ZG_STK3200, /usr/include/sdks/gecko_sdk/hardware/kit/common/bsp, /usr/arm-none-eabi/include, /usr/lib/gcc/arm-none-eabi/8.3.0/include, /usr/lib/gcc/arm-none-eabi/8.3.0/include-fixed, /srv/code/c/entertainment_IPS/src/application, /srv/code/c/entertainment_IPS/src/application/configs, /srv/code/c/entertainment_IPS/src/board/STK3200, /srv/code/c/entertainment_IPS/src/middleware, /srv/code/c/entertainment_IPS/src/HPI/, /srv/code/c/entertainment_IPS/src/HPI/host, /srv/code/c/entertainment_IPS/src/HPI/host/efm32zg222f32, /srv/code/c/entertainment_IPS/src/HPI/host/efm32zg222f32/I_O, /srv/code/c/entertainment_IPS/src/HPI/host/efm32zg222f32/I_O/gpio, /srv/code/c/entertainment_IPS/src/HPI/host/efm32zg222f32/I_O/spi, /srv/code/c/entertainment_IPS/src/HPI/slave, /srv/code/c/entertainment_IPS/src/HPI/slave/dw1000, /srv/code/c/entertainment_IPS/src/HPI/slave/dw1000/ext_interface, /srv/code/c/entertainment_IPS/src/HPI/slave/dw1000/ext_interface/spi, /srv/code/c/entertainment_IPS/src/HPI/slave/venus638"
+
 
 "To let clang know about your include directories custom defines, 
 "you should place your -I and -D compiler flags into the
@@ -496,4 +559,13 @@ nnoremap <F5> :make!<cr>
 
 "------------ Java --------------
 "set includeexpr=substitute(v:fname,'\\.','/','g')
+
+"-------------------------------------
+"---------- PLUGIN FILE --------------
+"-------------------------------------
+
+if filereadable(expand("/etc/.vimrc.plug"))
+    source /etc/.vimrc.plug
+endif
+
 
