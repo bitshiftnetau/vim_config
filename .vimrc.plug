@@ -72,6 +72,7 @@ Plug 'prabirshrestha/vim-lsp'
 ""Plug 'prabirshrestha/asyncomplete.vim'
 
 
+
 "*******************************************
 "****************** GIT ********************
 "*******************************************
@@ -106,6 +107,8 @@ Plug 'airblade/vim-gitgutter'
 " vim-javascript
 "Plug 'pangloss/vim-javascript'
 
+"Qt C++ in Vim
+Plug 'fedorenchik/qt-support.vim'
 
 
 

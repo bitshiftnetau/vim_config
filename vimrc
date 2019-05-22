@@ -17,6 +17,8 @@ runtime! archlinux.vim
 " do not load defaults if ~/.vimrc is missing
 let skip_defaults_vim=1
 
+" delete all registers on vim start
+autocmd VimEnter * WipeReg for i in range(34,122) | silent! call setreg(nr2char(i), []) | endfor
 "-------------------------------------
 "-------- VIM CORE CONFIG ------------
 "-------------------------------------
@@ -332,11 +334,9 @@ let g:multi_cursor_use_default_mapping=0
 nnoremap @ :NERDTreeToggle<CR>
 autocmd VimEnter * NERDTree<CR>
 
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
+"open auto
+"autocmd StdinReadPre * let s:std_in=1
+"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 ":hi Directory guifg=#FF0000 ctermfg=red
 
