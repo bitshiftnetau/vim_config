@@ -66,11 +66,11 @@ Plug 'honza/vim-snippets' " actual snippets
 "Emmet for web dev snippets
 Plug 'mattn/emmet-vim'
 
-"Cquery with vim-lsp
-Plug 'prabirshrestha/async.vim'
-Plug 'prabirshrestha/vim-lsp'
-""Plug 'prabirshrestha/asyncomplete.vim'
-
+"Language server protocol: MaskRay/ccls (with coc.nvim plugin)
+" Plug 'prabirshrestha/async.vim' 
+" Plug 'prabirshrestha/vim-lsp'
+" Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'neoclide/coc.nvim'
 
 
 "*******************************************

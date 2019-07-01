@@ -4,7 +4,7 @@
 !_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
-!_TAG_PROGRAM_VERSION	0.0.0	/45968eff/
+!_TAG_PROGRAM_VERSION	0.0.0	/3fdf28bc/
 #	.vim/plugged/vim-polyglot/indent/ps1.vim	/^inoremap <buffer> # X#$/;"	m
 #content	.vim/plugged/emmet-vim/docs/static/css/style-sites.css	/^#content {$/;"	i
 #tty	.vim/plugged/emmet-vim/docs/static/css/style-sites.css	/^#tty {$/;"	i
@@ -221,6 +221,22 @@ $PYTHONWARNINGS	.vim/plugged/vim-polyglot/compiler/python.vim	/^  let $PYTHONWAR
 <localleader>a	.vim/plugged/vim-polyglot/ftplugin/mail_vifm.vim	/^nnoremap <buffer> <silent> <localleader>a :call <sid>AddMailAttachments()<cr>$/;"	m
 <localleader>r	.vim/plugged/vim-polyglot/ftplugin/smt2.vim	/^nnoremap <silent> <buffer> <localleader>r :call smt2#RunSolver()<cr>$/;"	m
 <localleader>v	.vim/plugged/vim-polyglot/ftplugin/smt2.vim	/^nnoremap <silent> <buffer> <localleader>v :call smt2#PrintSolverVersion()<cr>$/;"	m
+<plug>(lsp-code-action)	.vim/plugged/vim-lsp/plugin/lsp.vim	/^nnoremap <plug>(lsp-code-action) :<c-u>call lsp#ui#vim#code_action()<cr>$/;"	m
+<plug>(lsp-declaration)	.vim/plugged/vim-lsp/plugin/lsp.vim	/^nnoremap <plug>(lsp-declaration) :<c-u>call lsp#ui#vim#declaration()<cr>$/;"	m
+<plug>(lsp-definition)	.vim/plugged/vim-lsp/plugin/lsp.vim	/^nnoremap <plug>(lsp-definition) :<c-u>call lsp#ui#vim#definition()<cr>$/;"	m
+<plug>(lsp-document-diagnostics)	.vim/plugged/vim-lsp/plugin/lsp.vim	/^nnoremap <plug>(lsp-document-diagnostics) :<c-u>call lsp#ui#vim#diagnostics#document_diagnostics/;"	m
+<plug>(lsp-document-format)	.vim/plugged/vim-lsp/plugin/lsp.vim	/^nnoremap <plug>(lsp-document-format) :<c-u>call lsp#ui#vim#document_format()<cr>$/;"	m
+<plug>(lsp-document-format)	.vim/plugged/vim-lsp/plugin/lsp.vim	/^vnoremap <plug>(lsp-document-format) :call lsp#ui#vim#document_range_format()<cr>$/;"	m
+<plug>(lsp-document-symbol)	.vim/plugged/vim-lsp/plugin/lsp.vim	/^nnoremap <plug>(lsp-document-symbol) :<c-u>call lsp#ui#vim#document_symbol()<cr>$/;"	m
+<plug>(lsp-hover)	.vim/plugged/vim-lsp/plugin/lsp.vim	/^nnoremap <plug>(lsp-hover) :<c-u>call lsp#ui#vim#hover#get_hover_under_cursor()<cr>$/;"	m
+<plug>(lsp-implementation)	.vim/plugged/vim-lsp/plugin/lsp.vim	/^nnoremap <plug>(lsp-implementation) :<c-u>call lsp#ui#vim#implementation()<cr>$/;"	m
+<plug>(lsp-next-error)	.vim/plugged/vim-lsp/plugin/lsp.vim	/^nnoremap <plug>(lsp-next-error) :<c-u>call lsp#ui#vim#diagnostics#next_error()<cr>$/;"	m
+<plug>(lsp-previous-error)	.vim/plugged/vim-lsp/plugin/lsp.vim	/^nnoremap <plug>(lsp-previous-error) :<c-u>call lsp#ui#vim#diagnostics#previous_error()<cr>$/;"	m
+<plug>(lsp-references)	.vim/plugged/vim-lsp/plugin/lsp.vim	/^nnoremap <plug>(lsp-references) :<c-u>call lsp#ui#vim#references()<cr>$/;"	m
+<plug>(lsp-rename)	.vim/plugged/vim-lsp/plugin/lsp.vim	/^nnoremap <plug>(lsp-rename) :<c-u>call lsp#ui#vim#rename()<cr>$/;"	m
+<plug>(lsp-status)	.vim/plugged/vim-lsp/plugin/lsp.vim	/^nnoremap <plug>(lsp-status) :<c-u>echo lsp#get_server_status()<cr>$/;"	m
+<plug>(lsp-type-definition)	.vim/plugged/vim-lsp/plugin/lsp.vim	/^nnoremap <plug>(lsp-type-definition) :<c-u>call lsp#ui#vim#type_definition()<cr>$/;"	m
+<plug>(lsp-workspace-symbol)	.vim/plugged/vim-lsp/plugin/lsp.vim	/^nnoremap <plug>(lsp-workspace-symbol) :<c-u>call lsp#ui#vim#workspace_symbol()<cr>$/;"	m
 <plug>(plug-preview)	.vim/autoload/plug.vim	/^    nnoremap <silent> <buffer> <plug>(plug-preview) :silent! call <SID>preview_commit()<cr>$/;"	m
 <plug>(startify-open-buffers)	.vim/plugged/vim-startify/plugin/startify.vim	/^nnoremap <silent><plug>(startify-open-buffers) :<c-u>call startify#open_buffers()<cr>$/;"	m
 <s>	vimrc	/^nnoremap <s> :w<CR>$/;"	m
@@ -238,6 +254,7 @@ A	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^        nnoremap <buffer> <s
 ALWAYS	.vim/plugged/vim-snippets/pythonx/javascript_snippets.py	/^ALWAYS = 'always'$/;"	v
 API	.vim/plugged/vim-devicons/DEVELOPER.md	/^### API$/;"	S
 API Examples	.vim/plugged/vim-devicons/DEVELOPER.md	/^#### API Examples$/;"	t
+APIs	.vim/plugged/async.vim/README.md	/^## APIs$/;"	s
 ARR_D	.vim/plugged/ultisnips/test/constant.py	/^ARR_D = '\\x1bOB'$/;"	v
 ARR_L	.vim/plugged/ultisnips/test/constant.py	/^ARR_L = '\\x1bOD'$/;"	v
 ARR_R	.vim/plugged/ultisnips/test/constant.py	/^ARR_R = '\\x1bOC'$/;"	v
@@ -496,6 +513,7 @@ Bw	.vim/plugged/vim-buffet/plugin/buffet.vim	/^command! -bang -complete=buffer -
 C	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^        nnoremap <buffer> <silent> C    :<C-u>exe "vertical resize ".(<SID>linechars('^\\S\\+')+/;"	m
 C	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^    nnoremap <buffer> <silent> C     :<C-U>exe 'Gedit ' . <SID>fnameescape(<SID>ContainingCommit/;"	m
 C	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^    nnoremap <buffer> <silent> C :<C-U>Gcommit<CR>:echohl WarningMsg<Bar>echo ':Gstatus C is dep/;"	m
+C++ Completion for Qt	.vim/plugged/qt-support.vim/README.md	/^## C++ Completion for Qt$/;"	s
 CHANGELOG	.vim/plugged/vim-devicons/CHANGELOG.md	/^CHANGELOG$/;"	c
 CHECK	.vim/plugged/ultisnips/pythonx/UltiSnips/snippet/parsing/_lexer.py	/^    CHECK = re.compile(r"^\\${VISUAL[:}\/]")$/;"	v	class:VisualToken
 CHECK	.vim/plugged/ultisnips/pythonx/UltiSnips/snippet/parsing/_lexer.py	/^    CHECK = re.compile(r'^\\$\\d+')$/;"	v	class:MirrorToken
@@ -642,6 +660,7 @@ DB_FILE	.vim/plugged/vim-gutentags/plat/win32/update_scopedb.cmd	/^set DB_FILE=c
 DUMP_FILENAME	.vim/plugged/ultisnips/pythonx/UltiSnips/debug.py	/^DUMP_FILENAME = '\/tmp\/file.txt' if not sys.platform.lower().startswith('win') \\$/;"	v
 DartIndent	.vim/plugged/vim-polyglot/indent/dart.vim	/^function! DartIndent()$/;"	f
 Debug	.vim/plugged/vim-template/plugin/templates.vim	/^function <SID>Debug(mesg)$/;"	f
+Debugging	.vim/plugged/vim-lsp/README.md	/^## Debugging$/;"	s
 Delete	.vim/plugged/vim-eunuch/plugin/eunuch.vim	/^command! -bar -bang Delete$/;"	c
 DeleteCurrentTabStop1_JumpBack	.vim/plugged/ultisnips/test/test_Editing.py	/^class DeleteCurrentTabStop1_JumpBack(_VimTest):$/;"	c
 DeleteCurrentTabStop2_JumpBack	.vim/plugged/ultisnips/test/test_Editing.py	/^class DeleteCurrentTabStop2_JumpBack(_VimTest):$/;"	c
@@ -650,6 +669,7 @@ DeleteLastTwoLinesInSnippet	.vim/plugged/ultisnips/test/test_Editing.py	/^class 
 DeleteSnippetInsertion0	.vim/plugged/ultisnips/test/test_Editing.py	/^class DeleteSnippetInsertion0(_VimTest):$/;"	c
 DeleteSnippetInsertion1	.vim/plugged/ultisnips/test/test_Editing.py	/^class DeleteSnippetInsertion1(_VimTest):$/;"	c
 Developers	.vim/plugged/vim-devicons/README.md	/^Developers$/;"	s
+Diagnostics	.vim/plugged/vim-lsp/README.md	/^### Diagnostics$/;"	S
 DiffGitCached	.vim/plugged/vim-polyglot/ftplugin/gitcommit.vim	/^  command! -bang -bar -buffer -complete=custom,s:diffcomplete -nargs=* DiffGitCached :call s:git/;"	c
 DiffGitCached	.vim/plugged/vim-polyglot/ftplugin/gitcommit.vim	/^command! -bang -bar -buffer -complete=custom,s:diffcomplete -nargs=* DiffGitCached :call s:gitdi/;"	c
 DirName	.vim/plugged/vim-template/plugin/templates.vim	/^function <SID>DirName(path)$/;"	f
@@ -681,6 +701,7 @@ ElmMakeMain	.vim/plugged/vim-polyglot/ftplugin/elm.vim	/^command -buffer ElmMake
 ElmRepl	.vim/plugged/vim-polyglot/ftplugin/elm.vim	/^command -buffer ElmRepl call elm#Repl()$/;"	c
 ElmShowDocs	.vim/plugged/vim-polyglot/ftplugin/elm.vim	/^command -buffer ElmShowDocs call elm#ShowDocs()$/;"	c
 ElmTest	.vim/plugged/vim-polyglot/ftplugin/elm.vim	/^command -buffer -nargs=? -complete=file ElmTest call elm#Test(<f-args>)$/;"	c
+Embedding	.vim/plugged/async.vim/README.md	/^## Embedding$/;"	s
 Emmet	.vim/plugged/emmet-vim/plugin/emmet.vim	/^  command! -nargs=1 Emmet call emmet#expandAbbr(4, <q-args>)$/;"	c
 EmmetInstall	.vim/plugged/emmet-vim/plugin/emmet.vim	/^command! -nargs=0 -bar EmmetInstall call <SID>install_plugin(get(g:, 'user_emmet_mode', 'a'), 1)$/;"	c
 EmmetUnitTest	.vim/plugged/emmet-vim/unittest.vim	/^command! -bang -nargs=* -complete=customlist,<SID>emmet_unittest_complete EmmetUnitTest call s:d/;"	c
@@ -726,6 +747,7 @@ Features	.vim/plugged/vim-devicons/README.md	/^Features$/;"	s
 FermHiLink	.vim/plugged/vim-polyglot/syntax/ferm.vim	/^  command! -nargs=+ FermHiLink highlight default link <args>$/;"	c
 FermHiLink	.vim/plugged/vim-polyglot/syntax/ferm.vim	/^  command! -nargs=+ FermHiLink highlight link <args>$/;"	c
 File	.vim/plugged/vim-project/autoload/project.vim	/^command! -nargs=+ File$/;"	c
+Filetypes:	.vim/plugged/qt-support.vim/README.md	/^## Filetypes:$/;"	s
 Filter	.vim/plugged/vim-devicons/rplugin/python3/denite/filter/devicons_denite_converter.py	/^class Filter(Base):$/;"	c
 FindOpenBrace	.vim/plugged/vim-polyglot/indent/llvm.vim	/^function! FindOpenBrace(lnum)$/;"	f
 Fixup	.vim/plugged/vim-polyglot/ftplugin/gitrebase.vim	/^command! -buffer -bar -range Fixup  :<line1>,<line2>call s:choose('fixup')$/;"	c
@@ -776,6 +798,7 @@ GetHaskellIndent	.vim/plugged/vim-polyglot/indent/haskell.vim	/^function! GetHas
 GetIdrisIndent	.vim/plugged/vim-polyglot/indent/idris.vim	/^function! GetIdrisIndent()$/;"	f
 GetJSONIndent	.vim/plugged/vim-polyglot/indent/json.vim	/^function GetJSONIndent()$/;"	f
 GetJavascriptIndent	.vim/plugged/vim-polyglot/indent/javascript.vim	/^function GetJavascriptIndent()$/;"	f
+GetJsIndent	.vim/plugged/qt-support.vim/indent/qml.vim	/^function! GetJsIndent()$/;"	f
 GetJsIndent	.vim/plugged/vim-polyglot/indent/qml.vim	/^function! GetJsIndent()$/;"	f
 GetJstIndent	.vim/plugged/vim-polyglot/indent/jst.vim	/^function! GetJstIndent(...)$/;"	f
 GetJsxIndent	.vim/plugged/vim-polyglot/after/indent/jsx.vim	/^fu! GetJsxIndent()$/;"	f
@@ -854,6 +877,10 @@ HaxeHiLink	.vim/plugged/vim-polyglot/syntax/haxe.vim	/^  command! -nargs=+ HaxeH
 HaxeHiLink	.vim/plugged/vim-polyglot/syntax/haxe.vim	/^  command! -nargs=+ HaxeHiLink hi link <args>$/;"	c
 HiFold	.vim/plugged/vim-syntax-extra/after/syntax/yacc.vim	/^ com! -nargs=+ HiFold	<args> fold$/;"	c
 HiFold	.vim/plugged/vim-syntax-extra/after/syntax/yacc.vim	/^ com! -nargs=+ HiFold	<args>$/;"	c
+HiLink	.vim/plugged/qt-support.vim/syntax/qbs.vim	/^    command -nargs=+ HiLink hi def link <args>$/;"	c
+HiLink	.vim/plugged/qt-support.vim/syntax/qbs.vim	/^    command -nargs=+ HiLink hi link <args>$/;"	c
+HiLink	.vim/plugged/qt-support.vim/syntax/qml.vim	/^    command -nargs=+ HiLink hi def link <args>$/;"	c
+HiLink	.vim/plugged/qt-support.vim/syntax/qml.vim	/^    command -nargs=+ HiLink hi link <args>$/;"	c
 HiLink	.vim/plugged/vim-polyglot/after/syntax/cpp.vim	/^    command -nargs=+ HiLink hi def link <args>$/;"	c
 HiLink	.vim/plugged/vim-polyglot/after/syntax/cpp.vim	/^    command -nargs=+ HiLink hi link <args>$/;"	c
 HiLink	.vim/plugged/vim-polyglot/extras/flow.vim	/^    command -nargs=+ HiLink hi def link <args>$/;"	c
@@ -999,6 +1026,8 @@ Installation	.vim/plugged/vim-polyglot/README.md	/^## Installation$/;"	s
 Installation	.vim/plugged/vim-snippets/README.md	/^Installation$/;"	s
 Installation	.vim/plugged/vim-template/README.rst	/^Installation$/;"	c
 Installation and Documentation	.vim/plugged/vim-startify/README.md	/^## Installation and Documentation$/;"	s
+Installation:	.vim/plugged/qt-support.vim/README.md	/^## Installation:$/;"	s
+Installing	.vim/plugged/vim-lsp/README.md	/^# Installing$/;"	c
 Integration with other plugins	.vim/plugged/vim-devicons/DEVELOPER.md	/^#### Integration with other plugins$/;"	t
 Interactive	.vim/plugged/vim-project/README.md	/^## Interactive$/;"	s
 Introduction	.vim/plugged/lightline.vim/README.md	/^## Introduction$/;"	s
@@ -1124,6 +1153,24 @@ Llocate	.vim/plugged/vim-eunuch/plugin/eunuch.vim	/^command! -bar -bang -complet
 Log	.vim/plugged/vim-gitgutter/test/runner.vim	/^function Log(msg)$/;"	f
 LoopParseArgs	.vim/plugged/vim-gutentags/plat/win32/update_scopedb.cmd	/^:LoopParseArgs$/;"	l
 LoopParseArgs	.vim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^:LoopParseArgs$/;"	l
+LspCodeAction	.vim/plugged/vim-lsp/plugin/lsp.vim	/^command! LspCodeAction call lsp#ui#vim#code_action()$/;"	c
+LspDeclaration	.vim/plugged/vim-lsp/plugin/lsp.vim	/^command! LspDeclaration call lsp#ui#vim#declaration()$/;"	c
+LspDefinition	.vim/plugged/vim-lsp/plugin/lsp.vim	/^command! LspDefinition call lsp#ui#vim#definition()$/;"	c
+LspDocumentDiagnostics	.vim/plugged/vim-lsp/plugin/lsp.vim	/^command! LspDocumentDiagnostics call lsp#ui#vim#diagnostics#document_diagnostics()$/;"	c
+LspDocumentFormat	.vim/plugged/vim-lsp/plugin/lsp.vim	/^command! -range LspDocumentFormat call lsp#ui#vim#document_format()$/;"	c
+LspDocumentFormatSync	.vim/plugged/vim-lsp/plugin/lsp.vim	/^command! -range LspDocumentFormatSync call lsp#ui#vim#document_format_sync()$/;"	c
+LspDocumentRangeFormat	.vim/plugged/vim-lsp/plugin/lsp.vim	/^command! -range LspDocumentRangeFormat call lsp#ui#vim#document_range_format()$/;"	c
+LspDocumentRangeFormatSync	.vim/plugged/vim-lsp/plugin/lsp.vim	/^command! -range LspDocumentRangeFormatSync call lsp#ui#vim#document_range_format_sync()$/;"	c
+LspDocumentSymbol	.vim/plugged/vim-lsp/plugin/lsp.vim	/^command! LspDocumentSymbol call lsp#ui#vim#document_symbol()$/;"	c
+LspHover	.vim/plugged/vim-lsp/plugin/lsp.vim	/^command! -nargs=? -complete=customlist,lsp#utils#empty_complete LspHover call lsp#ui#vim#hover#g/;"	c
+LspImplementation	.vim/plugged/vim-lsp/plugin/lsp.vim	/^command! LspImplementation call lsp#ui#vim#implementation()$/;"	c
+LspNextError	.vim/plugged/vim-lsp/plugin/lsp.vim	/^command! LspNextError call lsp#ui#vim#diagnostics#next_error()$/;"	c
+LspPreviousError	.vim/plugged/vim-lsp/plugin/lsp.vim	/^command! LspPreviousError call lsp#ui#vim#diagnostics#previous_error()$/;"	c
+LspReferences	.vim/plugged/vim-lsp/plugin/lsp.vim	/^command! LspReferences call lsp#ui#vim#references()$/;"	c
+LspRename	.vim/plugged/vim-lsp/plugin/lsp.vim	/^command! LspRename call lsp#ui#vim#rename()$/;"	c
+LspStatus	.vim/plugged/vim-lsp/plugin/lsp.vim	/^command! -nargs=0 LspStatus echo lsp#get_server_status()$/;"	c
+LspTypeDefinition	.vim/plugged/vim-lsp/plugin/lsp.vim	/^command! LspTypeDefinition call lsp#ui#vim#type_definition()$/;"	c
+LspWorkspaceSymbol	.vim/plugged/vim-lsp/plugin/lsp.vim	/^command! LspWorkspaceSymbol call lsp#ui#vim#workspace_symbol()$/;"	c
 MAKEFILE_DIR	.vim/plugged/ultisnips/Makefile	/^MAKEFILE_DIR := $(dir ${MAKEFILE_PATH})$/;"	m
 MAKEFILE_PATH	.vim/plugged/ultisnips/Makefile	/^MAKEFILE_PATH := $(abspath $(lastword $(MAKEFILE_LIST)))$/;"	m
 MakoIndentClose	.vim/plugged/vim-polyglot/indent/mako.vim	/^fun! <SID>MakoIndentClose(lnum)$/;"	f
@@ -1363,6 +1410,7 @@ PythonVisual_LineSelect_Simple	.vim/plugged/ultisnips/test/test_Interpolation.py
 PythonVisual_NoVisualSelection_Ignore	.vim/plugged/ultisnips/test/test_Interpolation.py	/^class PythonVisual_NoVisualSelection_Ignore(_VimTest):$/;"	c
 PythonVisual_SelectOneWord	.vim/plugged/ultisnips/test/test_Interpolation.py	/^class PythonVisual_SelectOneWord(_VimTest):$/;"	c
 Python_WeirdScoping_Error	.vim/plugged/ultisnips/test/test_Interpolation.py	/^class Python_WeirdScoping_Error(_VimTest):$/;"	c
+Qt support for vim	.vim/plugged/qt-support.vim/README.md	/^# Qt support for vim$/;"	c
 Quick Start	.vim/plugged/ultisnips/README.md	/^Quick Start$/;"	s
 R	.vim/autoload/plug.vim	/^  nnoremap <silent> <buffer> R  :call <SID>retry()<cr>$/;"	m
 R	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^    nnoremap <buffer> <silent> R :<C-U>exe <SID>ReloadStatus()<CR>$/;"	m
@@ -1403,8 +1451,10 @@ RecTabsStops_BackspaceZero_ECR	.vim/plugged/ultisnips/test/test_Recursive.py	/^c
 RecTabsStops_TypeInZero2_ECR	.vim/plugged/ultisnips/test/test_Recursive.py	/^class RecTabsStops_TypeInZero2_ECR(_VimTest):$/;"	c
 RecTabsStops_TypeInZero_ECR	.vim/plugged/ultisnips/test/test_Recursive.py	/^class RecTabsStops_TypeInZero_ECR(_VimTest):$/;"	c
 Recommendations and FAQ	.vim/plugged/vim-buffet/README.md	/^## Recommendations and FAQ$/;"	s
+Registering servers	.vim/plugged/vim-lsp/README.md	/^## Registering servers$/;"	s
 Related Projects	.vim/plugged/vim-gutentags/README.md	/^# Related Projects$/;"	c
 Related repositories	.vim/plugged/vim-snippets/README.md	/^Related repositories$/;"	s
+Related works:	.vim/plugged/qt-support.vim/README.md	/^## Related works:$/;"	s
 Remove	.vim/plugged/vim-eunuch/plugin/eunuch.vim	/^command! -bar -bang Remove Unlink<bang>$/;"	c
 RemoveTrailingWhitespace	.vim/plugged/ultisnips/test/test_Chars.py	/^class RemoveTrailingWhitespace(_VimTest):$/;"	c
 Rename	.vim/plugged/vim-eunuch/plugin/eunuch.vim	/^command! -bar -nargs=1 -bang -complete=custom,s:Rename_complete Rename$/;"	c
@@ -1469,6 +1519,7 @@ ShiftWidthZero	.vim/plugged/ultisnips/test/test_Fixes.py	/^class ShiftWidthZero(
 ShowUsage	.vim/plugged/vim-gutentags/plat/unix/update_scopedb.sh	/^ShowUsage() {$/;"	f
 ShowUsage	.vim/plugged/vim-gutentags/plat/unix/update_tags.sh	/^ShowUsage() {$/;"	f
 Shuffle	.vim/plugged/vim-gitgutter/test/runner.vim	/^function Shuffle(list)$/;"	f
+Signs	.vim/plugged/vim-lsp/README.md	/^#### Signs$/;"	t
 Simple function call	.vim/plugged/vim-devicons/DEVELOPER.md	/^##### Simple function call$/;"	T
 SimpleExpandEndingWithNewline_ExpectCorrectResult	.vim/plugged/ultisnips/test/test_Expand.py	/^class SimpleExpandEndingWithNewline_ExpectCorrectResult(_VimTest):$/;"	c
 SimpleExpandNewLineAndBackspae_ExpectCorrectResult	.vim/plugged/ultisnips/test/test_Expand.py	/^class SimpleExpandNewLineAndBackspae_ExpectCorrectResult(_SimpleExpands):$/;"	c
@@ -1582,9 +1633,11 @@ Squash	.vim/plugged/vim-polyglot/ftplugin/gitrebase.vim	/^command! -buffer -bar 
 Startify	.vim/plugged/vim-startify/plugin/startify.vim	/^command! -nargs=0 -bar Startify call startify#insane_in_the_membrane(0)$/;"	c
 StartifyDebug	.vim/plugged/vim-startify/plugin/startify.vim	/^command! -nargs=0 -bar StartifyDebug call startify#debug()$/;"	c
 Status line	.vim/plugged/vim-devicons/DEVELOPER.md	/^##### Status line$/;"	T
+Status:	.vim/plugged/qt-support.vim/README.md	/^## Status:$/;"	s
 Stylus	.vim/plugged/vim-polyglot/ftplugin/stylus.vim	/^command! Stylus !clear; cat % | stylus$/;"	c
 SudoEdit	.vim/plugged/vim-eunuch/plugin/eunuch.vim	/^command! -bar -bang -complete=file -nargs=? SudoEdit$/;"	c
 SudoWrite	.vim/plugged/vim-eunuch/plugin/eunuch.vim	/^command! -bar SudoWrite$/;"	c
+Supported commands	.vim/plugged/vim-lsp/README.md	/^## Supported commands$/;"	s
 SwiftIndent	.vim/plugged/vim-polyglot/indent/swift.vim	/^function! SwiftIndent(...)$/;"	f
 SwitchToBuffer	.vim/plugged/vim-buffet/plugin/buffet.vim	/^    function! SwitchToBuffer(buffer_id, clicks, btn, flags)$/;"	f
 SynAttrXMLish	.vim/plugged/vim-polyglot/after/indent/jsx.vim	/^fu! SynAttrXMLish(synattr)$/;"	f
@@ -1611,6 +1664,7 @@ TLoad	.vim/plugged/vim-template/plugin/templates.vim	/^function <SID>TLoad(posit
 TLoadTemplate	.vim/plugged/vim-template/plugin/templates.vim	/^function <SID>TLoadTemplate(template, position)$/;"	f
 TOCFoldLevel	.vim/plugged/vim-polyglot/ftplugin/latextoc.vim	/^function! TOCFoldLevel(lnum)$/;"	f
 TOCFoldText	.vim/plugged/vim-polyglot/ftplugin/latextoc.vim	/^function! TOCFoldText()$/;"	f
+TODO:	.vim/plugged/qt-support.vim/README.md	/^## TODO:$/;"	s
 TPutCursor	.vim/plugged/vim-template/plugin/templates.vim	/^function <SID>TPutCursor()$/;"	f
 TSearch	.vim/plugged/vim-template/plugin/templates.vim	/^function <SID>TSearch(path, template_prefix, file_name, height)$/;"	f
 TabStop	.vim/plugged/ultisnips/pythonx/UltiSnips/text_objects/_tabstop.py	/^class TabStop(EditableTextObject):$/;"	c
@@ -1787,6 +1841,7 @@ Things to consider when contributing	.vim/plugged/vim-snippets/README.md	/^Thing
 Things to keep in mind	.vim/plugged/vim-devicons/CONTRIBUTING.md	/^## Things to keep in mind$/;"	s
 This function will clean up first placeholder when this is empty.	.vim/plugged/ultisnips/doc/examples/autojump-if-empty/README.md	/^# This function will clean up first placeholder when this is empty.$/;"	c
 This function will jump to next placeholder when first is empty.	.vim/plugged/ultisnips/doc/examples/autojump-if-empty/README.md	/^# This function will jump to next placeholder when first is empty.$/;"	c
+Todos	.vim/plugged/async.vim/README.md	/^## Todos$/;"	s
 Token	.vim/plugged/ultisnips/pythonx/UltiSnips/snippet/parsing/_lexer.py	/^class Token(object):$/;"	c
 TrailingNewline_TabStop_EndNL	.vim/plugged/ultisnips/test/test_Chars.py	/^class TrailingNewline_TabStop_EndNL(_VimTest):$/;"	c
 TrailingNewline_TabStop_EndStartNL	.vim/plugged/ultisnips/test/test_Chars.py	/^class TrailingNewline_TabStop_EndStartNL(_VimTest):$/;"	c
@@ -1839,6 +1894,7 @@ Transformation_TestKill_InsertAfter_NoKill	.vim/plugged/ultisnips/test/test_Tran
 Transformation_TestKill_InsertBefore_NoKill	.vim/plugged/ultisnips/test/test_Transformation.py	/^class Transformation_TestKill_InsertBefore_NoKill(_VimTest):$/;"	c
 Transformation_TestKill_InsertBeginning_Kill	.vim/plugged/ultisnips/test/test_Transformation.py	/^class Transformation_TestKill_InsertBeginning_Kill(_VimTest):$/;"	c
 Transformation_TestKill_InsertEnd_Kill	.vim/plugged/ultisnips/test/test_Transformation.py	/^class Transformation_TestKill_InsertEnd_Kill(_VimTest):$/;"	c
+Trim	.vim/plugged/qt-support.vim/indent/qml.vim	/^function! Trim(line)$/;"	f
 Trim	.vim/plugged/vim-polyglot/indent/qml.vim	/^function! Trim(line)$/;"	f
 TrimSpacesAtEndOfLines	.vim/plugged/ultisnips/test/test_Chars.py	/^class TrimSpacesAtEndOfLines(_VimTest):$/;"	c
 Troubleshooting	.vim/plugged/vim-devicons/README.md	/^Troubleshooting$/;"	s
@@ -1913,6 +1969,7 @@ VimLCodeToken	.vim/plugged/ultisnips/pythonx/UltiSnips/snippet/parsing/_lexer.py
 VimPosition	.vim/plugged/ultisnips/pythonx/UltiSnips/vim_state.py	/^class VimPosition(Position):$/;"	c
 VimState	.vim/plugged/ultisnips/pythonx/UltiSnips/vim_state.py	/^class VimState(object):$/;"	c
 VimTestCase	.vim/plugged/ultisnips/test/vim_test_case.py	/^class VimTestCase(unittest.TestCase, TempFileManager):$/;"	c
+Virtual text	.vim/plugged/vim-lsp/README.md	/^### Virtual text$/;"	S
 VirtualEdit	.vim/plugged/ultisnips/test/test_Fixes.py	/^class VirtualEdit(_VimTest):$/;"	c
 Visual	.vim/plugged/ultisnips/pythonx/UltiSnips/text_objects/_visual.py	/^class Visual(NoneditableTextObject, TextObjectTransformation):$/;"	c
 VisualContentPreserver	.vim/plugged/ultisnips/pythonx/UltiSnips/vim_state.py	/^class VisualContentPreserver(object):$/;"	c
@@ -2310,6 +2367,7 @@ _leaving_buffer	.vim/plugged/ultisnips/pythonx/UltiSnips/snippet_manager.py	/^  
 _leaving_insert_mode	.vim/plugged/ultisnips/pythonx/UltiSnips/snippet_manager.py	/^    def _leaving_insert_mode(self):$/;"	m	class:SnippetManager
 _link_file	.vim/plugged/ultisnips/test/vim_test_case.py	/^    def _link_file(self, source, relative_destination):$/;"	m	class:VimTestCase
 _load_snippets_for	.vim/plugged/ultisnips/pythonx/UltiSnips/snippet/source/file/_base.py	/^    def _load_snippets_for(self, ft):$/;"	m	class:SnippetFileSource
+_lsp_silent_	.vim/plugged/vim-lsp/autoload/lsp.vim	/^augroup _lsp_silent_$/;"	a
 _make_debug_exception	.vim/plugged/ultisnips/pythonx/UltiSnips/snippet/definition/_base.py	/^    def _make_debug_exception(self, e, code=''):$/;"	m	class:SnippetDefinition
 _move	.vim/plugged/ultisnips/pythonx/UltiSnips/text_objects/_base.py	/^    def _move(self, pivot, diff):$/;"	m	class:EditableTextObject
 _move	.vim/plugged/ultisnips/pythonx/UltiSnips/text_objects/_base.py	/^    def _move(self, pivot, diff):$/;"	m	class:TextObject
@@ -2461,11 +2519,20 @@ aria_attributes_value	.vim/plugged/vim-polyglot/autoload/xml/aria.vim	/^let aria
 article	.vim/plugged/emmet-vim/docs/static/css/style-sites.css	/^article {$/;"	s
 as_unicode	.vim/plugged/ultisnips/pythonx/UltiSnips/compatibility.py	/^    def as_unicode(string):$/;"	f
 as_vimencoding	.vim/plugged/ultisnips/pythonx/UltiSnips/compatibility.py	/^    def as_vimencoding(string):$/;"	f
+asciicast-4568	.vim/plugged/emmet-vim/docs/index.html	/^				<script type="text\/javascript" src="https:\/\/asciinema.org\/a\/4568.js" id="asciicast-4568/;"	I
+async#job#pid	.vim/plugged/async.vim/autoload/async/job.vim	/^function! async#job#pid(jobid) abort$/;"	f
+async#job#send	.vim/plugged/async.vim/autoload/async/job.vim	/^function! async#job#send(jobid, data) abort$/;"	f
+async#job#start	.vim/plugged/async.vim/autoload/async/job.vim	/^function! async#job#start(cmd, opts) abort$/;"	f
+async#job#stop	.vim/plugged/async.vim/autoload/async/job.vim	/^function! async#job#stop(jobid) abort$/;"	f
+async#job#wait	.vim/plugged/async.vim/autoload/async/job.vim	/^function! async#job#wait(jobids, ...) abort$/;"	f
+async.vim	.vim/plugged/async.vim/README.md	/^# async.vim$/;"	c
 attributes_value	.vim/plugged/vim-polyglot/autoload/xml/html5.vim	/^    let attributes_value = extend(attributes_value, event_attributes_value)$/;"	v
 attributes_value	.vim/plugged/vim-polyglot/autoload/xml/html5.vim	/^    let attributes_value = extend(attributes_value, microdata_attributes_value)$/;"	v
 attributes_value	.vim/plugged/vim-polyglot/autoload/xml/html5.vim	/^    let attributes_value = extend(attributes_value, rdfa_attributes_value)$/;"	v
 attributes_value	.vim/plugged/vim-polyglot/autoload/xml/html5.vim	/^let attributes_value = {$/;"	v
+author	.vim/plugged/emmet-vim/docs/index.html	/^			<article id="author">$/;"	I
 author	.vim/plugged/vim-snippets/addon-info.json	/^  "author" : "community",$/;"	s
+auto-complete	.vim/plugged/vim-lsp/README.md	/^## auto-complete$/;"	s
 autofill_tokens	.vim/plugged/vim-polyglot/autoload/xml/html5.vim	/^let autofill_tokens = ['on', 'off', 'name', 'honorific-prefix', 'given-name', 'additional-name',/;"	v
 b	.vim/plugged/ultisnips/pythonx/UltiSnips/test_diff.py	/^    a, b = '', ''$/;"	v	class:TestEmptyString
 b	.vim/plugged/ultisnips/pythonx/UltiSnips/test_diff.py	/^    a, b = 'Hello', 'Hello\\nWorld\\nWorld\\nWorld'$/;"	v	class:TestLotsaNewlines
@@ -2520,6 +2587,9 @@ b:csv_result	.vim/plugged/vim-polyglot/ftplugin/csv.vim	/^let b:csv_result = ''$
 b:csv_start	.vim/plugged/vim-polyglot/ftplugin/csv.vim	/^let b:csv_start = get(g:, 'csv_start', 1)$/;"	v
 b:cucumber_root	.vim/plugged/vim-polyglot/ftplugin/cucumber.vim	/^let b:cucumber_root = expand('%:p:h:s?.*[\\\/]\\%(features\\|stories\\)\\zs[\\\/].*??')$/;"	v
 b:cucumber_steps_glob	.vim/plugged/vim-polyglot/ftplugin/cucumber.vim	/^  let b:cucumber_steps_glob = b:cucumber_root.'\/**\/*.rb'$/;"	v
+b:current_syntax	.vim/plugged/qt-support.vim/syntax/qbs.vim	/^let b:current_syntax = "qbs"$/;"	v
+b:current_syntax	.vim/plugged/qt-support.vim/syntax/qmake.vim	/^let b:current_syntax = "qmake"$/;"	v
+b:current_syntax	.vim/plugged/qt-support.vim/syntax/qml.vim	/^let b:current_syntax = "qml"$/;"	v
 b:current_syntax	.vim/plugged/ultisnips/syntax/snippets.vim	/^let b:current_syntax = "snippets"$/;"	v
 b:current_syntax	.vim/plugged/ultisnips/syntax/snippets_snipmate.vim	/^let b:current_syntax = "snippets"$/;"	v
 b:current_syntax	.vim/plugged/vim-fugitive/syntax/fugitive.vim	/^let b:current_syntax = "fugitive"$/;"	v
@@ -2692,6 +2762,8 @@ b:current_syntax_embed	.vim/plugged/vim-polyglot/syntax/rust.vim	/^    let b:cur
 b:did_after_plugin_ultisnips_after	.vim/plugged/ultisnips/after/plugin/UltiSnips_after.vim	/^let b:did_after_plugin_ultisnips_after = 1$/;"	v
 b:did_autoload_ultisnips	.vim/plugged/ultisnips/autoload/UltiSnips.vim	/^let b:did_autoload_ultisnips = 1$/;"	v
 b:did_autoload_ultisnips_map_keys	.vim/plugged/ultisnips/autoload/UltiSnips/map_keys.vim	/^let b:did_autoload_ultisnips_map_keys = 1$/;"	v
+b:did_ftplugin	.vim/plugged/qt-support.vim/ftplugin/qbs.vim	/^let b:did_ftplugin = 1$/;"	v
+b:did_ftplugin	.vim/plugged/qt-support.vim/ftplugin/qmake.vim	/^let b:did_ftplugin = 1$/;"	v
 b:did_ftplugin	.vim/plugged/ultisnips/ftplugin/snippets.vim	/^let b:did_ftplugin = 1$/;"	v
 b:did_ftplugin	.vim/plugged/vim-polyglot/ftplugin/ansible_hosts.vim	/^  let b:did_ftplugin = 1$/;"	v
 b:did_ftplugin	.vim/plugged/vim-polyglot/ftplugin/blade.vim	/^let b:did_ftplugin = 1$/;"	v
@@ -2751,6 +2823,7 @@ b:did_ftplugin	.vim/plugged/vim-polyglot/ftplugin/vifm-cmdedit.vim	/^let b:did_f
 b:did_ftplugin	.vim/plugged/vim-polyglot/ftplugin/vifm-edit.vim	/^let b:did_ftplugin = 1$/;"	v
 b:did_ftplugin	.vim/plugged/vim-polyglot/ftplugin/vifm-rename.vim	/^let b:did_ftplugin = 1$/;"	v
 b:did_ftplugin	.vim/plugged/vim-polyglot/ftplugin/vifm.vim	/^let b:did_ftplugin = 1$/;"	v
+b:did_indent	.vim/plugged/qt-support.vim/indent/qml.vim	/^let b:did_indent = 1$/;"	v
 b:did_indent	.vim/plugged/vim-polyglot/after/indent/jsx.vim	/^  let b:did_indent=s:did_indent$/;"	v
 b:did_indent	.vim/plugged/vim-polyglot/indent/Dockerfile.vim	/^let b:did_indent = 1$/;"	v
 b:did_indent	.vim/plugged/vim-polyglot/indent/arduino.vim	/^let b:did_indent = 1$/;"	v
@@ -3014,7 +3087,10 @@ b:tt2_syn_inc_perl	.vim/plugged/vim-polyglot/syntax/tt2.vim	/^    let b:tt2_syn_
 b:tt2_syn_tags	.vim/plugged/vim-polyglot/syntax/tt2.vim	/^    let b:tt2_syn_tags = '\\[% %]'$/;"	v
 b:twigMatchWords	.vim/plugged/vim-polyglot/ftplugin/twig.vim	/^    let b:twigMatchWords = [$/;"	v
 b:ultisnips_override_snipmate	.vim/plugged/ultisnips/syntax/snippets_snipmate.vim	/^let b:ultisnips_override_snipmate = 1$/;"	v
+b:undo_ftplugin	.vim/plugged/qt-support.vim/ftplugin/qbs.vim	/^let b:undo_ftplugin = "setl formatoptions< comments< commentstring<"$/;"	v
+b:undo_ftplugin	.vim/plugged/qt-support.vim/ftplugin/qmake.vim	/^let b:undo_ftplugin = "setl fo< com< commentstring< expandtab< tabstop< shiftwidth<"$/;"	v
 b:undo_ftplugin	.vim/plugged/ultisnips/ftplugin/snippets.vim	/^let b:undo_ftplugin = "$/;"	v
+b:undo_ftplugin	.vim/plugged/vim-lsp/ftplugin/lsp-hover.vim	/^let b:undo_ftplugin = 'setlocal pvw< bt< bh< swf< bl< cul< fen<' .$/;"	v
 b:undo_ftplugin	.vim/plugged/vim-polyglot/after/ftplugin/javascript.vim	/^  let b:undo_ftplugin .= ' | setlocal iskeyword< suffixesadd<'$/;"	v
 b:undo_ftplugin	.vim/plugged/vim-polyglot/after/ftplugin/javascript.vim	/^  let b:undo_ftplugin = 'setlocal iskeyword< suffixesadd<'$/;"	v
 b:undo_ftplugin	.vim/plugged/vim-polyglot/ftplugin/ansible_hosts.vim	/^let b:undo_ftplugin = "setl comments< commentstring< formatoptions<"$/;"	v
@@ -3163,6 +3239,7 @@ complete	.vim/plugged/vim-snippets/pythonx/vimsnippets.py	/^def complete(tab, op
 conserve	.vim/plugged/ultisnips/pythonx/UltiSnips/vim_state.py	/^    def conserve(self):$/;"	m	class:VisualContentPreserver
 conserve_placeholder	.vim/plugged/ultisnips/pythonx/UltiSnips/vim_state.py	/^    def conserve_placeholder(self, placeholder):$/;"	m	class:VisualContentPreserver
 constructor	.vim/plugged/vim-template/templates/=template=.jsx	/^  constructor(props: any) {$/;"	m	class:AnonymousClass0c87ac400101
+content	.vim/plugged/emmet-vim/docs/index.html	/^	<section id="content">$/;"	I
 context	.vim/plugged/ultisnips/pythonx/UltiSnips/snippet/definition/_base.py	/^    def context(self):$/;"	m	class:SnippetDefinition
 context	.vim/plugged/ultisnips/pythonx/UltiSnips/text_objects/_python_code.py	/^    def context(self):$/;"	m	class:SnippetUtil
 conv	.vim/plugged/ultisnips/pythonx/UltiSnips/_vim.py	/^    def conv(obj):$/;"	f	function:escape	file:
@@ -3366,6 +3443,8 @@ did_proto_syn_inits	.vim/plugged/vim-polyglot/syntax/fbs.vim	/^    let did_proto
 did_proto_syn_inits	.vim/plugged/vim-polyglot/syntax/proto.vim	/^    let did_proto_syn_inits = 1$/;"	v
 did_ps1_syn_inits	.vim/plugged/vim-polyglot/syntax/ps1.vim	/^		let did_ps1_syn_inits = 1$/;"	v
 did_python_syn_inits	.vim/plugged/vim-polyglot/syntax/python.vim	/^    let did_python_syn_inits = 1$/;"	v
+did_qbs_syn_inits	.vim/plugged/qt-support.vim/syntax/qbs.vim	/^    let did_qbs_syn_inits = 1$/;"	v
+did_qml_syn_inits	.vim/plugged/qt-support.vim/syntax/qml.vim	/^    let did_qml_syn_inits = 1$/;"	v
 did_qml_syn_inits	.vim/plugged/vim-polyglot/syntax/qml.vim	/^    let did_qml_syn_inits = 1$/;"	v
 did_racket_syntax_inits	.vim/plugged/vim-polyglot/syntax/racket.vim	/^    let did_racket_syntax_inits = 1$/;"	v
 did_rhelp_syntax_inits	.vim/plugged/vim-polyglot/syntax/rhelp.vim	/^    let did_rhelp_syntax_inits = 1$/;"	v
@@ -4249,6 +4328,25 @@ g:loaded_plug	.vim/autoload/plug.vim	/^let g:loaded_plug = 1$/;"	v
 g:loaded_startify	.vim/plugged/vim-startify/plugin/startify.vim	/^let g:loaded_startify = 1$/;"	v
 g:loaded_terraform	.vim/plugged/vim-polyglot/ftplugin/terraform.vim	/^let g:loaded_terraform = 1$/;"	v
 g:loaded_webdevicons	.vim/plugged/vim-devicons/plugin/webdevicons.vim	/^let g:loaded_webdevicons = 1$/;"	v
+g:lsp_async_completion	.vim/plugged/vim-lsp/plugin/lsp.vim	/^let g:lsp_async_completion = get(g:, 'lsp_async_completion', 0)$/;"	v
+g:lsp_auto_enable	.vim/plugged/vim-lsp/plugin/lsp.vim	/^let g:lsp_auto_enable = get(g:, 'lsp_auto_enable', 1)$/;"	v
+g:lsp_debug_servers	.vim/plugged/vim-lsp/plugin/lsp.vim	/^let g:lsp_debug_servers = get(g:, 'lsp_debug_servers', [])$/;"	v
+g:lsp_diagnostics_echo_cursor	.vim/plugged/vim-lsp/plugin/lsp.vim	/^let g:lsp_diagnostics_echo_cursor = get(g:, 'lsp_diagnostics_echo_cursor', 0)$/;"	v
+g:lsp_diagnostics_echo_delay	.vim/plugged/vim-lsp/plugin/lsp.vim	/^let g:lsp_diagnostics_echo_delay = get(g:, 'lsp_diagnostics_echo_delay', 500)$/;"	v
+g:lsp_diagnostics_enabled	.vim/plugged/vim-lsp/plugin/lsp.vim	/^let g:lsp_diagnostics_enabled = get(g:, 'lsp_diagnostics_enabled', 1)$/;"	v
+g:lsp_insert_text_enabled	.vim/plugged/vim-lsp/plugin/lsp.vim	/^let g:lsp_insert_text_enabled= get(g:, 'lsp_insert_text_enabled', 1)$/;"	v
+g:lsp_loaded	.vim/plugged/vim-lsp/plugin/lsp.vim	/^let g:lsp_loaded = 1$/;"	v
+g:lsp_log_file	.vim/plugged/vim-lsp/plugin/lsp.vim	/^let g:lsp_log_file = get(g:, 'lsp_log_file', '')$/;"	v
+g:lsp_log_verbose	.vim/plugged/vim-lsp/plugin/lsp.vim	/^let g:lsp_log_verbose = get(g:, 'lsp_log_verbose', 1)$/;"	v
+g:lsp_next_sign_id	.vim/plugged/vim-lsp/plugin/lsp.vim	/^let g:lsp_next_sign_id = get(g:, 'lsp_next_sign_id', 6999)$/;"	v
+g:lsp_preview_keep_focus	.vim/plugged/vim-lsp/plugin/lsp.vim	/^let g:lsp_preview_keep_focus = get(g:, 'lsp_preview_keep_focus', 1)$/;"	v
+g:lsp_signs_enabled	.vim/plugged/vim-lsp/plugin/lsp.vim	/^let g:lsp_signs_enabled = get(g:, 'lsp_signs_enabled', has('patch-8.1.0772') && exists('*sign_de/;"	v
+g:lsp_signs_error	.vim/plugged/vim-lsp/plugin/lsp.vim	/^let g:lsp_signs_error = get(g:, 'lsp_signs_error', {})$/;"	v
+g:lsp_signs_hint	.vim/plugged/vim-lsp/plugin/lsp.vim	/^let g:lsp_signs_hint = get(g:, 'lsp_signs_hint', {})$/;"	v
+g:lsp_signs_information	.vim/plugged/vim-lsp/plugin/lsp.vim	/^let g:lsp_signs_information = get(g:, 'lsp_signs_information', {})$/;"	v
+g:lsp_signs_warning	.vim/plugged/vim-lsp/plugin/lsp.vim	/^let g:lsp_signs_warning = get(g:, 'lsp_signs_warning', {})$/;"	v
+g:lsp_use_event_queue	.vim/plugged/vim-lsp/plugin/lsp.vim	/^let g:lsp_use_event_queue = get(g:, 'lsp_use_event_queue', has('nvim') || has('patch-8.1.0889'))$/;"	v
+g:lsp_virtual_text_enabled	.vim/plugged/vim-lsp/plugin/lsp.vim	/^let g:lsp_virtual_text_enabled = get(g:, 'lsp_virtual_text_enabled', exists('*nvim_buf_set_virtu/;"	v
 g:main_syntax	.vim/plugged/vim-polyglot/syntax/dart.vim	/^  let g:main_syntax = 'dart'$/;"	v
 g:main_syntax	.vim/plugged/vim-polyglot/syntax/gohtmltmpl.vim	/^  let g:main_syntax = 'html'$/;"	v
 g:mako_detect_lang_from_ext	.vim/plugged/vim-polyglot/ftdetect/polyglot.vim	/^  let g:mako_detect_lang_from_ext = 1$/;"	v
@@ -4387,7 +4485,7 @@ g:webdevicons_gui_glyph_fix	.vim/plugged/vim-devicons/nerdtree_plugin/webdevicon
 g:xmldata_aria	.vim/plugged/vim-polyglot/autoload/xml/aria.vim	/^let g:xmldata_aria = {$/;"	v
 g:xmldata_html5	.vim/plugged/vim-polyglot/autoload/xml/html5.vim	/^let g:xmldata_html5 = {$/;"	v
 g:ycm_error_symbol	vimrc	/^let g:ycm_error_symbol = 'EE'$/;"	v
-g:ycm_global_ycm_extra_conf	vimrc	/^let g:ycm_global_ycm_extra_conf='\/usr\/lib\/youcompleteme'$/;"	v
+g:ycm_global_ycm_extra_conf	vimrc	/^let g:ycm_global_ycm_extra_conf='\/usr\/lib\/youcompleteme\/.ycm_extra_conf.py'$/;"	v
 g:ycm_key_list_previous_completion	vimrc	/^let g:ycm_key_list_previous_completion=[]$/;"	v
 g:ycm_key_list_select_completion	vimrc	/^let g:ycm_key_list_select_completion=[]$/;"	v
 g:ycm_warning_symbol	vimrc	/^let g:ycm_warning_symbol = 'WW'$/;"	v
@@ -4659,6 +4757,7 @@ has_version	.vim/plugged/ultisnips/test/vim_interface.py	/^    def has_version(s
 haxe_minlines	.vim/plugged/vim-polyglot/syntax/haxe.vim	/^  let haxe_minlines = 5000$/;"	v
 head_tail	.vim/plugged/ultisnips/pythonx/UltiSnips/text.py	/^def head_tail(line):$/;"	f
 hide	.vim/plugged/emmet-vim/docs/static/js/jquery-latest.js	/^	hide: function(){$/;"	m	class:jQuery.fx
+howworkthis	.vim/plugged/emmet-vim/docs/index.html	/^			<article id="howworkthis">$/;"	I
 htmlcomplete#CheckDoctype	.vim/plugged/vim-polyglot/autoload/htmlcomplete.vim	/^function! htmlcomplete#CheckDoctype() " {{{$/;"	f
 htmlcomplete#CompleteTags	.vim/plugged/vim-polyglot/autoload/htmlcomplete.vim	/^function! htmlcomplete#CompleteTags(findstart, base)$/;"	f
 htmlcomplete#DetectOmniFlavor	.vim/plugged/vim-polyglot/autoload/htmlcomplete.vim	/^function! htmlcomplete#DetectOmniFlavor()$/;"	f
@@ -4706,6 +4805,7 @@ initial_line	.vim/plugged/ultisnips/pythonx/UltiSnips/test_diff.py	/^    initial
 initial_line	.vim/plugged/ultisnips/pythonx/UltiSnips/test_diff.py	/^    initial_line = 0$/;"	v	class:TestGuessing_InsertOneChar
 initial_line	.vim/plugged/ultisnips/pythonx/UltiSnips/test_diff.py	/^    initial_line = 0$/;"	v	class:TestGuessing_InsertOneChar1
 initial_line	.vim/plugged/ultisnips/pythonx/UltiSnips/test_diff.py	/^    initial_line = 0$/;"	v	class:TestGuessing_Noop0
+install	.vim/plugged/emmet-vim/docs/index.html	/^			<article id="install">$/;"	I
 instantiate	.vim/plugged/ultisnips/pythonx/UltiSnips/snippet/definition/_base.py	/^    def instantiate(self, snippet_instance, initial_text, indent):$/;"	m	class:SnippetDefinition
 instantiate	.vim/plugged/ultisnips/pythonx/UltiSnips/snippet/definition/snipmate.py	/^    def instantiate(self, snippet_instance, initial_text, indent):$/;"	m	class:SnipMateSnippetDefinition
 instantiate	.vim/plugged/ultisnips/pythonx/UltiSnips/snippet/definition/ulti_snips.py	/^    def instantiate(self, snippet_instance, initial_text, indent):$/;"	m	class:UltiSnipsSnippetDefinition
@@ -5303,6 +5403,7 @@ length	.vim/plugged/emmet-vim/docs/static/js/jquery-latest.js	/^	var target = ar
 li a	.vim/plugged/emmet-vim/docs/static/css/style-sites.css	/^li a, h3 a {$/;"	s
 li a:active	.vim/plugged/emmet-vim/docs/static/css/style-sites.css	/^li a:hover, li a:active, h3 a:hover, li a:active {$/;"	s
 li a:hover	.vim/plugged/emmet-vim/docs/static/css/style-sites.css	/^li a:hover, li a:active, h3 a:hover, li a:active {$/;"	s
+license	.vim/plugged/emmet-vim/docs/index.html	/^			<article id="license">$/;"	I
 lightline	.vim/plugged/lightline.vim/autoload/lightline.vim	/^  augroup lightline$/;"	a
 lightline	.vim/plugged/lightline.vim/autoload/lightline.vim	/^  augroup lightline-disable$/;"	a
 lightline	.vim/plugged/lightline.vim/plugin/lightline.vim	/^augroup lightline$/;"	a
@@ -5358,6 +5459,98 @@ livescript_make_options	.vim/plugged/vim-polyglot/compiler/ls.vim	/^  let livesc
 lnum	.vim/plugged/vim-polyglot/ftplugin/ocaml.vim	/^let lnum = search('^\\s*(\\*:o\\?caml:', 'n')$/;"	v
 loaded_nerd_tree	.vim/plugged/nerdtree/plugin/NERD_tree.vim	/^let loaded_nerd_tree = 1$/;"	v
 location	.vim/plugged/ultisnips/pythonx/UltiSnips/snippet/definition/_base.py	/^    def location(self):$/;"	m	class:SnippetDefinition
+logo	.vim/plugged/emmet-vim/docs/index.html	/^	<img id="logo" src="static\/images\/emmet-vim-logo.png" title="禅" alt="禅" \/>$/;"	I
+lsp	.vim/plugged/vim-lsp/autoload/lsp.vim	/^    augroup lsp$/;"	a
+lsp#capabilities#get_text_document_change_sync_kind	.vim/plugged/vim-lsp/autoload/lsp/capabilities.vim	/^function! lsp#capabilities#get_text_document_change_sync_kind(server_name) abort$/;"	f
+lsp#capabilities#get_text_document_save_registration_options	.vim/plugged/vim-lsp/autoload/lsp/capabilities.vim	/^function! lsp#capabilities#get_text_document_save_registration_options(server_name) abort$/;"	f
+lsp#capabilities#has_code_action_provider	.vim/plugged/vim-lsp/autoload/lsp/capabilities.vim	/^function! lsp#capabilities#has_code_action_provider(server_name) abort$/;"	f
+lsp#capabilities#has_declaration_provider	.vim/plugged/vim-lsp/autoload/lsp/capabilities.vim	/^function! lsp#capabilities#has_declaration_provider(server_name) abort$/;"	f
+lsp#capabilities#has_definition_provider	.vim/plugged/vim-lsp/autoload/lsp/capabilities.vim	/^function! lsp#capabilities#has_definition_provider(server_name) abort$/;"	f
+lsp#capabilities#has_document_formatting_provider	.vim/plugged/vim-lsp/autoload/lsp/capabilities.vim	/^function! lsp#capabilities#has_document_formatting_provider(server_name) abort$/;"	f
+lsp#capabilities#has_document_range_formatting_provider	.vim/plugged/vim-lsp/autoload/lsp/capabilities.vim	/^function! lsp#capabilities#has_document_range_formatting_provider(server_name) abort$/;"	f
+lsp#capabilities#has_document_symbol_provider	.vim/plugged/vim-lsp/autoload/lsp/capabilities.vim	/^function! lsp#capabilities#has_document_symbol_provider(server_name) abort$/;"	f
+lsp#capabilities#has_hover_provider	.vim/plugged/vim-lsp/autoload/lsp/capabilities.vim	/^function! lsp#capabilities#has_hover_provider(server_name) abort$/;"	f
+lsp#capabilities#has_implementation_provider	.vim/plugged/vim-lsp/autoload/lsp/capabilities.vim	/^function! lsp#capabilities#has_implementation_provider(server_name) abort$/;"	f
+lsp#capabilities#has_references_provider	.vim/plugged/vim-lsp/autoload/lsp/capabilities.vim	/^function! lsp#capabilities#has_references_provider(server_name) abort$/;"	f
+lsp#capabilities#has_rename_prepare_provider	.vim/plugged/vim-lsp/autoload/lsp/capabilities.vim	/^function! lsp#capabilities#has_rename_prepare_provider(server_name) abort$/;"	f
+lsp#capabilities#has_rename_provider	.vim/plugged/vim-lsp/autoload/lsp/capabilities.vim	/^function! lsp#capabilities#has_rename_provider(server_name) abort$/;"	f
+lsp#capabilities#has_type_definition_provider	.vim/plugged/vim-lsp/autoload/lsp/capabilities.vim	/^function! lsp#capabilities#has_type_definition_provider(server_name) abort$/;"	f
+lsp#capabilities#has_workspace_symbol_provider	.vim/plugged/vim-lsp/autoload/lsp/capabilities.vim	/^function! lsp#capabilities#has_workspace_symbol_provider(server_name) abort$/;"	f
+lsp#client#error_message	.vim/plugged/vim-lsp/autoload/lsp/client.vim	/^function! lsp#client#error_message(obj_or_response) abort$/;"	f
+lsp#client#get_last_request_id	.vim/plugged/vim-lsp/autoload/lsp/client.vim	/^function! lsp#client#get_last_request_id(client_id) abort$/;"	f
+lsp#client#is_error	.vim/plugged/vim-lsp/autoload/lsp/client.vim	/^function! lsp#client#is_error(obj_or_response) abort$/;"	f
+lsp#client#is_server_instantiated_notification	.vim/plugged/vim-lsp/autoload/lsp/client.vim	/^function! lsp#client#is_server_instantiated_notification(notification) abort$/;"	f
+lsp#client#send_notification	.vim/plugged/vim-lsp/autoload/lsp/client.vim	/^function! lsp#client#send_notification(client_id, opts) abort$/;"	f
+lsp#client#send_request	.vim/plugged/vim-lsp/autoload/lsp/client.vim	/^function! lsp#client#send_request(client_id, opts) abort$/;"	f
+lsp#client#start	.vim/plugged/vim-lsp/autoload/lsp/client.vim	/^function! lsp#client#start(opts) abort$/;"	f
+lsp#client#stop	.vim/plugged/vim-lsp/autoload/lsp/client.vim	/^function! lsp#client#stop(client_id) abort$/;"	f
+lsp#complete	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! lsp#complete(...) abort$/;"	f
+lsp#disable	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! lsp#disable() abort$/;"	f
+lsp#enable	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! lsp#enable() abort$/;"	f
+lsp#get_position	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! lsp#get_position(...) abort$/;"	f
+lsp#get_server_capabilities	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! lsp#get_server_capabilities(server_name) abort$/;"	f
+lsp#get_server_info	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! lsp#get_server_info(server_name) abort$/;"	f
+lsp#get_server_names	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! lsp#get_server_names() abort$/;"	f
+lsp#get_server_status	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! lsp#get_server_status(...) abort$/;"	f
+lsp#get_text_document_identifier	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! lsp#get_text_document_identifier(...) abort$/;"	f
+lsp#get_whitelisted_servers	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! lsp#get_whitelisted_servers(...) abort$/;"	f
+lsp#log	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! lsp#log(...) abort$/;"	f
+lsp#log_verbose	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! lsp#log_verbose(...) abort$/;"	f
+lsp#omni#complete	.vim/plugged/vim-lsp/autoload/lsp/omni.vim	/^function! lsp#omni#complete(findstart, base) abort$/;"	f
+lsp#omni#get_kind_text	.vim/plugged/vim-lsp/autoload/lsp/omni.vim	/^function! lsp#omni#get_kind_text(completion_item) abort$/;"	f
+lsp#omni#get_vim_completion_item	.vim/plugged/vim-lsp/autoload/lsp/omni.vim	/^function! lsp#omni#get_vim_completion_item(item, ...) abort$/;"	f
+lsp#register_notifications	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! lsp#register_notifications(name, callback) abort$/;"	f
+lsp#register_server	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! lsp#register_server(server_info) abort$/;"	f
+lsp#send_request	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! lsp#send_request(server_name, request) abort$/;"	f
+lsp#stop_server	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! lsp#stop_server(server_name) abort$/;"	f
+lsp#ui#vim#code_action	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! lsp#ui#vim#code_action() abort$/;"	f
+lsp#ui#vim#declaration	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! lsp#ui#vim#declaration() abort$/;"	f
+lsp#ui#vim#definition	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! lsp#ui#vim#definition() abort$/;"	f
+lsp#ui#vim#diagnostics#document_diagnostics	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/diagnostics.vim	/^function! lsp#ui#vim#diagnostics#document_diagnostics() abort$/;"	f
+lsp#ui#vim#diagnostics#echo#cursor_moved	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/diagnostics/echo.vim	/^function! lsp#ui#vim#diagnostics#echo#cursor_moved() abort$/;"	f
+lsp#ui#vim#diagnostics#get_diagnostics_under_cursor	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/diagnostics.vim	/^function! lsp#ui#vim#diagnostics#get_diagnostics_under_cursor() abort$/;"	f
+lsp#ui#vim#diagnostics#handle_text_document_publish_diagnostics	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/diagnostics.vim	/^function! lsp#ui#vim#diagnostics#handle_text_document_publish_diagnostics(server_name, data) abo/;"	f
+lsp#ui#vim#diagnostics#next_error	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/diagnostics.vim	/^function! lsp#ui#vim#diagnostics#next_error() abort$/;"	f
+lsp#ui#vim#diagnostics#previous_error	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/diagnostics.vim	/^function! lsp#ui#vim#diagnostics#previous_error() abort$/;"	f
+lsp#ui#vim#document_format	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! lsp#ui#vim#document_format() abort$/;"	f
+lsp#ui#vim#document_format_sync	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! lsp#ui#vim#document_format_sync() abort$/;"	f
+lsp#ui#vim#document_range_format	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! lsp#ui#vim#document_range_format() abort$/;"	f
+lsp#ui#vim#document_range_format_sync	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! lsp#ui#vim#document_range_format_sync() abort$/;"	f
+lsp#ui#vim#document_symbol	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! lsp#ui#vim#document_symbol() abort$/;"	f
+lsp#ui#vim#hover#get_hover_under_cursor	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/hover.vim	/^function! lsp#ui#vim#hover#get_hover_under_cursor() abort$/;"	f
+lsp#ui#vim#implementation	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! lsp#ui#vim#implementation() abort$/;"	f
+lsp#ui#vim#output#preview	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/output.vim	/^function! lsp#ui#vim#output#preview(data) abort$/;"	f
+lsp#ui#vim#references	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! lsp#ui#vim#references() abort$/;"	f
+lsp#ui#vim#rename	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! lsp#ui#vim#rename() abort$/;"	f
+lsp#ui#vim#signs#disable	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/signs.vim	/^function! lsp#ui#vim#signs#disable() abort$/;"	f
+lsp#ui#vim#signs#enable	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/signs.vim	/^function! lsp#ui#vim#signs#enable() abort$/;"	f
+lsp#ui#vim#signs#set	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/signs.vim	/^function! lsp#ui#vim#signs#set(server_name, data) abort$/;"	f
+lsp#ui#vim#type_definition	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! lsp#ui#vim#type_definition() abort$/;"	f
+lsp#ui#vim#utils#diagnostics_to_loc_list	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/utils.vim	/^function! lsp#ui#vim#utils#diagnostics_to_loc_list(result) abort$/;"	f
+lsp#ui#vim#utils#locations_to_loc_list	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/utils.vim	/^function! lsp#ui#vim#utils#locations_to_loc_list(result) abort$/;"	f
+lsp#ui#vim#utils#symbols_to_loc_list	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/utils.vim	/^function! lsp#ui#vim#utils#symbols_to_loc_list(result) abort$/;"	f
+lsp#ui#vim#virtual#disable	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/virtual.vim	/^function! lsp#ui#vim#virtual#disable() abort$/;"	f
+lsp#ui#vim#virtual#enable	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/virtual.vim	/^function! lsp#ui#vim#virtual#enable() abort$/;"	f
+lsp#ui#vim#virtual#set	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/virtual.vim	/^function! lsp#ui#vim#virtual#set(server_name, data) abort$/;"	f
+lsp#ui#vim#workspace_symbol	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! lsp#ui#vim#workspace_symbol() abort$/;"	f
+lsp#unregister_notifications	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! lsp#unregister_notifications(name) abort$/;"	f
+lsp#utils#buffer#_get_lines	.vim/plugged/vim-lsp/autoload/lsp/utils/buffer.vim	/^function! lsp#utils#buffer#_get_lines(buf) abort$/;"	f
+lsp#utils#diff#compute	.vim/plugged/vim-lsp/autoload/lsp/utils/diff.vim	/^function! lsp#utils#diff#compute(old, new) abort$/;"	f
+lsp#utils#echo_with_truncation	.vim/plugged/vim-lsp/autoload/lsp/utils.vim	/^function! lsp#utils#echo_with_truncation(msg) abort$/;"	f
+lsp#utils#empty_complete	.vim/plugged/vim-lsp/autoload/lsp/utils.vim	/^function! lsp#utils#empty_complete(...) abort$/;"	f
+lsp#utils#error	.vim/plugged/vim-lsp/autoload/lsp/utils.vim	/^function! lsp#utils#error(msg) abort$/;"	f
+lsp#utils#find_nearest_parent_directory	.vim/plugged/vim-lsp/autoload/lsp/utils.vim	/^function! lsp#utils#find_nearest_parent_directory(path, directoryname) abort$/;"	f
+lsp#utils#find_nearest_parent_file	.vim/plugged/vim-lsp/autoload/lsp/utils.vim	/^function! lsp#utils#find_nearest_parent_file(path, filename) abort$/;"	f
+lsp#utils#find_nearest_parent_file_directory	.vim/plugged/vim-lsp/autoload/lsp/utils.vim	/^function! lsp#utils#find_nearest_parent_file_directory(path, filename) abort$/;"	f
+lsp#utils#get_buffer_path	.vim/plugged/vim-lsp/autoload/lsp/utils.vim	/^function! lsp#utils#get_buffer_path(...) abort$/;"	f
+lsp#utils#get_buffer_uri	.vim/plugged/vim-lsp/autoload/lsp/utils.vim	/^function! lsp#utils#get_buffer_uri(...) abort$/;"	f
+lsp#utils#get_default_root_uri	.vim/plugged/vim-lsp/autoload/lsp/utils.vim	/^function! lsp#utils#get_default_root_uri() abort$/;"	f
+lsp#utils#is_remote_uri	.vim/plugged/vim-lsp/autoload/lsp/utils.vim	/^function! lsp#utils#is_remote_uri(uri) abort$/;"	f
+lsp#utils#matchstrpos	.vim/plugged/vim-lsp/autoload/lsp/utils.vim	/^    function! lsp#utils#matchstrpos(expr, pattern) abort$/;"	f
+lsp#utils#path_to_uri	.vim/plugged/vim-lsp/autoload/lsp/utils.vim	/^    function! lsp#utils#path_to_uri(path) abort$/;"	f
+lsp#utils#step#start	.vim/plugged/vim-lsp/autoload/lsp/utils/step.vim	/^function! lsp#utils#step#start(steps) abort$/;"	f
+lsp#utils#uri_to_path	.vim/plugged/vim-lsp/autoload/lsp/utils.vim	/^    function! lsp#utils#uri_to_path(uri) abort$/;"	f
+lsp_auto_enable	.vim/plugged/vim-lsp/plugin/lsp.vim	/^    augroup lsp_auto_enable$/;"	a
 main	.vim/plugged/ultisnips/test_all.py	/^    def main():$/;"	f
 main	.vim/plugged/vim-template/templates/=template=.go	/^package main$/;"	p
 main_syntax	.vim/plugged/vim-polyglot/syntax/ansible.vim	/^  let main_syntax = 'yaml'$/;"	v
@@ -5616,6 +5809,7 @@ replace	.vim/plugged/ultisnips/pythonx/UltiSnips/text_objects/_transformation.py
 replace_initial_text	.vim/plugged/ultisnips/pythonx/UltiSnips/text_objects/_snippet_instance.py	/^    def replace_initial_text(self, buf):$/;"	m	class:SnippetInstance
 replace_vars	.vim/plugged/ultisnips/utils/get_tm_snippets.py	/^def replace_vars(m):$/;"	f
 replay_user_edits	.vim/plugged/ultisnips/pythonx/UltiSnips/text_objects/_snippet_instance.py	/^    def replay_user_edits(self, cmds, ctab=None):$/;"	m	class:SnippetInstance
+repo	.vim/plugged/emmet-vim/docs/index.html	/^			<article id="repo">$/;"	I
 repository	.vim/plugged/vim-snippets/addon-info.json	/^  "repository" : {"type": "git", "url": "git:\/\/github.com\/honza\/snipmate-snippets.git"},$/;"	o
 repro	.vim/plugged/ultisnips/Makefile	/^repro:$/;"	t
 reset	.vim/plugged/ultisnips/pythonx/UltiSnips/indent_util.py	/^    def reset(self):$/;"	m	class:IndentUtil
@@ -5989,6 +6183,7 @@ s:ExtraBrackets	.vim/plugged/vim-polyglot/indent/crystal.vim	/^function s:ExtraB
 s:ExtraBrackets	.vim/plugged/vim-polyglot/indent/ruby.vim	/^function! s:ExtraBrackets(lnum) abort$/;"	f
 s:ExtractInputs	.vim/plugged/vim-polyglot/ftplugin/latex-box/complete.vim	/^function! s:ExtractInputs()$/;"	f
 s:ExtractLabels	.vim/plugged/vim-polyglot/ftplugin/latex-box/complete.vim	/^function! s:ExtractLabels()$/;"	f
+s:ExtractText	.vim/plugged/vim-lsp/autoload/lsp/utils/diff.vim	/^function! s:ExtractText(lines, start_line, start_char, end_line, end_char) abort$/;"	f
 s:Extract_type_data	.vim/plugged/vim-polyglot/ftplugin/ocaml.vim	/^    function! s:Extract_type_data(block_pattern, annot_file_name)$/;"	f
 s:FALSE	.vim/plugged/vim-polyglot/indent/autohotkey.vim	/^let s:FALSE = 0$/;"	v
 s:FNAMEESCAPEPATTERN	.vim/plugged/vim-polyglot/autoload/julia/doc.vim	/^let s:FNAMEESCAPEPATTERN = '\\\\\\ze[' . escape(s:ESCAPEDCHARS, ']^-\\') . ']'$/;"	v
@@ -6013,6 +6208,7 @@ s:FindPreviousOpenStructure	.vim/plugged/vim-polyglot/indent/twig.vim	/^function
 s:FindStartLine	.vim/plugged/vim-polyglot/indent/nim.vim	/^function! s:FindStartLine(fromln, pattern)$/;"	f
 s:Find_common_path	.vim/plugged/vim-polyglot/ftplugin/ocaml.vim	/^  function! s:Find_common_path (p1,p2)$/;"	f
 s:FinishCommit	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:FinishCommit() abort$/;"	f
+s:FirstDifference	.vim/plugged/vim-lsp/autoload/lsp/utils/diff.vim	/^function! s:FirstDifference(old, new) abort$/;"	f
 s:FlagSet	.vim/plugged/nerdtree/lib/nerdtree/flag_set.vim	/^let s:FlagSet = {}$/;"	v
 s:FlagSet.New	.vim/plugged/nerdtree/lib/nerdtree/flag_set.vim	/^function! s:FlagSet.New()$/;"	f
 s:FlagSet._flagsForScope	.vim/plugged/nerdtree/lib/nerdtree/flag_set.vim	/^function! s:FlagSet._flagsForScope(scope)$/;"	f
@@ -6192,6 +6388,7 @@ s:L2U_longest_common_prefix	.vim/plugged/vim-polyglot/autoload/LaTeXtoUnicode.vi
 s:L2U_partmatches_sort	.vim/plugged/vim-polyglot/autoload/LaTeXtoUnicode.vim	/^function! s:L2U_partmatches_sort(p1, p2)$/;"	f
 s:LabelCache	.vim/plugged/vim-polyglot/ftplugin/latex-box/complete.vim	/^let s:LabelCache = {}$/;"	v
 s:LabelEnv	.vim/plugged/vim-polyglot/ftplugin/latex-box/folding.vim	/^function! s:LabelEnv()$/;"	f
+s:LastDifference	.vim/plugged/vim-lsp/autoload/lsp/utils/diff.vim	/^function! s:LastDifference(old, new, start_char) abort$/;"	f
 s:LatexBoxNextSection	.vim/plugged/vim-polyglot/ftplugin/latex-box/mappings.vim	/^function! s:LatexBoxNextSection(type, backwards, visual)$/;"	f
 s:LatexBox_complete_inlineMath_or_not	.vim/plugged/vim-polyglot/ftplugin/latex-box/complete.vim	/^function! s:LatexBox_complete_inlineMath_or_not()$/;"	f
 s:LatexBox_inlineMath_completion	.vim/plugged/vim-polyglot/ftplugin/latex-box/complete.vim	/^function! s:LatexBox_inlineMath_completion(regex, ...)$/;"	f
@@ -6201,6 +6398,7 @@ s:LatexmkCallback	.vim/plugged/vim-polyglot/ftplugin/latex-box/latexmk.vim	/^fun
 s:LatexmkSetPID	.vim/plugged/vim-polyglot/ftplugin/latex-box/latexmk.vim	/^function! s:LatexmkSetPID(basename, pid)$/;"	f
 s:LeadingOperator	.vim/plugged/vim-polyglot/indent/ruby.vim	/^function! s:LeadingOperator(cline_info) abort$/;"	f
 s:Len	.vim/plugged/vim-buffet/autoload/buffet.vim	/^function! s:Len(string)$/;"	f
+s:Length	.vim/plugged/vim-lsp/autoload/lsp/utils/diff.vim	/^function! s:Length(lines, start_line, start_char, end_line, end_char)$/;"	f
 s:LineHasOpeningBrackets	.vim/plugged/vim-polyglot/indent/json.vim	/^function s:LineHasOpeningBrackets(lnum)$/;"	f
 s:LineHasOpeningBrackets	.vim/plugged/vim-polyglot/indent/solidity.vim	/^function s:LineHasOpeningBrackets(lnum)$/;"	f
 s:LinkHi	.vim/plugged/vim-buffet/plugin/buffet.vim	/^function! s:LinkHi(name, target)$/;"	f
@@ -6283,6 +6481,7 @@ s:NavigateUp	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:Navig
 s:NextCharsMatch	.vim/plugged/vim-polyglot/ftplugin/latex-box/complete.vim	/^function! s:NextCharsMatch(regex)$/;"	f
 s:NextIndToken	.vim/plugged/vim-polyglot/indent/erlang.vim	/^function! s:NextIndToken(lnum, i)$/;"	f
 s:NextSection	.vim/plugged/vim-polyglot/ftplugin/scala.vim	/^function! s:NextSection(backwards)$/;"	f
+s:Noop	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:Noop(...) abort$/;"	f
 s:Notifier	.vim/plugged/nerdtree/lib/nerdtree/notifier.vim	/^let s:Notifier = {}$/;"	v
 s:Notifier.AddListener	.vim/plugged/nerdtree/lib/nerdtree/notifier.vim	/^function! s:Notifier.AddListener(event, funcname)$/;"	f
 s:Notifier.GetListenersForEvent	.vim/plugged/nerdtree/lib/nerdtree/notifier.vim	/^function! s:Notifier.GetListenersForEvent(name)$/;"	f
@@ -6719,9 +6918,11 @@ s:activateBookmark	.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim	/^functio
 s:activateDirNode	.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:activateDirNode(directoryNode)$/;"	f
 s:activateFileNode	.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:activateFileNode(node)$/;"	f
 s:add_db	.vim/plugged/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^function! s:add_db(db_file) abort$/;"	f
+s:add_didchange_queue	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:add_didchange_queue(buf) abort$/;"	f
 s:add_dummy_sign	.vim/plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^function! s:add_dummy_sign(bufnr) abort$/;"	f
 s:add_methods	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:add_methods(namespace, method_names) abort$/;"	f
 s:add_or_remove_suffix	.vim/plugged/vim-project/autoload/project/utils.vim	/^function! s:add_or_remove_suffix(file, suffix) abort$/;"	f
+s:add_sign	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/signs.vim	/^function! s:add_sign(sign_name, sign_default_text, sign_options) abort$/;"	f
 s:added_db_files	.vim/plugged/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^let s:added_db_files = {}$/;"	v
 s:added_dbs	.vim/plugged/vim-gutentags/autoload/gutentags/cscope.vim	/^let s:added_dbs = []$/;"	v
 s:adjust_header	.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^function! s:adjust_header(bufnr, hunk_diff)$/;"	f
@@ -6731,13 +6932,17 @@ s:aliases	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^let s:aliases = {}$/
 s:all	.vim/plugged/vim-polyglot/autoload/vital/_crystal/Data/List.vim	/^function! s:all(f, xs) abort$/;"	f
 s:all_tokens	.vim/plugged/vim-polyglot/indent/erlang.vim	/^let s:all_tokens = {}$/;"	v
 s:allsteps	.vim/plugged/vim-polyglot/ftplugin/cucumber.vim	/^function! s:allsteps()$/;"	f
+s:already_setup	.vim/plugged/vim-lsp/autoload/lsp.vim	/^let s:already_setup = 0$/;"	v
 s:alternatePair	.vim/plugged/vim-polyglot/indent/typescript.vim	/^function s:alternatePair(stop)$/;"	f
 s:and	.vim/plugged/vim-polyglot/autoload/vital/_crystal/Data/List.vim	/^function! s:and(xs) abort$/;"	f
 s:annot_file_list	.vim/plugged/vim-polyglot/ftplugin/ocaml.vim	/^  let s:annot_file_list = {}$/;"	v
 s:anon_func_end	.vim/plugged/vim-polyglot/indent/lua.vim	/^let s:anon_func_end = '\\<end\\%(\\s*[)}]\\)\\+'$/;"	v
 s:anon_func_start	.vim/plugged/vim-polyglot/indent/lua.vim	/^let s:anon_func_start = '\\S\\+\\s*[({].*\\<function\\s*(.*)\\s*$'$/;"	v
 s:any	.vim/plugged/vim-polyglot/autoload/vital/_crystal/Data/List.vim	/^function! s:any(f, xs) abort$/;"	f
+s:append	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/output.vim	/^function! s:append(data) abort$/;"	f
 s:append_ul	.vim/autoload/plug.vim	/^function! s:append_ul(lnum, text)$/;"	f
+s:apply_text_edits	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! s:apply_text_edits(uri, text_edits) abort$/;"	f
+s:apply_workspace_edits	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! s:apply_workspace_edits(workspace_edits) abort$/;"	f
 s:aqua	.vim/plugged/lightline.vim/autoload/lightline/colorscheme/PaperColor_dark.vim	/^let s:aqua = '#3e999f'$/;"	v
 s:aqua	.vim/plugged/lightline.vim/autoload/lightline/colorscheme/PaperColor_light.vim	/^let s:aqua = '#3e999f'$/;"	v
 s:array_entry	.vim/plugged/vim-polyglot/indent/ansible.vim	/^let s:array_entry = '\\v^\\s*-\\s' " - foo$/;"	v
@@ -6960,6 +7165,7 @@ s:buffer_spec	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:buff
 s:buffer_type	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:buffer_type(...) dict abort$/;"	f
 s:buffers	.vim/plugged/vim-buffet/autoload/buffet.vim	/^let s:buffers = {}$/;"	v
 s:bufnr	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^let s:bufnr       = bufnr('')$/;"	v
+s:build_cmd	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! s:build_cmd(uri, text_edit) abort$/;"	f
 s:build_command	.vim/plugged/vim-gitgutter/autoload/gitgutter/async.vim	/^function! s:build_command(cmd)$/;"	f
 s:build_path	.vim/plugged/vim-polyglot/ftplugin/ruby.vim	/^function! s:build_path(path) abort$/;"	f
 s:bvars	.vim/plugged/vim-polyglot/indent/javascript.vim	/^let s:bvars = {$/;"	v
@@ -6967,6 +7173,8 @@ s:bx	.vim/plugged/emmet-vim/autoload/emmet/lang/html.vim	/^let s:bx = '{\\%("[^"
 s:c_flag	.vim/plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^let s:c_flag = s:git_supports_command_line_config_override()$/;"	v
 s:cache_project_root	.vim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! s:cache_project_root(path) abort$/;"	f
 s:cache_sid	.vim/plugged/vim-polyglot/autoload/vital/crystal.vim	/^let s:cache_sid = {}$/;"	v
+s:call_did_save	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:call_did_save(buf, server_name, result, cb) abort$/;"	f
+s:callback	.vim/plugged/vim-lsp/autoload/lsp/utils/step.vim	/^function! s:callback(steps, current_index, ...) abort$/;"	f
 s:callback	.vim/plugged/vim-project/autoload/project/config.vim	/^function! s:callback(title) abort$/;"	f
 s:can_diffoff	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:can_diffoff(buf) abort$/;"	f
 s:cd_to_vcs_root	.vim/plugged/vim-startify/autoload/startify.vim	/^function! s:cd_to_vcs_root(path) abort$/;"	f
@@ -7000,6 +7208,10 @@ s:clean	.vim/autoload/plug.vim	/^function! s:clean(force)$/;"	f
 s:clear	.vim/plugged/lightline.vim/test/link.vim	/^function! s:clear()$/;"	f
 s:clear	.vim/plugged/vim-gitgutter/autoload/gitgutter.vim	/^function! s:clear(bufnr)$/;"	f
 s:clear	.vim/plugged/vim-polyglot/autoload/vital/_crystal/Data/List.vim	/^function! s:clear(list) abort$/;"	f
+s:clear_all_virtual	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/virtual.vim	/^function! s:clear_all_virtual(ns) abort$/;"	f
+s:clear_signs	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/signs.vim	/^function! s:clear_signs(server_name, path) abort$/;"	f
+s:clear_virtual	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/virtual.vim	/^function! s:clear_virtual(server_name, path) abort$/;"	f
+s:clients	.vim/plugged/vim-lsp/autoload/lsp/client.vim	/^let s:clients = {} " { client_id: ctx }$/;"	v
 s:clojure_check_for_string_worker	.vim/plugged/vim-polyglot/indent/clojure.vim	/^	function! s:clojure_check_for_string_worker()$/;"	f
 s:clojure_indent_pos	.vim/plugged/vim-polyglot/indent/clojure.vim	/^	function! s:clojure_indent_pos()$/;"	f
 s:clojure_is_method_special_case_worker	.vim/plugged/vim-polyglot/indent/clojure.vim	/^	function! s:clojure_is_method_special_case_worker(position)$/;"	f
@@ -7028,9 +7240,14 @@ s:commondirs	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^let s:commondirs 
 s:compare_by_index	.vim/plugged/vim-startify/autoload/startify.vim	/^  function! s:compare_by_index(foo, bar)$/;"	f
 s:compare_by_key_len	.vim/plugged/vim-startify/autoload/startify.vim	/^  function! s:compare_by_key_len(foo, bar)$/;"	f
 s:compare_by_val_len	.vim/plugged/vim-startify/autoload/startify.vim	/^  function! s:compare_by_val_len(foo, bar)$/;"	f
+s:compare_diagnostics	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/diagnostics.vim	/^function! s:compare_diagnostics(d1, d2) abort$/;"	f
 s:compare_git_uri	.vim/autoload/plug.vim	/^function! s:compare_git_uri(a, b)$/;"	f
 s:compare_pos	.vim/plugged/vim-polyglot/autoload/julia_blocks.vim	/^function! s:compare_pos(pos1, pos2)$/;"	f
 s:compensate_for_pum	.vim/plugged/ultisnips/autoload/UltiSnips.vim	/^function! s:compensate_for_pum()$/;"	f
+s:completion	.vim/plugged/vim-lsp/autoload/lsp/omni.vim	/^let s:completion = {'counter': 0, 'status': '', 'matches': []}$/;"	v
+s:completion_status_failed	.vim/plugged/vim-lsp/autoload/lsp/omni.vim	/^let s:completion_status_failed = 'failed'$/;"	v
+s:completion_status_pending	.vim/plugged/vim-lsp/autoload/lsp/omni.vim	/^let s:completion_status_pending = 'pending'$/;"	v
+s:completion_status_success	.vim/plugged/vim-lsp/autoload/lsp/omni.vim	/^let s:completion_status_success = 'success'$/;"	v
 s:completion_type	.vim/plugged/vim-polyglot/ftplugin/latex-box/complete.vim	/^let s:completion_type = ''$/;"	v
 s:concat	.vim/plugged/vim-polyglot/autoload/vital/_crystal/Data/List.vim	/^function! s:concat(list) abort$/;"	f
 s:conceal	.vim/plugged/vim-polyglot/syntax/markdown.vim	/^  let s:conceal = ' conceal'$/;"	v
@@ -7068,6 +7285,10 @@ s:cpo_sav	.vim/plugged/vim-polyglot/syntax/clojure.vim	/^let s:cpo_sav = &cpo$/;
 s:cpo_sav	.vim/plugged/vim-polyglot/syntax/puppet.vim	/^let s:cpo_sav = &cpo$/;"	v
 s:cpo_sav	.vim/plugged/vim-polyglot/syntax/ruby.vim	/^let s:cpo_sav = &cpo$/;"	v
 s:cpo_save	.vim/autoload/plug.vim	/^let s:cpo_save = &cpo$/;"	v
+s:cpo_save	.vim/plugged/qt-support.vim/synmenu.vim	/^let s:cpo_save = &cpo$/;"	v
+s:cpo_save	.vim/plugged/qt-support.vim/syntax/qbs.vim	/^let s:cpo_save = &cpo$/;"	v
+s:cpo_save	.vim/plugged/qt-support.vim/syntax/qmake.vim	/^let s:cpo_save = &cpo$/;"	v
+s:cpo_save	.vim/plugged/qt-support.vim/syntax/qml.vim	/^let s:cpo_save = &cpo$/;"	v
 s:cpo_save	.vim/plugged/vim-polyglot/autoload/go/config.vim	/^let s:cpo_save = &cpo$/;"	v
 s:cpo_save	.vim/plugged/vim-polyglot/autoload/pony.vim	/^let s:cpo_save = &cpo$/;"	v
 s:cpo_save	.vim/plugged/vim-polyglot/compiler/cucumber.vim	/^let s:cpo_save = &cpo$/;"	v
@@ -7128,6 +7349,7 @@ s:cpo_save	.vim/plugged/vim-polyglot/syntax/tt2.vim	/^let s:cpo_save = &cpo$/;"	
 s:cpo_save	.vim/plugged/vim-polyglot/syntax/vifm.vim	/^let s:cpo_save = &cpo$/;"	v
 s:cpoptions_save	.vim/plugged/vim-polyglot/ftplugin/qml.vim	/^let s:cpoptions_save = &cpoptions$/;"	v
 s:cposet	.vim/plugged/vim-polyglot/ftplugin/ocaml.vim	/^let s:cposet=&cpoptions$/;"	v
+s:create_context	.vim/plugged/vim-lsp/autoload/lsp/client.vim	/^function! s:create_context(client_id, opts) abort$/;"	f
 s:create_last_session_link	.vim/plugged/vim-startify/autoload/startify.vim	/^function! s:create_last_session_link(spath)$/;"	f
 s:crystal_deindent_keywords	.vim/plugged/vim-polyglot/indent/crystal.vim	/^let s:crystal_deindent_keywords =$/;"	v
 s:crystal_indent_keywords	.vim/plugged/vim-polyglot/indent/crystal.vim	/^let s:crystal_indent_keywords =$/;"	v
@@ -7174,6 +7396,7 @@ s:dec_num	.vim/plugged/vim-polyglot/syntax/nim.vim	/^  let s:dec_num = '\\d%(_?\
 s:dec_regex	.vim/plugged/vim-polyglot/syntax/julia.vim	/^let s:dec_regex = '\\d\\%(_\\?\\d\\)*\\%(\\>\\|im\\>\\|\\ze\\D\\)'$/;"	v
 s:decode	.vim/plugged/vim-polyglot/autoload/vital/_crystal/Web/JSON.vim	/^function! s:decode(json, ...) abort$/;"	f
 s:decode_json	.vim/plugged/vim-polyglot/autoload/crystal_lang.vim	/^    function! s:decode_json(text) abort$/;"	f
+s:decode_uri	.vim/plugged/vim-lsp/autoload/lsp/utils.vim	/^function! s:decode_uri(uri) abort$/;"	f
 s:defArgMatcher	.vim/plugged/vim-polyglot/indent/scala.vim	/^let s:defArgMatcher = '\\%((\\_.\\{-})\\)'$/;"	v
 s:defMatcher	.vim/plugged/vim-polyglot/indent/scala.vim	/^let s:defMatcher = '\\%(\\%(private\\|protected\\)\\%(\\[[^\\]]*\\]\\)\\?\\s\\+\\|abstract\\s\\+/;"	v
 s:default_mappings	.vim/plugged/vim-polyglot/autoload/julia_blocks.vim	/^let s:default_mappings = {$/;"	v
@@ -7182,15 +7405,20 @@ s:define_commands	.vim/autoload/plug.vim	/^function! s:define_commands()$/;"	f
 s:define_commands	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:define_commands() abort$/;"	f
 s:define_sign_line_highlights	.vim/plugged/vim-gitgutter/autoload/gitgutter/highlight.vim	/^function! s:define_sign_line_highlights() abort$/;"	f
 s:define_sign_text	.vim/plugged/vim-gitgutter/autoload/gitgutter/highlight.vim	/^function! s:define_sign_text() abort$/;"	f
+s:define_signs	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/signs.vim	/^function! s:define_signs() abort$/;"	f
 s:delete	.vim/autoload/plug.vim	/^function! s:delete(range, force)$/;"	f
 s:deleteBookmark	.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:deleteBookmark(bookmark)$/;"	f
 s:delete_op	.vim/autoload/plug.vim	/^function! s:delete_op(type, ...)$/;"	f
 s:delimitMate_extra_excluded_regions	.vim/plugged/vim-polyglot/autoload/rust/delimitmate.vim	/^let s:delimitMate_extra_excluded_regions = ',rustLifetimeCandidate,rustGenericLifetimeCandidate'$/;"	v
 s:delimiter	.vim/plugged/vim-polyglot/syntax/ruby.vim	/^    let s:delimiter = '\\' . s:delimiter$/;"	v
 s:delimiters	.vim/plugged/vim-polyglot/ftplugin/caddyfile.vim	/^let s:delimiters = {'left': '#'}$/;"	v
+s:diagnostic_severity	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/utils.vim	/^let s:diagnostic_severity = {$/;"	v
+s:diagnostics	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/diagnostics.vim	/^let s:diagnostics = {} " { uri: { 'server_name': response } }$/;"	v
 s:dictionary_entry	.vim/plugged/vim-polyglot/indent/ansible.vim	/^let s:dictionary_entry = '\\v^\\s*[^:-]+:\\s*$' " with_items:$/;"	v
 s:did_check_exe	.vim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^let s:did_check_exe = 0$/;"	v
 s:did_indent	.vim/plugged/vim-polyglot/after/indent/jsx.vim	/^  let s:did_indent=b:did_indent$/;"	v
+s:didchange_queue	.vim/plugged/vim-lsp/autoload/lsp.vim	/^let s:didchange_queue = []$/;"	v
+s:didchange_timer	.vim/plugged/vim-lsp/autoload/lsp.vim	/^let s:didchange_timer = -1$/;"	v
 s:diff	.vim/autoload/plug.vim	/^function! s:diff()$/;"	f
 s:diff_modifier	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:diff_modifier(count) abort$/;"	f
 s:diff_restore	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:diff_restore() abort$/;"	f
@@ -7215,11 +7443,14 @@ s:dirpath	.vim/autoload/plug.vim	/^  function! s:dirpath(path)$/;"	f
 s:discard_header	.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^function! s:discard_header(hunk_diff)$/;"	f
 s:displayHelp	.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:displayHelp()$/;"	f
 s:display_by_path	.vim/plugged/vim-startify/autoload/startify.vim	/^function! s:display_by_path(path_prefix, path_format, use_env) abort$/;"	f
+s:dispose_context	.vim/plugged/vim-lsp/autoload/lsp/client.vim	/^function! s:dispose_context(client_id) abort$/;"	f
 s:do	.vim/autoload/plug.vim	/^function! s:do(pull, force, todo)$/;"	f
 s:do_handle_pattern_match_block	.vim/plugged/vim-polyglot/autoload/elixir/indent.vim	/^function! s:do_handle_pattern_match_block(relative_line, context)$/;"	f
 s:do_tests	.vim/plugged/emmet-vim/unittest.vim	/^function! s:do_tests(bang, ...)$/;"	f
 s:doautocmd	.vim/autoload/plug.vim	/^function! s:doautocmd(...)$/;"	f
 s:dobufread	.vim/autoload/plug.vim	/^function! s:dobufread(names)$/;"	f
+s:document_format	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! s:document_format(sync) abort$/;"	f
+s:document_format_range	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! s:document_format_range(sync) abort$/;"	f
 s:doesOrderConnect	.vim/plugged/vim-polyglot/indent/applescript.vim	/^func! s:doesOrderConnect(text)$/;"	f
 s:dollar_add	.vim/plugged/emmet-vim/autoload/emmet/lang/html.vim	/^function! s:dollar_add(base,no) abort$/;"	f
 s:done	.vim/plugged/vim-gitgutter/test/runner.vim	/^  let s:done += 1$/;"	v
@@ -7232,6 +7463,7 @@ s:drop_while	.vim/plugged/vim-polyglot/autoload/vital/_crystal/Data/List.vim	/^f
 s:dstring	.vim/plugged/vim-polyglot/autoload/vital/_crystal/Data/String.vim	/^function! s:dstring(expr) abort$/;"	f
 s:dummy_sign_id	.vim/plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^let s:dummy_sign_id = s:first_sign_id - 1$/;"	v
 s:echo	.vim/plugged/vim-polyglot/autoload/vital/_crystal/ColorEcho.vim	/^function! s:echo(str) abort$/;"	f
+s:echo_diagnostics_under_cursor	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/diagnostics/echo.vim	/^function! s:echo_diagnostics_under_cursor(...) abort$/;"	f
 s:echo_error	.vim/plugged/vim-polyglot/autoload/crystal_lang.vim	/^function! s:echo_error(msg, ...) abort$/;"	f
 s:echorizer	.vim/plugged/vim-polyglot/autoload/vital/_crystal/ColorEcho.vim	/^let s:echorizer = {$/;"	v
 s:echorizer.eat	.vim/plugged/vim-polyglot/autoload/vital/_crystal/ColorEcho.vim	/^function s:echorizer.eat() abort$/;"	f
@@ -7241,7 +7473,11 @@ s:ed	.vim/plugged/vim-polyglot/syntax/tt2.vim	/^        let s:ed = strpart(s:str
 s:elmOracle	.vim/plugged/vim-polyglot/autoload/elm.vim	/^function! s:elmOracle(...) abort$/;"	f
 s:emmet_settings	.vim/plugged/emmet-vim/autoload/emmet.vim	/^let s:emmet_settings = {$/;"	v
 s:emmet_unittest_complete	.vim/plugged/emmet-vim/unittest.vim	/^function! s:emmet_unittest_complete(arglead, cmdline, cmdpos)$/;"	f
+s:enabled	.vim/plugged/vim-lsp/autoload/lsp.vim	/^let s:enabled = 0$/;"	v
+s:enabled	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/signs.vim	/^let s:enabled = 0$/;"	v
+s:enabled	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/virtual.vim	/^let s:enabled = 0$/;"	v
 s:encode	.vim/plugged/vim-polyglot/autoload/vital/_crystal/Web/JSON.vim	/^function! s:encode(val, ...) abort$/;"	f
+s:encode_uri	.vim/plugged/vim-lsp/autoload/lsp/utils.vim	/^function! s:encode_uri(path, start_pos_encode, default_prefix) abort$/;"	f
 s:end_conditional_directive_rx	.vim/plugged/vim-polyglot/indent/omake.vim	/^let s:end_conditional_directive_rx = '^\\s*\\%(else\\|endif\\)\\>'$/;"	v
 s:end_end_regex	.vim/plugged/vim-polyglot/autoload/rubycomplete.vim	/^let s:end_end_regex = '\\%(^\\|[^.:@$]\\)\\@<=\\<end:\\@!\\>'$/;"	v
 s:end_end_regex	.vim/plugged/vim-polyglot/indent/crystal.vim	/^let s:end_end_regex = '\\%(^\\|[^.:@$]\\)\\@<=\\<end:\\@!\\>\\|{%\\s*\\<\\%(end\\)\\>'$/;"	v
@@ -7257,9 +7493,17 @@ s:end_start_regex	.vim/plugged/vim-polyglot/indent/ruby.vim	/^let s:end_start_re
 s:ends_with	.vim/plugged/vim-polyglot/autoload/vital/_crystal/Data/String.vim	/^function! s:ends_with(str, suffix) abort$/;"	f
 s:endtag	.vim/plugged/vim-polyglot/after/indent/jsx.vim	/^let s:endtag = '^\\s*\\\/\\?>\\s*;\\='$/;"	v
 s:endtags	.vim/plugged/vim-polyglot/indent/html.vim	/^let s:endtags = [0,0,0,0,0,0,0]   " long enough for the highest index$/;"	v
+s:ensure_changed	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:ensure_changed(buf, server_name, cb) abort$/;"	f
+s:ensure_conf	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:ensure_conf(buf, server_name, cb) abort$/;"	f
+s:ensure_flush	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:ensure_flush(buf, server_name, cb) abort$/;"	f
+s:ensure_flush_all	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:ensure_flush_all(buf, server_names) abort$/;"	f
+s:ensure_init	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:ensure_init(buf, server_name, cb) abort$/;"	f
+s:ensure_open	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:ensure_open(buf, server_name, cb) abort$/;"	f
+s:ensure_start	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:ensure_start(buf, server_name, cb) abort$/;"	f
 s:envbeginpattern	.vim/plugged/vim-polyglot/ftplugin/latex-box/folding.vim	/^let s:envbeginpattern = s:notcomment . s:notbslash . '\\\\begin\\s*{.\\{-}}'$/;"	v
 s:envendpattern	.vim/plugged/vim-polyglot/ftplugin/latex-box/folding.vim	/^let s:envendpattern = s:notcomment . s:notbslash . '\\\\end\\s*{.\\{-}}'$/;"	v
 s:err	.vim/autoload/plug.vim	/^function! s:err(msg)$/;"	f
+s:err_cb	.vim/plugged/async.vim/autoload/async/job.vim	/^function! s:err_cb(jobid, opts, job, data) abort$/;"	f
 s:error	.vim/plugged/lightline.vim/autoload/lightline/colorscheme/PaperColor_dark.vim	/^let s:error = '#5f0000'$/;"	v
 s:error	.vim/plugged/lightline.vim/autoload/lightline/colorscheme/PaperColor_light.vim	/^let s:error = '#ffafdf'$/;"	v
 s:error	.vim/plugged/vim-polyglot/autoload/dart.vim	/^function! s:error(text) abort$/;"	f
@@ -7284,6 +7528,7 @@ s:executables	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^let s:executable
 s:exists	.vim/plugged/emmet-vim/autoload/emmet/lang.vim	/^let s:exists = {}$/;"	v
 s:exists	.vim/plugged/vim-polyglot/autoload/vital/crystal.vim	/^function! s:exists(name) abort dict$/;"	f
 s:exists_file	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! s:exists_file(bufnr) abort$/;"	f
+s:exit_cb	.vim/plugged/async.vim/autoload/async/job.vim	/^function! s:exit_cb(jobid, opts, job, status) abort$/;"	f
 s:exp	.vim/plugged/vim-polyglot/syntax/nim.vim	/^  let s:exp = '%([eE][+-]?'.s:dec_num.')'$/;"	v
 s:expand	.vim/plugged/lightline.vim/autoload/lightline.vim	/^function! s:expand(components) abort$/;"	f
 s:expand	.vim/plugged/lightline.vim/test/expand.vim	/^function! s:expand(...)$/;"	f
@@ -7302,6 +7547,7 @@ s:ffn	.vim/plugged/vim-eunuch/plugin/eunuch.vim	/^function! s:ffn(fn, path) abor
 s:fg	.vim/plugged/lightline.vim/autoload/lightline/colorscheme/materia.vim	/^let s:fg     = '#d5dbe5'$/;"	v
 s:fg	.vim/plugged/lightline.vim/autoload/lightline/colorscheme/material.vim	/^let s:fg     = '#eeffff'$/;"	v
 s:fg	.vim/plugged/lightline.vim/autoload/lightline/colorscheme/one.vim	/^let s:fg     = [ '#abb2bf', 145 ]$/;"	v
+s:file_content	.vim/plugged/vim-lsp/autoload/lsp.vim	/^let s:file_content = {}$/;"	v
 s:file_name	.vim/plugged/vim-polyglot/indent/erlang.vim	/^let s:file_name = ''$/;"	v
 s:filename	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! s:filename(bufnr) abort$/;"	f
 s:files	.vim/plugged/vim-polyglot/ftplugin/vifm-rename.vim	/^let s:files = getline(1, '$')$/;"	v
@@ -7314,6 +7560,7 @@ s:findAndRevealPath	.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim	/^functi
 s:findDependencyModule	.vim/plugged/vim-polyglot/autoload/elm/util.vim	/^function! s:findDependencyModule(rel_path, root)$/;"	f
 s:findLocalModule	.vim/plugged/vim-polyglot/autoload/elm/util.vim	/^function! s:findLocalModule(rel_path, root)$/;"	f
 s:find_block	.vim/plugged/vim-polyglot/autoload/julia_blocks.vim	/^function! s:find_block(current_mode)$/;"	f
+s:find_complete_servers	.vim/plugged/vim-lsp/autoload/lsp/omni.vim	/^function! s:find_complete_servers() abort$/;"	f
 s:find_completion_start	.vim/plugged/vim-polyglot/autoload/crystal_lang.vim	/^function! s:find_completion_start() abort$/;"	f
 s:find_current_signs	.vim/plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^function! s:find_current_signs(bufnr) abort$/;"	f
 s:find_following_block	.vim/plugged/vim-polyglot/after/ftplugin/llvm.vim	/^function! s:find_following_block(linum) abort$/;"	f
@@ -7336,6 +7583,7 @@ s:first_rtp	.vim/autoload/plug.vim	/^let s:first_rtp = s:escrtp(get(s:split_rtp(
 s:first_sign_id	.vim/plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^let s:first_sign_id = 3000$/;"	v
 s:fix_file_references	.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^function! s:fix_file_references(filepath, hunk_diff)$/;"	f
 s:fixed_column	.vim/plugged/vim-startify/autoload/startify.vim	/^let s:fixed_column = len(s:padding_left) + 2$/;"	v
+s:fixendofline_exists	.vim/plugged/vim-lsp/autoload/lsp/utils/buffer.vim	/^let s:fixendofline_exists = exists('+fixendofline')$/;"	v
 s:flag	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^let s:flag = '\\%(:[p8~.htre]\\|:g\\=s\\(.\\).\\{-\\}\\1.\\{-\\}\\1\\)'$/;"	v
 s:flatten	.vim/plugged/vim-polyglot/autoload/vital/_crystal/Data/List.vim	/^function! s:flatten(list, ...) abort$/;"	f
 s:flatten_twice	.vim/plugged/lightline.vim/autoload/lightline.vim	/^function! s:flatten_twice(xss) abort$/;"	f
@@ -7344,6 +7592,7 @@ s:float_regex1	.vim/plugged/vim-polyglot/syntax/julia.vim	/^let s:float_regex1 =
 s:float_regex2	.vim/plugged/vim-polyglot/syntax/julia.vim	/^let s:float_regex2 = '\\d\\%(_\\?\\d\\)*\\.\\%(\\d\\%(_\\?\\d\\)*\\)\\?\\%([eEf][-+]\\?\\d\\+\\)/;"	v
 s:float_regex3	.vim/plugged/vim-polyglot/syntax/julia.vim	/^let s:float_regex3 = '\\d\\%(_\\?\\d\\)*[eEf][-+]\\?\\d\\+\\%(\\>\\|im\\>\\|\\ze\\D\\)'$/;"	v
 s:float_suf	.vim/plugged/vim-polyglot/syntax/nim.vim	/^  let s:float_suf = '%(''%(%(f|F)%(32|64|128)?|d|D))'$/;"	v
+s:flush_vim_sendraw	.vim/plugged/async.vim/autoload/async/job.vim	/^function! s:flush_vim_sendraw(jobid, timer) abort$/;"	f
 s:fnameescape	.vim/plugged/vim-eunuch/plugin/eunuch.vim	/^function! s:fnameescape(string) abort$/;"	f
 s:fnameescape	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:fnameescape(file) abort$/;"	f
 s:fnameescape	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^let s:fnameescape = " \\t\\n*?[{`$\\\\%#'\\"|!<"$/;"	v
@@ -7376,29 +7625,49 @@ s:funcs_re	.vim/plugged/vim-polyglot/syntax/python.vim	/^  let s:funcs_re = '__i
 s:funcs_re	.vim/plugged/vim-polyglot/syntax/python.vim	/^  let s:funcs_re = 'syn match pythonBuiltinFunc ''\\v\\.@<!\\zs<%(' . s:funcs_re . ')>'$/;"	v
 s:function	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:function(name) abort$/;"	f
 s:function_range_at	.vim/plugged/vim-polyglot/after/ftplugin/llvm.vim	/^function! s:function_range_at(linum) abort$/;"	f
+s:generate_move_end_cmd	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! s:generate_move_end_cmd(line_pos, character_pos) abort$/;"	f
+s:generate_move_start_cmd	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! s:generate_move_start_cmd(line_pos, character_pos) abort$/;"	f
+s:generate_sub_cmd	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! s:generate_sub_cmd(text_edit) abort$/;"	f
+s:generate_sub_cmd_insert	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! s:generate_sub_cmd_insert(text_edit) abort$/;"	f
+s:generate_sub_cmd_replace	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! s:generate_sub_cmd_replace(text_edit) abort$/;"	f
 s:generate_wildignore_options	.vim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^function! s:generate_wildignore_options() abort$/;"	f
 s:getHLStack	.vim/plugged/vim-polyglot/indent/haskell.vim	/^function! s:getHLStack(line, col)$/;"	f
 s:getNesting	.vim/plugged/vim-polyglot/indent/haskell.vim	/^function! s:getNesting(hlstack)$/;"	f
+s:get_all_buffer_diagnostics	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/diagnostics.vim	/^function! s:get_all_buffer_diagnostics() abort$/;"	f
 s:get_background_colors	.vim/plugged/vim-gitgutter/autoload/gitgutter/highlight.vim	/^function! s:get_background_colors(group) abort$/;"	f
 s:get_base_indent	.vim/plugged/vim-polyglot/autoload/elixir/indent.vim	/^function! s:get_base_indent(lnum, text)$/;"	f
 s:get_browser_command	.vim/plugged/vim-polyglot/autoload/elm/util.vim	/^fun! s:get_browser_command() abort$/;"	f
+s:get_completion_result	.vim/plugged/vim-lsp/autoload/lsp/omni.vim	/^function! s:get_completion_result(data) abort$/;"	f
+s:get_content_length	.vim/plugged/vim-lsp/autoload/lsp/client.vim	/^function! s:get_content_length(headers) abort$/;"	f
 s:get_ctags_executable	.vim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^function! s:get_ctags_executable(proj_dir) abort$/;"	f
+s:get_diagnostic_severity_text	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/utils.vim	/^function! s:get_diagnostic_severity_text(severity) abort$/;"	f
+s:get_diagnostics	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/diagnostics.vim	/^function! s:get_diagnostics(uri) abort$/;"	f
 s:get_echorizer	.vim/plugged/vim-polyglot/autoload/vital/_crystal/ColorEcho.vim	/^function! s:get_echorizer(str) abort$/;"	f
 s:get_env	.vim/plugged/vim-startify/autoload/startify.vim	/^  function! s:get_env()$/;"	f
+s:get_fixendofline	.vim/plugged/vim-lsp/autoload/lsp/utils/buffer.vim	/^function! s:get_fixendofline(buf) abort$/;"	f
 s:get_foreground_colors	.vim/plugged/vim-gitgutter/autoload/gitgutter/highlight.vim	/^function! s:get_foreground_colors(group) abort$/;"	f
 s:get_func_identifiers	.vim/plugged/vim-polyglot/after/ftplugin/llvm.vim	/^function! s:get_func_identifiers(line) abort$/;"	f
 s:get_identifiers	.vim/plugged/vim-polyglot/after/ftplugin/llvm.vim	/^function! s:get_identifiers(line) abort$/;"	f
 s:get_indentexpr	.vim/plugged/vim-polyglot/indent/vue.vim	/^function! s:get_indentexpr(language)$/;"	f
 s:get_index_as_string	.vim/plugged/vim-startify/autoload/startify.vim	/^function! s:get_index_as_string() abort$/;"	f
+s:get_last_file_content	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:get_last_file_content(buf, server_name) abort$/;"	f
 s:get_last_status	.vim/plugged/vim-polyglot/autoload/vital/_crystal/Process.vim	/^function! s:get_last_status() abort$/;"	f
 s:get_line_trimmed	.vim/plugged/vim-polyglot/indent/reason.vim	/^function! s:get_line_trimmed(lnum)$/;"	f
 s:get_line_trimmed	.vim/plugged/vim-polyglot/indent/rust.vim	/^function! s:get_line_trimmed(lnum)$/;"	f
 s:get_lists	.vim/plugged/vim-startify/autoload/startify.vim	/^function! s:get_lists() abort$/;"	f
+s:get_prefix	.vim/plugged/vim-lsp/autoload/lsp/utils.vim	/^function! s:get_prefix(path) abort$/;"	f
 s:get_random_offset	.vim/plugged/vim-startify/autoload/startify/fortune.vim	/^function! s:get_random_offset(max) abort$/;"	f
 s:get_save_pos	.vim/plugged/vim-polyglot/autoload/julia_blocks.vim	/^function! s:get_save_pos(...)$/;"	f
 s:get_sep	.vim/plugged/vim-project/autoload/project/config.vim	/^function! s:get_sep() abort$/;"	f
 s:get_session_path	.vim/plugged/vim-startify/autoload/startify.vim	/^function! s:get_session_path() abort$/;"	f
+s:get_sign_group	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/signs.vim	/^function! s:get_sign_group(server_name) abort$/;"	f
+s:get_symbol_text_from_kind	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/utils.vim	/^function! s:get_symbol_text_from_kind(kind) abort$/;"	f
 s:get_tag	.vim/plugged/vim-polyglot/indent/html.vim	/^func! s:get_tag(tagname)$/;"	f
+s:get_text_document	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:get_text_document(buf, server_name, buffer_info) abort$/;"	f
+s:get_text_document_identifier	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:get_text_document_identifier(buf, buffer_info) abort$/;"	f
+s:get_text_document_text	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:get_text_document_text(buf, server_name) abort$/;"	f
+s:get_virtual_group	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/virtual.vim	/^function! s:get_virtual_group(name) abort$/;"	f
+s:get_visual_selection_pos	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! s:get_visual_selection_pos() abort$/;"	f
 s:getmapchars	.vim/plugged/vim-polyglot/autoload/julia_blocks.vim	/^function! s:getmapchars(function)$/;"	f
 s:git_diff	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function s:git_diff()$/;"	f
 s:git_diff_staged	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function s:git_diff_staged()$/;"	f
@@ -7463,9 +7732,19 @@ s:gsub	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:gsub(str,pa
 s:guicolor	.vim/plugged/lightline.vim/autoload/lightline/colorscheme.vim	/^let s:guicolor = {$/;"	v
 s:handleLeftClick	.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:handleLeftClick()$/;"	f
 s:handleMiddleMouse	.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:handleMiddleMouse()$/;"	f
+s:handle_code_action	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! s:handle_code_action(server, last_req_id, type, data) abort$/;"	f
+s:handle_hover	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/hover.vim	/^function! s:handle_hover(server, data) abort$/;"	f
+s:handle_initialize	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:handle_initialize(server_name, data) abort$/;"	f
+s:handle_location	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! s:handle_location(ctx, server, type, data) abort "ctx = {counter, list, jump_if_one, l/;"	f
+s:handle_omnicompletion	.vim/plugged/vim-lsp/autoload/lsp/omni.vim	/^function! s:handle_omnicompletion(server_name, complete_counter, data) abort$/;"	f
+s:handle_rename_prepare	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! s:handle_rename_prepare(server, last_req_id, type, data) abort$/;"	f
+s:handle_symbol	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! s:handle_symbol(server, last_req_id, type, data) abort$/;"	f
+s:handle_text_edit	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! s:handle_text_edit(server, last_req_id, type, data) abort$/;"	f
 s:handle_with	.vim/plugged/vim-polyglot/autoload/elixir/indent.vim	/^function! s:handle_with(start_lnum, start_col, context)$/;"	f
+s:handle_workspace_edit	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! s:handle_workspace_edit(server, last_req_id, type, data) abort$/;"	f
 s:hardRefreshNerdTree	.vim/plugged/vim-devicons/plugin/webdevicons.vim	/^function! s:hardRefreshNerdTree()$/;"	f
 s:has	.vim/plugged/vim-polyglot/autoload/vital/_crystal/Data/List.vim	/^function! s:has(list, value) abort$/;"	f
+s:has_bool_provider	.vim/plugged/vim-lsp/autoload/lsp/capabilities.vim	/^function! s:has_bool_provider(server_name, ...) abort$/;"	f
 s:has_common_items	.vim/plugged/vim-polyglot/autoload/vital/_crystal/Data/List.vim	/^function! s:has_common_items(list1, list2) abort$/;"	f
 s:has_fresh_changes	.vim/plugged/vim-gitgutter/autoload/gitgutter.vim	/^function! s:has_fresh_changes(bufnr) abort$/;"	f
 s:has_index	.vim/plugged/vim-polyglot/autoload/vital/_crystal/Data/List.vim	/^function! s:has_index(list, index) abort$/;"	f
@@ -7537,7 +7816,9 @@ s:is_concealed	.vim/plugged/vim-polyglot/indent/python.vim	/^    function! s:is_
 s:is_dedented_already	.vim/plugged/vim-polyglot/indent/cython.vim	/^function! s:is_dedented_already(current, base)$/;"	f
 s:is_dedented_already	.vim/plugged/vim-polyglot/indent/python.vim	/^function! s:is_dedented_already(current, base)$/;"	f
 s:is_file_buffer	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! s:is_file_buffer(bufnr) abort$/;"	f
+s:is_file_uri	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/utils.vim	/^function! s:is_file_uri(uri) abort$/;"	f
 s:is_in_skiplist	.vim/plugged/vim-startify/autoload/startify.vim	/^function! s:is_in_skiplist(arg) abort$/;"	f
+s:is_insert	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! s:is_insert(range) abort$/;"	f
 s:is_local_plug	.vim/autoload/plug.vim	/^  function! s:is_local_plug(repo)$/;"	f
 s:is_managed	.vim/autoload/plug.vim	/^function! s:is_managed(name)$/;"	f
 s:is_method_special_case	.vim/plugged/vim-polyglot/indent/clojure.vim	/^	function! s:is_method_special_case(position)$/;"	f
@@ -7550,7 +7831,10 @@ s:is_python_string	.vim/plugged/vim-polyglot/indent/cython.vim	/^function! s:is_
 s:is_python_string	.vim/plugged/vim-polyglot/indent/python.vim	/^function! s:is_python_string(lnum, ...)$/;"	f
 s:is_reader_conditional_special_case	.vim/plugged/vim-polyglot/indent/clojure.vim	/^	function! s:is_reader_conditional_special_case(position)$/;"	f
 s:is_removed	.vim/plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^function! s:is_removed(from_count, to_count) abort$/;"	f
+s:is_same_range	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! s:is_same_range(range1, range2) abort$/;"	f
 s:is_section_delim	.vim/plugged/vim-polyglot/after/ftplugin/llvm.vim	/^function! s:is_section_delim(line, func_delim) abort$/;"	f
+s:is_server_instantiated_notification	.vim/plugged/vim-lsp/autoload/lsp/client.vim	/^function! s:is_server_instantiated_notification(notification) abort$/;"	f
+s:is_step_error	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:is_step_error(s) abort$/;"	f
 s:is_string_comment	.vim/plugged/vim-polyglot/indent/reason.vim	/^function! s:is_string_comment(lnum, col)$/;"	f
 s:is_string_comment	.vim/plugged/vim-polyglot/indent/rust.vim	/^function! s:is_string_comment(lnum, col)$/;"	f
 s:is_string_or_comment	.vim/plugged/vim-polyglot/autoload/elixir/indent.vim	/^function! s:is_string_or_comment(line, col)$/;"	f
@@ -7558,14 +7842,28 @@ s:is_unix	.vim/plugged/vim-polyglot/autoload/vital/_crystal/Process.vim	/^let s:
 s:is_updated	.vim/autoload/plug.vim	/^function! s:is_updated(dir)$/;"	f
 s:is_vital_vim	.vim/plugged/vim-polyglot/autoload/vital/crystal.vim	/^let s:is_vital_vim = s:plugin_name is# 'vital'$/;"	v
 s:is_win	.vim/autoload/plug.vim	/^let s:is_win = has('win32')$/;"	v
+s:is_win	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/diagnostics.vim	/^let s:is_win = has('win32') || has('win64')$/;"	v
 s:is_windows	.vim/plugged/vim-polyglot/autoload/vital/_crystal/Process.vim	/^let s:is_windows = has('win16') || has('win32') || has('win64') || has('win95')$/;"	v
 s:iscontOne	.vim/plugged/vim-polyglot/indent/typescript.vim	/^function s:iscontOne(i,num,cont)$/;"	f
 s:iskeyword_save	.vim/plugged/vim-polyglot/syntax/php.vim	/^let s:iskeyword_save = &iskeyword$/;"	v
 s:itemno	.vim/plugged/emmet-vim/autoload/emmet.vim	/^function! s:itemno(itemno, current) abort$/;"	f
 s:job_abort	.vim/autoload/plug.vim	/^function! s:job_abort()$/;"	f
 s:job_cb	.vim/autoload/plug.vim	/^function! s:job_cb(fn, job, ch, data)$/;"	f
+s:job_error_unsupported_job_type	.vim/plugged/async.vim/autoload/async/job.vim	/^let s:job_error_unsupported_job_type = -2 " unsupported job type$/;"	v
 s:job_exit_cb	.vim/autoload/plug.vim	/^function! s:job_exit_cb(self, data) abort$/;"	f
 s:job_out_cb	.vim/autoload/plug.vim	/^function! s:job_out_cb(self, data) abort$/;"	f
+s:job_pid	.vim/plugged/async.vim/autoload/async/job.vim	/^function! s:job_pid(jobid) abort$/;"	f
+s:job_send	.vim/plugged/async.vim/autoload/async/job.vim	/^function! s:job_send(jobid, data) abort$/;"	f
+s:job_start	.vim/plugged/async.vim/autoload/async/job.vim	/^function! s:job_start(cmd, opts) abort$/;"	f
+s:job_stop	.vim/plugged/async.vim/autoload/async/job.vim	/^function! s:job_stop(jobid) abort$/;"	f
+s:job_supported_types	.vim/plugged/async.vim/autoload/async/job.vim	/^function! s:job_supported_types() abort$/;"	f
+s:job_supports_type	.vim/plugged/async.vim/autoload/async/job.vim	/^function! s:job_supports_type(type) abort$/;"	f
+s:job_type_nvimjob	.vim/plugged/async.vim/autoload/async/job.vim	/^let s:job_type_nvimjob = 'nvimjob'$/;"	v
+s:job_type_vimjob	.vim/plugged/async.vim/autoload/async/job.vim	/^let s:job_type_vimjob = 'vimjob'$/;"	v
+s:job_wait	.vim/plugged/async.vim/autoload/async/job.vim	/^function! s:job_wait(jobids, timeout) abort$/;"	f
+s:job_wait_single	.vim/plugged/async.vim/autoload/async/job.vim	/^function! s:job_wait_single(jobid, timeout, start) abort$/;"	f
+s:jobidseq	.vim/plugged/async.vim/autoload/async/job.vim	/^let s:jobidseq = 0$/;"	v
+s:jobs	.vim/plugged/async.vim/autoload/async/job.vim	/^let s:jobs = {} " { job, opts, type: 'vimjob|nvimjob'}$/;"	v
 s:join_posix_lines	.vim/plugged/vim-polyglot/autoload/vital/_crystal/Data/String.vim	/^function! s:join_posix_lines(lines, ...) abort$/;"	f
 s:js_keywords	.vim/plugged/vim-polyglot/indent/solidity.vim	/^let s:js_keywords = '^\\s*\\(break\\|case\\|catch\\|continue\\|debugger\\|default\\|delete\\|do\\/;"	v
 s:jsx_match_words	.vim/plugged/vim-polyglot/after/ftplugin/jsx.vim	/^  let s:jsx_match_words = '<\\([a-zA-Z0-9.]\\+\\)\\(>\\|$\\|\\s\\):<\\\/\\1>'$/;"	v
@@ -7600,6 +7898,7 @@ s:key_value	.vim/plugged/vim-polyglot/indent/ansible.vim	/^let s:key_value = '\\
 s:keyword	.vim/plugged/vim-polyglot/autoload/elixir/indent.vim	/^function! s:keyword(expr)$/;"	f
 s:kill_all_latexmk_processes	.vim/plugged/vim-polyglot/ftplugin/latex-box/latexmk.vim	/^function! s:kill_all_latexmk_processes()$/;"	f
 s:kill_latexmk_process	.vim/plugged/vim-polyglot/ftplugin/latex-box/latexmk.vim	/^function! s:kill_latexmk_process(pid)$/;"	f
+s:kind_text_mappings	.vim/plugged/vim-lsp/autoload/lsp/omni.vim	/^let s:kind_text_mappings = {$/;"	v
 s:known_files	.vim/plugged/vim-gutentags/autoload/gutentags.vim	/^let s:known_files = []$/;"	v
 s:known_projects	.vim/plugged/vim-gutentags/autoload/gutentags.vim	/^let s:known_projects = {}$/;"	v
 s:label_col	.vim/plugged/vim-polyglot/indent/typescript.vim	/^function s:label_col()$/;"	f
@@ -7609,6 +7908,7 @@ s:largest_buffer_id	.vim/plugged/vim-buffet/autoload/buffet.vim	/^let s:largest_
 s:last_changedtick	.vim/plugged/vim-polyglot/indent/erlang.vim	/^let s:last_changedtick = -1$/;"	v
 s:last_current_buffer_id	.vim/plugged/vim-buffet/autoload/buffet.vim	/^let s:last_current_buffer_id = -1$/;"	v
 s:last_non_empty_line	.vim/autoload/plug.vim	/^function! s:last_non_empty_line(lines)$/;"	f
+s:last_req_id	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^let s:last_req_id = 0$/;"	v
 s:last_rtp	.vim/autoload/plug.vim	/^let s:last_rtp  = s:escrtp(get(s:split_rtp(), -1, ''))$/;"	v
 s:last_wildignores	.vim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^let s:last_wildignores = ''$/;"	v
 s:lastline	.vim/autoload/plug.vim	/^function! s:lastline(msg)$/;"	f
@@ -7661,6 +7961,11 @@ s:logn	.vim/plugged/emmet-vim/unittest.vim	/^function! s:logn(msg)$/;"	f
 s:logpos	.vim/autoload/plug.vim	/^function! s:logpos(name)$/;"	f
 s:looking_at	.vim/plugged/vim-polyglot/indent/typescript.vim	/^function s:looking_at()$/;"	f
 s:lpad	.vim/autoload/plug.vim	/^function! s:lpad(str, len)$/;"	f
+s:lsp_get_last_request_id	.vim/plugged/vim-lsp/autoload/lsp/client.vim	/^function! s:lsp_get_last_request_id(id) abort$/;"	f
+s:lsp_is_error	.vim/plugged/vim-lsp/autoload/lsp/client.vim	/^function! s:lsp_is_error(obj_or_response) abort$/;"	f
+s:lsp_send	.vim/plugged/vim-lsp/autoload/lsp/client.vim	/^function! s:lsp_send(id, opts, type) abort " opts = { method, params?, on_notification }$/;"	f
+s:lsp_start	.vim/plugged/vim-lsp/autoload/lsp/client.vim	/^function! s:lsp_start(opts) abort$/;"	f
+s:lsp_stop	.vim/plugged/vim-lsp/autoload/lsp/client.vim	/^function! s:lsp_stop(id) abort$/;"	f
 s:m	.vim/plugged/vim-polyglot/ftplugin/ocaml.vim	/^let s:m = matchstr(s:modeline,'default\\s*=\\s*\\d\\+')$/;"	v
 s:m	.vim/plugged/vim-polyglot/ftplugin/ocaml.vim	/^let s:m = matchstr(s:modeline,'struct\\s*=\\s*\\d\\+')$/;"	v
 s:mac_gui	.vim/autoload/plug.vim	/^let s:mac_gui = has('gui_macvim') && has('gui_running')$/;"	v
@@ -7708,6 +8013,7 @@ s:matchit	.vim/plugged/vim-polyglot/autoload/julia_blocks.vim	/^function! s:matc
 s:max_by	.vim/plugged/vim-polyglot/autoload/vital/_crystal/Data/List.vim	/^function! s:max_by(list, expr) abort$/;"	f
 s:maxoff	.vim/plugged/vim-polyglot/indent/meson.vim	/^let s:maxoff = 50	" maximum number of lines to look backwards for ()$/;"	v
 s:me	.vim/autoload/plug.vim	/^let s:me = resolve(expand('<sfile>:p'))$/;"	v
+s:merge_same_range	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! s:merge_same_range(start_index, text_edits) abort$/;"	f
 s:message	.vim/plugged/lightline.vim/test/error.vim	/^function! s:message() abort$/;"	f
 s:messages	.vim/plugged/vim-gitgutter/test/runner.vim	/^let s:messages = []$/;"	v
 s:middle_patt	.vim/plugged/vim-polyglot/indent/lua.vim	/^let s:middle_patt = '\\C\\<\\%(else\\|elseif\\)\\>'$/;"	v
@@ -7735,7 +8041,10 @@ s:needs_cppstructure_match	.vim/plugged/vim-polyglot/after/syntax/cpp.vim	/^	let
 s:needs_cppstructure_match	.vim/plugged/vim-polyglot/after/syntax/cpp.vim	/^let s:needs_cppstructure_match = 0$/;"	v
 s:new	.vim/plugged/vim-polyglot/autoload/vital/crystal.vim	/^function! s:new(plugin_name) abort$/;"	f
 s:new_log_session	.vim/plugged/vim-gitgutter/autoload/gitgutter/debug.vim	/^let s:new_log_session = 1$/;"	v
+s:new_rpc_error	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:new_rpc_error(message, data) abort$/;"	f
+s:new_rpc_success	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:new_rpc_success(message, data) abort$/;"	f
 s:new_window	.vim/autoload/plug.vim	/^function! s:new_window()$/;"	f
+s:next	.vim/plugged/vim-lsp/autoload/lsp/utils/step.vim	/^function! s:next(steps, current_index, result) abort$/;"	f
 s:next_section	.vim/plugged/vim-polyglot/after/ftplugin/llvm.vim	/^function! s:next_section(stop_func_begin) abort$/;"	f
 s:next_sign_id	.vim/plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^function! s:next_sign_id() abort$/;"	f
 s:next_sign_id	.vim/plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^let s:next_sign_id  = s:first_sign_id$/;"	v
@@ -7766,9 +8075,12 @@ s:nord8	.vim/plugged/lightline.vim/autoload/lightline/colorscheme/nord.vim	/^let
 s:nord9	.vim/plugged/lightline.vim/autoload/lightline/colorscheme/nord.vim	/^let s:nord9 = ["#81A1C1", 4]$/;"	v
 s:normalize	.vim/plugged/lightline.vim/autoload/lightline.vim	/^function! s:normalize(result) abort$/;"	f
 s:not_git_dir	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! s:not_git_dir(bufnr) abort$/;"	f
+s:not_supported	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! s:not_supported(what) abort$/;"	f
+s:not_supported	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/hover.vim	/^function! s:not_supported(what) abort$/;"	f
 s:not_tracked_by_git	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^  function! s:not_tracked_by_git(bufnr)$/;"	f
 s:notbslash	.vim/plugged/vim-polyglot/ftplugin/latex-box/folding.vim	/^let s:notbslash = '\\%(\\\\\\@<!\\%(\\\\\\\\\\)*\\)\\@<='$/;"	v
 s:notcomment	.vim/plugged/vim-polyglot/ftplugin/latex-box/folding.vim	/^let s:notcomment = '\\%(\\%(\\\\\\@<!\\%(\\\\\\\\\\)*\\)\\@<=%.*\\)\\@<!'$/;"	v
+s:notification_callbacks	.vim/plugged/vim-lsp/autoload/lsp.vim	/^let s:notification_callbacks = [] " { name, callback }$/;"	v
 s:nr	.vim/plugged/lightline.vim/autoload/lightline/colorscheme.vim	/^function! s:nr(x) abort$/;"	f
 s:nr2byte	.vim/plugged/vim-polyglot/autoload/vital/_crystal/Data/String.vim	/^function! s:nr2byte(nr) abort$/;"	f
 s:nr2enc_char	.vim/plugged/vim-polyglot/autoload/vital/_crystal/Data/String.vim	/^function! s:nr2enc_char(charcode) abort$/;"	f
@@ -7789,14 +8101,29 @@ s:old_style	.vim/plugged/vim-polyglot/syntax/erlang.vim	/^let s:old_style = (exi
 s:olive	.vim/plugged/lightline.vim/autoload/lightline/colorscheme/PaperColor_dark.vim	/^let s:olive = '#dfaf5f'$/;"	v
 s:olive	.vim/plugged/lightline.vim/autoload/lightline/colorscheme/PaperColor_light.vim	/^let s:olive = '#718c00'$/;"	v
 s:on_begin	.vim/plugged/vim-polyglot/autoload/julia_blocks.vim	/^function! s:on_begin()$/;"	f
+s:on_buf_wipeout	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:on_buf_wipeout(buf) abort$/;"	f
 s:on_bufenter	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^function! s:on_bufenter()$/;"	f
+s:on_cursor_moved	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:on_cursor_moved() abort$/;"	f
 s:on_end	.vim/plugged/vim-polyglot/autoload/julia_blocks.vim	/^function! s:on_end()$/;"	f
+s:on_exit	.vim/plugged/async.vim/autoload/async/job.vim	/^function! s:on_exit(jobid, status, event) abort$/;"	f
+s:on_exit	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:on_exit(server_name, id, data, event) abort$/;"	f
+s:on_exit	.vim/plugged/vim-lsp/autoload/lsp/client.vim	/^function! s:on_exit(id, status, event) abort$/;"	f
 s:on_exit_nvim	.vim/plugged/vim-gitgutter/autoload/gitgutter/async.vim	/^function! s:on_exit_nvim(_job_id, exit_code, _event) dict abort$/;"	f
 s:on_exit_vim	.vim/plugged/vim-gitgutter/autoload/gitgutter/async.vim	/^function! s:on_exit_vim(channel) dict abort$/;"	f
+s:on_notification	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:on_notification(server_name, id, data, event) abort$/;"	f
+s:on_stderr	.vim/plugged/async.vim/autoload/async/job.vim	/^function! s:on_stderr(jobid, data, event) abort$/;"	f
+s:on_stderr	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:on_stderr(server_name, id, data, event) abort$/;"	f
+s:on_stderr	.vim/plugged/vim-lsp/autoload/lsp/client.vim	/^function! s:on_stderr(id, data, event) abort$/;"	f
 s:on_stderr_nvim	.vim/plugged/vim-gitgutter/autoload/gitgutter/async.vim	/^function! s:on_stderr_nvim(_job_id, data, _event) dict abort$/;"	f
 s:on_stderr_vim	.vim/plugged/vim-gitgutter/autoload/gitgutter/async.vim	/^function! s:on_stderr_vim(channel, _data) dict abort$/;"	f
+s:on_stdout	.vim/plugged/async.vim/autoload/async/job.vim	/^function! s:on_stdout(jobid, data, event) abort$/;"	f
+s:on_stdout	.vim/plugged/vim-lsp/autoload/lsp/client.vim	/^function! s:on_stdout(id, data, event) abort$/;"	f
 s:on_stdout_nvim	.vim/plugged/vim-gitgutter/autoload/gitgutter/async.vim	/^function! s:on_stdout_nvim(_job_id, data, _event) dict abort$/;"	f
 s:on_stdout_vim	.vim/plugged/vim-gitgutter/autoload/gitgutter/async.vim	/^function! s:on_stdout_vim(_channel, data) dict abort$/;"	f
+s:on_text_document_did_change	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:on_text_document_did_change() abort$/;"	f
+s:on_text_document_did_close	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:on_text_document_did_close() abort$/;"	f
+s:on_text_document_did_open	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:on_text_document_did_open() abort$/;"	f
+s:on_text_document_did_save	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:on_text_document_did_save() abort$/;"	f
 s:on_vimenter	.vim/plugged/vim-startify/plugin/startify.vim	/^function! s:on_vimenter()$/;"	f
 s:on_vimleavepre	.vim/plugged/vim-startify/plugin/startify.vim	/^function! s:on_vimleavepre()$/;"	f
 s:one_line_scope_regex	.vim/plugged/vim-polyglot/indent/solidity.vim	/^let s:one_line_scope_regex = '\\<\\%(if\\|else\\|for\\|while\\)\\>[^{;]*' . s:line_term$/;"	v
@@ -7834,6 +8161,7 @@ s:orange	.vim/plugged/lightline.vim/autoload/lightline/colorscheme/solarized.vim
 s:orange	.vim/plugged/lightline.vim/autoload/lightline/colorscheme/srcery_drk.vim	/^let s:orange = [ '#d75f00', 166 ]$/;"	v
 s:orange	.vim/plugged/lightline.vim/autoload/lightline/colorscheme/wombat.vim	/^let s:orange = [ '#e5786d', 173 ]$/;"	v
 s:others	.vim/plugged/vim-polyglot/indent/typescript.vim	/^function s:others(p)$/;"	f
+s:out_cb	.vim/plugged/async.vim/autoload/async/job.vim	/^function! s:out_cb(jobid, opts, job, data) abort$/;"	f
 s:output	.vim/plugged/vim-gitgutter/autoload/gitgutter/debug.vim	/^function! s:output(text)$/;"	f
 s:p	.vim/plugged/lightline.vim/autoload/lightline/colorscheme/16color.vim	/^let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {/;"	v
 s:p	.vim/plugged/lightline.vim/autoload/lightline/colorscheme/16color.vim	/^let s:p.inactive.left =  [ [ s:base0, s:base02 ], [ s:base00, s:base02 ] ]$/;"	v
@@ -8257,7 +8585,9 @@ s:padding_left	.vim/plugged/vim-startify/autoload/startify.vim	/^let s:padding_l
 s:padding_left	.vim/plugged/vim-startify/syntax/startify.vim	/^let s:padding_left = repeat(' ', get(g:, 'startify_padding_left', 3))$/;"	v
 s:paren_pairs	.vim/plugged/vim-polyglot/indent/cython.vim	/^let s:paren_pairs = {'()': 50, '[]': 100, '{}': 1000}$/;"	v
 s:paren_pairs	.vim/plugged/vim-polyglot/indent/python.vim	/^let s:paren_pairs = {'()': 50, '[]': 100, '{}': 1000}$/;"	v
+s:parse	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! s:parse(text) abort$/;"	f
 s:parse_options	.vim/autoload/plug.vim	/^function! s:parse_options(arg)$/;"	f
+s:parse_range	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! s:parse_range(range) abort$/;"	f
 s:partition	.vim/plugged/vim-polyglot/autoload/vital/_crystal/Data/List.vim	/^function! s:partition(f, xs) abort$/;"	f
 s:pat	.vim/plugged/vim-polyglot/compiler/coffee.vim	/^let s:pat = '^' . current_compiler$/;"	v
 s:pat	.vim/plugged/vim-polyglot/compiler/ls.vim	/^let s:pat = '^' . current_compiler$/;"	v
@@ -8276,6 +8606,8 @@ s:phpindent	.vim/plugged/vim-polyglot/indent/blade.vim	/^let s:phpindent = &inde
 s:pink	.vim/plugged/lightline.vim/autoload/lightline/colorscheme/PaperColor_dark.vim	/^let s:pink = '#afdf00'$/;"	v
 s:pink	.vim/plugged/lightline.vim/autoload/lightline/colorscheme/PaperColor_light.vim	/^let s:pink = '#d7005f'$/;"	v
 s:pink	.vim/plugged/lightline.vim/autoload/lightline/colorscheme/molokai.vim	/^let s:pink = [ '#f92672', 161 ]$/;"	v
+s:place_signs	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/signs.vim	/^function! s:place_signs(server_name, path, diagnostics) abort$/;"	f
+s:place_virtual	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/virtual.vim	/^function! s:place_virtual(server_name, path, diagnostics) abort$/;"	f
 s:plug_buf	.vim/autoload/plug.vim	/^let s:plug_buf = get(s:, 'plug_buf', -1)$/;"	v
 s:plug_src	.vim/autoload/plug.vim	/^let s:plug_src = 'https:\/\/github.com\/junegunn\/vim-plug.git'$/;"	v
 s:plug_tab	.vim/autoload/plug.vim	/^let s:plug_tab = get(s:, 'plug_tab', -1)$/;"	v
@@ -8289,6 +8621,7 @@ s:pos	.vim/plugged/vim-project/autoload/project/config.vim	/^let s:pos = 0$/;"	v
 s:predefined_quotes	.vim/plugged/vim-startify/autoload/startify/fortune.vim	/^let s:predefined_quotes = [$/;"	v
 s:prepare	.vim/autoload/plug.vim	/^function! s:prepare(...)$/;"	f
 s:prepare_env	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^let s:prepare_env = {$/;"	v
+s:preprocess_cmd	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! s:preprocess_cmd(range) abort$/;"	f
 s:prev_ends_with	.vim/plugged/vim-polyglot/autoload/elixir/indent.vim	/^function! s:prev_ends_with(context, expr)$/;"	f
 s:prev_non_connected_line	.vim/plugged/vim-polyglot/indent/applescript.vim	/^func! s:prev_non_connected_line(line)$/;"	f
 s:prev_section	.vim/plugged/vim-polyglot/after/ftplugin/llvm.vim	/^function! s:prev_section(stop_func_begin) abort$/;"	f
@@ -8358,6 +8691,7 @@ s:redirects	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^let s:redirects = 
 s:refreshCurrent	.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:refreshCurrent(node)$/;"	f
 s:refreshRoot	.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:refreshRoot()$/;"	f
 s:register	.vim/plugged/vim-startify/autoload/startify.vim	/^function! s:register(line, index, type, cmd, path)$/;"	f
+s:register_events	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:register_events() abort$/;"	f
 s:register_language	.vim/plugged/vim-polyglot/syntax/vue.vim	/^function! s:register_language(language, tag, ...)$/;"	f
 s:regress_bar	.vim/autoload/plug.vim	/^function! s:regress_bar()$/;"	f
 s:rel	.vim/plugged/vim-polyglot/indent/javascript.vim	/^let s:rel = has('reltime')$/;"	v
@@ -8369,6 +8703,8 @@ s:remove_continuation	.vim/plugged/vim-polyglot/indent/omake.vim	/^function s:re
 s:remove_rtp	.vim/autoload/plug.vim	/^function! s:remove_rtp()$/;"	f
 s:remove_signs	.vim/plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^function! s:remove_signs(bufnr, sign_ids, all_signs) abort$/;"	f
 s:remove_triggers	.vim/autoload/plug.vim	/^function! s:remove_triggers(name)$/;"	f
+s:remove_typed_part	.vim/plugged/vim-lsp/autoload/lsp/omni.vim	/^function! s:remove_typed_part(word) abort$/;"	f
+s:rename	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! s:rename(server, new_name, pos) abort$/;"	f
 s:renameBuffer	.vim/plugged/nerdtree/nerdtree_plugin/fs_menu.vim	/^function! s:renameBuffer(bufNum, newNodeName, isDirectory)$/;"	f
 s:reorg_rtp	.vim/autoload/plug.vim	/^function! s:reorg_rtp()$/;"	f
 s:repair_posix_text	.vim/plugged/vim-polyglot/autoload/vital/_crystal/Data/String.vim	/^function! s:repair_posix_text(text, ...) abort$/;"	f
@@ -8421,6 +8757,7 @@ s:run_spec	.vim/plugged/vim-polyglot/autoload/crystal_lang.vim	/^function! s:run
 s:run_syntax_fold	.vim/plugged/vim-polyglot/syntax/ruby.vim	/^function! s:run_syntax_fold(args) abort$/;"	f
 s:runner_exe	.vim/plugged/vim-gutentags/autoload/gutentags/cscope.vim	/^let s:runner_exe = gutentags#get_plat_file('update_scopedb')$/;"	v
 s:runner_exe	.vim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^let s:runner_exe = gutentags#get_plat_file('update_tags')$/;"	v
+s:save_cpo	.vim/plugged/async.vim/autoload/async/job.vim	/^let s:save_cpo = &cpo$/;"	v
 s:save_cpo	.vim/plugged/emmet-vim/autoload/emmet.vim	/^let s:save_cpo = &cpoptions$/;"	v
 s:save_cpo	.vim/plugged/emmet-vim/plugin/emmet.vim	/^let s:save_cpo = &cpoptions$/;"	v
 s:save_cpo	.vim/plugged/lightline.vim/autoload/lightline.vim	/^let s:save_cpo = &cpo$/;"	v
@@ -8433,6 +8770,7 @@ s:save_cpo	.vim/plugged/ultisnips/autoload/unite/sources/ultisnips.vim	/^let s:s
 s:save_cpo	.vim/plugged/ultisnips/ftplugin/snippets.vim	/^let s:save_cpo = &cpo$/;"	v
 s:save_cpo	.vim/plugged/vim-devicons/autoload/vimfiler/columns/devicons.vim	/^let s:save_cpo = &cpo$/;"	v
 s:save_cpo	.vim/plugged/vim-devicons/plugin/webdevicons.vim	/^let s:save_cpo = &cpo$/;"	v
+s:save_cpo	.vim/plugged/vim-lsp/autoload/lsp/client.vim	/^let s:save_cpo = &cpo$/;"	v
 s:save_cpo	.vim/plugged/vim-polyglot/after/indent/objc.vim	/^let s:save_cpo = &cpo$/;"	v
 s:save_cpo	.vim/plugged/vim-polyglot/autoload/crystal_lang.vim	/^let s:save_cpo = &cpo$/;"	v
 s:save_cpo	.vim/plugged/vim-polyglot/autoload/vital/_crystal/ColorEcho.vim	/^let s:save_cpo = &cpo$/;"	v
@@ -8470,11 +8808,19 @@ s:section	.vim/autoload/plug.vim	/^function! s:section(flags)$/;"	f
 s:section_delim_at	.vim/plugged/vim-polyglot/after/ftplugin/llvm.vim	/^function! s:section_delim_at(lnum) abort$/;"	f
 s:sectionmovement	.vim/plugged/vim-polyglot/ftplugin/mustache.vim	/^function! s:sectionmovement(pattern,flags,mode,count)$/;"	f
 s:seed	.vim/plugged/emmet-vim/autoload/emmet/util.vim	/^let s:seed = localtime()$/;"	v
+s:send_completion_request	.vim/plugged/vim-lsp/autoload/lsp/omni.vim	/^function! s:send_completion_request(info) abort$/;"	f
+s:send_didchange_queue	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:send_didchange_queue(...) abort$/;"	f
+s:send_notification	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:send_notification(server_name, data) abort$/;"	f
+s:send_request	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:send_request(server_name, data) abort$/;"	f
+s:send_type_notification	.vim/plugged/vim-lsp/autoload/lsp/client.vim	/^let s:send_type_notification = 2$/;"	v
+s:send_type_request	.vim/plugged/vim-lsp/autoload/lsp/client.vim	/^let s:send_type_request = 1$/;"	v
 s:sep	.vim/plugged/vim-project/syntax/project.vim	/^let s:sep = project#config#get_sep()$/;"	v
 s:sep	.vim/plugged/vim-startify/autoload/startify.vim	/^let s:sep = startify#get_separator()$/;"	v
 s:sep	.vim/plugged/vim-startify/syntax/startify.vim	/^let s:sep = startify#get_separator()$/;"	v
 s:separator	.vim/plugged/vim-eunuch/plugin/eunuch.vim	/^function! s:separator()$/;"	f
 s:separator	.vim/plugged/vim-gitgutter/autoload/gitgutter/debug.vim	/^function! s:separator()$/;"	f
+s:server_status	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:server_status(server_name) abort$/;"	f
+s:servers	.vim/plugged/vim-lsp/autoload/lsp.vim	/^let s:servers = {} " { lsp_id, server_info, init_callbacks, init_result, buffers: { path: { chan/;"	v
 s:session_dir	.vim/plugged/vim-startify/autoload/startify.vim	/^let s:session_dir = s:get_session_path()$/;"	v
 s:set	.vim/plugged/vim-devicons/plugin/webdevicons.vim	/^function! s:set(var, default) abort$/;"	f
 s:set	.vim/plugged/vim-gitgutter/plugin/gitgutter.vim	/^function! s:set(var, default) abort$/;"	f
@@ -8495,6 +8841,8 @@ s:setup	.vim/plugged/vim-project/autoload/project/config.vim	/^function! s:setup
 s:setupTemplate	.vim/plugged/vim-polyglot/ftdetect/polyglot.vim	/^function! s:setupTemplate()$/;"	f
 s:setup_maps	.vim/plugged/vim-gitgutter/autoload/gitgutter.vim	/^function! s:setup_maps()$/;"	f
 s:setup_vim_server	.vim/plugged/vim-polyglot/ftplugin/latex-box/latexmk.vim	/^function! s:setup_vim_server()$/;"	f
+s:severity_sign_names_mapping	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/signs.vim	/^let s:severity_sign_names_mapping = {$/;"	v
+s:severity_sign_names_mapping	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/virtual.vim	/^let s:severity_sign_names_mapping = {$/;"	v
 s:sfile	.vim/plugged/emmet-vim/unittest.vim	/^let s:sfile = expand('<sfile>')$/;"	v
 s:shellesc	.vim/autoload/plug.vim	/^function! s:shellesc(arg)$/;"	f
 s:shellesc	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:shellesc(arg) abort$/;"	f
@@ -8519,6 +8867,7 @@ s:show_title	.vim/plugged/emmet-vim/unittest.vim	/^function! s:show_title(no, ti
 s:show_type	.vim/plugged/emmet-vim/unittest.vim	/^function! s:show_type(type)$/;"	f
 s:sid2sfuncs	.vim/plugged/vim-polyglot/autoload/vital/crystal.vim	/^function! s:sid2sfuncs(sid) abort$/;"	f
 s:signs	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^function s:signs(filename)$/;"	f
+s:signs	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/signs.vim	/^let s:signs = {} " { server_name: { path: {} } }$/;"	v
 s:skip2	.vim/plugged/vim-polyglot/autoload/pony.vim	/^let s:skip2 = '<SID>InLiteral(line("."), col(".")) || <SID>InComment(line("."), col(".")) == 1'$/;"	v
 s:skip3	.vim/plugged/vim-polyglot/autoload/pony.vim	/^let s:skip3 = '!<SID>InKeyword(line("."), col("."))'$/;"	v
 s:skip4	.vim/plugged/vim-polyglot/autoload/pony.vim	/^let s:skip4 = '!<SID>InBracket(line("."), col("."))'$/;"	v
@@ -8543,6 +8892,7 @@ s:sort	.vim/plugged/vim-project/autoload/project/config.vim	/^function! s:sort(d
 s:sort_by	.vim/plugged/vim-polyglot/autoload/vital/_crystal/Data/List.vim	/^function! s:sort_by(list, expr) abort$/;"	f
 s:sort_by_mtime	.vim/plugged/vim-startify/autoload/startify.vim	/^    function! s:sort_by_mtime(foo, bar)$/;"	f
 s:sort_by_tick	.vim/plugged/vim-startify/autoload/startify.vim	/^function! s:sort_by_tick(one, two)$/;"	f
+s:sort_text_edit_desc	.vim/plugged/vim-lsp/autoload/lsp/ui/vim.vim	/^function! s:sort_text_edit_desc(text_edit1, text_edit2) abort$/;"	f
 s:source	.vim/autoload/plug.vim	/^function! s:source(from, ...)$/;"	f
 s:source	.vim/plugged/ultisnips/autoload/neocomplete/sources/ultisnips.vim	/^let s:source = {$/;"	v
 s:source.gather_candidates	.vim/plugged/ultisnips/autoload/neocomplete/sources/ultisnips.vim	/^function! s:source.gather_candidates(context)$/;"	f
@@ -8576,6 +8926,7 @@ s:statusline_inactive_fg	.vim/plugged/lightline.vim/autoload/lightline/colorsche
 s:statusline_inactive_fg	.vim/plugged/lightline.vim/autoload/lightline/colorscheme/PaperColor_light.vim	/^let s:statusline_inactive_fg = s:foreground$/;"	v
 s:stepmatch	.vim/plugged/vim-polyglot/ftplugin/cucumber.vim	/^function! s:stepmatch(receiver,target)$/;"	f
 s:steps	.vim/plugged/vim-polyglot/ftplugin/cucumber.vim	/^function! s:steps(lnum)$/;"	f
+s:stop_cursor_moved_timer	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/diagnostics/echo.vim	/^function! s:stop_cursor_moved_timer() abort$/;"	f
 s:stop_statement	.vim/plugged/vim-polyglot/indent/cython.vim	/^let s:stop_statement = '^\\s*\\(break\\|continue\\|raise\\|return\\|pass\\)\\>'$/;"	v
 s:stop_statement	.vim/plugged/vim-polyglot/indent/python.vim	/^let s:stop_statement = '^\\s*\\(break\\|continue\\|raise\\|return\\|pass\\)\\>'$/;"	v
 s:str	.vim/plugged/vim-polyglot/syntax/tt2.vim	/^        let s:str = substitute(s:str,'[^ ]* ','',"")$/;"	v
@@ -8776,7 +9127,9 @@ s:suite.two_empty_left	.vim/plugged/lightline.vim/test/concatenate.vim	/^functio
 s:suite.two_empty_right	.vim/plugged/lightline.vim/test/concatenate.vim	/^function! s:suite.two_empty_right()$/;"	f
 s:suite.visual	.vim/plugged/lightline.vim/test/highlight.vim	/^function! s:suite.visual()$/;"	f
 s:suite.visual	.vim/plugged/lightline.vim/test/link.vim	/^function! s:suite.visual()$/;"	f
+s:supports_signs	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/signs.vim	/^let s:supports_signs = has('signs') && has('patch-8.1.0772') && exists('*sign_define')$/;"	v
 s:supports_star	.vim/plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^let s:supports_star = v:version > 703 || (v:version == 703 && has("patch596"))$/;"	v
+s:supports_vt	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/virtual.vim	/^let s:supports_vt = exists('*nvim_buf_set_virtual_text')$/;"	v
 s:sw	.vim/plugged/vim-polyglot/autoload/elixir/indent.vim	/^function! s:sw()$/;"	f
 s:sw	.vim/plugged/vim-polyglot/indent/caddyfile.vim	/^	function! s:sw()$/;"	f
 s:sw	.vim/plugged/vim-polyglot/indent/cython.vim	/^    function! s:sw()$/;"	f
@@ -8785,6 +9138,7 @@ s:sw	.vim/plugged/vim-polyglot/indent/python.vim	/^    function! s:sw()$/;"	f
 s:sw	.vim/plugged/vim-polyglot/indent/typescript.vim	/^  function s:sw()$/;"	f
 s:switch_in	.vim/autoload/plug.vim	/^function! s:switch_in()$/;"	f
 s:switch_out	.vim/autoload/plug.vim	/^function! s:switch_out(...)$/;"	f
+s:symbol_kinds	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/utils.vim	/^let s:symbol_kinds = {$/;"	v
 s:syn	.vim/plugged/vim-polyglot/indent/cucumber.vim	/^function! s:syn(lnum)$/;"	f
 s:syn_at	.vim/plugged/vim-polyglot/indent/typescript.vim	/^function s:syn_at(l,c)$/;"	f
 s:syn_id_name	.vim/plugged/vim-polyglot/indent/clojure.vim	/^	function! s:syn_id_name()$/;"	f
@@ -8853,8 +9207,10 @@ s:test	.vim/plugged/emmet-vim/unittest.vim	/^function! s:test(...)$/;"	f
 s:test_repo	.vim/plugged/vim-gitgutter/test/test_gitgutter.vim	/^let s:test_repo   = s:current_dir.'\/test-repo'$/;"	v
 s:tests	.vim/plugged/vim-gitgutter/test/runner.vim	/^  let s:tests = filter(s:tests, 'v:val =~ argv(1)')$/;"	v
 s:tests	.vim/plugged/vim-gitgutter/test/runner.vim	/^let s:tests = split(substitute(@q, 'function \\(\\k*()\\)', '\\1', 'g'))$/;"	v
+s:text_changes	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:text_changes(buf, server_name) abort$/;"	f
 s:tf	.vim/plugged/vim-startify/autoload/startify.vim	/^let s:tf = exists('g:startify_transformations')$/;"	v
 s:throw	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^function! s:throw(string) abort$/;"	f
+s:throw_step_error	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:throw_step_error(s) abort$/;"	f
 s:tick	.vim/autoload/plug.vim	/^function! s:tick()$/;"	f
 s:tmp	.vim/plugged/vim-template/plugin/templates.vim	/^	let s:tmp = g:templates_directory$/;"	v
 s:to_a	.vim/autoload/plug.vim	/^function! s:to_a(v)$/;"	f
@@ -8883,6 +9239,7 @@ s:typeSpecMatcher	.vim/plugged/vim-polyglot/indent/scala.vim	/^let s:typeSpecMat
 s:type_length	.vim/plugged/vim-polyglot/ftplugin/latex-box/complete.vim	/^let s:type_length=0$/;"	v
 s:uname	.vim/plugged/vim-polyglot/ftplugin/latex-box/common.vim	/^      let s:uname = system('echo -n $(uname -s)')$/;"	v
 s:unc_path	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! s:unc_path(bufnr)$/;"	f
+s:undefine_signs	.vim/plugged/vim-lsp/autoload/lsp/ui/vim/signs.vim	/^function! s:undefine_signs() abort$/;"	f
 s:undo	.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^function! s:undo(hunk_diff)$/;"	f
 s:undo_ftplugin	.vim/plugged/vim-polyglot/ftplugin/eelixir.vim	/^  let s:undo_ftplugin = b:undo_ftplugin . " | " . s:undo_ftplugin$/;"	v
 s:undo_ftplugin	.vim/plugged/vim-polyglot/ftplugin/eelixir.vim	/^  let s:undo_ftplugin = b:undo_ftplugin$/;"	v
@@ -8925,11 +9282,13 @@ s:unix_redir	.vim/plugged/vim-gutentags/autoload/gutentags/cscope.vim	/^let s:un
 s:unix_redir	.vim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^let s:unix_redir = (&shellredir =~# '%s') ? &shellredir : &shellredir . ' %s'$/;"	v
 s:unload	.vim/plugged/vim-polyglot/autoload/vital/crystal.vim	/^function! s:unload() abort dict$/;"	f
 s:unmap	.vim/plugged/vim-polyglot/autoload/julia_blocks.vim	/^function! s:unmap(function)$/;"	f
+s:unregister_events	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:unregister_events() abort$/;"	f
 s:unshift	.vim/plugged/vim-polyglot/autoload/vital/_crystal/Data/List.vim	/^function! s:unshift(list, val) abort$/;"	f
 s:upDirCurrentRootClosed	.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:upDirCurrentRootClosed()$/;"	f
 s:upDirCurrentRootOpen	.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:upDirCurrentRootOpen()$/;"	f
 s:upconvert	.vim/plugged/lightline.vim/autoload/lightline/colorscheme.vim	/^function! s:upconvert(nr) abort$/;"	f
 s:update	.vim/autoload/plug.vim	/^function! s:update(force, names)$/;"	f
+s:update_file_content	.vim/plugged/vim-lsp/autoload/lsp.vim	/^function! s:update_file_content(buf, server_name, new) abort$/;"	f
 s:update_finish	.vim/autoload/plug.vim	/^function! s:update_finish()$/;"	f
 s:update_impl	.vim/autoload/plug.vim	/^function! s:update_impl(pull, force, args) abort$/;"	f
 s:update_in_progress	.vim/plugged/vim-gutentags/autoload/gutentags.vim	/^    let s:update_in_progress[module] = []$/;"	v
@@ -8944,6 +9303,7 @@ s:update_vim	.vim/autoload/plug.vim	/^function! s:update_vim()$/;"	f
 s:upgrade	.vim/autoload/plug.vim	/^function! s:upgrade()$/;"	f
 s:upgrade_specs	.vim/autoload/plug.vim	/^function! s:upgrade_specs()$/;"	f
 s:upsert_new_gitgutter_signs	.vim/plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^function! s:upsert_new_gitgutter_signs(bufnr, modified_lines) abort$/;"	f
+s:urlencode_char	.vim/plugged/vim-lsp/autoload/lsp/utils.vim	/^function! s:urlencode_char(c) abort$/;"	f
 s:use_known_shell	.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! s:use_known_shell() abort$/;"	f
 s:vala_cpo_save	.vim/plugged/vim-polyglot/syntax/vala.vim	/^let s:vala_cpo_save = &cpo$/;"	v
 s:var	.vim/plugged/vim-fugitive/autoload/fugitive.vim	/^let s:var = '\\%(%\\|#<\\=\\d\\+\\|##\\=\\)'$/;"	v
@@ -9019,6 +9379,7 @@ s:zip	.vim/plugged/vim-polyglot/autoload/vital/_crystal/Data/List.vim	/^function
 s:zip_fill	.vim/plugged/vim-polyglot/autoload/vital/_crystal/Data/List.vim	/^function! s:zip_fill(xs, ys, filler) abort$/;"	f
 safari	.vim/plugged/emmet-vim/docs/static/js/jquery-latest.js	/^	safari: \/webkit\/.test( userAgent ),$/;"	p	class:jQuery.browser
 safari2	.vim/plugged/emmet-vim/docs/static/js/jquery-latest.js	/^		    safari2      = safari && parseInt(version) < 522 && !\/adobeair\/i.test(userAgent),$/;"	v
+sample usage	.vim/plugged/async.vim/README.md	/^## sample usage$/;"	s
 save_mark	.vim/plugged/ultisnips/pythonx/UltiSnips/_vim.py	/^def save_mark(name):$/;"	f
 scala#ConditionalConfirm	.vim/plugged/vim-polyglot/indent/scala.vim	/^function! scala#ConditionalConfirm(msg)$/;"	f
 scala#CountBrackets	.vim/plugged/vim-polyglot/indent/scala.vim	/^function! scala#CountBrackets(line, openBracket, closedBracket)$/;"	f
@@ -9620,6 +9981,7 @@ vim	.vim/plugged/vim-devicons/pythonx/vim_devicons/powerline/segments.py	/^	vim 
 vim	.vim/plugged/vim-polyglot/syntax/go.vim	/^augroup vim-go-hi$/;"	a
 vim plugins for HTML and CSS hi-speed coding.	.vim/plugged/emmet-vim/docs/index.html	/^	<h2>vim plugins for HTML and CSS hi-speed coding.<\/h2>$/;"	i
 vim-buffet	.vim/plugged/vim-buffet/README.md	/^# vim-buffet$/;"	c
+vim-lsp	.vim/plugged/vim-lsp/README.md	/^# vim-lsp$/;"	c
 vim-startify	.vim/plugged/vim-devicons/DEVELOPER.md	/^##### vim-startify$/;"	T
 vim/neovim_config	README.md	/^# vim\/neovim_config$/;"	c
 vim_executable	.vim/plugged/ultisnips/test/vim_interface.py	/^    def vim_executable(self):$/;"	m	class:VimInterface
@@ -10204,6 +10566,7 @@ webdevicons_file_format	.vim/plugged/vim-devicons/pythonx/vim_devicons/powerline
 webdevicons_flagship_filesymbol	.vim/plugged/vim-devicons/autoload/devicons/plugins/flagship.vim	/^    augroup webdevicons_flagship_filesymbol$/;"	a
 webdevicons_flagship_filetype	.vim/plugged/vim-devicons/autoload/devicons/plugins/flagship.vim	/^    augroup webdevicons_flagship_filetype$/;"	a
 welcome	.vim/plugged/vim-project/autoload/project/config.vim	/^  augroup welcome$/;"	a
+whats	.vim/plugged/emmet-vim/docs/index.html	/^			<article id="whats">$/;"	I
 widget_attributes	.vim/plugged/vim-polyglot/autoload/xml/aria.vim	/^let widget_attributes = {$/;"	v
 widget_role	.vim/plugged/vim-polyglot/autoload/xml/aria.vim	/^let widget_role = [$/;"	v
 widget_role	.vim/plugged/vim-polyglot/autoload/xml/html5.vim	/^    let widget_role = ['alert', 'alertdialog', 'button', 'checkbox', 'combobox', 'dialog', 'grid/;"	v
